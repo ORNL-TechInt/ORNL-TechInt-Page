@@ -12,8 +12,11 @@
           padding-top: 4px;
           padding-bottom: 4px;
        }
-       h1 {
+       .page_title {
           font-family: "Arial Black", Gadget, sans-serif;
+       }
+       .push_down {
+          margin-top: 50px;
        }
        .history {
           background-color: yellow;
@@ -38,6 +41,14 @@
           /* background-color: #000046; */
           background-color: #0062AC;
        }
+       .spaced_low {
+          width: 33%;
+          height: 40px;
+          text-align: center;
+          vertical-align: center;
+          background-color: #34ffb9;
+          border-radius: 10px;
+       }
        .spaced {
           width: 33%;
           height: 100px;
@@ -59,9 +70,9 @@
          </div>
 
        <td width="47%" align="center">
-        <h1>Technology Integration</h1>
-        <h2>National Center for Computational Sciences</h2>
-        <h3>at Oak Ridge National Laboratory</h3>
+        <h1 class="page_title">Technology Integration</h1>
+        <h2 class="page_title">National Center for Computational Sciences</h2>
+        <h3 class="page_title">at Oak Ridge National Laboratory</h3>
 
        <td width="25%" align="center" bgcolor="#CDFFEE" class="rounded">
          <div class="rounded bordered">
@@ -75,8 +86,21 @@
   <center>
   <table class="rounded main">
     <tr>
-       <td class="rounded spaced history">
-           <a href="history.html">History</a>
+      <td class="spaced_low">
+        <a href="history.html">Group History</a>
+      <td class="spaced_low">
+        <a href="members.html">Group Members</a>
+      <td class="spaced_low">
+        <a href="projects.html">Projects</a>
+    </tr>
+  </table>
+
+  <div class="push_down">
+  <h3>Members of Technology Integration contribute to the following
+  projects:</h3>
+  </div>
+  <table class="rounded main">
+    <tr>
 
        <td class="rounded spaced olcf"><a href="olcf.html">
            <!-- <a href="http://www.olcf.ornl.gov"> --> 
@@ -89,11 +113,11 @@
            <img src="hpss_logo.jpg" height="100px" width="75%" />
            </a>
 
-    </tr><tr>
-
        <td class="rounded spaced sns"><a href="sns.html">
            <img src="sns_logo.png" width="90%" /> 
            </a>
+
+    </tr><tr>
 
        <td class="rounded spaced noaa"><a href="noaa.html">
            <img src="noaa_logo.png" width="80%" />
@@ -104,27 +128,22 @@
    href="http://climatemodeling.science.energy.gov/sites/default/files/CSSEF_Fact_Sheet_0.pdf">
             CSSEF (pdf)</a>
 
+       <td class="rounded spaced networking">Networking
+
     </tr><tr>
 
-       <td class="rounded spaced networking">Networking
        <td class="rounded spaced cms">CMS
        <td class="rounded spaced nvm">NVM (NSF)
 
-    </tr><tr>
 
        <td class="rounded spaced nci">NCI Data Management (NIH)
 
+    </tr><tr>
        <td class="rounded spaced ldrd">LDRD Projects
        <td class="rounded spaced seed">I/O Coordination (SEED)
 
-    </tr><tr>
 
        <td class="rounded spaced many">Many-cores
-
-       <td class="rounded spaced empty">&nbsp;
-
-       <td class="rounded spaced members">Members
-
     </tr>
   </table>
   </center>
