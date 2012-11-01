@@ -7,6 +7,11 @@
           margin-top: 20px;
           margin-bottom: 30px;
        }
+       .bordered {
+          border: 2px solid black;
+          padding-top: 4px;
+          padding-bottom: 4px;
+       }
        h1 {
           font-family: "Arial Black", Gadget, sans-serif;
        }
@@ -14,11 +19,14 @@
           background-color: yellow;
        }
        .hpss {
-          background-color: blue;
+          background-color: white;
        }
        .main {
           width: 95%;
           border: 2px solid black;
+       }
+       .noaa {
+          background-color: white;
        }
        .olcf {
           background-color: black;
@@ -27,7 +35,8 @@
           border-radius: 10px;
        }
        .sns {
-          background-color: blue;
+          /* background-color: #000046; */
+          background-color: #0062AC;
        }
        .spaced {
           width: 33%;
@@ -38,18 +47,27 @@
     </style>
 </header>
 
-<body bgcolor="#9EFFBC">
+<body bgcolor="#CDFFEE">
   <div class="banner">
       <center>
       <table width="100%"><tr>
-       <td width="28%" bgcolor="#4F6F61" class="rounded" align="center">
-         <img src="nccs_logo.png" width="300px" alt="NCCS Logo" />
+
+       <td width="28%" bgcolor="#CDFFEE" class="rounded"
+           align="center">
+         <div class="rounded bordered">
+         <img src="nccs_logo.png" width="90%" alt="NCCS Logo" />
+         </div>
+
        <td width="47%" align="center">
         <h1>Technology Integration</h1>
         <h2>National Center for Computational Sciences</h2>
         <h3>at Oak Ridge National Laboratory</h3>
+
        <td width="25%" align="center" bgcolor="#CDFFEE" class="rounded">
-        <img src="ornl_doe_logo.png" alt="ORNL/DOE Logo" />
+         <div class="rounded bordered">
+         <img src="ornl_doe_logo.png" width="90%" alt="ORNL/DOE Logo" />
+         </div>
+
       </tr></table>
       </center>
   </div>
@@ -57,24 +75,29 @@
   <center>
   <table class="rounded main">
     <tr>
-       <td class="rounded spaced history">History
+       <td class="rounded spaced history">
+           <a href="history.html">History</a>
 
        <td class="rounded spaced olcf"><a href="olcf.html">
            <!-- <a href="http://www.olcf.ornl.gov"> --> 
              <img
-       src="http://www.olcf.ornl.gov/wp-content/themes/olcf/images/olcf-logo.png"
-       />
+                src="http://www.olcf.ornl.gov/wp-content/themes/olcf/images/olcf-logo.png"
+                width="90%" />
              </a>
 
-       <td class="rounded spaced hpss">HPSS
+       <td class="rounded spaced hpss"><a href="hpss.html">
+           <img src="hpss_logo.jpg" height="100px" width="75%" />
+           </a>
 
     </tr><tr>
 
        <td class="rounded spaced sns"><a href="sns.html">
-           <img src="sns_logo.png" width="300px" /> 
+           <img src="sns_logo.png" width="90%" /> 
            </a>
 
-       <td class="rounded spaced noaa">NOAA
+       <td class="rounded spaced noaa"><a href="noaa.html">
+           <img src="noaa_logo.png" width="80%" />
+           </a>
 
        <td class="rounded spaced climate">Climate Data: ESG, ESGF,
              <a
