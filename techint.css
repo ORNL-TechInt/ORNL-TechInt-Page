@@ -8,6 +8,9 @@
           padding-top: 4px;
           padding-bottom: 4px;
        }
+       .notes {
+          font-style: italic;
+       }
        .page_title {
           font-family: "Arial Black", Gadget, sans-serif;
        }
