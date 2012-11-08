@@ -1,0 +1,59 @@
+       .banner {
+          width: 100%;
+          margin-top: 20px;
+          margin-bottom: 30px;
+       }
+       .bordered {
+          border: 2px solid black;
+          padding-top: 4px;
+          padding-bottom: 4px;
+       }
+       .page_title {
+          font-family: "Arial Black", Gadget, sans-serif;
+       }
+       .push_down {
+          margin-top: 50px;
+       }
+       .history {
+          background-color: yellow;
+       }
+       .hpss {
+          background-color: white;
+       }
+       .main {
+          width: 95%;
+          border: 2px solid black;
+       }
+       .member {
+          width: 33%;
+          height: 200px;
+          border: 2px solid black;
+          border-radius: 10px;
+       }
+       .noaa {
+          background-color: white;
+       }
+       .olcf {
+          background-color: black;
+       }
+       .rounded {
+          border-radius: 10px;
+       }
+       .sns {
+          /* background-color: #000046; */
+          background-color: #0062AC;
+       }
+       .spaced_low {
+          width: 33%;
+          height: 40px;
+          text-align: center;
+          vertical-align: center;
+          background-color: #00e0e0;
+          border-radius: 10px;
+       }
+       .spaced {
+          width: 33%;
+          height: 100px;
+          text-align: center;
+          vertical-align: center;
+       }
