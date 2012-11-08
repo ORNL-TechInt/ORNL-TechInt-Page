@@ -36,6 +36,10 @@
        .olcf {
           background-color: black;
        }
+       .outlink {
+          height: 60px;
+          width: 25%;
+       }
        .rounded {
           border-radius: 10px;
        }
