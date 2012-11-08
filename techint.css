@@ -33,6 +33,9 @@
           border: 2px solid black;
           border-radius: 10px;
        }
+       .networking {
+          background-color: brown;
+       }
        .noaa {
           background-color: white;
        }
