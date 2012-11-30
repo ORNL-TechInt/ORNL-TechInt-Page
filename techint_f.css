@@ -1,0 +1,109 @@
+    .banner {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .bordered {
+        border: 2px solid black;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        border-radius: 10px;
+    }
+    .cci {
+        margin-left: 5px;
+        width: 30%;
+        height: 150px;
+    }
+    .climate {
+        width: 50%;
+    } 
+    .esg {
+        width: 100%;
+    } 
+    .contact {
+        width: 100%;
+    }
+    .contact td {
+        vertical-align: top;
+    }
+    table tr td {
+    }
+    .notes {
+        font-style: italic;
+    }
+    .right {
+        float: right;
+    }
+    .page_title {
+        font-family: "Arial Black", Gadget, sans-serif;
+        color: white;
+        background-color: #061b38;
+        padding-top: 20px;
+        padding-bottom: 22px;
+        padding-left: 10px;
+    }
+    .menu {
+        font-family: "Arial Black", Gadget, sans-serif;
+        font-size: small;
+    }
+    .push_down {
+       margin-top: 50px;
+    }
+    .history {
+       background-color: yellow;
+    }
+    .hpss {
+       background-color: white;
+       padding-right: 15px;
+       border-radius: 10px;
+    }
+    .main {
+       width: 95%;
+       border: 2px solid black;
+    }
+    .member {
+       width: 33%;
+       height: 200px;
+       border: 2px solid black;
+       border-radius: 10px;
+       padding-left: 5px;
+    }
+    .networking {
+       background-color: white;
+       width: 100%;
+    }
+    .noaa {
+       background-color: white;
+    }
+    .olcf {
+       background-color: black;
+    }
+    .outlink {
+       height: 60px;
+       width: 300px;
+       text-align: center;
+    }
+    .vmiddle {
+       vertical-align: middle;
+    }
+    .rounded {
+       border-radius: 10px;
+    }
+    .sns {
+       /* background-color: #000046; */
+       background-color: #0062AC;
+    }
+    .spaced_low {
+       width: 33%;
+       height: 40px;
+       text-align: center;
+       vertical-align: center;
+       background-color: #00e0e0;
+       border-radius: 10px;
+    }
+    .spaced {
+       width: 33%;
+       height: 100px;
+       text-align: center;
+       vertical-align: center;
+    }
