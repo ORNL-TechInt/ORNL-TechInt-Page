@@ -37,6 +37,19 @@
     h2 {
         font-family: "Arial Black", Gadget, sans-serif;
     }
+    h3 {
+        font-family: "Arial Black", Gadget, sans-serif;
+        padding-bottom: 0px;
+    }
+    h4 {
+        font-family: "Arial Black", Gadget, sans-serif;
+        margin-top: -5px;
+        margin-bottom: -10px;
+    }
+    h5 {
+        font-family: "Arial Black", Gadget, sans-serif;
+        padding-bottom: 0px;
+    }
     .page_title {
         font-family: "Arial Black", Gadget, sans-serif;
         color: white;
