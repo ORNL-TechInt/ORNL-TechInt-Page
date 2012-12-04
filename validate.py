@@ -104,8 +104,13 @@ def check_structure(F):
     if stray_present:
         print("%s: stray '%s' tag found" % (F['filename'], stray))
 
-    ctypes = ['proj', 'about', 'member', 'contact', 'conf', 'pub']
-    if F['filetype'] in ctypes and body.get('bgcolor').upper() != "#CDFFff":
+    bgcolor_bad = True
+    ctypes = ['proj', 'about', 'member', 'contact', 'conf', 'pub',
+              'software', 'jobs']
+    bgcolor = body.get('bgcolor')
+    if bgcolor != None and bgcolor.upper() == "#CDFFFF":
+        bgcolor_bad = False
+    if F['filetype'] in ctypes and bgcolor_bad:
         print("%s: body background color should be #CDFFFF" % (F['filename']))
         
 # ---------------------------------------------------------------------------
