@@ -42,11 +42,14 @@ def check_file(filename):
 # ---------------------------------------------------------------------------
 def check_for_csslink(F):
     count = 0
+    link_bad = True
     for item in F['root'].iter('link'):
-        count += 1
-    if count <= 0:
-        print("%s: no link tag found in head element" % F['filename'])
-    
+        if item.get('rel') == 'stylesheet' and item.get('type') == 'text/css':
+            link_bad = False
+
+    if link_bad:
+        print("%s: no stylesheet link tag found in head element" % F['filename'])
+        
 # ---------------------------------------------------------------------------
 def check_for_meta(F):
     """
@@ -55,21 +58,21 @@ def check_for_meta(F):
 
     There should also be a <meta charset="utf-8"> tag as well.
     """
-    ft_ok = False
-    charset_ok = False
+    ft_missing = True
+    charset_missing = True
     F['filetype'] = 'unknown'
     for item in F['root'].iter('meta'):
         if item.get('name') == 'filetype':
             F['filetype'] = item.get('content')
-            ft_ok = True
+            ft_missing = False
         elif item.get('charset') != None:
-            charset_ok = True
+            charset_missing = False
 
-    if not ft_ok:
+    if ft_missing:
         print("%s: no filetype specified. " % F['filename']
               + "Please add '<meta name=\"filetype\" content=\"<filetype>\" />'")
 
-    if not charset_ok:
+    if charset_missing:
         print("%s: no charset specified. " % F['filename']
               + "Please add '<meta charset=\"utf-8\" />'")
 
@@ -79,18 +82,26 @@ def check_structure(F):
     if lang != 'en':
         print("%s: html lang attribute should be 'en'" % (F['filename']))
 
-    tl = []
-    tl_expect = ['body', 'head']
+    body_missing = True
+    head_missing = True
+    stray_present = False
+    stray = ''
+    
     for child in F['root']:
-        tl.append(child.tag)
+        if child.tag == 'body':
+            body_missing = False
+        elif child.tag = 'head':
+            head_missing = False
+        else:
+            stray_present = True
+            stray = child.tag
 
-    for tag in tl_expect:
-        if tag not in tl:
-            print("%s: %s tag not found" % (F['filename'], tag))
-
-    for tag in tl:
-        if tag not in tl_expect:
-            print("%s: found extra %s tag" % (F['filename'], tag))
+    if body_missing:
+        print("%s: body tag not found" % (F['filename']))
+    if head_missing:
+        print("%s: head tag not found" % (F['filename']))
+    if stray_present:
+        print("%s: stray '%s' tag found" % (F['filename'], stray))
     
 # ---------------------------------------------------------------------------
 def check_title(F):
