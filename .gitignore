@@ -1,2 +1,6 @@
+validate
+QUESTIONS
+*.do
+*.ignore
 *~
 

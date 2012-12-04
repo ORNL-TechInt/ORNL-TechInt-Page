@@ -90,7 +90,7 @@ def check_structure(F):
     for child in F['root']:
         if child.tag == 'body':
             body_missing = False
-        elif child.tag = 'head':
+        elif child.tag == 'head':
             head_missing = False
         else:
             stray_present = True
