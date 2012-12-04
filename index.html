@@ -28,6 +28,11 @@
         parent.nav.location="news.html";
         parent.content.location="story.html";
     }
+    function publications()
+    {
+        parent.nav.location="pubnav.html";
+        parent.content.location="publications.html";
+    }
     function conferences()
     {
         parent.nav.location="conferences.html";
@@ -39,41 +44,42 @@
 <!-- ************************************************************************* -->
 <body>
 
-<center>
+    <center>
 
-    <table class="page_title" width="90%"><tr>
-    <td><h1 class="page_title">Technology Integration</h1></td>
-    <td align="right" valign="middle"><img src="nccs_logo.png" /></td>
-    </tr></table>
+        <table class="page_title" width="90%"><tr>
+        <td><h1 class="page_title">Technology Integration</h1></td>
+        <td align="right" valign="middle"><img src="nccs_logo.png" /></td>
+        </tr></table>
 
-</center>
+    </center>
 
-<div class="menu">
-| <a href="javascript:about()">About</a>
-| <a href="javascript:projects()">Projects</a>
-| <a href="javascript:members()">Members</a>
-| <a href="publications.html" target="content">Publications</a>
-| <a href="software.html" target="content">Software</a>
-| <a href="jobs.html" target="content">Jobs</a>
-| <a href="contact.html" target="content">Contact Us</a>
-| <a href="javascript:news()">News</a>
-| <a href="javascript:conferences()">Conferences</a>
-</div>
+    <div class="menu">
+    | <a href="javascript:about()">About</a>
+    | <a href="javascript:projects()">Projects</a>
+    | <a href="javascript:members()">Members</a>
+<!--    | <a href="publications.html" target="content">Publications</a> -->
+    | <a href="javascript:publications()">Publications</a>
+    | <a href="software.html" target="content">Software</a>
+    | <a href="jobs.html" target="content">Jobs</a>
+    | <a href="contact.html" target="content">Contact Us</a>
+    | <a href="javascript:news()">News</a>
+    | <a href="javascript:conferences()">Conferences</a>
+    </div>
 
-<center>
-    <table width="91%"><tr>
+    <center>
+        <table width="91%"><tr>
 
-    <td width="10%">
-       <iframe src="projects.html" height="500" name="nav" frameborder="1"> </iframe>
-    </td>
+        <td width="10%">
+           <iframe src="projects.html" height="500" name="nav" frameborder="1"> </iframe>
+        </td>
 
-    <td width="90%">
-       <iframe width="100%" src="about.html" height="500" 
-               name="content" frameborder="1"> </iframe>
-    </td>
+        <td width="90%">
+           <iframe width="100%" src="about.html" height="500" 
+                   name="content" frameborder="1"> </iframe>
+        </td>
 
-    </tr></table>
-</center>
+        </tr></table>
+    </center>
 
 </body>
 </html>
