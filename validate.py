@@ -89,6 +89,7 @@ def check_structure(F):
     
     for child in F['root']:
         if child.tag == 'body':
+            body = child
             body_missing = False
         elif child.tag == 'head':
             head_missing = False
@@ -102,7 +103,11 @@ def check_structure(F):
         print("%s: head tag not found" % (F['filename']))
     if stray_present:
         print("%s: stray '%s' tag found" % (F['filename'], stray))
-    
+
+    ctypes = ['proj', 'about', 'member', 'contact', 'conf', 'pub']
+    if F['filetype'] in ctypes and body.get('bgcolor').upper() != "#CDFFff":
+        print("%s: body background color should be #CDFFFF" % (F['filename']))
+        
 # ---------------------------------------------------------------------------
 def check_title(F):
     hl = []
