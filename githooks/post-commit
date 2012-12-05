@@ -9,6 +9,6 @@ LAST_UPDATE=`git log -1 | grep Date | cut -c9-`
 cat << EOF > version.js
 function version()
 {
-    document.write("version: `git describe`; last update: $LAST_UPDATE");
+    document.write("version: `git describe` / last update: $LAST_UPDATE");
 }
 EOF
