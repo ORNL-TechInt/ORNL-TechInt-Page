@@ -6,7 +6,7 @@
 # To enable this hook, rename this file to "post-commit".
 
 LAST_UPDATE=`git log -1 | grep Date | cut -c9-`
-cat << EOF > version.js
+cat << EOF > js/version.js
 function version()
 {
     document.write("version: `git describe` / last update: $LAST_UPDATE");
