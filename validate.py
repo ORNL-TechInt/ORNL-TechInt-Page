@@ -1,10 +1,12 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2.7
 """
 Validate html files for techint group website.
 """
 import glob
+import os
 import pdb
 import sys
+
 import xml.etree.ElementTree as ET
 
 from optparse import *
@@ -18,16 +20,18 @@ def main(args):
     (o, a) = p.parse_args(args)
                  
     if o.debug: pdb.set_trace()
-    
+
     for filename in glob.glob("*.html"):
         check_file(filename)
 
+    sys.exit(exit_value())
+    
 # ---------------------------------------------------------------------------
 def check_file(filename):
     try:
         t = ET.parse(filename)
     except ET.ParseError, e:
-        print("%s: (%s) %s" % (filename, type(e), str(e)))
+        errmsg("%s: (%s) %s" % (filename, type(e), str(e)))
         return
     
     fash = {}
@@ -48,8 +52,8 @@ def check_for_csslink(F):
             link_bad = False
 
     if link_bad:
-        print("%s: no stylesheet link tag found in head element" % F['filename'])
-        
+        errmsg("%s: no stylesheet link tag found in head element" % F['filename'])
+    
 # ---------------------------------------------------------------------------
 def check_for_meta(F):
     """
@@ -69,12 +73,12 @@ def check_for_meta(F):
             charset_missing = False
 
     if ft_missing:
-        print("%s: no filetype specified. " % F['filename']
-              + "Please add '<meta name=\"filetype\" content=\"<filetype>\" />'")
+        errmsg("%s: no filetype specified. " % F['filename']
+               + "Please add '<meta name=\"filetype\" content=\"<filetype>\" />'")
 
     if charset_missing:
-        print("%s: no charset specified. " % F['filename']
-              + "Please add '<meta charset=\"utf-8\" />'")
+        errmsg("%s: no charset specified. " % F['filename']
+               + "Please add '<meta charset=\"utf-8\" />'")
 
 # ---------------------------------------------------------------------------
 def check_structure(F):
@@ -98,11 +102,11 @@ def check_structure(F):
             stray = child.tag
 
     if body_missing:
-        print("%s: body tag not found" % (F['filename']))
+        errmsg("%s: body tag not found" % (F['filename']))
     if head_missing:
-        print("%s: head tag not found" % (F['filename']))
+        errmsg("%s: head tag not found" % (F['filename']))
     if stray_present:
-        print("%s: stray '%s' tag found" % (F['filename'], stray))
+        errmsg("%s: stray '%s' tag found" % (F['filename'], stray))
 
     bgcolor_bad = True
     ctypes = ['proj', 'about', 'member', 'contact', 'conf', 'pub',
@@ -111,7 +115,7 @@ def check_structure(F):
     if bgcolor != None and bgcolor.upper() == "#CDFFFF":
         bgcolor_bad = False
     if F['filetype'] in ctypes and bgcolor_bad:
-        print("%s: body background color should be #CDFFFF" % (F['filename']))
+        errmsg("%s: body background color should be #CDFFFF" % (F['filename']))
         
 # ---------------------------------------------------------------------------
 def check_title(F):
@@ -120,7 +124,7 @@ def check_title(F):
         hl.append(item)
 
     if len(hl) != 1:
-        print('%s: wrong number of head elementss: %d' % (F['filename'], len(hl)))
+        errmsg('%s: wrong number of head elementss: %d' % (F['filename'], len(hl)))
         return
     
     tl = []
@@ -128,10 +132,29 @@ def check_title(F):
         tl.append(item)
 
     if (F['filetype'] == 'index') and (len(tl) != 1):
-        print("%s: should have title but does not" % (F['filename']))
+        errmsg("%s: should have title but does not" % (F['filename']))
     elif (F['filetype'] != 'index') and (len(tl) != 0):
-        print("%s: should not have title but does" % (F['filename']))
-        
+        errmsg("%s: should not have title but does" % (F['filename']))
+
+# ---------------------------------------------------------------------------
+def errmsg(msg):
+    print(msg)
+    exit_value(1)
+    
+# ---------------------------------------------------------------------------
+def exit_value(val=0):
+    global xval
+
+    try:
+        rval = xval
+    except:
+        xval = 0
+
+    if val != 0:
+        xval = val
+
+    return xval
+
 # ---------------------------------------------------------------------------
 if __name__ == '__main__':
     main(sys.argv)

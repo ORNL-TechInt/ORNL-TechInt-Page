@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# An example hook script that is called after a successful
+# commit is made.
+#
+# To enable this hook, rename this file to "post-commit".
+
+cat << EOF > version.js
+function version()
+{
+    document.write("version: `git describe`");
+}
+EOF
