@@ -1,4 +1,5 @@
 #!/bin/sh
 
+rm -f .git/hooks/pre-commit .git/hooks/post-commit
 ln -s ../../validate.py .git/hooks/pre-commit
-ln -s githooks/post-commit .git/hooks/post-commit
+ln -s ../../githooks/post-commit .git/hooks/post-commit
