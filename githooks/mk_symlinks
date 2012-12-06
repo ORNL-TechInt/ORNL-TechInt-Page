@@ -1,5 +1,16 @@
 #!/bin/sh
 
-rm -f .git/hooks/pre-commit .git/hooks/post-commit
+# first, remove all current hooks so we can update them
+rm -f .git/hooks/pre-commit .git/hooks/post-commit .git/hooks/post-merge
+
+# validate.py will check the validity of the code before commits. This
+# will help avoid allowing bad constructions into the repository.
 ln -s ../../validate.py .git/hooks/pre-commit
-ln -s ../../githooks/post-commit .git/hooks/post-commit
+
+# Right after a commit, we want to regenerate js/version.js so it
+# contains the current 'git describe' value. post-commit does this.
+ln -s ../../githooks/set-version .git/hooks/post-commit
+
+# We also want to regenerate js/version.js after 'git pull'. The
+# post-merge hook takes care of this.
+ln -s ../../githooks/set-version .git/hooks/post-merge
