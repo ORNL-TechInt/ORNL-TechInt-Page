@@ -69,6 +69,9 @@
         margin-right: 5%;
         text-align: right;
     }
+    .publist li {
+        padding-bottom: 1.2em;
+    }
     .push_down {
        margin-top: 50px;
     }
