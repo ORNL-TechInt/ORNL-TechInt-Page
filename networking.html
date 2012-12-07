@@ -15,32 +15,37 @@
    </a>
 </div>
 
-<p />
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+<p/>
+The CCI project is an open-source communication interface that aims to
+provide a simple and portable API, high performance, scalability for
+the largest deployments, and robustness in the presence of faults. It
+is developed and maintained by a partnership of research, academic,
+and industry members.
 
-<p />
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+<p/>
+Targeted towards high performance computing (HPC) environments as well
+as large data centers, CCI can provide a common network abstraction
+layer (NAL) for persistent services as well as general interprocess
+communication. In HPC, MPI is the de facto standard for communication
+within a job. Persistent services such as distributed file systems,
+code coupling (e.g. a simulation sending output to an analysis
+application sending its output to a visualization process), health
+monitoring, debugging, and performance monitoring, however, exist
+outside of scheduler jobs or span multiple jobs. In these cases, these
+persistent services tend to use either BSD sockets for portability to
+avoid having to rewrite the applications for each new interconnect or
+they implement their own NAL which takes developer time and effort.
+CCI can simplify support for these persistent services by providing a
+common NAL which minimizes the maintenance and support for these
+services while providing improved performance (i.e. reduced latency
+and increased bandwidth) compared to Sockets.
 
-<p />
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+<p/>
+We are currently working on proof-of-concept implementations using
+Sockets (UDP), Cray Portals 3.3, OpenFabrics Verbs, Cray GNI, and IBM
+BG/P (Kittyhawk), as well as raw Ethernet. Visit 
+<a href="http://cci-forum.com/">CCI Forum</a> for release
+information.
 
 <p/>Contributors: Scott Atchley, Youngjae Kim
 

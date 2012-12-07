@@ -13,32 +13,50 @@
     </a>
 </div>
 
-<p />
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+<p/>The High Performance Storage System (HPSS) is a collaboration among
+IBM Houston Global Services and five DOE National
+Laboratories (Oak Ridge, Lawrence Berkeley, Lawrence Livermore, Los Alamos,
+and Sandia) which began in the fall of 1992.
 
-<p />
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+<p/>The goal was to produce a highly scalable high performance storage
+system. The High Performance Storage System (HPSS) needed to provide
+scalable hierarchical storage management (HSM), archive, and file
+system services. No product meeting the requirements existed. When
+HPSS design and implementation began scientific computing power and
+storage capabilities at a site, such as a DOE national laboratory, was
+measured in a few 10s of gigaops, data archived in HSMs in a few 10s
+of terabytes at most, data throughput rates to an HSM in a few
+megabytes/s, and daily throughput with the HSM in a few gigabytes/day.
 
-<p />
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+<p/>At that time, the DOE national laboratory and IBM HPSS design team
+recognized that we were headed for a data storage explosion driven by
+computing power rising to teraops/petaops requiring data stored in
+HSMs to rise to petabytes and beyond, data transfer rates with the HSM
+to rise to gigabytes/s and higher, and daily throughput with a HSM in
+10s of terabytes/day. Therefore, we set out to design and deploy a
+system that would scale by a factor of 1,000 or more and evolve from
+the base above toward these expected targets. Because of the highly
+scalable HPSS architecture these targets have been successfully met.
+We now recognize that computing power will rise to exaops by about
+2020 with a corresponding rise in the need to scale storage in its
+various dimensions by another factor of 1,000. Further, other major
+application domains, such as real-time data collection, also require
+such extreme scale storage. We believe the HPSS architecture and basic
+implementation built around a scalable relational database management
+system (IBM’s DB2) make it well suited to this challenge. 
+
+<p/>
+TechInt members are responsible for vital components of HPSS including
+   <ul>
+     <li/>the Administrative Interfaces, which allow personnel at a
+     site to control and manage HPSS operations,
+     <li/>Alarm and Event Logging, which allows server processes in
+     the system to record events and conditions of interest to a
+     central log for trouble-shooting or auditing, and
+
+     <li/>the Bitfile Server, which keeps track of and moves the
+     actual bits of user data through the system.
+   </ul>
 
 <p/>Contributors: Deryl Steinert, Vicky White, Tom Barron
 
