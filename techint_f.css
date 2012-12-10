@@ -78,10 +78,6 @@
         margin-right: 5%;
         text-align: right;
     }
-    .publist li {
-        padding-top: .6em;
-        padding-bottom: .6em;
-    }
     /*
     ** The image small-scroll.png is a resized version of 
     ** http://www.clker.com/clipart-scroll-3.html. The website says its
@@ -97,6 +93,16 @@
     }
     .publist h4 {
         padding-bottom: .5em;
+    }
+    .publist li {
+        padding-top: .6em;
+        padding-bottom: .6em;
+    }
+    .publist dt {
+        padding-top: .6em;
+    }
+    .publist dd {
+        padding-bottom: .6em;
     }
     .push_down {
        margin-top: 50px;

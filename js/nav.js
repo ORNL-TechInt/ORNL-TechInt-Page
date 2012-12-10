@@ -1,13 +1,20 @@
 function about()
 {
-    parent.nav.location="projects.html";
+    /* parent.nav.location="projects.html"; */
+    clear_frame("nav");
     parent.content.location="about.html";
 }
 
-function projects()
+function contact()
 {
-    parent.nav.location="projects.html";
-    parent.content.location="storage.html";
+    clear_frame("nav");
+    parent.content.location="contact.html";
+}
+
+function jobs()
+{
+    clear_frame("nav");
+    parent.content.location="jobs.html";
 }
 
 function members()
@@ -16,10 +23,10 @@ function members()
     parent.content.location="vazhkudai.html";
 }
 
-function news()
+function projects()
 {
-    parent.nav.location="news.html";
-    parent.content.location="story.html";
+    parent.nav.location="projects.html";
+    parent.content.location="storage.html";
 }
 
 function publications()
@@ -28,8 +35,17 @@ function publications()
     parent.content.location="publications.html";
 }
 
-function conferences()
+function software()
 {
-    parent.nav.location="conferences.html";
-    parent.content.location="cug.html";
+    parent.nav.location="swnav.html";
+    parent.content.location="software.html";
+}
+
+function clear_frame(fid)
+{
+    var frame = document.getElementById(fid),
+    frameDoc = frame.contentDocument || frame.contentWindow.document;
+    if (frameDoc.documentElement != null) {
+        frameDoc.removeChild(frameDoc.documentElement);
+    }
 }
