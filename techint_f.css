@@ -79,7 +79,24 @@
         text-align: right;
     }
     .publist li {
-        padding-bottom: 1.2em;
+        padding-top: .6em;
+        padding-bottom: .6em;
+    }
+    /*
+    ** The image small-scroll.png is a resized version of 
+    ** http://www.clker.com/clipart-scroll-3.html. The website says its
+    ** images are in the public domain.
+    */
+    .year_list ul {
+        /* list-style-image: url('small-scroll.png'); */
+        list-style-type: circle;
+    }
+    .publist h3 {
+        margin-top: -1em;
+        margin-bottom: -1em;
+    }
+    .publist h4 {
+        padding-bottom: .5em;
     }
     .push_down {
        margin-top: 50px;

@@ -17,11 +17,15 @@ def main(args):
     p.add_option('-d', '--debug',
                  action='store_true', default=False, dest='debug',
                  help='debug')
+    p.add_option('-v', '--verbose',
+                 action='store_true', default=False, dest='verbose',
+                 help='more output')
     (o, a) = p.parse_args(args)
                  
     if o.debug: pdb.set_trace()
 
     for filename in glob.glob("*.html"):
+        if o.verbose: print filename
         check_file(filename)
 
     sys.exit(exit_value())
@@ -31,7 +35,7 @@ def check_file(filename):
     try:
         t = ET.parse(filename)
     except ET.ParseError, e:
-        errmsg("%s: (%s) %s" % (filename, type(e), str(e)))
+        errmsg("%s: (%s) %s [%d]" % (filename, type(e), str(e), e.code))
         return
     
     fash = {}
@@ -112,7 +116,7 @@ def check_structure(F):
     ctypes = ['proj', 'about', 'member', 'contact', 'conf', 'pub',
               'software', 'jobs']
     body_class = body.get('class')
-    if body_class == 'content_frame':
+    if None != body_class and 'content_frame' in body_class:
         body_class_bad = False
     if F['filetype'] in ctypes and body_class_bad:
         errmsg("%s: body should have class 'content_frame'" % (F['filename']))
