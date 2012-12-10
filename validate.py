@@ -108,14 +108,14 @@ def check_structure(F):
     if stray_present:
         errmsg("%s: stray '%s' tag found" % (F['filename'], stray))
 
-    bgcolor_bad = True
+    body_class_bad = True
     ctypes = ['proj', 'about', 'member', 'contact', 'conf', 'pub',
               'software', 'jobs']
-    bgcolor = body.get('bgcolor')
-    if bgcolor != None and bgcolor.upper() == "#CDFFFF":
-        bgcolor_bad = False
-    if F['filetype'] in ctypes and bgcolor_bad:
-        errmsg("%s: body background color should be #CDFFFF" % (F['filename']))
+    body_class = body.get('class')
+    if body_class == 'content_frame':
+        body_class_bad = False
+    if F['filetype'] in ctypes and body_class_bad:
+        errmsg("%s: body should have class 'content_frame'" % (F['filename']))
         
 # ---------------------------------------------------------------------------
 def check_title(F):

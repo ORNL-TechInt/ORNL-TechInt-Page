@@ -4,7 +4,9 @@ ORNL-TechInt-Page
 This project is for building a public-facing page describing the
 Technology Integration Group, NCCS, ORNL.
 
-The master copy resides at https://github.com/ORNL-TechInt/ORNL-TechInt-Page
+The master copy resides at
+
+   https://github.com/ORNL-TechInt/ORNL-TechInt-Page
 
 
 Gitting a Copy

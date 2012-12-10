@@ -7,7 +7,7 @@ function about()
 function projects()
 {
     parent.nav.location="projects.html";
-    parent.content.location="olcf.html";
+    parent.content.location="storage.html";
 }
 
 function members()

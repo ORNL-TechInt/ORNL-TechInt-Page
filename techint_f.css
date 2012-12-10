@@ -3,6 +3,15 @@
         margin-top: 20px;
         margin-bottom: 30px;
     }
+    .bg_bigorange {
+        background-color: #ff5900;
+    }
+    .bg_cyan {
+        background-color: #CDFFFF;
+    }
+    .content_frame {
+        background-color: #CDFFFF;
+    }
     .bordered {
         border: 2px solid black;
         padding-top: 4px;
