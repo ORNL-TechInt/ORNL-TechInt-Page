@@ -24,7 +24,12 @@ def main(args):
                  
     if o.debug: pdb.set_trace()
 
-    for filename in glob.glob("*.html"):
+    if 1 < len(a):
+        flist = a[1:]
+    else:
+        flist = glob.glob("*.html")
+
+    for filename in flist:
         if o.verbose: print filename
         check_file(filename)
 
@@ -71,16 +76,21 @@ def check_file(filename):
 # ---------------------------------------------------------------------------
 def check_deprecations(F):
     deprecations_present = []
-    recommendations = {'<b>': '<strong>', '<i>': '<em>'}
-    
-    for item in F['root'].iter('b'):
-        deprecations_present.append("<b>")
+    recommendations = {'b': '<strong>',
+                       'i': '<em>',
+                       'B': '<strong>',
+                       'I': '<em>',
+                       'A': '<a ...>',
+                       'LI': '<li ...>',
+                       'UL': '<ul ...>',
+                       }
 
-    for item in F['root'].iter('i'):
-        deprecations_present.append("<i>")
-        
+    for tag in recommendations.keys():
+        for item in F['root'].iter(tag):
+            deprecations_present.append(tag)
+
     for dep in deprecations_present:
-        errmsg("%s: deprecated tag %s present -- consider using %s instead"
+        errmsg("%s: deprecated tag <%s> present -- consider using %s instead"
                % (F['filename'], dep, recommendations[dep]),
                0)
     
