@@ -9,8 +9,12 @@
     .bg_cyan {
         background-color: #CDFFFF;
     }
+    .canvas {
+        /* background-color: #CDFFFF; */
+        background: url('bggrad2.jpg') repeat-x;
+    }
     .content_frame {
-        background-color: #CDFFFF;
+        background-color: #cdffff;
     }
     .bordered {
         border: 2px solid black;
@@ -36,6 +40,9 @@
         vertical-align: top;
     }
     table tr td {
+    }
+    .nav {
+        background-color: white;
     }
     .notes {
         font-style: italic;

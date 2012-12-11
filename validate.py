@@ -31,22 +31,59 @@ def main(args):
     sys.exit(exit_value())
     
 # ---------------------------------------------------------------------------
+def loadfile(filename):
+    f = open(filename, 'r')
+    doctype = f.readline()
+    xml = f.read()
+    f.close()
+
+    if "\t" in doctype or "\t" in xml:
+        errmsg("%s: TAB characters detected. Please use spaces."
+               % filename);
+    
+    if '<!doctype ' not in doctype.lower():
+        raise StandardError('%s: <!DOCTYPE ...> required' % filename)
+    try:
+        rval = ET.fromstring(xml)
+    except ET.ParseError, e:
+        errmsg("%s (%s) %s [%d]" % (filename, type(e), str(e), e.code))
+        
+    return rval
+
+# ---------------------------------------------------------------------------
 def check_file(filename):
     try:
-        t = ET.parse(filename)
-    except ET.ParseError, e:
-        errmsg("%s: (%s) %s [%d]" % (filename, type(e), str(e), e.code))
+        t = loadfile(filename)
+    except Exception, e:
+        errmsg(str(e))
         return
-    
+        
     fash = {}
     fash['filename'] = filename
-    fash['root'] = t._root
+    fash['root'] = t
 
     check_for_meta(fash)
     check_structure(fash)
     check_title(fash)
     check_for_csslink(fash)
+    check_deprecations(fash)
+    
+# ---------------------------------------------------------------------------
+def check_deprecations(F):
+    deprecations_present = []
+    recommendations = {'<b>': '<strong>', '<i>': '<em>'}
+    
+    for item in F['root'].iter('b'):
+        deprecations_present.append("<b>")
 
+    for item in F['root'].iter('i'):
+        deprecations_present.append("<i>")
+        
+    for dep in deprecations_present:
+        errmsg("%s: deprecated tag %s present -- consider using %s instead"
+               % (F['filename'], dep, recommendations[dep]),
+               0)
+    
 # ---------------------------------------------------------------------------
 def check_for_csslink(F):
     count = 0
@@ -141,9 +178,9 @@ def check_title(F):
         errmsg("%s: should not have title but does" % (F['filename']))
 
 # ---------------------------------------------------------------------------
-def errmsg(msg):
+def errmsg(msg, status=1):
     print(msg)
-    exit_value(1)
+    exit_value(status)
     
 # ---------------------------------------------------------------------------
 def exit_value(val=0):
