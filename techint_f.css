@@ -1,20 +1,13 @@
+    /* classes */
     .banner {
         width: 100%;
         margin-top: 20px;
         margin-bottom: 30px;
     }
-    .bg_bigorange {
-        background-color: #ff5900;
-    }
-    .bg_cyan {
-        background-color: #CDFFFF;
-    }
-    .canvas {
-        /* background-color: #CDFFFF; */
-        background: url('bggrad2.jpg') repeat-x;
-    }
     .content_frame {
-        background-color: #cdffff;
+        /* background-color: #CDFFFF; */  /* cyan */
+        /* background-color: #ff5900; */  /* Big Orange (approximate) */
+        background-color: #EEEEEE;        /* light gray */
     }
     .bordered {
         border: 2px solid black;
@@ -30,16 +23,21 @@
     .climate {
         width: 50%;
     } 
-    .esg {
-        width: 100%;
-    } 
     .contact {
         width: 100%;
     }
     .contact td {
         vertical-align: top;
     }
-    table tr td {
+    .esg {
+        width: 100%;
+    } 
+    .full_page {
+        /* background-color: #CDFFFF; */
+        background: url('bggrad2.jpg') repeat-x;
+    }
+    .iframe {
+        background-color: white;
     }
     .nav {
         background-color: white;
@@ -49,22 +47,6 @@
     }
     .right {
         float: right;
-    }
-    h2 {
-        font-family: "Arial Black", Gadget, sans-serif;
-    }
-    h3 {
-        font-family: "Arial Black", Gadget, sans-serif;
-        padding-bottom: 0px;
-    }
-    h4 {
-        font-family: "Arial Black", Gadget, sans-serif;
-        margin-top: -5px;
-        margin-bottom: -10px;
-    }
-    h5 {
-        font-family: "Arial Black", Gadget, sans-serif;
-        padding-bottom: 0px;
     }
     .page_title {
         font-family: "Arial Black", Gadget, sans-serif;
@@ -171,4 +153,24 @@
        height: 100px;
        text-align: center;
        vertical-align: center;
+    }
+
+    /* tags */
+    h2 {
+        font-family: "Arial Black", Gadget, sans-serif;
+    }
+    h3 {
+        font-family: "Arial Black", Gadget, sans-serif;
+        padding-bottom: 0px;
+    }
+    h4 {
+        font-family: "Arial Black", Gadget, sans-serif;
+        margin-top: -5px;
+        margin-bottom: -10px;
+    }
+    h5 {
+        font-family: "Arial Black", Gadget, sans-serif;
+        padding-bottom: 0px;
+    }
+    table tr td {
     }
