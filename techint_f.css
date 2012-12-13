@@ -1,27 +1,49 @@
     /* classes */
+    .banner {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
     .content_frame {
         /* background-color: #CDFFFF; */  /* cyan */
         /* background-color: #ff5900; */  /* Big Orange (approximate) */
         background-color: #EEEEEE;        /* light gray */
+    }
+    .bordered {
+        border: 2px solid black;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        border-radius: 10px;
     }
     .cci {
         margin-left: 5px;
         width: 30%;
         height: 20%;
     }
+    .climate {
+        width: 50%;
+    } 
+    .contact {
+        width: 100%;
+    }
+    .contact td {
+        vertical-align: top;
+    }
+    .esg {
+        width: 100%;
+    } 
     .full_page {
         /* background-color: #CDFFFF; */
-        /* background: url('bggrad2.jpg') repeat-x; */
-        background: #fff url(img/homeBG.gif) 0 0 repeat-x;
-        font-family: Verdana, Arial, Helvetica, sans-serif;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        font-size: 11px;
-        min-width:900px;
+        background: url('bggrad2.jpg') repeat-x;
+    }
+    .iframe {
+        background-color: white;
     }
     .nav {
         background-color: white;
+    }
+    .notes {
+        font-style: italic;
     }
     .right {
         float: right;
@@ -33,7 +55,6 @@
         padding-top: 20px;
         padding-bottom: 22px;
         padding-left: 10px;
-        width: 90%;
     }
     .menu {
         font-family: "Arial Black", Gadget, sans-serif;
@@ -72,6 +93,17 @@
     .publist dd {
         padding-bottom: .6em;
     }
+    .push_down {
+       margin-top: 50px;
+    }
+    .history {
+       background-color: yellow;
+    }
+    .hpss {
+       background-color: white;
+       padding-right: 15px;
+       border-radius: 10px;
+    }
     .main {
        width: 95%;
        border: 2px solid black;
@@ -87,51 +119,6 @@
        background-color: white;
        width: 100%;
     }
-    .rounded {
-       border-radius: 10px;
-    }
-
-    /* obsolete classes -- no longer used in the html -----------------------------
-    .banner {
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-    .bordered {
-        border: 2px solid black;
-        padding-top: 4px;
-        padding-bottom: 4px;
-        border-radius: 10px;
-    }
-    .climate {
-        width: 50%;
-    } 
-    .contact {
-        width: 100%;
-    }
-    .contact td {
-        vertical-align: top;
-    }
-    .esg {
-        width: 100%;
-    } 
-    .iframe {
-        background-color: white;
-    }
-    .notes {
-        font-style: italic;
-    }
-    .push_down {
-       margin-top: 50px;
-    }
-    .history {
-       background-color: yellow;
-    }
-    .hpss {
-       background-color: white;
-       padding-right: 15px;
-       border-radius: 10px;
-    }
     .noaa {
        background-color: white;
     }
@@ -145,6 +132,9 @@
     }
     .vmiddle {
        vertical-align: middle;
+    }
+    .rounded {
+       border-radius: 10px;
     }
     .sns {
        /* background-color: #000046; */
@@ -164,7 +154,6 @@
        text-align: center;
        vertical-align: center;
     }
-    ---------------------------------------------------------------- */
 
     /* tags */
     h2 {
