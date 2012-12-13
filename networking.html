@@ -17,15 +17,14 @@
 </div>
 
 <a name="CCI"/>
-<p/>
-The CCI project is an open-source communication interface that aims to
+<h2>Common Communication Interface (CCI)</h2>
+<p>The CCI project is an open-source communication interface that aims to
 provide a simple and portable API, high performance, scalability for
 the largest deployments, and robustness in the presence of faults. It
 is developed and maintained by a partnership of research, academic,
-and industry members.
+and industry members.</p>
 
-<p/>
-Targeted towards high performance computing (HPC) environments as well
+<p>Targeted towards high performance computing (HPC) environments as well
 as large data centers, CCI can provide a common network abstraction
 layer (NAL) for persistent services as well as general interprocess
 communication. In HPC, MPI is the de facto standard for communication
@@ -40,24 +39,39 @@ they implement their own NAL which takes developer time and effort.
 CCI can simplify support for these persistent services by providing a
 common NAL which minimizes the maintenance and support for these
 services while providing improved performance (i.e. reduced latency
-and increased bandwidth) compared to Sockets.
+and increased bandwidth) compared to Sockets.</p>
 
-<p/>
-We are currently working on proof-of-concept implementations using
-Sockets (UDP), Cray Portals 3.3, OpenFabrics Verbs, Cray GNI, and IBM
-BG/P (Kittyhawk), as well as raw Ethernet. Visit 
+<p>We are currently supports Sockets (UDP and TCP), OpenFabrics Verbs 
+(InfiniBand and RoCE), Cray GNI (Gemini and Aries), Cray Portals 3.3 
+(SeaStar), as well as raw Ethernet (IP-bypass). Visit 
 <a href="http://cci-forum.com/" target="_">CCI Forum</a> for release
-information.
+information.</p>
+
+<p/>Contributors: Scott Atchley
+
+<a name="Terabit"/>
+<h2>An Adaptive End-to-End Approach for Terabit Data Movement Optimization</h2>
+
+<p>This is the work related to <em>An Adaptive End-to-End Approach for
+Terabit Data Movement Optimization</em> project, the goal of this project 
+is to improve throughput of wide-area data transfer between DOE facilities.
+This work involves serveral areas:</p>
+<ul>
+<li>Optimization of CCI for wide-area networking</li>
+<li>Heterogenous routing of CCI</li>
+<li>Optimization of accesses to parallel file systems</li>
+</ul>
 
 <p/>Contributors: Scott Atchley, Youngjae Kim
 
-<a name="Terabit"/>
-<h2>Terabit</h2>
-
-
-
 <a name="DStar"/>
-<h2>DillowStar</h2> (i.e., Dillow's improvement on SeaStar)
+<h2>DStar</h2>
+<p>DStar is a native implementation of CCI embedded in SeaStar firmware. By
+replacing Cray Portals, CCI can achieve a latency of about 2 &#956;s compared to
+around 6 &#956;s when using Portals for point-to-point small messages. CCI can even
+send a 4 KiB message in less than 6 &#956;s.</p>
+
+<p/>Contributors: David Dillow
 
 </body>
 </html>
