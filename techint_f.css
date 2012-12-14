@@ -10,6 +10,16 @@
     .content_frame a:visited {
         color: purple;
     }
+    .content_frame h3 {
+        padding-top: 1em;
+    }
+    .content_frame ul {
+        list-style-type: disc;
+    }
+    .content_frame ul ul {
+        /* list-style-image: url('small-scroll.png'); */
+        list-style-type: circle;
+    }
     .cci {
         margin-left: 5px;
         width: 30%;
@@ -68,7 +78,7 @@
         list-style-type: none;
     }
     .menu ul li.menu_item {
-        width: 147px;
+        /* width: 147px; */
         background: url(img/navBG.gif) 0 0 repeat-x;
     }
     .menu ul li.menu_item:hover {
@@ -160,12 +170,6 @@
     } 
     .menu li > ul { top: 28px; left: -1px; z-index: 500; } 
 
-    .simple_list a:link {
-        color: blue;
-    }
-    .simple_list a:visited {
-        color: purple;
-    }
     .version {
         font-family: "Arial Black", Gadget, sans-serif;
         font-size: small;
@@ -217,80 +221,6 @@
        border-radius: 10px;
     }
 
-    /* obsolete classes -- no longer used in the html -----------------------------
-    .banner {
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-    .bordered {
-        border: 2px solid black;
-        padding-top: 4px;
-        padding-bottom: 4px;
-        border-radius: 10px;
-    }
-    .climate {
-        width: 50%;
-    } 
-    .contact {
-        width: 100%;
-    }
-    .contact td {
-        vertical-align: top;
-    }
-    .esg {
-        width: 100%;
-    } 
-    .iframe {
-        background-color: white;
-    }
-    .notes {
-        font-style: italic;
-    }
-    .push_down {
-       margin-top: 50px;
-    }
-    .history {
-       background-color: yellow;
-    }
-    .hpss {
-       background-color: white;
-       padding-right: 15px;
-       border-radius: 10px;
-    }
-    .noaa {
-       background-color: white;
-    }
-    .olcf {
-       background-color: black;
-    }
-    .outlink {
-       height: 60px;
-       width: 300px;
-       text-align: center;
-    }
-    .vmiddle {
-       vertical-align: middle;
-    }
-    .sns {
-       /* background-color: #000046; */
-       background-color: #0062AC;
-    }
-    .spaced_low {
-       width: 33%;
-       height: 40px;
-       text-align: center;
-       vertical-align: center;
-       background-color: #00e0e0;
-       border-radius: 10px;
-    }
-    .spaced {
-       width: 33%;
-       height: 100px;
-       text-align: center;
-       vertical-align: center;
-    }
-    ---------------------------------------------------------------- */
 
     /* tags */
     h2 {
