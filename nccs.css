@@ -464,9 +464,11 @@ font-style:normal;
 float:right;
 font-weight:normal;
 }
+/*
  #content, #sidebar, #footer, .widget {
 overflow: hidden;
 }
+*/
 /* Footer */
 #footer {
 width: 100%;

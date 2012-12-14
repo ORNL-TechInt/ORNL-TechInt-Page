@@ -4,6 +4,12 @@
         /* background-color: #ff5900; */  /* Big Orange (approximate) */
         background-color: #EEEEEE;        /* light gray */
     }
+    .content_frame a:link {
+        color: blue;
+    }
+    .content_frame a:visited {
+        color: purple;
+    }
     .cci {
         margin-left: 5px;
         width: 30%;
@@ -27,6 +33,12 @@
     }
     .nav {
         background-color: white;
+    }
+    .nav a:link {
+        color: blue;
+    }
+    .nav a:visited {
+        color: purple;
     }
     .right {
         float: right;
