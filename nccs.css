@@ -251,6 +251,7 @@ font-size: 1.1em;
 text-align: left;
 color: #333;
 }
+/*
 #content {
 background: #fff;
 float: left;
@@ -260,6 +261,7 @@ position:relative;
 }
 html #content {
 }
+*/
 .project-table {
 	width: 888px;
 }
