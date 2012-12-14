@@ -9,6 +9,11 @@
         width: 30%;
         height: 150px;
     }
+    .frame_table {
+        width: 90%;
+        border: none;
+        border-collapse: collapse;
+    }
     .full_page {
         /* background-color: #CDFFFF; */
         /* background: url('bggrad2.jpg') repeat-x; */
@@ -44,7 +49,7 @@
         padding-top: 7px;
         position: relative;
         /* width: 899px; */
-        width: 100%;
+        width: 100.5%;
         z-index: 500;
     }
     .menu ul {
