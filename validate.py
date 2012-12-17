@@ -90,9 +90,9 @@ def check_file(filename):
     fash['filename'] = filename
     fash['root'] = t
 
-    check_for_meta(fash)
-    check_structure(fash)
-    check_title(fash)
+    # check_for_meta(fash)
+    # check_structure(fash)
+    # check_title(fash)
     # check_for_csslink(fash)
     # check_deprecations(fash)
     
@@ -129,86 +129,86 @@ def check_file(filename):
 #         errmsg("%s: no stylesheet link tag found in head element" % F['filename'])
     
 # ---------------------------------------------------------------------------
-def check_for_meta(F):
-    """
-    If there is a meta tag in the head element and its name is 'filetype',
-    return its 'content' attribute. If no meta tag is found, complain.
+# def check_for_meta(F):
+#     """
+#     If there is a meta tag in the head element and its name is 'filetype',
+#     return its 'content' attribute. If no meta tag is found, complain.
 
-    There should also be a <meta charset="utf-8"> tag as well.
-    """
-    ft_missing = True
-    charset_missing = True
-    F['filetype'] = 'unknown'
-    for item in F['root'].iter('meta'):
-        if item.get('name') == 'filetype':
-            F['filetype'] = item.get('content')
-            ft_missing = False
-        elif item.get('charset') != None:
-            charset_missing = False
+#     There should also be a <meta charset="utf-8"> tag as well.
+#     """
+#     ft_missing = True
+#     charset_missing = True
+#     F['filetype'] = 'unknown'
+#     for item in F['root'].iter('meta'):
+#         if item.get('name') == 'filetype':
+#             F['filetype'] = item.get('content')
+#             ft_missing = False
+#         elif item.get('charset') != None:
+#             charset_missing = False
 
-    if ft_missing:
-        errmsg("%s: no filetype specified. " % F['filename']
-               + "Please add '<meta name=\"filetype\" content=\"<filetype>\" />'")
+#     if ft_missing:
+#         errmsg("%s: no filetype specified. " % F['filename']
+#                + "Please add '<meta name=\"filetype\" content=\"<filetype>\" />'")
 
-    if charset_missing:
-        errmsg("%s: no charset specified. " % F['filename']
-               + "Please add '<meta charset=\"utf-8\" />'")
+#     if charset_missing:
+#         errmsg("%s: no charset specified. " % F['filename']
+#                + "Please add '<meta charset=\"utf-8\" />'")
 
 # ---------------------------------------------------------------------------
-def check_structure(F):
-    lang = F['root'].get('lang')
-    if lang != 'en':
-        print("%s: html lang attribute should be 'en'" % (F['filename']))
+# def check_structure(F):
+#     lang = F['root'].get('lang')
+#     if lang != 'en':
+#         print("%s: html lang attribute should be 'en'" % (F['filename']))
 
-    body_missing = True
-    head_missing = True
-    stray_present = False
-    stray = ''
+#     body_missing = True
+#     head_missing = True
+#     stray_present = False
+#     stray = ''
     
-    for child in F['root']:
-        if child.tag == 'body':
-            body = child
-            body_missing = False
-        elif child.tag == 'head':
-            head_missing = False
-        else:
-            stray_present = True
-            stray = child.tag
+#     for child in F['root']:
+#         if child.tag == 'body':
+#             body = child
+#             body_missing = False
+#         elif child.tag == 'head':
+#             head_missing = False
+#         else:
+#             stray_present = True
+#             stray = child.tag
 
-    if body_missing:
-        errmsg("%s: body tag not found" % (F['filename']))
-    #if head_missing:
-     #   errmsg("%s: head tag not found" % (F['filename']))
-    # if stray_present:
-        # errmsg("%s: stray '%s' tag found" % (F['filename'], stray))
+#     if body_missing:
+#         errmsg("%s: body tag not found" % (F['filename']))
+#     #if head_missing:
+#      #   errmsg("%s: head tag not found" % (F['filename']))
+#     # if stray_present:
+#         # errmsg("%s: stray '%s' tag found" % (F['filename'], stray))
 
-    body_class_bad = True
-    ctypes = ['proj', 'about', 'member', 'contact', 'conf', 'pub',
-              'software', 'jobs']
-    body_class = body.get('class')
-    if None != body_class and 'content_frame' in body_class:
-        body_class_bad = False
-    if F['filetype'] in ctypes and body_class_bad:
-        errmsg("%s: body should have class 'content_frame'" % (F['filename']))
+#     body_class_bad = True
+#     ctypes = ['proj', 'about', 'member', 'contact', 'conf', 'pub',
+#               'software', 'jobs']
+#     body_class = body.get('class')
+#     if None != body_class and 'content_frame' in body_class:
+#         body_class_bad = False
+#     if F['filetype'] in ctypes and body_class_bad:
+#         errmsg("%s: body should have class 'content_frame'" % (F['filename']))
         
 # ---------------------------------------------------------------------------
-def check_title(F):
-    hl = []
-    for item in F['root'].iter('head'):
-        hl.append(item)
+# def check_title(F):
+#     hl = []
+#     for item in F['root'].iter('head'):
+#         hl.append(item)
 
-#     if len(hl) != 1:
-#         errmsg('%s: wrong number of head elements: %d' % (F['filename'], len(hl)))
-#         return
+# #     if len(hl) != 1:
+# #         errmsg('%s: wrong number of head elements: %d' % (F['filename'], len(hl)))
+# #         return
     
-    tl = []
-    for item in F['root'].iter('title'):
-        tl.append(item)
+#     tl = []
+#     for item in F['root'].iter('title'):
+#         tl.append(item)
 
-    if (F['filetype'] == 'index') and (len(tl) != 1):
-        errmsg("%s: should have title but does not" % (F['filename']))
-    elif (F['filetype'] != 'index') and (len(tl) != 0):
-        errmsg("%s: should not have title but does" % (F['filename']))
+#     if (F['filetype'] == 'index') and (len(tl) != 1):
+#         errmsg("%s: should have title but does not" % (F['filename']))
+#     elif (F['filetype'] != 'index') and (len(tl) != 0):
+#         errmsg("%s: should not have title but does" % (F['filename']))
 
 # ---------------------------------------------------------------------------
 def errmsg(msg, status=1):
@@ -236,6 +236,14 @@ class TIParser(HTMLParser.HTMLParser):
         """
         Initialize the object with the data and flags we'll need to
         validate the input.
+
+        The general strategy for checking for required elements is to
+        create a flag here that starts out with the value 'missing',
+        indicating the element has not yet been seen. When/if we come
+        across the element, we'll update the flag to 'present' or
+        whatever is appropriate. Then in finish(), we can check the
+        flag and if it still says 'missing', we know we never found
+        the required element.
         """
         if verbose(): print("TIParser.__init__")
         HTMLParser.HTMLParser.__init__(self)
@@ -248,7 +256,10 @@ class TIParser(HTMLParser.HTMLParser):
         self.body = 'missing'
         self.css = 'missing'
         self.filetype = 'missing'
+        self.charset = 'missing'
+        self.title = 'missing'
         self.stack = []
+
         
     # -----------------------------------------------------------------------
     def handle_startendtag(self, tag, attrs):
@@ -293,7 +304,7 @@ class TIParser(HTMLParser.HTMLParser):
         etag = self.text[line-1][offset:]
         pop = self.stack.pop()
         if tag != pop:
-            errmsg("%s does not match %s" % (tag, pop))
+            errmsg("</%s> does not match <%s>" % (tag, pop))
         
     # -----------------------------------------------------------------------
     def handle_data(self, data):
@@ -321,10 +332,28 @@ class TIParser(HTMLParser.HTMLParser):
             
     # -----------------------------------------------------------------------
     def handle_meta(self, tag, attrs):
-        if ('name', 'filetype') in attrs:
-            if attrs[1][0] == 'content':
-                self.filetype = 'present'
-        
+        ad = {}
+        for tup in attrs:
+            ad[tup[0]] = tup[1]
+        if 'name' in ad.keys() \
+           and 'filetype' == ad['name'] \
+           and 'content' in ad.keys():
+            self.filetype = 'present'
+            self.filetype = ad['content']
+        if 'charset' in ad.keys():
+            self.charset = 'present'
+
+#         if ('name', 'filetype') in attrs:
+#             if attrs[1][0] == 'content':
+#                 self.filetype = 'present'
+#         if 1 <= len(attrs):
+#             if attrs[0][0] == 'charset':
+#                 self.charset = 'present'
+                
+    # -----------------------------------------------------------------------
+    def handle_title(self, tag, attrs):
+        self.title = 'present'
+
     # -----------------------------------------------------------------------
     def handle_named_tag(self, tag, attrs):
         d = dir(self)
@@ -391,6 +420,15 @@ class TIParser(HTMLParser.HTMLParser):
                         + "'<meta name=\"filetype\" content=\"[ft]\" /> "
                         + "where 'ft' is one of 'about', 'proj', 'member', "
                         + "'contact', 'jobs', 'nav', 'pub', or 'software' "
+                        + "in the <head> section.")
+        elif self.filetype == 'index' and self.title == 'missing':
+            self.errmsg("A <title> tag is needed for this file.")
+        elif self.filetype != 'index' and self.title != 'missing':
+            self.errmsg("This file should not have a <title> tag.")
+            
+        if self.charset == 'missing':
+            self.errmsg("Charset not specified. Please add "
+                        + "<meta charset='utf-8' /> "
                         + "in the <head> section.")
 
         if self.css == 'missing':
