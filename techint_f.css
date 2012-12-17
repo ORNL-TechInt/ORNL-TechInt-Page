@@ -32,6 +32,10 @@
     .esg {
         width: 100%;
     } 
+    .frame_holder {
+        margin: auto;
+        width: 91%;
+    }
     .full_page {
         /* background-color: #CDFFFF; */
         background: url('bggrad2.jpg') repeat-x;
@@ -55,6 +59,8 @@
         padding-top: 20px;
         padding-bottom: 22px;
         padding-left: 10px;
+        margin: auto;
+        width: 90.5%;
     }
     .menu {
         font-family: "Arial Black", Gadget, sans-serif;

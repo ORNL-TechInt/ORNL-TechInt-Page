@@ -15,6 +15,9 @@ from optparse import *
 
 # ---------------------------------------------------------------------------
 def main(args):
+    """
+    Handle command line arguments, process the list of files, call sys.exit()
+    """
     p = OptionParser()
     p.add_option('-d', '--debug',
                  action='store_true', default=False, dest='debug',
@@ -38,182 +41,16 @@ def main(args):
         check_file(filename)
 
     sys.exit(exit_value())
-    
-# ---------------------------------------------------------------------------
-def verbose(value=None):
-    global verbosity
-
-    if value != None:
-        verbosity = value
-        
-    try:
-        rval = verbosity
-    except NameError:
-        verbosity = False
-        rval = verbosity
-
-    return rval
-
-# ---------------------------------------------------------------------------
-def loadfile(filename):
-    f = open(filename, 'r')
-    doctype = f.readline()
-    xml = f.read()
-    f.close()
-
-    if "\t" in doctype or "\t" in xml:
-        errmsg("%s: TAB characters detected. Please use spaces."
-               % filename);
-    
-    tip = TIParser(filename, doctype+xml)
-    tip.feed(doctype + xml)
-    tip.finish()
-    
-    if '<!doctype ' not in doctype.lower():
-        raise StandardError('%s: <!DOCTYPE ...> required' % filename)
-    try:
-        rval = ET.fromstring(xml)
-    except ET.ParseError, e:
-        errmsg("%s (%s) %s [%d]" % (filename, type(e), str(e), e.code))
-        
-    return rval
 
 # ---------------------------------------------------------------------------
 def check_file(filename):
-    try:
-        t = loadfile(filename)
-    except Exception, e:
-        errmsg(str(e))
-        return
-        
-    fash = {}
-    fash['filename'] = filename
-    fash['root'] = t
+    f = open(filename, 'r')
+    html = f.read()
+    f.close()
 
-    # check_for_meta(fash)
-    # check_structure(fash)
-    # check_title(fash)
-    # check_for_csslink(fash)
-    # check_deprecations(fash)
-    
-# # ---------------------------------------------------------------------------
-# def check_deprecations(F):
-#     deprecations_present = []
-#     recommendations = {'b': '<strong>',
-#                        'i': '<em>',
-#                        'B': '<strong>',
-#                        'I': '<em>',
-#                        'A': '<a ...>',
-#                        'LI': '<li ...>',
-#                        'UL': '<ul ...>',
-#                        }
-
-#     for tag in recommendations.keys():
-#         for item in F['root'].iter(tag):
-#             deprecations_present.append(tag)
-
-#     for dep in deprecations_present:
-#         errmsg("%s: deprecated tag <%s> present -- consider using %s instead"
-#                % (F['filename'], dep, recommendations[dep]),
-#                0)
-    
-# ---------------------------------------------------------------------------
-# def check_for_csslink(F):
-#     count = 0
-#     link_bad = True
-#     for item in F['root'].iter('link'):
-#         if item.get('rel') == 'stylesheet' and item.get('type') == 'text/css':
-#             link_bad = False
-
-#     if link_bad:
-#         errmsg("%s: no stylesheet link tag found in head element" % F['filename'])
-    
-# ---------------------------------------------------------------------------
-# def check_for_meta(F):
-#     """
-#     If there is a meta tag in the head element and its name is 'filetype',
-#     return its 'content' attribute. If no meta tag is found, complain.
-
-#     There should also be a <meta charset="utf-8"> tag as well.
-#     """
-#     ft_missing = True
-#     charset_missing = True
-#     F['filetype'] = 'unknown'
-#     for item in F['root'].iter('meta'):
-#         if item.get('name') == 'filetype':
-#             F['filetype'] = item.get('content')
-#             ft_missing = False
-#         elif item.get('charset') != None:
-#             charset_missing = False
-
-#     if ft_missing:
-#         errmsg("%s: no filetype specified. " % F['filename']
-#                + "Please add '<meta name=\"filetype\" content=\"<filetype>\" />'")
-
-#     if charset_missing:
-#         errmsg("%s: no charset specified. " % F['filename']
-#                + "Please add '<meta charset=\"utf-8\" />'")
-
-# ---------------------------------------------------------------------------
-# def check_structure(F):
-#     lang = F['root'].get('lang')
-#     if lang != 'en':
-#         print("%s: html lang attribute should be 'en'" % (F['filename']))
-
-#     body_missing = True
-#     head_missing = True
-#     stray_present = False
-#     stray = ''
-    
-#     for child in F['root']:
-#         if child.tag == 'body':
-#             body = child
-#             body_missing = False
-#         elif child.tag == 'head':
-#             head_missing = False
-#         else:
-#             stray_present = True
-#             stray = child.tag
-
-#     if body_missing:
-#         errmsg("%s: body tag not found" % (F['filename']))
-#     #if head_missing:
-#      #   errmsg("%s: head tag not found" % (F['filename']))
-#     # if stray_present:
-#         # errmsg("%s: stray '%s' tag found" % (F['filename'], stray))
-
-#     body_class_bad = True
-#     ctypes = ['proj', 'about', 'member', 'contact', 'conf', 'pub',
-#               'software', 'jobs']
-#     body_class = body.get('class')
-#     if None != body_class and 'content_frame' in body_class:
-#         body_class_bad = False
-#     if F['filetype'] in ctypes and body_class_bad:
-#         errmsg("%s: body should have class 'content_frame'" % (F['filename']))
-        
-# ---------------------------------------------------------------------------
-# def check_title(F):
-#     hl = []
-#     for item in F['root'].iter('head'):
-#         hl.append(item)
-
-# #     if len(hl) != 1:
-# #         errmsg('%s: wrong number of head elements: %d' % (F['filename'], len(hl)))
-# #         return
-    
-#     tl = []
-#     for item in F['root'].iter('title'):
-#         tl.append(item)
-
-#     if (F['filetype'] == 'index') and (len(tl) != 1):
-#         errmsg("%s: should have title but does not" % (F['filename']))
-#     elif (F['filetype'] != 'index') and (len(tl) != 0):
-#         errmsg("%s: should not have title but does" % (F['filename']))
-
-# ---------------------------------------------------------------------------
-def errmsg(msg, status=1):
-    print(msg)
-    exit_value(status)
+    tip = TIParser(filename, html)
+    tip.feed(html)
+    tip.finish()
     
 # ---------------------------------------------------------------------------
 def exit_value(val=0):
@@ -228,6 +65,24 @@ def exit_value(val=0):
         xval = val
 
     return xval
+
+# ---------------------------------------------------------------------------
+def verbose(value=None):
+    """
+    Cache and return the value of the -v option.
+    """
+    global verbosity
+
+    if value != None:
+        verbosity = value
+        
+    try:
+        rval = verbosity
+    except NameError:
+        verbosity = False
+        rval = verbosity
+
+    return rval
 
 # ---------------------------------------------------------------------------
 class TIParser(HTMLParser.HTMLParser):
@@ -249,8 +104,15 @@ class TIParser(HTMLParser.HTMLParser):
         HTMLParser.HTMLParser.__init__(self)
         self.filename = filename
         self.text = text.split("\n")
-        self.deprecations = {'b': '<strong>',
-                             'i': '<em>'}
+        self.deprecations = {'applet': '<object>',
+                             'basefont': 'CSS',
+                             'blackface': 'CSS',
+                             'center': 'CSS',
+                             'dir': '<ul>',
+                             'embed': '<object>',
+                             'font': 'CSS',
+                             'strike': 'CSS',
+                             }
         self.doctype = "missing"
         self.head = 'missing'
         self.body = 'missing'
@@ -258,13 +120,15 @@ class TIParser(HTMLParser.HTMLParser):
         self.filetype = 'missing'
         self.charset = 'missing'
         self.title = 'missing'
+        self.nostack = ['p', 'br']
         self.stack = []
 
-        
+        self.catch_tabs()
+            
     # -----------------------------------------------------------------------
     def handle_startendtag(self, tag, attrs):
         """
-        We'll use this catch <script/>, which doesn't work for loading
+        Here we catch <script/>, which doesn't work for loading
         javascripts.
         """
         if verbose(): print("TIParser.handle_startendtag(self, %s, %s)"
@@ -278,6 +142,7 @@ class TIParser(HTMLParser.HTMLParser):
     # -----------------------------------------------------------------------
     def handle_starttag(self, tag, attrs):
         """
+        Run the standard tag checks.
         At the very first tag, we should have already seen a
         <!doctype...>, so if not, we complain. Once we've complained
         once, we change the string in self.doctype so we won't report
@@ -288,10 +153,10 @@ class TIParser(HTMLParser.HTMLParser):
         """
         if verbose(): print("TIParser.handle_starttag(self, %s, %s)"
                             % (tag, attrs))
+
         self.standard_tag_checks(tag, attrs)
-        if 1 == len(self.stack) and tag != 'head' and tag != 'body':
-            self.errmsg("stray '%s' tag found" % tag)
-        self.stack.append(tag)
+        if tag not in self.nostack:
+            self.stack.append(tag)
         
     # -----------------------------------------------------------------------
     def handle_endtag(self, tag):
@@ -302,9 +167,10 @@ class TIParser(HTMLParser.HTMLParser):
             self.body = 'closed'
         (line, offset) = self.getpos()
         etag = self.text[line-1][offset:]
-        pop = self.stack.pop()
-        if tag != pop:
-            errmsg("</%s> does not match <%s>" % (tag, pop))
+        if tag not in self.nostack:
+            pop = self.stack.pop()
+            if tag != pop:
+                self.errmsg("</%s> does not match <%s>" % (tag, pop))
         
     # -----------------------------------------------------------------------
     def handle_data(self, data):
@@ -343,13 +209,6 @@ class TIParser(HTMLParser.HTMLParser):
         if 'charset' in ad.keys():
             self.charset = 'present'
 
-#         if ('name', 'filetype') in attrs:
-#             if attrs[1][0] == 'content':
-#                 self.filetype = 'present'
-#         if 1 <= len(attrs):
-#             if attrs[0][0] == 'charset':
-#                 self.charset = 'present'
-                
     # -----------------------------------------------------------------------
     def handle_title(self, tag, attrs):
         self.title = 'present'
@@ -362,15 +221,39 @@ class TIParser(HTMLParser.HTMLParser):
             getattr(self, mname)(tag, attrs)
 
     # -----------------------------------------------------------------------
+    def catch_tabs(self):
+        """
+        Scan the input text and report the location of any TAB
+        characters found.
+        """
+        lnum = 1
+        for line in self.text:
+            cnum = line.find("\t")
+            if 0 <= cnum:
+                self.errmsg("TAB detected in input. Please use spaces.",
+                            pos=(lnum,cnum))
+            lnum += 1
+        
+    # -----------------------------------------------------------------------
     def catch_unquoted_attrs(self, text, attrlist):
+        """
+        Here We check to make sure attributes inside HTML tags are quoted.
+        """
         for tup in attrlist:
-            xp = "%s=\"%s\"" % (tup)
-            if xp not in self.unescape(text):
-                (line, offs) = self.getpos()
+            (an, av) = tup
+            rgx = "%s\s*=\s*" % (an) \
+                  + "['" \
+                  + '"]%s["' % (re.escape(av)) \
+                  + "']"
+            q = re.search(rgx, self.unescape(text))
+            if q == None:
                 self.errmsg("unquoted attribute in '%s'" % (text))
                 
     # -----------------------------------------------------------------------
     def catch_deprecated_tags(self, tag):
+        """
+        Here we report any deprecated tags we encounter.
+        """
         if tag in self.deprecations.keys():
             (line, offs) = self.getpos()
             self.errmsg("Tag '<%s>' is deprecated. Consider using %s instead"
@@ -389,7 +272,7 @@ class TIParser(HTMLParser.HTMLParser):
                 break
                 
     # -----------------------------------------------------------------------
-    def errmsg(self, msg, exit_val = 1):
+    def errmsg(self, msg, exit_val = 1, pos = None):
         """
         Format an error message -- filename, location in file, and
         message. Optionally, the caller can set the exit value to be
@@ -397,7 +280,10 @@ class TIParser(HTMLParser.HTMLParser):
         indicating an issue but the caller can set exit_val to 0 for a
         warning that won't prevent downstream processing.
         """
-        (line, offset) = self.getpos()
+        if pos == None:
+            (line, offset) = self.getpos()
+        else:
+            (line, offset) = pos
         fmsg = "%s[%d,%d]: %s" % (self.filename, line, offset, msg)
         print(fmsg)
         exit_value(exit_val)
@@ -435,7 +321,7 @@ class TIParser(HTMLParser.HTMLParser):
             self.errmsg("No CSS link found in <head>. Please add at least "
                         + "<link rel='stylesheet' type='text/css' "
                         + "href='techint_f.css' />")
-
+        
     # -----------------------------------------------------------------------
     def standard_tag_checks(self, tag, attrs):
         """
@@ -458,11 +344,14 @@ class TIParser(HTMLParser.HTMLParser):
         Next, we check for unquoted attributes, deprecated tags, and
         uppercase tags.
         """
-        # if verbose(): print("TIParser.standard_tag_checks(self, %s, %s)"
-        #                     % (tag, attrs))
         if self.doctype == "missing":
             self.errmsg("A <!doctype ...> is required at the top of the file")
             self.doctype = "reported"
+
+        if 0 == len(self.stack) and tag != 'html':
+            self.errmsg("The top level tag should be <html>")
+        elif 1 == len(self.stack) and tag != 'head' and tag != 'body':
+            self.errmsg("stray '%s' tag found" % tag)
 
         self.handle_named_tag(tag, attrs)
         self.catch_unquoted_attrs(self.get_starttag_text(), attrs)
