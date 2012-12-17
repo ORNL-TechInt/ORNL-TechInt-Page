@@ -44,6 +44,10 @@ def main(args):
 
 # ---------------------------------------------------------------------------
 def check_file(filename):
+    """
+    Load the contents of the file, instantiate a parser, and feed it
+    the input data.
+    """
     f = open(filename, 'r')
     html = f.read()
     f.close()
@@ -54,6 +58,9 @@ def check_file(filename):
     
 # ---------------------------------------------------------------------------
 def exit_value(val=0):
+    """
+    Record the exit value to be used when the process terminates.
+    """
     global xval
 
     try:
@@ -160,6 +167,9 @@ class TIParser(HTMLParser.HTMLParser):
         
     # -----------------------------------------------------------------------
     def handle_endtag(self, tag):
+        """
+        This gets called when the parser sees an end tag.
+        """
         if verbose(): print("TIParser.handle_endtag(self, %s)" % (tag))
         if tag == 'head':
             self.head = 'closed'
@@ -174,30 +184,53 @@ class TIParser(HTMLParser.HTMLParser):
         
     # -----------------------------------------------------------------------
     def handle_data(self, data):
+        """
+        This gets called when the parser sees data between tags.
+        """
         if verbose(): print("TIParser.handle_data(self, '%s')" % (data))
         pass
 
     # -----------------------------------------------------------------------
     def handle_decl(self, decl):
+        """
+        This gets called when the parser sees a declaration, like
+        <!doctype ...>
+        """
         if verbose(): print("TIParser.handle_decl(self, '%s')" % (decl))
         if 'doctype' in decl.lower():
             self.doctype = "present"
             
     # -----------------------------------------------------------------------
     def handle_head(self, tag, attrs):
+        """
+        This gets called when the parser sees a <head> tag.
+        """
         self.head = 'open'
         
     # -----------------------------------------------------------------------
     def handle_body(self, tag, attrs):
+        """
+        This gets called when the parser sees a <body> tag.
+        """
         self.body = 'open'
         
     # -----------------------------------------------------------------------
     def handle_link(self, tag, attrs):
+        """
+        This gets called when the parser sees a <link> tag. At least
+        one is required to specify the CSS file.
+        """
         if ('rel', 'stylesheet') in attrs and ('type', 'text/css') in attrs:
             self.css = "present"
             
     # -----------------------------------------------------------------------
     def handle_meta(self, tag, attrs):
+        """
+        Handling for meta tags. Two things must be specified with meta
+        tags: filetype (e.g., <meta name="filetype" content="index" />) and charset
+        (e.g., <meta charset="utf-8" />). They can both be specified in a single
+        meta tag or split up.
+        """
         ad = {}
         for tup in attrs:
             ad[tup[0]] = tup[1]
@@ -211,10 +244,18 @@ class TIParser(HTMLParser.HTMLParser):
 
     # -----------------------------------------------------------------------
     def handle_title(self, tag, attrs):
+        """
+        Note that we've seen a title tag.
+        """
         self.title = 'present'
 
     # -----------------------------------------------------------------------
     def handle_named_tag(self, tag, attrs):
+        """
+        Look for a method named 'handle_<tagname>'. If it exists, call
+        it with the tag and attribute list as arguments. This makes it
+        easy to add handlers for specific tags.
+        """
         d = dir(self)
         mname = 'handle_%s' % tag
         if mname in dir(self):
@@ -262,6 +303,9 @@ class TIParser(HTMLParser.HTMLParser):
 
     # -----------------------------------------------------------------------
     def catch_uppercase_tags(self, tag):
+        """
+        Here we report uppercase tags.
+        """
         raw = self.get_starttag_text()
         q = re.search("<\s*(\w+)\s*", raw)
         txt = q.groups()[0]
