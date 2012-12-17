@@ -8,7 +8,6 @@ import pdb
 import re
 import sys
 
-import xml.etree.ElementTree as ET
 import HTMLParser
 
 from optparse import *
