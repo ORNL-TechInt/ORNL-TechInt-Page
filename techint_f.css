@@ -207,18 +207,11 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
     padding-top: 1px;
     float: none;
 }
-/*
-.nav ul li.current_page {
-    background: #eeeeee;
-    background: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 80%);
-    color: #03875e;
-}
-*/
 .nav ul a {
     white-space: nowrap;
 }
 .nav li:hover ul {
-    left: 0px;
+    left: -2px;
 }
 .nav li:hover a {
     /* this sets the backgound color for the menu bar when hovering */
@@ -245,6 +238,7 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03875e', endColorstr='#05523a',GradientType=0 ); /* IE6-9 */
     background: linear-gradient(top, #03875e 0%,#05523a 80%); /* W3C */
     text-decoration: none;
+    height: 2.5em;
     width: 14em;
 }
 .notes {
