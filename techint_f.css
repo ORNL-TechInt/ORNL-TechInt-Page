@@ -136,12 +136,7 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
 .navbar {
     font-family: 'Arial';
     font-size: small;
-/*
-    margin-left: auto;
-    margin-right: auto;
-*/
     width: 80%;
-    background: #eeeeee;
     background: #03875e;
     background: -moz-linear-gradient(top, #03875e 0%, #05523a 80%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#03875e), color-stop(80%,#05523a)); /* Chrome,Safari4+ */
@@ -173,8 +168,8 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
 
 .nav a {
     display: block;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     padding-right: 19px;
     padding-left: 19px;
     /* vertical-align: middle; */
