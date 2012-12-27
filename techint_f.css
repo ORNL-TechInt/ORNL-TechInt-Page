@@ -67,7 +67,7 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
 #header {
     background: url("images/header-tile2.png") repeat-x 
                 scroll left -9px #F0F0F0;
-    height: 148px;
+    height: 146px;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -137,14 +137,7 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
     font-family: 'Arial';
     font-size: small;
     width: 80%;
-    background: #03875e;
-    background: -moz-linear-gradient(top, #03875e 0%, #05523a 80%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#03875e), color-stop(80%,#05523a)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #03875e 0%,#05523a 80%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #03875e 0%,#05523a 80%); /* Opera11.10+ */            
-    background: -ms-linear-gradient(top, #03875e 0%,#05523a 80%); /* IE10+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03875e', endColorstr='#05523a',GradientType=0 ); /* IE6-9 */
-    background: linear-gradient(top, #03875e 0%,#05523a 80%); /* W3C */
+    background: transparent;
     margin:16px auto 0;
     text-transform:uppercase;
     height:33px;
@@ -156,27 +149,23 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
     font-weight: bold;
     /* margin-bottom: 10px; */
 }
-
+.nav ul {
+    list-style: none;
+    position: absolute;
+    left: -9999px;
+}
 .nav li {
     float: left;
-/*
-    padding-right: 10px;
-    padding-left: 10px;
-*/
     position: relative;
+    margin-left: 1px;
 }
-
 .nav a {
     display: block;
     padding-top: 6px;
     padding-bottom: 6px;
     padding-right: 19px;
     padding-left: 19px;
-    /* vertical-align: middle; */
-    /* margin-top: 10px; */
-    /* margin-bottom: auto; */
     color: #fff;
-/*    background: #eeeeee; */
     background: #03875e;
     background: -moz-linear-gradient(top, #03875e 0%, #05523a 80%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#03875e), color-stop(80%,#05523a)); /* Chrome,Safari4+ */
@@ -189,27 +178,30 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
 }
 .nav a:hover {
     color: #fff;
-    /* background: #6b0c36; */
     background: #016db9;
     text-decoration: none;
 }
 .current_page {
     background-color: #eeeeee;
     background: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 80%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(80%,#eeeeee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #eeeeee 0%,#eeeeee 80%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #eeeeee 0%,#eeeeee 80%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #eeeeee 0%,#eeeeee 80%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #eeeeee 0%,#eeeeee 80%); /* W3C */
     color: #03875e;
-    padding: 1px; 
 }
 .nav a.current_page {
     background: #eeeeee;
     background: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 80%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(80%,#eeeeee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #eeeeee 0%,#eeeeee 80%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #eeeeee 0%,#eeeeee 80%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #eeeeee 0%,#eeeeee 80%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #eeeeee 0%,#eeeeee 80%); /* W3C */
     color: #03875e;
-}
-.nav ul {
-    /* background: #fff;
-    background: rgba(255,255,255,0); */
-    list-style: none;
-    position: absolute;
-    left: -9999px;
 }
 .nav ul li {
     padding-top: 1px;
@@ -243,6 +235,17 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
 .nav li:hover ul li a:hover {
     /* this sets the background color of dropdown menu items when hovered */
     background: #004932;
+}
+.navfill {
+    background: -moz-linear-gradient(top, #03875e 0%, #05523a 80%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#03875e), color-stop(80%,#05523a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #03875e 0%,#05523a 80%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #03875e 0%,#05523a 80%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #03875e 0%,#05523a 80%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03875e', endColorstr='#05523a',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #03875e 0%,#05523a 80%); /* W3C */
+    text-decoration: none;
+    width: 14em;
 }
 .notes {
     font-style: italic;
