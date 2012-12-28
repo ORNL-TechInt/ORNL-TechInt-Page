@@ -1,8 +1,10 @@
+mkhtml
 edit_cmsg
 version.js
 validate
 QUESTIONS
 scroll-md.png
+*.test
 *.do
 *.ignore
 *~
