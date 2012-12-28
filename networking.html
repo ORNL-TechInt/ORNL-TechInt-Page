@@ -7,7 +7,71 @@
     <title>Technology Integration Group: Networking</title>
 </head>
 
-<body class="content_frame">
+<body id="body">
+
+  <div id="header">
+    <div id="hbanner">
+      <table id="header"><tr>
+        <td id="logo"><img src="olcf-logo.png" /></td>
+        <td id="page_title"><h1>Technology Integration</h1></td>
+      </tr></table>
+    </div>
+
+    <div class="navbar">
+    <ul class="nav">
+      <li />
+       <a href="index.html">About</a>
+      <li class="current_page"/>
+        <a class="current_page" href="projects.html">Projects</a>
+        <ul>
+          <li/><a href="storage.html">File and Storage Systems</a>
+          <li/><a href="nvm.html">Non-Volatile Memory</a>
+          <li/><a href="data.html">Data Management</a>
+          <li/><a href="networking.html">Networking</a>
+          <li/><a href="architecture.html">Computer Architecture</a>
+        </ul>
+      <li/><a href="members.html">Members</a>
+        <ul>
+          <li/><a href="vazhkudai.html">Sudharshan Vazhkudai (group leader)</a>
+          <li/><a href="mowery.html">Sonya Mowery (group secretary)</a>
+          <li/><a href="atchley.html">Scotty Atchley</a>
+          <li/><a href="barron.html">Tom Barron</a>
+          <li/><a href="dillow.html">David Dillow</a>
+          <li/><a href="fuller.html">Doug Fuller</a>
+          <li/><a href="gunasekaran.html">Raghul Gunasekaran</a>
+          <li/><a href="harney.html">John Harney</a>
+          <li/><a href="kim.html">Youngjae Kim</a>
+          <li/><a href="miller.html">Ross Miller</a>
+          <li/><a href="oral.html">Sarp Oral</a>
+          <li/><a href="simmons.html">James Simmons</a>
+          <li/><a href="smith.html">Brian Smith</a>
+          <li/><a href="stansberry.html">Dale Stansberry</a>
+          <li/><a href="steinert.html">Deryl Steinert</a>
+          <li/><a href="cwang.html">Chao Wang</a>
+          <li/><a href="fwang.html">Feiyi Wang</a>
+          <li/><a href="white.html">Vicky White</a>
+        </ul>
+      <li/><a href="publications.html">Publications</a>
+        <ul>
+          <li/><a href="publications.html#2013">2013</a>
+          <li/><a href="publications.html#2012">2012</a>
+          <li/><a href="publications.html#2011">2011</a>
+          <li/><a href="publications.html#2010">2010</a>
+          <li/><a href="publications.html#2009">2009 and earlier</a>
+        </ul>
+      <li/><a href="software.html">Software</a>
+        <ul>
+          <li/><a href="software.html#2012">2012</a>
+          <li/><a href="software.html#2011">2011</a>
+        </ul>
+      <li/><a href="jobs.html">Jobs</a>
+      <li/><a href="contact.html">Contact Us</a>
+      <li class="navfill"/>
+    </ul>
+    </div>
+  </div>
+
+
 <div class="right cci">
    <a
     href="http://www.olcf.ornl.gov/center-projects/common-communication-interface/"
@@ -17,63 +81,77 @@
    </a>
 </div>
 
-<a name="CCI"/>
-<h2>Common Communication Interface (CCI)</h2>
-<p>The CCI project is an open-source communication interface that aims to
-provide a simple and portable API, high performance, scalability for
-the largest deployments, and robustness in the presence of faults. It
-is developed and maintained by a partnership of research, academic,
-and industry members.</p>
+  <div class="box-top-left"></div>
+  <div id="page_content_left">
+    <a name="CCI"/>
+    <h2>Common Communication Interface (CCI)</h2>
+    <p>The CCI project is an open-source communication interface that aims to
+    provide a simple and portable API, high performance, scalability for
+    the largest deployments, and robustness in the presence of faults. It
+    is developed and maintained by a partnership of research, academic,
+    and industry members.</p>
 
-<p>Targeted towards high performance computing (HPC) environments as well
-as large data centers, CCI can provide a common network abstraction
-layer (NAL) for persistent services as well as general interprocess
-communication. In HPC, MPI is the de facto standard for communication
-within a job. Persistent services such as distributed file systems,
-code coupling (e.g. a simulation sending output to an analysis
-application sending its output to a visualization process), health
-monitoring, debugging, and performance monitoring, however, exist
-outside of scheduler jobs or span multiple jobs. In these cases, these
-persistent services tend to use either BSD sockets for portability to
-avoid having to rewrite the applications for each new interconnect or
-they implement their own NAL which takes developer time and effort.
-CCI can simplify support for these persistent services by providing a
-common NAL which minimizes the maintenance and support for these
-services while providing improved performance (i.e. reduced latency
-and increased bandwidth) compared to Sockets.</p>
+    <p>Targeted towards high performance computing (HPC) environments as well
+    as large data centers, CCI can provide a common network abstraction
+    layer (NAL) for persistent services as well as general interprocess
+    communication. In HPC, MPI is the de facto standard for communication
+    within a job. Persistent services such as distributed file systems,
+    code coupling (e.g. a simulation sending output to an analysis
+    application sending its output to a visualization process), health
+    monitoring, debugging, and performance monitoring, however, exist
+    outside of scheduler jobs or span multiple jobs. In these cases, these
+    persistent services tend to use either BSD sockets for portability to
+    avoid having to rewrite the applications for each new interconnect or
+    they implement their own NAL which takes developer time and effort.
+    CCI can simplify support for these persistent services by providing a
+    common NAL which minimizes the maintenance and support for these
+    services while providing improved performance (i.e. reduced latency
+    and increased bandwidth) compared to Sockets.</p>
 
-<p>We are currently supports Sockets (UDP and TCP), OpenFabrics Verbs 
-(InfiniBand and RoCE), Cray GNI (Gemini and Aries), Cray Portals 3.3 
-(SeaStar), as well as raw Ethernet (IP-bypass). Visit 
-<a href="http://cci-forum.com/" target="_">CCI Forum</a> for release
-information.</p>
+    <p>We are currently supporting Sockets (UDP and TCP), OpenFabrics Verbs 
+    (InfiniBand and RoCE), Cray GNI (Gemini and Aries), Cray Portals 3.3 
+    (SeaStar), as well as raw Ethernet (IP-bypass). Visit 
+    <a href="http://cci-forum.com/" target="_">CCI Forum</a> for release
+    information.</p>
 
-<p/>Contributors: Scott Atchley
+    <p/>Contributors: Scott Atchley
+  </div>
+  <div class="box-bottom-left"></div>
 
-<a name="Terabit"/>
-<h2>An Adaptive End-to-End Approach for Terabit Data Movement Optimization</h2>
+  <div class="box-top"></div>
+  <div id="page_content">
 
-<p>This is the work related to <em>An Adaptive End-to-End Approach for
-Terabit Data Movement Optimization</em> project, the goal of this project 
-is to improve throughput of wide-area data transfer between DOE facilities.
-This work involves serveral areas:</p>
-<ul>
-<li>Optimization of CCI for wide-area networking</li>
-<li>Heterogenous routing of CCI</li>
-<li>Optimization of accesses to parallel file systems</li>
-</ul>
+    <a name="Terabit"/>
+    <h2>An Adaptive End-to-End Approach for Terabit Data Movement Optimization</h2>
 
-<p/>Contributors: Scott Atchley, Youngjae Kim
+    <p>This is the work related to <em>An Adaptive End-to-End Approach for
+        Terabit Data Movement Optimization</em> project, the goal of this project 
+      is to improve throughput of wide-area data transfer between DOE facilities.
+      This work involves serveral areas:</p>
+    <ul>
+      <li>Optimization of CCI for wide-area networking</li>
+      <li>Heterogenous routing of CCI</li>
+      <li>Optimization of accesses to parallel file systems</li>
+    </ul>
 
-<a name="DStar"/>
-<h2>DStar</h2>
-<p>DStar is a native implementation of CCI embedded in SeaStar firmware. By
-replacing Cray Portals, CCI can achieve a latency of about 3 &#956;s compared to
-around 6 &#956;s when using Portals for point-to-point small messages.
-  CCI on DStar can even
-send a 4 KiB message in less than 6 &#956;s.</p>
+    <p/>Contributors: Scott Atchley, Youngjae Kim
+  </div>
+  <div class="box-bottom"></div>
 
-<p/>Contributors: David Dillow
+  <div class="box-top"></div>
+  <div id="page_content">
+
+    <a name="DStar"/>
+    <h2>DStar</h2>
+    <p>DStar is a native implementation of CCI embedded in SeaStar
+      firmware. By replacing Cray Portals, CCI can achieve a latency
+      of about 3 &#956;s compared to around 6 &#956;s when using
+      Portals for point-to-point small messages. CCI on DStar can even
+      send a 4 KiB message in less than 6 &#956;s.</p>
+
+    <p/>Contributors: David Dillow
+  </div>
+  <div class="box-bottom"></div>
 
 </body>
 </html>

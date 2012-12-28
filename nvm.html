@@ -7,41 +7,117 @@
     <title>Technology Integration Group: Non-Volatile Memory</title>
 </head>
 
-<body class="content_frame">
+<body id="body">
 
 <!-- For each project, we want to include information about 1) who
      works on it, 2) what its status is (completed, ongoing, in
      maintenance, etc.), 3) links to related software or papers on the
      software/publications pages, and 4) funding agency -->
 
-<a name="NVMalloc"/>
-<h2><a href="http://users.nccs.gov/~vazhkuda/NVMalloc.html" target="_">NVMalloc</a></h2>
+  <div id="header">
+    <div id="hbanner">
+      <table id="header"><tr>
+        <td id="logo"><img src="olcf-logo.png" /></td>
+        <td id="page_title"><h1>Technology Integration</h1></td>
+      </tr></table>
+    </div>
+
+    <div class="navbar">
+    <ul class="nav">
+      <li />
+       <a href="index.html">About</a>
+      <li class="current_page"/>
+        <a class="current_page" href="projects.html">Projects</a>
+        <ul>
+          <li/><a href="storage.html">File and Storage Systems</a>
+          <li/><a href="nvm.html">Non-Volatile Memory</a>
+          <li/><a href="data.html">Data Management</a>
+          <li/><a href="networking.html">Networking</a>
+          <li/><a href="architecture.html">Computer Architecture</a>
+        </ul>
+      <li/><a href="members.html">Members</a>
+        <ul>
+          <li/><a href="vazhkudai.html">Sudharshan Vazhkudai (group leader)</a>
+          <li/><a href="mowery.html">Sonya Mowery (group secretary)</a>
+          <li/><a href="atchley.html">Scotty Atchley</a>
+          <li/><a href="barron.html">Tom Barron</a>
+          <li/><a href="dillow.html">David Dillow</a>
+          <li/><a href="fuller.html">Doug Fuller</a>
+          <li/><a href="gunasekaran.html">Raghul Gunasekaran</a>
+          <li/><a href="harney.html">John Harney</a>
+          <li/><a href="kim.html">Youngjae Kim</a>
+          <li/><a href="miller.html">Ross Miller</a>
+          <li/><a href="oral.html">Sarp Oral</a>
+          <li/><a href="simmons.html">James Simmons</a>
+          <li/><a href="smith.html">Brian Smith</a>
+          <li/><a href="stansberry.html">Dale Stansberry</a>
+          <li/><a href="steinert.html">Deryl Steinert</a>
+          <li/><a href="cwang.html">Chao Wang</a>
+          <li/><a href="fwang.html">Feiyi Wang</a>
+          <li/><a href="white.html">Vicky White</a>
+        </ul>
+      <li/><a href="publications.html">Publications</a>
+        <ul>
+          <li/><a href="publications.html#2013">2013</a>
+          <li/><a href="publications.html#2012">2012</a>
+          <li/><a href="publications.html#2011">2011</a>
+          <li/><a href="publications.html#2010">2010</a>
+          <li/><a href="publications.html#2009">2009 and earlier</a>
+        </ul>
+      <li/><a href="software.html">Software</a>
+        <ul>
+          <li/><a href="software.html#2012">2012</a>
+          <li/><a href="software.html#2011">2011</a>
+        </ul>
+      <li/><a href="jobs.html">Jobs</a>
+      <li/><a href="contact.html">Contact Us</a>
+      <li class="navfill"/>
+    </ul>
+    </div>
+
+  </div>
+
+  <div class="box-top"></div>
+  <div id="page_content">
+
+    <a name="NVMalloc"/>
+    <h2 class="title"><a href="http://users.nccs.gov/~vazhkuda/NVMalloc.html" target="_">NVMalloc</a></h2>
 
 
-<p/>DRAM is a precious resource in extreme-scale machines and is
-increasingly becoming scarce, mainly due to the growing number of
-cores per node. On future multi-petaflop and exaflop machines, the
-memory pressure is likely to be so severe that we need to rethink our
-memory usage models. Fortunately, the advent of non-volatile memory
-(NVM) offers a unique opportunity in this space. Current NVM offerings
-possess several desirable properties, such as low cost and power
-efficiency, but also suffer from high latency and lifetime issues. We
-need rich techniques to be able to use them alongside DRAM. NVMalloc
-is an approach for exploiting NVM as a secondary memory partition so
-that applications can explicitly allocate and manipulate memory
-regions therein. More specifically, it is a middleware library with a
-suite of services that enables applications to access node-local or
-distributed NVM storage system in a seamless fashion.
+    <p/>DRAM is a precious resource in extreme-scale machines and is
+    increasingly becoming scarce, mainly due to the growing number of
+    cores per node. On future multi-petaflop and exaflop machines, the
+    memory pressure is likely to be so severe that we need to rethink our
+    memory usage models. Fortunately, the advent of non-volatile memory
+    (NVM) offers a unique opportunity in this space. Current NVM offerings
+    possess several desirable properties, such as low cost and power
+    efficiency, but also suffer from high latency and lifetime issues. We
+    need rich techniques to be able to use them alongside DRAM. NVMalloc
+    is an approach for exploiting NVM as a secondary memory partition so
+    that applications can explicitly allocate and manipulate memory
+    regions therein. More specifically, it is a middleware library with a
+    suite of services that enables applications to access node-local or
+    distributed NVM storage system in a seamless fashion.
 
-<p/>Contributors: Youngjae Kim, Chao Wang, Sudharshan Vazhkudai
-
-
-<a name="BurstBuffers"/>
-<h2>Burst Buffers</h2>
+    <p/>Contributors: Youngjae Kim, Chao Wang, Sudharshan Vazhkudai
+  </div>
+  <div class="box-bottom"></div>
 
 
-<a name="ActiveFlash"/>
-<h2>Active Flash</h2>
+  <div class="box-top"></div>
+  <div id="page_content">
+    <a name="BurstBuffers"/>
+    <h2 class="title">Burst Buffers</h2>
+  </div>
+  <div class="box-bottom"></div>
+
+
+  <div class="box-top"></div>
+  <div id="page_content">
+    <a name="ActiveFlash"/>
+    <h2 class="title">Active Flash</h2>
+  </div>
+  <div class="box-bottom"></div>
 
 </body>
 </html>

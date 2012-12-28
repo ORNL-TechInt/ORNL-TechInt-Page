@@ -41,6 +41,8 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
 }
 .cci {
     margin-left: 5px;
+    margin-right: 45px;
+    margin-top: 5em;
     width: 30%;
     height: 20%;
 }
@@ -129,6 +131,46 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
     width: 620px;
     margin-left: auto;
     margin-right: auto;
+}
+#page_content h2 {
+    color: #242424;
+    font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
+    font-size: 28px;
+    letter-spacing: -0.05em;
+    line-height: 38px;
+    padding: 5px 0;
+}
+.box-top-left {
+    background: url("images/cat-section-shade.png") no-repeat scroll 0 0 transparent;
+    height: 8px;
+    margin-top: 8px;
+    width: 648px;
+    margin-left: auto;
+    margin-right: 400px;
+}
+.box-bottom-left {
+    background: url("images/cat-section-shade.png") no-repeat scroll 0 -8px transparent;
+    height: 8px;
+    width: 648px;
+    margin-left: auto;
+    margin-right: 400px;;
+}
+#page_content_left {
+    background-color: white;
+    background: url("images/cat-section-vertical-shade.png") repeat-y scroll 0 0 #FFFFFF;
+    /* margin-top: 20px; */
+    padding: 0 14px 4px;
+    width: 620px;
+    margin-left: auto;
+    margin-right: 400px;
+}
+#page_content_left h2 {
+    color: #242424;
+    font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
+    font-size: 28px;
+    letter-spacing: -0.05em;
+    line-height: 38px;
+    padding: 5px 0;
 }
 #page_content li {
     list-style: disc outside none;
