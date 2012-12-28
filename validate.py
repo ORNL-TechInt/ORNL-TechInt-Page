@@ -350,10 +350,8 @@ class TIParser(HTMLParser.HTMLParser):
                         + "where 'ft' is one of 'about', 'proj', 'member', "
                         + "'contact', 'jobs', 'nav', 'pub', or 'software' "
                         + "in the <head> section.")
-        elif self.filetype == 'index' and self.title == 'missing':
-            self.errmsg("A <title> tag is needed for this file.")
-        elif self.filetype != 'index' and self.title != 'missing':
-            self.errmsg("This file should not have a <title> tag.")
+        elif self.title == 'missing':
+            self.errmsg("A <title> tag is needed for this file.", 0)
             
         if self.charset == 'missing':
             self.errmsg("Charset not specified. Please add "
