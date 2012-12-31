@@ -28,7 +28,9 @@ def main(argv = None):
     
     # process arguments
     for filename in a[1:]:
-        process(filename, o)
+        q = Assembler(filename, o.output)
+        q.process()
+        # process(filename, o)
 
 # ---------------------------------------------------------------------------
 def assemble(input, output):
@@ -92,6 +94,72 @@ def process(filename, opts):
     f.close()
     g.close()
     
+# ---------------------------------------------------------------------------
+class Assembler(object):
+    # -----------------------------------------------------------------------
+    def __init__(self, input_name, ext=None):
+        if not input_name.endswith('.src'):
+            raise StandardError("I don't know what to do with %s" % filename)
+        
+        self.iname = input_name
+        self.instack = [input_name]
+        self.oname = self.output_name(input_name, ext)
+        
+    # -----------------------------------------------------------------------
+    def assemble(self):
+        for line in self.ifile:
+            if line[0] == '%':
+                cmd = line[1:]
+                eval('self.%s' % cmd)
+            else:
+                self.ofile.write(line)
+
+    # -----------------------------------------------------------------------
+    def ifeq(self, a, b):
+        line = self.ifile.readline()
+        while line.strip() not in ['%else', '%endif']:
+            if a == b:
+                self.ofile.write(line)
+            line = self.ifile.readline()
+
+        while line.strip() != '%endif':
+            if a != b:
+                self.ofile.write(line)
+            line = self.ifile.readline()
+
+    # -----------------------------------------------------------------------
+    def include(self, filename):
+        self.instack.append(filename)
+        self.iname = filename
+        self.ifile = open(filename, 'r')
+        self.ifstack.append(self.ifile)
+
+        self.assemble()
+
+        self.ifile.close()
+        self.ifile = self.ifstack.pop()
+        self.instack.pop()
+        
+    # -----------------------------------------------------------------------
+    def output_name(self, iname, ext):
+        if ext == None or ext == '':
+            ext = '.html'
+        elif not ext.startswith('.'):
+            ext = '.' + ext
+        rval = iname.replace('.src', ext)
+        return rval
+    
+    # -----------------------------------------------------------------------
+    def process(self):
+        self.ifile = open(self.iname, 'r')
+        self.ifstack = [self.ifile]
+        self.ofile = open(self.oname, 'w')
+
+        self.assemble()
+
+        self.ofile.close()
+        self.ifile.close()
+        
 # ---------------------------------------------------------------------------
 class MkhtmlTest(unittest.TestCase):
     def test_example(self):
