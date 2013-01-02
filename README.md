@@ -36,3 +36,15 @@ cloning your copy of the repo, you can activate these hooks by running
 
 This creates the appropriate symlinks from .git/hooks to scripts in
 githooks.
+
+
+Special Measures
+----------------
+
+To style these pages similarly to olcf.ornl.gov, it's necessary to put
+the same header on them. This header consists of a combination of HTML
+and CSS. Since the html files include the css file, this can easily be
+done with a single copy of the css.
+
+However, the HTML specification doesn't provide a way for including
+common HTML snippets into multiple files. 

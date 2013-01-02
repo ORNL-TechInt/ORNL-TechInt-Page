@@ -1,0 +1,41 @@
+%include('html_intro.src')
+    <meta name="filetype" content="projects" />
+    <title>Technology Integration Group: Non-Volatile Memory</title>
+%include('hdbody.src')
+
+%include('hdrnav.src')
+
+%include('content_intro.src')
+    <a name="NVMalloc"/>
+    <h2 class="title"><a href="http://users.nccs.gov/~vazhkuda/NVMalloc.html" target="_">NVMalloc</a></h2>
+
+
+    <p/>DRAM is a precious resource in extreme-scale machines and is
+    increasingly becoming scarce, mainly due to the growing number of
+    cores per node. On future multi-petaflop and exaflop machines, the
+    memory pressure is likely to be so severe that we need to rethink our
+    memory usage models. Fortunately, the advent of non-volatile memory
+    (NVM) offers a unique opportunity in this space. Current NVM offerings
+    possess several desirable properties, such as low cost and power
+    efficiency, but also suffer from high latency and lifetime issues. We
+    need rich techniques to be able to use them alongside DRAM. NVMalloc
+    is an approach for exploiting NVM as a secondary memory partition so
+    that applications can explicitly allocate and manipulate memory
+    regions therein. More specifically, it is a middleware library with a
+    suite of services that enables applications to access node-local or
+    distributed NVM storage system in a seamless fashion.
+
+    <p/>Contributors: Youngjae Kim, Chao Wang, Sudharshan Vazhkudai
+%include('content_close.src')
+
+%include('content_intro.src')
+    <a name="BurstBuffers"/>
+    <h2 class="title">Burst Buffers</h2>
+%include('content_close.src')
+
+
+%include('content_intro.src')
+    <a name="ActiveFlash"/>
+    <h2 class="title">Active Flash</h2>
+%include('content_close.src')
+%include('html_close.src')
