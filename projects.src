@@ -1,11 +1,11 @@
-%include('html_intro.html')
+%include('html_intro.src')
     <meta name="filetype" content="nav" />
     <title>Technology Integration Group: Projects</title>
-%include('hdbody.html')
+%include('hdbody.src')
 
-%include('hdrnav.html')
+%include('hdrnav.src')
 
-%include('content_intro.html')
+%include('content_intro.src')
     <h2 class="title">Thrust Areas</h2>
     <ul>
       <li/><a href="storage.html" target="content">File and Storage
@@ -34,5 +34,5 @@
       discovery.
 
     </ul>
-%include('content_close.html')
-%include('html_close.html')
+%include('content_close.src')
+%include('html_close.src')
