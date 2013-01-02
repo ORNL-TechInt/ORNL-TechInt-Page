@@ -8,14 +8,14 @@
 
     <div class="navbar">
     <ul class="nav">
-%ifeq(self.instack[-2], 'index.src')
+%ifeq(self.instack[-1], 'index.src')
       <li class="current_page" />
        <a class="current_page" href="index.html">About</a>
 %else
       <li/>
        <a href="index.html">About</a>
 %endif
-%ifeq(self.instack[-2], 'projects.src')
+%ifeq(self.instack[-1], 'projects.src')
       <li class="current_page" />
        <a class="current_page" href="projects.html">Projects</a>
 %else

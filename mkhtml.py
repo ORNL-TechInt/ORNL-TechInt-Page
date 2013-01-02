@@ -102,17 +102,21 @@ class Assembler(object):
             raise StandardError("I don't know what to do with %s" % filename)
         
         self.iname = input_name
-        self.instack = [input_name]
         self.oname = self.output_name(input_name, ext)
+        self.instack = []
+        self.ifstack = []
         
     # -----------------------------------------------------------------------
     def assemble(self):
-        for line in self.ifile:
+        # for line in self.ifile:
+        line = self.ifile.readline()
+        while line != '':
             if line[0] == '%':
                 cmd = line[1:]
                 eval('self.%s' % cmd)
             else:
                 self.ofile.write(line)
+            line = self.ifile.readline()
 
     # -----------------------------------------------------------------------
     def ifeq(self, a, b):
@@ -122,6 +126,11 @@ class Assembler(object):
                 self.ofile.write(line)
             line = self.ifile.readline()
 
+        if line.strip() == '%endif':
+            return
+        else:
+            line = self.ifile.readline()
+            
         while line.strip() != '%endif':
             if a != b:
                 self.ofile.write(line)
@@ -129,16 +138,16 @@ class Assembler(object):
 
     # -----------------------------------------------------------------------
     def include(self, filename):
-        self.instack.append(filename)
+        self.instack.append(self.iname)
+        self.ifstack.append(self.ifile)
         self.iname = filename
         self.ifile = open(filename, 'r')
-        self.ifstack.append(self.ifile)
 
         self.assemble()
 
         self.ifile.close()
         self.ifile = self.ifstack.pop()
-        self.instack.pop()
+        self.iname = self.instack.pop()
         
     # -----------------------------------------------------------------------
     def output_name(self, iname, ext):
@@ -152,7 +161,6 @@ class Assembler(object):
     # -----------------------------------------------------------------------
     def process(self):
         self.ifile = open(self.iname, 'r')
-        self.ifstack = [self.ifile]
         self.ofile = open(self.oname, 'w')
 
         self.assemble()
