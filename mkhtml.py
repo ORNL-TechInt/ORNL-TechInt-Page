@@ -3,6 +3,7 @@
 mkhtml - generate HTML files from snippets
 """
 import pdb
+import re
 import sys
 import toolframe
 import unittest
@@ -33,66 +34,66 @@ def main(argv = None):
         # process(filename, o)
 
 # ---------------------------------------------------------------------------
-def assemble(input, output):
-    global ofile, ifile
-    ofile = output
-    ifile = input
-    for line in input:
-        if line[0] == '%':
-            cmd = line[1:]
-            eval(cmd)
-        else:
-            output.write(line)
+# def assemble(input, output):
+#     global ofile, ifile
+#     ofile = output
+#     ifile = input
+#     for line in input:
+#         if line[0] == '%':
+#             cmd = line[1:]
+#             eval(cmd)
+#         else:
+#             output.write(line)
 
 # ---------------------------------------------------------------------------
-def ifeq(parent, target):
-    # get the first line past the %ifeq() line
-    line = ifile.readline()
-    # process lines until we hit '%else' or '%endif'
-    while line.strip() not in ['%else', '%endif']:
-        # writing out lines in the ifeq branch if the comparands are equal
-        if parent == target:
-            ofile.write(line)
-        line = ifile.readline()
+# def ifeq(parent, target):
+#     # get the first line past the %ifeq() line
+#     line = ifile.readline()
+#     # process lines until we hit '%else' or '%endif'
+#     while line.strip() not in ['%else', '%endif']:
+#         # writing out lines in the ifeq branch if the comparands are equal
+#         if parent == target:
+#             ofile.write(line)
+#         line = ifile.readline()
 
-    # at this point, line is either '%else' or '%endif'. If it's '%endif',
-    # this second loop will fail immediately and we'll return. If it's
-    # '%else', this will process lines on down to the '%endif'
-    while line.strip() != '%endif':
-        # writing out the lines if the comparands are unequal
-        if parent != target:
-            ofile.write(line)
-        line = ifile.readline()
+#     # at this point, line is either '%else' or '%endif'. If it's '%endif',
+#     # this second loop will fail immediately and we'll return. If it's
+#     # '%else', this will process lines on down to the '%endif'
+#     while line.strip() != '%endif':
+#         # writing out the lines if the comparands are unequal
+#         if parent != target:
+#             ofile.write(line)
+#         line = ifile.readline()
 
 # ---------------------------------------------------------------------------
-def include(filename):
-    global ofile
-    f = open(filename, 'r')
-    for line in f:
-        ofile.write(line)
-    f.close()
+# def include(filename):
+#     global ofile
+#     f = open(filename, 'r')
+#     for line in f:
+#         ofile.write(line)
+#     f.close()
     
 # ---------------------------------------------------------------------------
-def process(filename, opts):
-    if not filename.endswith('.src'):
-        print("I don't know what to do with %s" % filename)
-        return
+# def process(filename, opts):
+#     if not filename.endswith('.src'):
+#         print("I don't know what to do with %s" % filename)
+#         return
 
-    if opts.output.startswith('.'):
-        ext = opts.output
-    elif opts.output != '':
-        ext = '.' + opts.output
-    else:
-        ext = '.html'
+#     if opts.output.startswith('.'):
+#         ext = opts.output
+#     elif opts.output != '':
+#         ext = '.' + opts.output
+#     else:
+#         ext = '.html'
 
-    outname = filename.replace('.src', ext)
-    f = open(filename, 'r')
-    g = open(outname, 'w')
+#     outname = filename.replace('.src', ext)
+#     f = open(filename, 'r')
+#     g = open(outname, 'w')
 
-    assemble(f, g)
+#     assemble(f, g)
 
-    f.close()
-    g.close()
+#     f.close()
+#     g.close()
     
 # ---------------------------------------------------------------------------
 class Assembler(object):
@@ -108,13 +109,16 @@ class Assembler(object):
         
     # -----------------------------------------------------------------------
     def assemble(self):
-        # for line in self.ifile:
         line = self.ifile.readline()
         while line != '':
             if line[0] == '%':
                 cmd = line[1:]
                 eval('self.%s' % cmd)
             else:
+                q = re.search(r"name=['\"]filetype['\"]\s+content=['\"](.*)['\"]", line)
+                if q:
+                    self.filetype = q.groups()[0]
+                    
                 self.ofile.write(line)
             line = self.ifile.readline()
 
