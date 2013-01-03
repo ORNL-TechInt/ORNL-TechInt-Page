@@ -1,0 +1,38 @@
+%include('html_intro.src')
+    <meta name="filetype" content="projects" />
+    <title>Technology Integration Group: Data Management</title>
+%include('hdbody.src')
+
+%include('hdrnav.src')
+
+%include('content_intro.src')
+    <a name="ADARA" />
+    <h2 class="title">ADARA</h2>
+%include('content_close.src')
+
+
+%include('content_intro.src')
+    <a name="UVCDAT" />
+    <h2 class="title">UV/CDAT</h2>
+%include('content_close.src')
+
+%include('content_intro.src')
+    <a name="PARCAT" />
+    <h2 class="title">PARCAT</h2>
+%include('content_close.src')
+
+%include('content_intro.src')
+    <a name="ESGF" />
+    <h2 class="title">Earth System Grid Federation</h2>
+%include('content_close.src')
+
+%include('content_intro.src')
+    <a name="CMS" />
+    <h2 class="title">CMS</h2>
+%include('content_close.src')
+
+%include('content_intro.src')
+    <a name="NIH" />
+    <h2 class="title">NIH Oncology Data</h2>
+%include('content_close.src')
+%include('html_close.src')
