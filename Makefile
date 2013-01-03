@@ -9,6 +9,7 @@ ALL_HTML = index.html \
     architecture.html \
     atchley.html \
     barron.html \
+    contact.html \
     cwang.html \
     data.html \
     dillow.html \
