@@ -16,6 +16,7 @@ ALL_HTML = index.html \
     fwang.html \
     gunasekaran.html \
     harney.html \
+    jobs.html \
     kim.html \
     members.html \
     miller.html \
@@ -27,6 +28,7 @@ ALL_HTML = index.html \
     publications.html \
     simmons.html \
     smith.html \
+    software.html \
     stansberry.html \
     steinert.html \
     storage.html \

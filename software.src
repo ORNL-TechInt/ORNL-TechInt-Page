@@ -1,11 +1,11 @@
-<!doctype html>
-<html lang="en"><head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="techint_f.css" />
+%include('html_intro.inc')
     <meta name="filetype" content="software" />
     <title>Technology Integration Group: Software</title>
-</head><body class="content_frame publist">
+%include('hdbody.inc')
+%include('hdrnav.inc')
+<!-- </head><body class="content_frame publist"> -->
 
+%include('content_intro.inc')
 <h2>Software</h2>
 
   <a name="2012" />
@@ -17,12 +17,12 @@
     <!-- *************************************************************** -->
     <!-- <li/><h4>Non-Volatile Memory</h4> -->
     <!-- *************************************************************** -->
-    <li><h4>Data Management</h4></li>
+    <li/><h4>Data Management</h4>
     <dl> 
       <dt/><strong>EZ-Pub</strong>
         <dd/>A stream-lined publishing tool for making scientific data
         available for download through a portal like ESGF.
-        <br/><a href="http://code.google.com/p/scigest/downloads/list"
+        <a href="http://code.google.com/p/scigest/downloads/list"
         target="_">Download Page</a>
 
       <dt/><strong>ParCat</strong>
@@ -58,5 +58,5 @@
     </dl>
 
   </ul>
-
-</body></html>
+%include('content_close.inc')
+%include('html_close.inc')

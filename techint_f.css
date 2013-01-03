@@ -154,6 +154,13 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
 #page_content h4 {
     padding-bottom: .75em;
 }
+#page_content dt {
+    font-weight: bold;
+    /* margin-left: 2em; */
+}
+#page_content dd {
+    margin-left: 2em;
+}
 #page_content li {
     list-style: disc outside none;
     position: relative;

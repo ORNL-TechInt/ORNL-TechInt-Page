@@ -1,0 +1,15 @@
+%include('html_intro.inc')
+    <meta name="filetype" content="jobs" />
+    <title>Technology Integration Group: Jobs</title>
+%include('hdbody.inc')
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
+<h2>Jobs</h2>
+
+<ul>
+ <li />...
+</ul>
+
+%include('content_close.inc')
+%include('html_close.inc')
