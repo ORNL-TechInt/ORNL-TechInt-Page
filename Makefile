@@ -11,6 +11,7 @@ ALL_HTML = index.html \
     barron.html \
     data.html \
     members.html \
+    mowery.html \
     networking.html \
     nvm.html \
     projects.html \

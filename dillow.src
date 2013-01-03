@@ -1,10 +1,11 @@
-<!doctype html>
-<html lang="en"><head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="techint_f.css" />
-    <meta name="filetype" content="member" />
+%include('html_intro.inc')
+    <meta name="filetype" content="members" />
     <title>Technology Integration Group: David Dillow</title>
-</head><body class="content_frame">
+%include('hdbody.inc')
+
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
 <h2>David Dillow</h2>
 
 <p/>Dave Dillow is an Advanced Systems Architect and Developer at
@@ -37,5 +38,5 @@ efficient and effective use of the facility.
 project called <a href="storage.html#SOS">Scalable Object Store</a> (SOS), which investigates
 innovative mechanisms for future storage systems that will scale to
 extreme capacity and bandwidth.
-
-</body></html>
+%include('content_close.inc')
+%include('html_close.inc')

@@ -1,11 +1,9 @@
-<!doctype html>
-<html lang="en"><head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="techint_f.css" />
-    <meta name="filetype" content="member" />
+%include('html_intro.inc')
+    <meta name="filetype" content="members" />
     <title>Technology Integration Group: Chao Wang</title>
-</head><body class="content_frame">
-
+%include('hdbody.inc')
+%include('hdrnav.inc')
+%include('content_intro.inc')
 <h2><a href="https://sites.google.com/site/wangchao98/">Chao Wang</a></h2>
 
 <p/>Chao is a Research Associate of the Technology Integration
@@ -30,5 +28,5 @@ migration.
 He obtained a bachelors degree in
 Computer Science from 
 <a href="http://www.fudan.edu.cn" target="_">Fudan University</a> in China in 1998.
-
-</body></html>
+%include('content_close.inc')
+%include('html_close.inc')
