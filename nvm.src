@@ -10,32 +10,148 @@
     <h2 class="title"><a href="http://users.nccs.gov/~vazhkuda/NVMalloc.html" target="_">NVMalloc</a></h2>
 
 
-    <p/>DRAM is a precious resource in extreme-scale machines and is
-    increasingly becoming scarce, mainly due to the growing number of
-    cores per node. On future multi-petaflop and exaflop machines, the
-    memory pressure is likely to be so severe that we need to rethink our
-    memory usage models. Fortunately, the advent of non-volatile memory
-    (NVM) offers a unique opportunity in this space. Current NVM offerings
-    possess several desirable properties, such as low cost and power
-    efficiency, but also suffer from high latency and lifetime issues. We
-    need rich techniques to be able to use them alongside DRAM. NVMalloc
-    is an approach for exploiting NVM as a secondary memory partition so
-    that applications can explicitly allocate and manipulate memory
-    regions therein. More specifically, it is a middleware library with a
-    suite of services that enables applications to access node-local or
-    distributed NVM storage system in a seamless fashion.
+<p>DRAM is a precious resource in extreme-scale machines and is
+increasingly becoming scarce, mainly due to the growing number of
+cores per node. On future multi-petaflop and exaflop machines, the
+memory pressure is likely to be so severe that we need to rethink our
+memory usage models. Fortunately, the advent of non-volatile memory
+(NVM) offers a unique opportunity in this space. Current NVM offerings
+possess several desirable properties, such as low cost and power
+efficiency, but also suffer from high latency and lifetime issues. We
+need rich techniques to be able to use them alongside DRAM. NVMalloc
+is an approach for exploiting NVM as a secondary memory partition so
+that applications can explicitly allocate and manipulate memory
+regions therein. More specifically, it is a middleware library with a
+suite of services that enables applications to access node-local or
+distributed NVM storage system in a seamless fashion. The work
+inovolves several areas.
+
+
+<ul>
+
+  <li/>Exploring NVM as a secondary memory partition for HPC systems 
+
+  <li/>Developing NVMalloc library with a suite of services that
+  enables applications to access NVM systems
+
+  <li/>Studying the performance of NVMalloc with various HPC benchmark
+  suits
+
+  <li/>Developing data management techniques to efficiently use the
+  NVM partition and DRAM partition
+
+</ul>
 
     <p/>Contributors: Youngjae Kim, Chao Wang, Sudharshan Vazhkudai
-%include('content_close.inc')
-
-%include('content_intro.inc')
-    <a name="BurstBuffers"/>
-    <h2 class="title">Burst Buffers</h2>
-%include('content_close.inc')
 
 
-%include('content_intro.inc')
-    <a name="ActiveFlash"/>
-    <h2 class="title">Active Flash</h2>
+<ul type="circle">
+  <li/>Selected publications
+    <ul type="square">
+
+      <li/>Chao Wang, Sudharshan Vazhkudai, Xiaosong Ma, Fei Meng,
+      Youngjae Kim, Christian Engelmann, "NVMalloc: Exposing an
+      Aggregate SSD Store as a Memory Partition in Extreme-Scale
+      Machines", <i>Proceedings of the 26th IEEE Int'l Parallel and
+      Distributed Processing Symposium (IPDPS 2012), Shanghai, China,
+      May 21-25, 2012. (118/569 = 20.7%)</i>
+
+    </ul>
+</ul>
+
+<h2><a href="">Burst Buffers</a></h2>
+
+Solid-state Disks (SSDs) do not have any mechanical moving parts and
+provide low-latency access, hig h throughput and less power compared
+to Hard Disk Drives (HDDs). However, integrating SSDs into exis ting
+HPC systems is non-trivial because Flash memory suffers from limits on
+its reliability, and an order of magnitude more expensive than the
+HDDs. Thus, HPC architects and researchers have been exploring various
+storage systems designs using SSDs to build cost-efficient storage
+systems. One of the proposed designs is to build a SSD tier to use for
+burst buffers to absorb burst of application I/O requests. Thus we
+explore various design space of the SSD tiers for burst buffer. The
+work involves several areas.
+
+
+<ul>
+  <li/>Designing SSD tiers for burst buffer in HPC systems
+  <li/>Developing detailed performance and energy models for the study of the feasibility of the tiered architecture 
+  <li/>Identifying various application scenarios (eg. I/O checkpointing) of maximizing the use of the burst buffer
+  <li/>Studying application scheduling for the efficient use of the burst buffer
+</ul>
+
+Contributors: Sudharshan Vazhkudai
+
+<h2>Active Flash</h2>
+
+This is the work related to out-of-core analytics on SSDs. In this project, we propose Active Flash, to expedite data analysis pipelines by migrating to the location of the data, the flash device itself. Active Flash has the potential to enable true out-of-core data analytics by freeing up both the compute core and the associated main memory. The work involves several areas. 
+
+<ul>
+  <li/>Developing analytics models for the performance and energy feasibility of Active Flash, and comparing them against traditional in-situ and offline data analysis schemes
+  <li/>Building an Active Flash prototype to demonstrate its viability
+  <li/>Studying co-scheduling of analyses and internal flash management activities on the SSDs controller 
+  <li/>Defining efficient representations of data object interfaces for Active Flash 
+</ul>
+
+Contributors: Sudharshan Vazhkudai, Youngjae Kim
+
+<ul type="circle">
+  <li/>Selected publications
+    <ul type="square">
+
+      <li/>Devesh Tiwari, Simona Bobila, Sudharshan Vazhkudai,
+      Youngjae Kim, Xiaosong Ma, Peter Desnoyers, Yan Solin, "Active
+      Flash: Towards Energy-Efficient, In-Situ Data Analytics on
+      Extreme-Scale Machines,", <i>(To appear) Proceedings of the
+      USENIX Conference on File and Storage Technologies (FAST 2013),
+      February, 2013. (24/127 = 18.9%)</i>
+
+      <li/>Simona Boboila, Youngjae Kim, Sudharshan Vazhkudai, Peter
+      Desnoyers, Galen M. Shipman, "Active Flash: Out-of-core Data
+      Analytics on Flash Storage", <i>(Proceedings of the 28th IEEE
+      Symposium on Massive Storage Systems and Technologies (MSST
+      2012), Monterey, CA, April 16-20, 2012. (14/57 = 24.5%)</i>
+
+    </ul>
+</ul>
+
+<h2>Flash Storage Systems</h2>
+
+Although SSDs offer significant performance improvements over had disk
+drives (HDDs) for a number of workloads, they can exhibit substantial
+variance in request latency and throughput as a result of garbage
+collection (GC). Thus, in this project, we explore design challenges
+on SSD based storage systems. The work involves several areas.
+
+<ul>
+  <li/>Benchmarking SSDs and understanding their performance and behavior
+  <li/>Detailed performance modeling of SSDs for different HPC workloads 
+  <li/>Improving performance of individual SSDs and arrays of SSDs
+
+  <li/>Developing internal flash management algorithms (GC, FTL, etc)
+  for high performance SSD based storage systems
+
+</ul>
+
+Contributors: Youngjae Kim
+
+<ul type="circle">
+  <li/>Selected publications
+    <ul type="square">
+
+      <li/>Youngjae Kim, Junghee Lee, Sarp Oral, David Dillow, Feiyi
+      Wang, Galen M. Shipman, "Coordinating Garbage Collection for
+      Arrays of Solid-state Drives", <i>(To appear) IEEE Transactions
+      on Computers (IEEE TC), 2013.</i>
+
+      <li/>Junghee Lee, Youngjae Kim, Galen M. Shipman, Sarp Oral,
+      Jongman Kim, "Preemptible I/O Scheduling of Garbage Collection
+      for Solid-state Drives", <i>(To appear) IEEE Transactions on
+      Computer-Aided Design of Integrated Circuits and Systems (IEEE
+      TCAD), 2013.</i>
+
+    </ul>
+</ul>
 %include('content_close.inc')
 %include('html_close.inc')
