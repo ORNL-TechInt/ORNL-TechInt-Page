@@ -143,6 +143,14 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
     line-height: 38px;
     padding: 5px 0;
 }
+#page_content li {
+    list-style: disc outside none;
+    position: relative;
+    left: .75em;
+}
+#page_content p {
+    margin-top: 1em;
+}
 .box-top-left {
     background: url("images/cat-section-shade.png") no-repeat scroll 0 0 transparent;
     height: 8px;
@@ -175,10 +183,13 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
     line-height: 38px;
     padding: 5px 0;
 }
-#page_content li {
+#page_content_left li {
     list-style: disc outside none;
     position: relative;
     left: .75em;
+}
+#page_content_left p {
+    margin-top: 1em;
 }
 #content_about p {
     padding-top: 10px;
