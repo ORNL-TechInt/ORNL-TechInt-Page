@@ -1,10 +1,9 @@
-<!doctype html>
-<html lang="en"><head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="techint_f.css" />
-    <meta name="filetype" content="member" />
+%include('html_intro.inc')
+    <meta name="filetype" content="members" />
     <title>Technology Integration Group: Sudharshan Vazhkudai</title>
-</head><body class="content_frame">
+%include('hdbody.inc')
+%include('hdrnav.inc')
+%include('content_intro.inc')
 <h2><a href="http://www.ccs.ornl.gov/~vazhkuda" target="_">Sudharshan Vazhkudai</a></h2>
 
 <p />Sudharshan is the Group Leader of the Technology Integration
@@ -39,5 +38,5 @@ previous life (if you believe in that sort of a thing :)), Sudharshan
 obtained a bachelors degree in computer science from 
 <a href="http://www.kud.ac.in/" target="_">Karnatak University</a>
 in India in 1996. He grew up in Madras, South India.
-
-</body></html>
+%include('content_close.inc')
+%include('html_close.inc')

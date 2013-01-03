@@ -7,13 +7,15 @@ ALL_INC = content_close.inc \
 
 ALL_HTML = index.html \
     architecture.html \
+    atchley.html \
     barron.html \
     data.html \
     members.html \
     networking.html \
     nvm.html \
     projects.html \
-    storage.html
+    storage.html \
+    vazhkudai.html
 
 all: $(ALL_HTML)
 
