@@ -1,10 +1,10 @@
-<!doctype html>
-<html lang="en"><head>
-    <meta charset="utf-8" />
-   <link rel="stylesheet" type="text/css" href="techint_f.css"/>
-    <meta name="filetype" content="member" />
+%include('html_intro.inc')
+    <meta name="filetype" content="members" />
     <title>Technology Integration Group: Youngjae Kim</title>
-</head><body class="content_frame">
+%include('hdbody.inc')
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
 <h2><a href="http://users.nccs.gov/~yk7/index.html" target="_">Youngjae Kim</a></h2>
 
 <p/>Youngjae is a Research and Development Staff Member at US Department
@@ -31,4 +31,5 @@ State University</a> in 2009. Youngjae is also an adjunct professor in the
 <a href="http://www.ece.gatech.edu/" target="_">School of Electrical
 and Computer Engineering</a> at Georgia Institute of Technology.
 
-</body></html>
+%include('content_close.inc')
+%include('html_close.inc')

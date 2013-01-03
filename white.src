@@ -1,4 +1,4 @@
-%include('html_intro.src')
+%include('html_intro.inc')
     <meta name="filetype" content="members" />
     <title>Technology Integration Group: Vicky White</title>
 %include('hdbody.inc')

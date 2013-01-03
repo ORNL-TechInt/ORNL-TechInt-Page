@@ -22,5 +22,5 @@ parallel I/O and file systems, fault tolerance and system simulation,
 and scientific data management and integration. Dr. Wang is a senior
 member of <a href="http://www.ieee.org" target="_">IEEE</a>.
 
-%include('html_intro.inc')
-%include('html_intro.inc')
+%include('content_close.inc')
+%include('html_close.inc')
