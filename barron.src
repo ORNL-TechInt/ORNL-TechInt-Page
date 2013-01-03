@@ -1,11 +1,12 @@
-<!doctype html>
-<html lang="en"><head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="techint_f.css" />
-    <meta name="filetype" content="member" />
+%include('html_intro.inc')
+    <meta name="filetype" content="members" />
     <title>Technology Integration Group: Tom Barron</title>
-</head><body class="content_frame">
-<h2>Tom Barron</h2>
+%include('hdbody.inc')
+
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
+<h2>Tom Barron</h2> 
 
 <p/>Tom is a Unix Systems Programmer. Since coming to ORNL in 2000,
      Tom has administered systems, written software for
@@ -24,5 +25,5 @@
      University</a> in 1983 and an M.S. in Software Engineering
      from <a href="http://www.umuc.edu/" target="_">University of
      Maryland</a> in 2007.
-
-</body></html>
+%include('content_close.inc')
+%include('html_close.inc')

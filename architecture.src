@@ -1,15 +1,15 @@
-%include('html_intro.src')
+%include('html_intro.inc')
     <meta name="filetype" content="projects" />
     <title>Technology Integration Group: Computer Architecture</title>
-%include('hdbody.src')
+%include('hdbody.inc')
 
-%include('hdrnav.src')
+%include('hdrnav.inc')
 
-%include('content_intro.src')
+%include('content_intro.inc')
     <a name="Many-Core"/>
     <h2>Functional Partitioning of Many-Core Nodes</h2>
 
     <p/>Contributors: Scott Atchley, Sudharshan Vazhkudai
-%include('content_close.src')
-%include('html_close.src')
+%include('content_close.inc')
+%include('html_close.inc')
 

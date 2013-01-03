@@ -1,16 +1,16 @@
-%include('html_intro.src')
+%include('html_intro.inc')
     <meta name="filetype" content="projects" />
     <title>Technology Integration Group: Networking</title>
-%include('hdbody.src')
+%include('hdbody.inc')
 
-%include('hdrnav.src')
+%include('hdrnav.inc')
 
 <div class="right cci">
    <a
     href="http://www.olcf.ornl.gov/center-projects/common-communication-interface/"
     target="_">
     <img class="rounded networking"
-         src="cci-logo-text-01.png" />
+        .inc="cci-logo-text-01.png" />
    </a>
 </div>
 
@@ -51,7 +51,7 @@
   </div>
   <div class="box-bottom-left"></div>
 
-%include('content_intro.src')
+%include('content_intro.inc')
     <a name="Terabit"/>
     <h2>An Adaptive End-to-End Approach for Terabit Data Movement Optimization</h2>
 
@@ -66,9 +66,9 @@
     </ul>
 
     <p/>Contributors: Scott Atchley, Youngjae Kim
-%include('content_close.src')
+%include('content_close.inc')
 
-%include('content_intro.src')
+%include('content_intro.inc')
     <a name="DStar"/>
     <h2>DStar</h2>
     <p>DStar is a native implementation of CCI embedded in SeaStar
@@ -78,6 +78,6 @@
       send a 4 KiB message in less than 6 &#956;s.</p>
 
     <p/>Contributors: David Dillow
-%include('content_close.src')
+%include('content_close.inc')
     <div id="end_networking"></div>
-%include('html_close.src')
+%include('html_close.inc')

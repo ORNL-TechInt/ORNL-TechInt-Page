@@ -1,11 +1,11 @@
-%include('html_intro.src')
+%include('html_intro.inc')
     <meta name="filetype" content="members" />
     <title>Technology Integration Group: Members</title>
-%include('hdbody.src')
+%include('hdbody.inc')
 
-%include('hdrnav.src')
+%include('hdrnav.inc')
 
-%include('content_intro.src')
+%include('content_intro.inc')
 <ul>
  <li /><a href="vazhkudai.html" target="content">Sudharshan
  Vazhkudai</a> (Group Leader)
@@ -27,5 +27,5 @@
  <li /><a href="fwang.html" target="content">Feiyi Wang</a>
  <li /><a href="white.html" target="content">Vicky White</a>
 </ul>
-%include('content_close.src')
-%include('html_close.src')
+%include('content_close.inc')
+%include('html_close.inc')

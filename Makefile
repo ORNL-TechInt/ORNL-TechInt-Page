@@ -1,5 +1,13 @@
+ALL_INC = content_close.inc \
+    content_intro.inc \
+    hdbody.inc \
+    hdrnav.inc \
+    html_close.inc \
+    html_intro.inc
+
 ALL_HTML = index.html \
     architecture.html \
+    barron.html \
     data.html \
     members.html \
     networking.html \
@@ -9,7 +17,7 @@ ALL_HTML = index.html \
 
 all: $(ALL_HTML)
 
-%.html: %.src
+%.html: %.src $(ALL_INC)
 	mkhtml $<
 
 clean:

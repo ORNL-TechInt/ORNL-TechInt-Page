@@ -1,73 +1,70 @@
-%include('html_intro.src')
+%include('html_intro.inc')
     <meta name="filetype" content="projects" />
     <title>Technology Integration Group: Storage</title>
-%include('hdbody.src')
+%include('hdbody.inc')
 
-%include('hdrnav.src')
+%include('hdrnav.inc')
 
 <!-- For each project, we want to include information about 1) who
      works on it, 2) what its status is (completed, ongoing, in
      maintenance, etc.), 3) links to related software or papers on the
      software/publications pages, and 4) funding agency -->
 
-%include('content_intro.src')
+%include('content_intro.inc')
     <a name="Spider" />
     <h2 class="title">Spider</h2>
-%include('content_close.src')
+%include('content_close.inc')
 
-%include('content_intro.src')
+%include('content_intro.inc')
     <a name="HPSS" />
     <h2 class="title">HPSS</h2>
-%include('content_close.src')
+%include('content_close.inc')
 
 
-%include('content_intro.src')
+%include('content_intro.inc')
     <a name="Spider2" />
     <h2 class="title">Spider2</h2>
-%include('content_close.src')
+%include('content_close.inc')
 
 
-%include('content_intro.src')
+%include('content_intro.inc')
     <a name="LUT" />
     <h2 class="title">Luster User Tools (LUT)</h2>
-%include('content_close.src')
+%include('content_close.inc')
 
 
-%include('content_intro.src')
+%include('content_intro.inc')
     <a name="Ceph" />
     <h2 class="title">Ceph</h2>
-%include('content_close.src')
+%include('content_close.inc')
 
 
-%include('content_intro.src')
+%include('content_intro.inc')
     <a name="Benchmarks" />
     <h2 class="title">Benchmarks</h2>
-%include('content_close.src')
+%include('content_close.inc')
 
 
-%include('content_intro.src')
+%include('content_intro.inc')
     <a name="LustreEval" />
     <h2 class="title">Lustre Evaluation</h2>
-%include('content_close.src')
+%include('content_close.inc')
 
 
-%include('content_intro.src')
+%include('content_intro.inc')
     <a name="IOCoord" />
     <h2 class="title">I/O Coordination</h2>
-%include('content_close.src')
+%include('content_close.inc')
 
 
-%include('content_intro.src')
+%include('content_intro.inc')
     <a name="SOS" />
     <h2 class="title">Scalable Object Storage</h2>
-%include('content_close.src')
+%include('content_close.inc')
 
 
-%include('content_intro.src')
+%include('content_intro.inc')
     <a name="NOAA" />
     <h2 class="title">NOAA</h2>
-%include('content_close.src')
-
-
-</body>
-</html>
+%include('content_close.inc')
+%include('html_close.inc')

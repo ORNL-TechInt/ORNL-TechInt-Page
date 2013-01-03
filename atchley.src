@@ -1,10 +1,11 @@
-<!doctype html>
-<html lang="en"><head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="techint_f.css" />
-    <meta name="filetype" content="member" />
+%include('html_intro.inc')
+    <meta name="filetype" content="members" />
     <title>Technology Integration Group: Scott Atchley</title>
-</head><body class="content_frame">
+%include('hdbody.inc')
+
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
 <h2>Scott Atchley</h2>
 
 <p>Scott joined ORNL in 2011 as a HPC Systems Engineer. He works on networking
@@ -28,5 +29,5 @@ Tennessee where he focused on distributed storage over the wide-area.</p>
 <p>Scott received a B.S. in Business Administration in 1987 and a M.S. in Computer
 Science in 2002, both from the <a href="http://www.utk.edu" target="_">University of
 Tennessee</a>.</p>
-
-</body></html>
+%include('content_close.inc')
+%include('html_close.inc')

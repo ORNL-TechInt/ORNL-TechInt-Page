@@ -1,12 +1,12 @@
-%include('html_intro.src')
+%include('html_intro.inc')
     <meta name="filetype" content="index" />
     <title>Technology Integration Group, National Center for Computational
          Sciences, ORNL</title>
-%include('hdbody.src')
+%include('hdbody.inc')
 
-%include('hdrnav.src')
+%include('hdrnav.inc')
 
-%include('content_intro.src')
+%include('content_intro.inc')
     <h2 class="title">About the ORNL Technology Integration Group</h2>
 
     <p>
@@ -30,7 +30,7 @@
     users to take full advantage of the expanded capabilities of the
     leadership class systems.
 
-%include('content_close.src')
+%include('content_close.inc')
 
   <script language="JavaScript" type="text/javascript" src="js/version.js"></script>
   <div class="version">
@@ -39,4 +39,4 @@
     </script>
   </div>
 
-%include('html_close.src')
+%include('html_close.inc')
