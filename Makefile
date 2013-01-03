@@ -1,9 +1,10 @@
 ALL_HTML = index.html \
-    projects.html \
-    storage.html \
-    nvm.html \
+    architecture.html \
     data.html \
-    networking.html
+    networking.html \
+    nvm.html \
+    projects.html \
+    storage.html
 
 all: $(ALL_HTML)
 
