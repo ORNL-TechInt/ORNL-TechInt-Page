@@ -1,5 +1,5 @@
 %include('html_intro.src')
-    <meta name="filetype" content="proj" />
+    <meta name="filetype" content="projects" />
     <title>Technology Integration Group: Networking</title>
 %include('hdbody.src')
 

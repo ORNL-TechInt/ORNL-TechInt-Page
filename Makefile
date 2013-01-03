@@ -1,6 +1,7 @@
 ALL_HTML = index.html \
     architecture.html \
     data.html \
+    members.html \
     networking.html \
     nvm.html \
     projects.html \
