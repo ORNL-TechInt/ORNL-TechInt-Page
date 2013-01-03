@@ -7,7 +7,8 @@
 
 %include('content_intro.inc')
     <a name="NVMalloc"/>
-    <h2 class="title"><a href="http://users.nccs.gov/~vazhkuda/NVMalloc.html" target="_">NVMalloc</a></h2>
+    <h2 class="title"><a href="http://users.nccs.gov/~vazhkuda/NVMalloc.html" 
+    target="_">NVMalloc</a></h2>
 
 
 <p>DRAM is a precious resource in extreme-scale machines and is
@@ -58,8 +59,10 @@ inovolves several areas.
 
     </ul>
 </ul>
+%include('content_close.inc')
 
-<h2><a href="">Burst Buffers</a></h2>
+%include('content_intro.inc')
+<h2>Burst Buffers</h2>
 
 Solid-state Disks (SSDs) do not have any mechanical moving parts and
 provide low-latency access, hig h throughput and less power compared
@@ -82,7 +85,9 @@ work involves several areas.
 </ul>
 
 Contributors: Sudharshan Vazhkudai
+%include('content_close.inc')
 
+%include('content_intro.inc')
 <h2>Active Flash</h2>
 
 This is the work related to out-of-core analytics on SSDs. In this project, we propose Active Flash, to expedite data analysis pipelines by migrating to the location of the data, the flash device itself. Active Flash has the potential to enable true out-of-core data analytics by freeing up both the compute core and the associated main memory. The work involves several areas. 
@@ -115,7 +120,9 @@ Contributors: Sudharshan Vazhkudai, Youngjae Kim
 
     </ul>
 </ul>
+%include('content_close.inc')
 
+%include('content_intro.inc')
 <h2>Flash Storage Systems</h2>
 
 Although SSDs offer significant performance improvements over had disk
