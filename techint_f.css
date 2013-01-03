@@ -143,10 +143,23 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
     line-height: 38px;
     padding: 5px 0;
 }
+#page_content h3 {
+    color: #242424;
+    font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    font-weight: bold;
+    padding: 5px 0;
+}
+#page_content h4 {
+    padding-bottom: .75em;
+}
 #page_content li {
     list-style: disc outside none;
     position: relative;
-    left: .75em;
+    left: 2em;
+    width: 580px;
+    padding-bottom: .5em;
 }
 #page_content p {
     margin-top: 1em;

@@ -24,6 +24,7 @@ ALL_HTML = index.html \
     nvm.html \
     oral.html \
     projects.html \
+    publications.html \
     simmons.html \
     smith.html \
     stansberry.html \

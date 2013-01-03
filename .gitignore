@@ -4,6 +4,7 @@ version.js
 validate
 QUESTIONS
 scroll-md.png
+*.html
 *.test
 *.do
 *.ignore

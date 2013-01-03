@@ -1,11 +1,11 @@
-<!doctype html>
-<html lang="en"><head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="techint_f.css" />
+%include('html_intro.inc')
     <meta name="filetype" content="pub" />
     <title>Technology Integration Group: Publications</title>
-</head><body class="content_frame publist">
+%include('hdbody.inc')
+<!-- </head><body class="content_frame publist"> -->
+%include('hdrnav.inc')
 
+%include('content_intro.inc')
 <h2>Publications</h2>
 
   <a name="2013" />
@@ -53,8 +53,8 @@
   <ul class="year_list">
 
     <!-- *************************************************************** -->
-    <li><h4>File and Storage Systems</h4></li>
-    <ul>
+    <li><h4>File and Storage Systems</h4>
+    <ul class="category">
 
       <li/><strong>Characterizing Output Bottlenecks in a
           Supercomputer </strong>, Bing Xie, Jeff Chase, David Dillow,
@@ -206,8 +206,8 @@
   <ul class="year_list">
 
     <!-- *************************************************************** -->
-    <li><h4>File and Storage Systems</h4></li>
-    <ul> 
+    <li/><h4>File and Storage Systems</h4>
+    <ul class="category"> 
       <li/><strong>Dynamic Thermal Management for High-Performance Storage
         Systems</strong>, Youngjae Kim, Sudhanva Gurumurthi, Anand
         Sivasubramaniam. <em>Book Chapter in Handbook of Energy-aware
@@ -351,7 +351,7 @@
   <ul class="year_list">
 
     <!-- *************************************************************** -->
-    <li><h4>File and Storage Systems</h4></li>
+    <li><h4>File and Storage Systems</h4>
     <ul>
 
       <li/><strong>Workload Characterization of a Leadership Class
@@ -428,7 +428,7 @@
   <ul class="year_list">
 
     <!-- *************************************************************** -->
-    <li><h4>File and Storage Systems</h4></li>
+    <li/><h4>File and Storage Systems</h4>
     <ul>
       <li/><strong>The Spider Center Wide File System; From Concept to
         Reality</strong>, Galen M. Shipman, David A, Dillow, Sarp
@@ -465,5 +465,5 @@
    
     </ul>
   </ul>
-
-</body></html>
+%include('content_close.inc')
+%include('html_close.inc')
