@@ -233,6 +233,7 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
 .nav ul {
     list-style: none;
     position: absolute;
+    z-index: 1;
     left: -9999px;
 }
 .nav li {
