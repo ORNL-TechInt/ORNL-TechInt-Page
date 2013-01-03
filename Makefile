@@ -9,14 +9,28 @@ ALL_HTML = index.html \
     architecture.html \
     atchley.html \
     barron.html \
+    cwang.html \
     data.html \
+    dillow.html \
+    fuller.html \
+    fwang.html \
+    gunasekaran.html \
+    harney.html \
+    kim.html \
     members.html \
+    miller.html \
     mowery.html \
     networking.html \
     nvm.html \
+    oral.html \
     projects.html \
+    simmons.html \
+    smith.html \
+    stansberry.html \
+    steinert.html \
     storage.html \
-    vazhkudai.html
+    vazhkudai.html \
+    white.html
 
 all: $(ALL_HTML)
 

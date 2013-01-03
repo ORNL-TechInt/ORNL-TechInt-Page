@@ -1,10 +1,9 @@
-<!doctype html>
-<html lang="en"><head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="techint_f.css" />
-    <meta name="filetype" content="member" />
+%include('html_intro.src')
+    <meta name="filetype" content="members" />
     <title>Technology Integration Group: Vicky White</title>
-</head><body class="content_frame">
+%include('hdbody.inc')
+%include('hdrnav.inc')
+%include('content_intro.inc')
 <h2>Vicky White</h2>
 
 <p/>Vicky has worked on the <a href="storage.html#HPSS">High
@@ -18,5 +17,6 @@
      focuses on the Bitfile Service, that portion of HPSS which
      manages reads and writes to files and controls the movement of
      files up and down the levels of the storage hierarchy.
+%include('content_close.inc')
+%include('html_close.inc')
 
-</body></html>

@@ -1,10 +1,10 @@
-<!doctype html>
-<html lang="en"><head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="techint_f.css" />
-    <meta name="filetype" content="member" />
+%include('html_intro.inc')
+    <meta name="filetype" content="members" />
     <title>Technology Integration Group: James Simmons</title>
-</head><body class="content_frame">
+%include('hdbody.inc')
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
 <h2>James Simmons</h2>
 
 <p/>James joined ORNL in 2008 as
@@ -27,4 +27,5 @@ embedded devices and cellphone prototypes. He's happy programming
 anything as long as it's in a <a href="http://www.linux.org"
 target="_">Linux</a> environment.
 
-</body></html>
+%include('content_close.inc')
+%include('html_close.inc')

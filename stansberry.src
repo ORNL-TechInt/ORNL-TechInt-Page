@@ -1,10 +1,10 @@
-<!doctype html>
-<html lang="en"><head>
-    <meta charset="utf-8" />
-    <meta name="filetype" content="member" />
-    <link rel="stylesheet" type="text/css" href="techint_f.css" />
+%include('html_intro.inc')
+    <meta name="filetype" content="members" />
     <title>Technology Integration Group: Dale Stansberry</title>
-</head><body class="content_frame">
+%include('hdbody.inc')
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
 <h2>Dale Stansberry</h2>
 
 <p>Dale joined Technology Integration in 2012.
@@ -17,4 +17,5 @@
   Spallation Neutron Source to give scientists more rapid feedback on
   their experiments.
 
-</body></html>
+%include('content_close.inc')
+%include('html_close.inc')

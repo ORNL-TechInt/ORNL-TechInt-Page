@@ -1,10 +1,11 @@
-<!doctype html>
-<html lang="en"><head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="techint_f.css" />
-    <meta name="filetype" content="member" />
+%include('html_intro.inc')
+    <meta name="filetype" content="members" />
     <title>Technology Integration Group: Raghul Gunasekaran</title>
-</head><body class="content_frame">
+%include('hdbody.inc')
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
+
 <h2>Raghul Gunasekaran</h2>
 
 <p/>Raghul joined the Technology Integration group in 2009 after
@@ -19,4 +20,5 @@ working as a graduate intern on the SensorNet project here at ORNL.
   the area of Data Analytics, working on the CMS project, among
   others.
 
-</body></html>
+%include('content_close.inc')
+%include('html_close.inc')

@@ -1,10 +1,11 @@
-<!doctype html>
-<html lang="en"><head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="techint_f.css" />
-    <meta name="filetype" content="member" />
+%include('html_intro.inc')
+    <meta name="filetype" content="members" />
     <title>Technology Integration Group: Feiyi Wang</title>
-</head><body class="content_frame">
+%include('hdbody.inc')
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
+
 <h2><a href="http://www.ccs.ornl.gov/~fwang2" target="_">Feiyi Wang</a></h2>
 
 <p/>Feiyi Wang received his Ph.D. in Computer Engineering from 
@@ -21,4 +22,5 @@ parallel I/O and file systems, fault tolerance and system simulation,
 and scientific data management and integration. Dr. Wang is a senior
 member of <a href="http://www.ieee.org" target="_">IEEE</a>.
 
-</body></html>
+%include('html_intro.inc')
+%include('html_intro.inc')
