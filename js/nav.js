@@ -1,19 +1,18 @@
 function about()
 {
-    /* parent.nav.location="projects.html"; */
-    clear_frame("nav");
+    parent.nav.location="blank.html";
     parent.content.location="about.html";
 }
 
 function contact()
 {
-    clear_frame("nav");
+    parent.nav.location="blank.html";
     parent.content.location="contact.html";
 }
 
 function jobs()
 {
-    clear_frame("nav");
+    parent.nav.location="blank.html";
     parent.content.location="jobs.html";
 }
 
@@ -39,13 +38,4 @@ function software()
 {
     parent.nav.location="swnav.html";
     parent.content.location="software.html";
-}
-
-function clear_frame(fid)
-{
-    var frame = document.getElementById(fid),
-    frameDoc = frame.contentDocument || frame.contentWindow.document;
-    if (frameDoc.documentElement != null) {
-        frameDoc.removeChild(frameDoc.documentElement);
-    }
 }
