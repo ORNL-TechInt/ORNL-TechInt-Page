@@ -7,25 +7,26 @@
 
 %include('content_intro.inc')
 <ul>
- <li /><a href="vazhkudai.html" target="content">Sudharshan
+ <li /><a href="vazhkudai.html">Sudharshan
  Vazhkudai</a> (Group Leader)
- <li /><a href="mowery.html" target="content">Sonya Mowery</a> (Group Secretary)
- <li /><a href="atchley.html" target="content">Scott Atchley</a>
- <li /><a href="barron.html" target="content">Tom Barron</a>
- <li /><a href="dillow.html" target="content">David Dillow</a>
- <li /><a href="fuller.html" target="content">Doug Fuller</a>
- <li /><a href="gunasekaran.html" target="content">Raghul Gunasekaran</a>
- <li /><a href="harney.html" target="content">John Harney</a>
- <li /><a href="kim.html" target="content">Youngjae Kim</a>
- <li /><a href="miller.html" target="content">Ross Miller</a>
- <li /><a href="oral.html" target="content">Sarp Oral</a>
- <li /><a href="simmons.html" target="content">James Simmons</a>
- <li /><a href="smith.html" target="content">Brian Smith</a>
- <li /><a href="stansberry.html" target="content">Dale Stansberry</a>
- <li /><a href="steinert.html" target="content">Deryl Steinert</a>
- <li /><a href="cwang.html" target="content">Chao Wang</a>
- <li /><a href="fwang.html" target="content">Feiyi Wang</a>
- <li /><a href="white.html" target="content">Vicky White</a>
+ <li /><a href="mowery.html">Sonya Mowery</a> (Group Secretary)
+ <li /><a href="atchley.html">Scott Atchley</a>
+ <li /><a href="barron.html">Tom Barron</a>
+ <li /><a href="dillow.html">David Dillow</a>
+ <li /><a href="fuller.html">Doug Fuller</a>
+ <li /><a href="gunasekaran.html">Raghul Gunasekaran</a>
+ <li /><a href="harney.html">John Harney</a>
+ <li /><a href="kim.html">Youngjae Kim</a>
+ <li /><a href="miller.html">Ross Miller</a>
+ <li /><a href="oral.html">Sarp Oral</a>
+ <li /><a href="sim.html">Hyogi Sim</a>
+ <li /><a href="simmons.html">James Simmons</a>
+ <li /><a href="smith.html">Brian Smith</a>
+ <li /><a href="stansberry.html">Dale Stansberry</a>
+ <li /><a href="steinert.html">Deryl Steinert</a>
+ <li /><a href="cwang.html">Chao Wang</a>
+ <li /><a href="fwang.html">Feiyi Wang</a>
+ <li /><a href="white.html">Vicky White</a>
 </ul>
 %include('content_close.inc')
 %include('html_close.inc')

@@ -27,6 +27,7 @@ ALL_HTML = index.html \
     oral.html \
     projects.html \
     publications.html \
+    sim.html \
     simmons.html \
     smith.html \
     software.html \
