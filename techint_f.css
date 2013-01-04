@@ -171,6 +171,12 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
 #page_content p {
     margin-top: 1em;
 }
+#page_content strong {
+    font-weight: bold;
+}
+#page_content em {
+    font-style: italic;
+}
 .box-top-left {
     background: url("images/cat-section-shade.png") no-repeat scroll 0 0 transparent;
     height: 8px;
