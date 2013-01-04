@@ -17,9 +17,9 @@
 %endif
 %ifeq(self.filetype, 'projects')
       <li class="current_page" />
-       <a class="current_page" href="projects.html">Projects</a>
+       <a class="current_page" href="projects.html">Thrust Areas</a>
 %else
-      <li/><a href="projects.html">Projects</a>
+      <li/><a href="projects.html">Thrust Areas</a>
 %endif
         <ul>
           <li/><a href="storage.html">File and Storage Systems</a>
@@ -46,6 +46,7 @@
           <li/><a href="kim.html">Youngjae Kim</a>
           <li/><a href="miller.html">Ross Miller</a>
           <li/><a href="oral.html">Sarp Oral</a>
+          <li/><a href="sim.html">Hyogi Sim</a>
           <li/><a href="simmons.html">James Simmons</a>
           <li/><a href="smith.html">Brian Smith</a>
           <li/><a href="stansberry.html">Dale Stansberry</a>
