@@ -5,42 +5,46 @@ ALL_INC = content_close.inc \
     html_close.inc \
     html_intro.inc
 
-ALL_HTML = index.html \
+ALL_OTHER = index.html \
     architecture.html \
-    atchley.html \
-    barron.html \
     contact.html \
-    cwang.html \
     data.html \
+    jobs.html \
+    members.html \
+    networking.html \
+    nvm.html \
+    projects.html \
+    publications.html \
+    software.html \
+    storage.html
+
+ALL_MEMBERS = atchley.html \
+    barron.html \
+    cwang.html \
     dillow.html \
     fuller.html \
     fwang.html \
     gunasekaran.html \
     harney.html \
-    jobs.html \
     kim.html \
-    members.html \
     miller.html \
     mowery.html \
-    networking.html \
-    nvm.html \
     oral.html \
-    projects.html \
-    publications.html \
     sim.html \
     simmons.html \
     smith.html \
-    software.html \
     stansberry.html \
     steinert.html \
-    storage.html \
     vazhkudai.html \
     white.html
 
-all: $(ALL_HTML)
+all: mkhtml $(ALL_MEMBERS) $(ALL_OTHER)
 
 %.html: %.src $(ALL_INC)
 	mkhtml $<
 
+mkhtml: mkhtml.py
+	ln -s mkhtml.py mkhtml
+
 clean:
-	rm -rf $(ALL_HTML)
+	rm -rf $(ALL_MEMBERS) $(ALL_OTHER)
