@@ -6,6 +6,36 @@
 %include('content_intro.inc')
 <h2><a href="http://www.ccs.ornl.gov/~vazhkuda" target="_">Sudharshan Vazhkudai</a></h2>
 
+
+<p>
+Sudharshan is the Group Leader of the Technology Integration group in the
+National Center for Computational Sciences (NCCS) at Oak Ridge National
+Laboratory (ORNL). 
+
+<p> 
+Prior to that, he was a Research Scientist in the Computer Science
+Research group of the <a href="http://www.csm.ornl.gov/">Computer
+Science and Mathematics Division</a> at ORNL, for over nine years. He
+joined ORNL in August 2003. In this role, his work straddled both
+basic and applied distributed systems research. He has worked on
+several projects in the following areas: large-scale data management,
+HPC I/O, storage systems, non-volatile memory, end-to-end data
+transfers and multicore architectures.
+
+<p> 
+Sudharshan received a Ph.D. and Masters in Computer Science from the
+<a href="http://www.olemiss.edu/">University of Mississippi</a> in
+2003 and 1998 respectively. His doctoral work (partly at <a
+href="http://www.anl.gov/">Argonne National Laboratory</a> , in
+Chicago, on a Wallace Givens Fellowship) addressed data access issues
+in the <a
+href="http://www.globus.org/toolkit/docs/2.4/datagrid/">Globus Data
+Grid</a> environment. He obtained a bachelors degree in computer
+science from <a href="http://www.kud.ac.in/">Karnatak University</a>
+in India in 1996. He grew up in Madras, South India.
+
+
+<!--
 <p />Sudharshan is the Group Leader of the Technology Integration
 group in the National Center for Computational Sciences (NCCS) at Oak
 Ridge National Laboratory (ORNL). NCCS hosts the multi-petaflop Titan
@@ -38,5 +68,8 @@ previous life (if you believe in that sort of a thing :)), Sudharshan
 obtained a bachelors degree in computer science from 
 <a href="http://www.kud.ac.in/" target="_">Karnatak University</a>
 in India in 1996. He grew up in Madras, South India.
+-->
+
+
 %include('content_close.inc')
 %include('html_close.inc')
