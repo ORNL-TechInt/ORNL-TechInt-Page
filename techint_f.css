@@ -27,8 +27,9 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
     /* background-color: #ff5900; */  /* Big Orange (approximate) */
     background-color: #EEEEEE;        /* light gray */
 }
-#body {
+body {
     /* background-color: #000fff; */
+    height: 70%;
     font-family: 'Arial';
     font-size: 12px;
     line-height: 1.75em;
@@ -80,6 +81,11 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
 #hbanner {
     width: 968px; margin: 0px auto 0px auto; height:97px; padding:0;
 }
+
+html {
+    height: 100%;
+}
+
 #logo {
     width: 323px;
     float: left;
@@ -459,4 +465,9 @@ h5 {
     padding-bottom: 0px;
 }
 table tr td {
+}
+#vlayout {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
 }
