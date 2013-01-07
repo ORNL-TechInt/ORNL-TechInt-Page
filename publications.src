@@ -17,7 +17,7 @@
 
     <!-- *************************************************************** -->
     <li/><h4>Non-Volatile Memory</h4>
-    <ul class="category">
+    <ul>
 
       <li/><strong>Active Flash: Towards Energy-Efficient, In-Situ
         Data Analytics on Extreme-Scale Machines</strong>, Devesh
@@ -40,7 +40,26 @@
       </ul>
 
     <!-- *************************************************************** -->
-    <!-- <li/><h4>Data Management</h4> <ul> </ul> -->
+    <li/><h4>Data Management</h4> 
+    <ul> 
+
+      <li/><strong>Design and Implementation of a Scalable Climate
+        Data System in Support of HPC Environment</strong>, 
+        Feiyi Wang<sup>1</sup>, 
+        John Harney<sup>1</sup>, 
+        Tom Barron<sup>1</sup>, 
+        Galen Shipman<sup>1</sup>, 
+        Dean Williams<sup>2</sup>, 
+        Luca Cinquini<sup>3</sup>, 
+        <sup>1</sup>Oak Ridge National Laboratory, 
+           Oak Ridge, Tennessee 37831,
+        <sup>2</sup>Lawrence Livermore National Laboratory,
+           Livermore, California 94550,
+        <sup>3</sup>Jet Propulsion Laboratory,
+           Pasadena, California 91109,
+        <em>In submission</em>.
+
+    </ul>
     <!-- *************************************************************** -->
     <!-- <li/><h4>Networking</h4> <ul> </ul> -->
     <!-- *************************************************************** -->
@@ -53,8 +72,8 @@
   <ul class="year_list">
 
     <!-- *************************************************************** -->
-    <li><h4>File and Storage Systems</h4>
-    <ul class="category">
+    <li/><h4>File and Storage Systems</h4>
+    <ul>
 
       <li/><strong>Characterizing Output Bottlenecks in a
           Supercomputer </strong>, Bing Xie, Jeff Chase, David Dillow,
@@ -207,7 +226,7 @@
 
     <!-- *************************************************************** -->
     <li/><h4>File and Storage Systems</h4>
-    <ul class="category"> 
+    <ul> 
       <li/><strong>Dynamic Thermal Management for High-Performance Storage
         Systems</strong>, Youngjae Kim, Sudhanva Gurumurthi, Anand
         Sivasubramaniam. <em>Book Chapter in Handbook of Energy-aware
@@ -351,7 +370,7 @@
   <ul class="year_list">
 
     <!-- *************************************************************** -->
-    <li><h4>File and Storage Systems</h4>
+    <li/><h4>File and Storage Systems</h4>
     <ul>
 
       <li/><strong>Workload Characterization of a Leadership Class

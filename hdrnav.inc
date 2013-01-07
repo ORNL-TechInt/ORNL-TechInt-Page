@@ -1,7 +1,7 @@
   <div id="header">
     <div id="hbanner">
       <table id="header"><tr>
-        <td id="logo"><img src="olcf-logo.png" /></td>
+        <td id="logo"><img src="olcf-logo.png" alt="OLCF Logo"/></td>
         <td id="page_title"><h1>Technology Integration</h1></td>
       </tr></table>
     </div>

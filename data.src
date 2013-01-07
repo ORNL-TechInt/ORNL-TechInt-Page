@@ -24,6 +24,190 @@
 %include('content_intro.inc')
     <a name="ESGF" />
     <h2 class="title">Earth System Grid Federation</h2>
+
+    <h3>Overview</h3>
+
+<p> 
+The study of climate change, and the evaluation of its impact on
+the Earth ecosystem and human society, is one of the most important
+scientific challenges of our time. Because of the extreme diversity
+and complexity of the physical processes that govern the Earth
+climate, this research involves the use of sophisticated model
+simulations generating unprecedented amount of output data, as well as
+the collection of observational data from multiple sources (remote
+sensing, in-situ, vertical profiles etc.) on a global scale. These
+data sets are managed and stored at multiple geographic locations all
+across the globe, yet they need to be discovered, accessed and
+analyzed as if they were stored in a single centralized archive.
+
+<p>
+For over a decade, the objective has been to establish the Earth
+System Grid Federation (ESGF) as a leader and visionary architect for
+all aspects of climate data discovery and knowledge integration. From
+its formative years (now known as the Earth System Grid (ESG)), ESGF
+has demonstrated a viable path forward into the future and attracted
+key national and international collaborators and potential sponsors.
+To date, global funding sponsors have started to achieve a critical
+mass to undertake fundamental data-intensive and data-driven science
+problems. In the climate application arena, projects are consolidating
+on the ESGF Peer-to-Peer (P2P) infrastructure. This realization places
+ESGF at the forefront and allows it to play a stewardship role in the
+transformation in climate science that will lead to integration of
+data driven infrastructure and analysis with science research and
+discoveries. It enables the world to better organize and integrate all
+climate knowledge via a cooperative federation. With that said, the
+ESGF P2P software has distinguished itself from other collaborative
+knowledge systems in the climate community, as evidenced by its
+widespread adoption, federation capabilities, and broad developer
+base. It is the leading source for current climate data holdings,
+including the most important and largest data sets in the
+global-climate community.
+
+<p>
+Through ESGF, users access, analyze, and visualize data using a
+globally federated collection of networks, computers, and software. In
+addition, the enterprise system is used to support national and
+international climate model and observation intercomparison activities
+as well as high profile U.S. DOE, NOAA, NASA, and NSF projects.
+
+
+    <h3>ESGF Web-FE </h3>
+
+<p>
+The provision of an intuitive and easy-to-use web portal is a key goal
+of the current ESGF development effort. To this end, ESGF has adopted
+a modern design inspired by emerging Web 2.0 technologies. The portal
+makes heavy use of the state-of-the-art JQuery JavaScript libraries
+and Model-View-Controller (MVC) design patterns as implemented by the
+Spring Framework for Java. The user interface (UI) also conforms to
+the overall ESGF theme of decoupled software components that
+accommodate a more dynamic user experience. Services of other
+components (e.g. search and node manager components) may be utilized
+via Ajax-style HTTP calls.  The web UI materializes a variety of ESGF
+supported services through the browser: (1) administrative and user
+account management interfaces, (2) collection and file level search
+and discovery, (3) the dashboard service, (4) the Live Access Server
+(LAS) visualization tool and (5) the Common Information Model (CIM)
+viewer.
+
+<p>
+The user account and administrative component delivers a clear and
+concise means for users and administrators to manage personal
+information and security aspects of the portal. Users may view and
+edit personal attributes and apply for group memberships that grant
+access to secure data. Administrators are provided with tools that
+interface to the security infrastructure services that allow group
+access to specific data holdings.
+
+<p>
+Search and discovery mechanisms are presented to the user via the
+search component of web portal. The search component is presented as a
+single, composite page, allowing users to avoid clumsy
+“back-and-forth” static page navigation through the portal.
+Initially, the user may search the dataset holdings at the collection
+level. Here, the user has a plethora of search options. The sidebar
+widget located on the left side of the page presents a configurable
+list of facets, which allow users to constrain their search results
+through categorization. Search constraints can also be added via the
+free text search bar. Furthermore, users may take advantage of the
+temporal and geospatial (using Google Maps [10]) search overlay
+widgets by searching for data measured or simulated at specific times
+or geographical locations, respectively. The state of the search
+(i.e. the current constraints utilized by the user) is shown
+prominently in the upper left corner of the page and may be flexibly
+changed at any time. Important information about the datasets may
+also be viewed through the search component of the portal. Each
+dataset contains a comprehensive metadata summary outlining
+descriptive information about the dataset. The CIM viewer, which
+provides richer and more detailed metadata about climate models, may
+also be invoked. Additional information associated with a dataset,
+such as a technical report, may also be accessed. Finally, the Live
+Access Server (LAS) browser visualization tool may also be invoked to
+visualize details of the datasets. For file access, the search
+component uses a “shopping cart” metaphor commonly used in e-Commerce
+sites. The user needs only to select a collection level dataset (via
+the “Add to Cart” link) and navigate to the “Data Cart” tab.  The
+collections previously chosen are displayed in this tab and may be
+quickly expanded to their file level data holdings. These files may
+then be downloaded by means of a number of different methods that are
+discussed in the next section.
+
+<p>
+The ORNL ESGF Portal site is located at <a
+href="http://esg.ccs.ornl.gov">http://esg.ccs.ornl.gov</a>
+
+    <h3>ESGF Search</h3>
+
+The ESGF search module, deployed as part of an ESGF Index Node, is
+responsible for making the data holdings of one or more ESGF Data
+Nodes discoverable and accessible by clients. Its two main features
+are the ability to execute distributed searches across the federation,
+and the support for a well defined REST API that insulates clients
+from the specific query syntax of the back-end metadata repository.
+Although the software is architected to allow for pluggable back-ends,
+currently it uses Apache Solr [3] as the underlying search engine.
+Solr is a very popular search engine, used in many commercial web
+sites, that features high performance text and faceted searching,
+geospatial and temporal querying, and partition of searchable metadata
+across multiple local indexes (“cores”) and distributed servers
+(“shards”). 
+
+<p>
+The search module makes two high-level web services
+available to clients:
+
+<ul>
+ <li/>The Indexing Service is used to parse the metadata content
+ available at some repository (located by its URL), and ingest it in
+ the back-end metadata storage. So far ESGF has focused mostly on
+ parsing metadata from THREDDS catalogs [4], although support for
+ other repositories such as GCMD [5] archives is forthcoming. Indexing
+ operations are subject to authorization according to the local
+ policies established at the Index Node: the client must present a
+ valid SSL certificate belonging to a user that has been granted
+ publishing rights for that specific data collection. Because of
+ historical reasons, the Indexing Service is currently exposed through
+ the Hessian protocol.
+
+ <li/>The Search Service is used to query the index metadata content
+ to retrieve matching results that include descriptive information, as
+ well as all the available data access endpoints (HTTP, GridFTP,
+ OpenDAP, LAS etc…). The search service is invoked by clients through
+ a REST API that includes the ability to execute free-text queries
+ (for example “climate”, “surface temperature”, etc.), as well as
+ searching for specific values of one or more search categories or
+ “facets” (for example, “model=CESM and time frequency=monthly”).
+ Among other things, the API allows clients to search for either the
+ latest or a specific version of the data, for replicas, and to target
+ only the local index or any number of remote indexes. Response
+ documents can be returned in either XML or JSON format.
+</ul>
+
+<p>
+Internally, in order to optimize performance, the search module
+partitions its metadata space into different object types, that are
+stored and queried separately. Datasets contain high-level information
+about a data collection (such as the model that generated it or the
+instrument that collected it, or its temporal and geo-spatial
+coverage), and they are typically returned as results matching a
+query, In other words, a Dataset is the unit of discovery in the
+system. Files and Aggregations represent the content of a Dataset, and
+contain the URL endpoints of all services that can be used by clients
+to access the data. Typically, a single Dataset contains many Files
+and/or Aggregations, so searching on Datasets is much faster.
+
+<p>
+Within Solr, each object type is stored in a dedicated “core” or
+index, which is separately updated and queried. Additionally, the Solr
+setup at each Node is such that metadata is indexed into a master Solr
+instance, which is only accessible locally, and then replicated at
+one-minute intervals to a slave Solr instance, which is accessible for
+read-only operations by outside clients.
+
+    <h3>EZ-Pub</h3>
+
+    <h3>ESGF SRM</h3>
+
 %include('content_close.inc')
 
 %include('content_intro.inc')

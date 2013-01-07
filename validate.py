@@ -214,6 +214,16 @@ class TIParser(HTMLParser.HTMLParser):
         self.body = 'open'
         
     # -----------------------------------------------------------------------
+    def handle_img(self, tag, attrs):
+        if 'alt' not in [n for (n, v) in attrs]:
+            self.errmsg("<img> tag needs an 'alt' attribute")
+
+    # -----------------------------------------------------------------------
+    def handle_input(self, tag, attrs):
+        if 'alt' not in [n for (n,v) in attrs]:
+            self.errmsg("<input> tag needs an 'alt' attribute")
+
+    # -----------------------------------------------------------------------
     def handle_link(self, tag, attrs):
         """
         This gets called when the parser sees a <link> tag. At least

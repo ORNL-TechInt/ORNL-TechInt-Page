@@ -5,6 +5,7 @@ validate
 QUESTIONS
 scroll-md.png
 *.html
+*.pyc
 *.test
 *.do
 *.ignore
