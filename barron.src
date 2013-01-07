@@ -1,5 +1,5 @@
 %include('html_intro.inc')
-    <meta name="filetype" content="members" />
+    <meta name="keywords" content="members" />
     <title>Technology Integration Group: Tom Barron</title>
 %include('hdbody.inc')
 

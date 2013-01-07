@@ -46,7 +46,7 @@ class Assembler(object):
         
     # -----------------------------------------------------------------------
     def assemble(self):
-        rgx = r"name=['\"]filetype['\"]\s+content=['\"](.*)['\"]"
+        rgx = r"name=['\"]keywords['\"]\s+content=['\"](.*)['\"]"
         line = self.ifile.readline()
         while line != '':
             if line[0] == '%':
@@ -55,7 +55,7 @@ class Assembler(object):
             else:
                 q = re.search(rgx, line)
                 if q:
-                    self.filetype = q.groups()[0]
+                    self.filetype = q.groups()[0].split()[0]
                     
                 self.ofile.write(line)
             line = self.ifile.readline()

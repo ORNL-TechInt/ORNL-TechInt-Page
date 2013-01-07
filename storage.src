@@ -1,5 +1,5 @@
 %include('html_intro.inc')
-    <meta name="filetype" content="projects" />
+    <meta name="keywords" content="projects" />
     <title>Technology Integration Group: Storage</title>
 %include('hdbody.inc')
 

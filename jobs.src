@@ -1,5 +1,5 @@
 %include('html_intro.inc')
-    <meta name="filetype" content="jobs" />
+    <meta name="keywords" content="jobs" />
     <title>Technology Integration Group: Jobs</title>
 %include('hdbody.inc')
 %include('hdrnav.inc')

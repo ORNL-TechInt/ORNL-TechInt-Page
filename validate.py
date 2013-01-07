@@ -236,7 +236,7 @@ class TIParser(HTMLParser.HTMLParser):
     def handle_meta(self, tag, attrs):
         """
         Handling for meta tags. Two things must be specified with meta
-        tags: filetype (e.g., <meta name="filetype" content="index" />) and charset
+        tags: filetype (e.g., <meta name="keywords" content="index" />) and charset
         (e.g., <meta charset="utf-8" />). They can both be specified in a single
         meta tag or split up.
         """
@@ -244,9 +244,8 @@ class TIParser(HTMLParser.HTMLParser):
         for tup in attrs:
             ad[tup[0]] = tup[1]
         if 'name' in ad.keys() \
-           and 'filetype' == ad['name'] \
+           and 'keywords' == ad['name'] \
            and 'content' in ad.keys():
-            self.filetype = 'present'
             self.filetype = ad['content']
         if 'charset' in ad.keys():
             self.charset = 'present'
@@ -356,7 +355,7 @@ class TIParser(HTMLParser.HTMLParser):
 
         if self.filetype == 'missing':
             self.errmsg("Filetype missing. Please add "
-                        + "'<meta name=\"filetype\" content=\"[ft]\" /> "
+                        + "'<meta name=\"keywords\" content=\"[ft]\" /> "
                         + "where 'ft' is one of 'about', 'proj', 'member', "
                         + "'contact', 'jobs', 'nav', 'pub', or 'software' "
                         + "in the <head> section.")
