@@ -1,5 +1,6 @@
 %include('html_intro.inc')
-    <meta name="filetype" content="contact" />
+    <meta name="keywords" content="contact">
+    <meta name="description" content="NCCS TechInt group contact info">
     <title>Technology Integration Group: Contact Us</title>
 %include('hdbody.inc')
 %include('hdrnav.inc')

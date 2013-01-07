@@ -1,5 +1,6 @@
 %include('html_intro.inc')
-    <meta name="filetype" content="software" />
+    <meta name="keywords" content="software">
+    <meta name="description" content="NCCS TechInt group software page">
     <title>Technology Integration Group: Software</title>
 %include('hdbody.inc')
 %include('hdrnav.inc')
