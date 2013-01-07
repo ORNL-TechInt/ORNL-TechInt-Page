@@ -1,5 +1,6 @@
 %include('html_intro.inc')
-    <meta name="keywords" content="jobs" />
+    <meta name="keywords" content="jobs">
+    <meta name="description" content="NCCS TechInt group openings">
     <title>Technology Integration Group: Jobs</title>
 %include('hdbody.inc')
 %include('hdrnav.inc')

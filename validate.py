@@ -125,8 +125,9 @@ class TIParser(HTMLParser.HTMLParser):
         self.css = 'missing'
         self.filetype = 'missing'
         self.charset = 'missing'
+        self.description = 'missing'
         self.title = 'missing'
-        self.nostack = ['p', 'br']
+        self.nostack = ['p', 'br', 'meta']
         self.stack = []
 
         self.catch_tabs()
@@ -247,6 +248,9 @@ class TIParser(HTMLParser.HTMLParser):
            and 'keywords' == ad['name'] \
            and 'content' in ad.keys():
             self.filetype = ad['content']
+        if 'name' in ad.keys() \
+           and 'description' == ad['name']:
+            self.description = 'present'
         if 'charset' in ad.keys():
             self.charset = 'present'
 
@@ -371,7 +375,12 @@ class TIParser(HTMLParser.HTMLParser):
             self.errmsg("No CSS link found in <head>. Please add at least "
                         + "<link rel='stylesheet' type='text/css' "
                         + "href='techint_f.css' />")
-        
+
+        if self.description == 'missing':
+            self.errmsg("File description not found. Please add at least "
+                        + '<meta name="description" content="page description"> '
+                        + 'in the <head> section.')
+                        
     # -----------------------------------------------------------------------
     def standard_tag_checks(self, tag, attrs):
         """

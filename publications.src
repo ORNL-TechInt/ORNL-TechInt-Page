@@ -1,5 +1,6 @@
 %include('html_intro.inc')
-    <meta name="keywords" content="pub" />
+    <meta name="keywords" content="pub">
+    <meta name="description" content="NCCS TechInt group publications">
     <title>Technology Integration Group: Publications</title>
 %include('hdbody.inc')
 <!-- </head><body class="content_frame publist"> -->
