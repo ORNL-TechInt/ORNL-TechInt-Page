@@ -30,29 +30,6 @@ body {
     width: 30%;
     height: 20%;
 }
-.climate {
-    width: 50%;
-} 
-.contact {
-    width: 100%;
-}
-.contact td {
-    vertical-align: top;
-}
-#end_networking {
-    margin-bottom: 5em;
-}
-.esg {
-    width: 100%;
-} 
-.frame_holder {
-    margin: auto;
-    width: 91%;
-}
-.full_page {
-    /* background-color: #CDFFFF; */
-    background: url('bggrad2.jpg') repeat-x;
-}
 #header {
     background: url("images/header-tile2.png") repeat-x 
                 scroll left -9px #F0F0F0;
@@ -114,6 +91,9 @@ html {
     width: 648px;
     margin-left: auto;
     margin-right: auto;
+}
+.end-space {
+    padding-bottom: 1em;
 }
 .page_content {
     background-color: white;

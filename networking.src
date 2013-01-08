@@ -79,5 +79,4 @@
 
     <p/>Contributors: David Dillow
 %include('content_close.inc')
-    <div id="end_networking"></div>
 %include('html_close.inc')
