@@ -9,6 +9,8 @@ import re
 import sys
 
 import HTMLParser
+import urllib2
+import xml.sax.saxutils as xml
 
 from optparse import *
 
@@ -21,6 +23,9 @@ def main(args):
     p.add_option('-d', '--debug',
                  action='store_true', default=False, dest='debug',
                  help='debug')
+    p.add_option('-w', '--w3c',
+                 action='store_true', default=False, dest='w3c',
+                 help='send file to validator.w3.org')
     p.add_option('-v', '--verbose',
                  action='store_true', default=False, dest='verbose',
                  help='more output')
@@ -37,7 +42,10 @@ def main(args):
 
     for filename in flist:
         if verbose(): print filename
-        check_file(filename)
+        if o.w3c:
+            w3c_validate(filename)
+        else:
+            check_file(filename)
 
     sys.exit(exit_value())
 
@@ -89,6 +97,35 @@ def verbose(value=None):
         rval = verbosity
 
     return rval
+
+# ---------------------------------------------------------------------------
+def w3c_validate(filename):
+    """
+    For index.html, the validation URL is http://validator.w3.org/check?uri=http%3A%2F%2Fusers.nccs.gov%2F~tpb%2Ftechint_olcf%2Findex.html&charset=%28detect+automatically%29&doctype=Inline&group=0&user-agent=W3C_Validator%2F1.3
+    """
+    entities = {':': '%3a',
+                '/': '%2F',
+                '(': '%28',
+                ')': '%29'}
+    validator = "http://validator.w3.org"
+    host = "http://users.nccs.gov/~tpb/techint_olcf"
+    uri = xml.escape("uri=%s/%s" % (host, filename), entities)
+    charset = xml.escape("charset=(detect+automatically)", entities)
+    doctype = "doctype=Inline"
+    group = "group=0"
+    agent = xml.escape("user-agent=W3C_Validator/1.3", entities)
+    
+    url = "%s/check?%s&%s&%s&%s&%s" % (validator, uri, charset, doctype,
+                                       group, agent)
+    # print url
+
+    page = urllib2.urlopen(url)
+    text = page.readlines()
+    vname = "validation_%s" % filename
+    h = open(vname, 'w')
+    h.writelines(text)
+    h.close()
+    print("Validation output is in %s" % vname)
 
 # ---------------------------------------------------------------------------
 class TIParser(HTMLParser.HTMLParser):
