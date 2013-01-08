@@ -3,7 +3,6 @@
     <meta name="description" content="NCCS TechInt group publications">
     <title>Technology Integration Group: Publications</title>
 %include('hdbody.inc')
-<!-- </head><body class="content_frame publist"> -->
 %include('hdrnav.inc')
 
 %include('content_intro.inc')

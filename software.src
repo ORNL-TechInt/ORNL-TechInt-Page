@@ -4,7 +4,6 @@
     <title>Technology Integration Group: Software</title>
 %include('hdbody.inc')
 %include('hdrnav.inc')
-<!-- </head><body class="content_frame publist"> -->
 
 %include('content_intro.inc')
 <h2>Software</h2>

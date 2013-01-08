@@ -16,29 +16,12 @@ input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inher
 
 
 
-/* classes */
-.banner {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-.content_frame {
-    /* background-color: #CDFFFF; */  /* cyan */
-    /* background-color: #ff5900; */  /* Big Orange (approximate) */
-    background-color: #EEEEEE;        /* light gray */
-}
 body {
     /* background-color: #000fff; */
     height: 70%;
     font-family: 'Arial';
     font-size: 12px;
     line-height: 1.75em;
-}
-.bordered {
-    border: 2px solid black;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    border-radius: 10px;
 }
 .cci {
     margin-left: 5px;
