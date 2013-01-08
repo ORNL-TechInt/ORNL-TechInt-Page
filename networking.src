@@ -6,16 +6,16 @@
 
 %include('hdrnav.inc')
 
-<div class="right cci">
-   <a
-    href="http://www.olcf.ornl.gov/center-projects/common-communication-interface/"
-    target="_">
-    <img class="rounded networking" src="cci-logo-text-01.png" alt="CCI Logo"/>
-   </a>
-</div>
+  <div class="box-top"></div>
+  <div class="page_content">
+    <div class="right cci">
+       <a
+        href="http://www.olcf.ornl.gov/center-projects/common-communication-interface/"
+        target="_">
+        <img class="rounded networking" src="cci-logo-text-01.png" alt="CCI Logo"/>
+       </a>
+    </div>
 
-  <div class="box-top-left"></div>
-  <div id="page_content_left">
     <a name="CCI"/>
     <h2>Common Communication Interface (CCI)</h2>
     <p>The CCI project is an open-source communication interface that aims to
@@ -49,7 +49,7 @@
 
     <p/>Contributors: Scott Atchley
   </div>
-  <div class="box-bottom-left"></div>
+  <div class="box-bottom"></div>
 
 %include('content_intro.inc')
     <a name="Terabit"/>
