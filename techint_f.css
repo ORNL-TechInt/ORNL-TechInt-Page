@@ -30,7 +30,7 @@ body {
     width: 30%;
     height: 20%;
 }
-#header {
+.header {
     background: url("images/header-tile2.png") repeat-x 
                 scroll left -9px #F0F0F0;
     height: 146px;
