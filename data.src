@@ -101,14 +101,41 @@ Contributors: John Harney, Feiyi Wang, Tom Barron, Ross Miller
 <p>Selected Publications</p>
 <p>
 <ul>
-  <li>Feiyi Wang, John Harney, Galen Shipman, Dean Williams, Luca Cinquini, "Building a Large-Scale Climate Data System for HPC Environments", published in IEEE 7th International Conference on Next Generation Web Service Practices, Oct 19-21.  Salamanca, Spain.</li>
-  <li>Luca Cinquini, Daniel Crichton, Chris Mattmann, John Harney, Galen Shipman, Feiyi Wang, Rachana Ananthakrishnan, Neill Miller, Sebastian Denvil, Mark Morgan, Zed Pobre, Gavin M. Bell, Charles Doutriaux, Robert Drach, Dean Williams, Phillip Kershaw, Stephen Pascoe, Estanislao Gonzalez, Sandro Fiore, and Roland Schweitzer.  The Earth System Grid Federation: An Open Infrastructure for Access to Distributed Geospatial Data.  To appear in Proceedngs of the 8th IEEE International Conference on eScience 2012, Chicago, IL, Oct 8-12, 2012.</li>
-  <li>Luca Cinquini, Daniel Crichton, Chris Mattmann, John Harney, Galen Shipman, Feiyi Wang, Rachana Ananthakrishnan, Neill Miller, Sebastian Denvil, Mark Morgan, Zed Pobre, Gavin M. Bell, Charles Doutriaux, Robert Drach, Dean Williams, Phillip Kershaw, Stephen Pascoe, Estanislao Gonzalez, Sandro Fiore, and Roland Schweitzer.  The Earth System Grid Federation: An Open Infrastructure for Access to Distributed Geospatial Data.  To appear in special issue of FGCS 2013 (Future Generation Computing Systems).</li>
-  <li>Feiyi Wang, John Harney, Tom Barron, Galen Shipman, Dean Williams, Luca Cinquini, "Design and Implementation of a Scalable Climate Data System in Support of HPC Environments".  <span style="font-type:italic">In revision stage</span>.</li>
+
+  <li>Feiyi Wang, John Harney, Galen Shipman, Dean Williams, Luca
+  Cinquini, "Building a Large-Scale Climate Data System for HPC
+  Environments", published in IEEE 7th International Conference on
+  Next Generation Web Service Practices, Oct 19-21. Salamanca,
+  Spain.</li>
+
+  <li>Luca Cinquini, Daniel Crichton, Chris Mattmann, John Harney,
+  Galen Shipman, Feiyi Wang, Rachana Ananthakrishnan, Neill Miller,
+  Sebastian Denvil, Mark Morgan, Zed Pobre, Gavin M. Bell, Charles
+  Doutriaux, Robert Drach, Dean Williams, Phillip Kershaw, Stephen
+  Pascoe, Estanislao Gonzalez, Sandro Fiore, and Roland Schweitzer.
+  The Earth System Grid Federation: An Open Infrastructure for Access
+  to Distributed Geospatial Data. To appear in Proceedngs of the 8th
+  IEEE International Conference on eScience 2012, Chicago, IL, Oct
+  8-12, 2012.</li>
+
+  <li>Luca Cinquini, Daniel Crichton, Chris Mattmann, John Harney,
+  Galen Shipman, Feiyi Wang, Rachana Ananthakrishnan, Neill Miller,
+  Sebastian Denvil, Mark Morgan, Zed Pobre, Gavin M. Bell, Charles
+  Doutriaux, Robert Drach, Dean Williams, Phillip Kershaw, Stephen
+  Pascoe, Estanislao Gonzalez, Sandro Fiore, and Roland Schweitzer.
+  The Earth System Grid Federation: An Open Infrastructure for Access
+  to Distributed Geospatial Data. To appear in special issue of FGCS
+  2013 (Future Generation Computing Systems).</li>
+
+  <li>Feiyi Wang, John Harney, Tom Barron, Galen Shipman, Dean
+  Williams, Luca Cinquini, "Design and Implementation of a Scalable
+  Climate Data System in Support of HPC Environments". <em>In revision
+  stage</em>.</li>
+
 </ul>
 </p>
 
-    <h3 style="margin-top:20px">ESGF Web-FE </h3>
+    <h3>ESGF Web-FE </h3>
 
 <p>
 The provision of an intuitive and easy-to-use web portal is a key goal
@@ -170,7 +197,7 @@ discussed in the next section.
 The ORNL ESGF Portal site is located at <a
 href="http://esg.ccs.ornl.gov">http://esg.ccs.ornl.gov</a>
 
-    <h3 style="margin-top:20px">ESGF Search</h3>
+    <h3>ESGF Search</h3>
 
 The ESGF search module, deployed as part of an ESGF Index Node, is
 responsible for making the data holdings of one or more ESGF Data
@@ -240,9 +267,9 @@ read-only operations by outside clients.
 
 
 
-    <h3 style="margin-top:20px">EZ-Pub</h3>
+    <h3>EZ-Pub</h3>
 
-    <h3 style="margin-top:20px">ESGF SRM</h3>
+    <h3>ESGF SRM</h3>
 
 <p>
 Contributors: John Harney, Tom Barron
