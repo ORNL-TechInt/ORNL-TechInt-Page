@@ -10,6 +10,19 @@
     <a name="Many-Core"/>
     <h2>Functional Partitioning of Many-Core Nodes</h2>
 
+<p>With the leveling off of processor clockspeeds, chip manufacturers have
+increased the number of cores to consume the additional transitors promised by
+Moore's Law. As we move towards exascale systems, we may see higher core counts
+per node including more cores per socket, more sockets, add add-in boards such
+as GP-GPUs and many-core coprocessors connected via PCI Express. As users
+initially port their applications to Titan's GP-GPUs, they may not fully utilize
+the CPUs leaving them available for functional partitioning.</p>
+
+<p>This effort will explore providing runtime services to applications using a
+small subset of cores on a many-core systems. These services may include I/O
+buffering, which would allow the application to resume computation more quickly,
+or various forms of fine-grain analysis.</p>
+
     <p/>Contributors: Scott Atchley, Sudharshan Vazhkudai
 %include('content_close.inc')
 %include('html_close.inc')
