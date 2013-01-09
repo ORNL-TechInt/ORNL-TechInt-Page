@@ -80,9 +80,11 @@
         </ul>
 %ifeq(self.filetype, 'jobs')
       <li class="current_page" />
-       <a class="current_page" href="jobs.html">Jobs</a>
+       <!-- <a class="current_page" href="jobs.html">Jobs</a> -->
+       <a class="current_page" href="http://www.olcf.ornl.gov/about/careers/">Jobs</a>
 %else
-      <li/><a href="jobs.html">Jobs</a>
+      <li/><!-- <a href="jobs.html">Jobs</a> -->
+       <a href="http://www.olcf.ornl.gov/about/careers/">Jobs</a>
 %endif
 %ifeq(self.filetype, 'contact')
       <li class="current_page" />
