@@ -9,17 +9,29 @@
 
 <h2>Raghul Gunasekaran</h2>
 
-<p/>Raghul joined the Technology Integration group in 2009 after
-working as a graduate intern on the SensorNet project here at ORNL.
+<p> 
+Raghul Gunasekaran has been a member of the Technology Integration
+group in the National Center for Computational Sciences (NCCS) at Oak
+Ridge National Laboratory(ORNL) since 2009. Prior to that, Raghul was
+with the <a href="http://computing.ornl.gov/cse/index.shtml" target="_">
+Computational Sciences and Engineering Division</a> 
+at ORNL since 2007.
 
-<p>Raghul received his B.E. in Electronics and Communication
-  Engineering from the University of Madras in Chennai, India, in
-  2004. In 2007, he received his M.Sc. in Electrical Engineering from
-  the University of Tennessee, Knoxville.
+<p> 
+Raghul’s research interests are in the systems area: <a
+href="http://hadoop.apache.org/" target="_">Hadoop</a>, unstructured
+data stores, cloud-based solutions for big-data analytics, and
+performance characterization of I/O subsystems.
 
-<p>Raghul's focus as a member of Technology Integration has been in
-  the area of Data Analytics, working on the CMS project, among
-  others.
+<p> 
+Raghul is currently a PhD candidate in the Computational Sciences and
+Engineering department at <a href="http://www.gatech.edu/"
+target="_">Georgia Tech</a>. Raghul received his Masters (2007) and
+Bachelors (2004) in <a href="http://www.eecs.utk.edu/"
+target="_">Electrical Engineering</a> from the <a
+href="http://www.utk.edu" target="_">University of Tennessee</a> and
+<a href="http://www.unom.ac.in/" target="_">University of Madras</a>,
+respectively.
 
 %include('content_close.inc')
 %include('html_close.inc')

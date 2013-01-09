@@ -55,6 +55,37 @@
 %include('content_intro.inc')
     <a name="IOCoord" />
     <h2 class="title">I/O Coordination</h2>
+
+<p>
+Large-scale systems are heavily-shared resource environments where a
+mix of applications run concurrently and compete for network and
+storage resources. It is essential to characterize the runtime
+behavior of these applications in order to provision system resources
+and understand the impact of resource contention on an application’s
+performance.
+
+
+<p>
+Traditionally, applications are characterized and benchmarked using
+ﬁne-grained performance tools on a quiescent machine, however, the
+runtime behavior of the applications tend to be different impacted by
+the availability of shared resources and also varies based on the
+needs of the specific scientific user.
+
+<p>
+The objective of the project is to be able to characterize the I/O
+usage patterns of user-applications from the backend storage servers
+with minimal overhead and interfering with the applications I/O
+activities and build an I/O-aware decision making capability, such as
+scheduling. At OLCF, the spider storage system is available as four
+partitions and the users are allowed to use all or any of them during
+runtime. The immediate goals of the project is to enable scientific
+users choose the best file system partition based on current loads and
+known I/O behavior of the applications.
+
+<p>
+Contributors: Raghul, Sudharshan, Yang Liu (NCSU), Xiaosong Ma (NCSU)
+ 
 %include('content_close.inc')
 
 
