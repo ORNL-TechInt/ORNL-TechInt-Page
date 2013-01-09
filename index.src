@@ -8,7 +8,7 @@
 %include('hdrnav.inc')
 
 <table id="vlayout">
-<tr><td valign="top">
+<tr><td id="vlayout-top">
 %include('content_intro.inc')
     <h2 class="title">About the ORNL Technology Integration Group</h2>
 
@@ -28,7 +28,7 @@
     adopted.
 
 %include('content_close.inc')
-</td></tr><tr><td valign="bottom">
+</td></tr><tr><td id="vlayout-bottom">
 
   <script language="JavaScript" type="text/javascript" src="js/version.js"></script>
   <div class="version">

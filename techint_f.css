@@ -293,10 +293,14 @@ h5 {
     font-family: "Arial Black", Gadget, sans-serif;
     padding-bottom: 0px;
 }
-table tr td {
-}
 #vlayout {
     height: 100%;
     width: 100%;
     border-collapse: collapse;
+}
+#vlayout-top {
+    vertical-align: top;
+}
+#vlayout-bottom {
+    vertical-align: bottom;
 }
