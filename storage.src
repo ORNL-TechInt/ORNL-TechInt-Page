@@ -68,20 +68,23 @@ performance.
 <p>
 Traditionally, applications are characterized and benchmarked using
 ﬁne-grained performance tools on a quiescent machine, however, the
-runtime behavior of the applications tend to be different impacted by
+runtime behavior of the applications tend to be impacted differently by
 the availability of shared resources and also varies based on the
 needs of the specific scientific user.
 
 <p>
-The objective of the project is to be able to characterize the I/O
-usage patterns of user-applications from the backend storage servers
-with minimal overhead and interfering with the applications I/O
-activities and build an I/O-aware decision making capability, such as
-scheduling. At OLCF, the spider storage system is available as four
-partitions and the users are allowed to use all or any of them during
-runtime. The immediate goals of the project is to enable scientific
-users choose the best file system partition based on current loads and
-known I/O behavior of the applications.
+The objective of this project is to characterize the I/O usage
+patterns of user-applications from the perspective of backend storage
+servers while minimizing overhead and interference with the
+application's I/O activities, and build an I/O-aware decision making
+capability, to guide decisions about issues such as scheduling.
+
+<p>
+At OLCF, the spider storage system is available as four partitions and
+the users are allowed to use all or any of them during runtime. The
+immediate goal of the project is to enable scientific users to choose
+the best file system partition based on current loads and known I/O
+behavior of their application.
 
 <p>
 Contributors: Raghul, Sudharshan, Yang Liu (NCSU), Xiaosong Ma (NCSU)
