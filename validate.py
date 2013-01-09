@@ -164,7 +164,7 @@ class TIParser(HTMLParser.HTMLParser):
         self.charset = 'missing'
         self.description = 'missing'
         self.title = 'missing'
-        self.nostack = ['p', 'br', 'meta']
+        self.nostack = ['p', 'br', 'meta', 'li']
         self.stack = []
 
         self.catch_tabs()
