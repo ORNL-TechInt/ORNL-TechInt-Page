@@ -6,8 +6,7 @@
 
 %include('hdrnav.inc')
 
-  <div class="box-top"></div>
-  <div class="page_content">
+%include('content_intro.inc')
     <div class="right cci">
        <a
         href="http://www.olcf.ornl.gov/center-projects/common-communication-interface/"
@@ -48,8 +47,7 @@
     information.</p>
 
     <p/>Contributors: Scott Atchley
-  </div>
-  <div class="box-bottom"></div>
+%include('content_close.inc')
 
 %include('content_intro.inc')
     <a name="Terabit"/>
