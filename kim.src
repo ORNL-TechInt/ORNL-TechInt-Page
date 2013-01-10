@@ -13,9 +13,12 @@ Youngjae joined ORNL in 2009 as an I/O systems computational
 scientist. He works on the <a href="nvm.html#NVMalloc">NVMalloc
 project</a>, developing the NVMalloc libraries. He has refined the
 APIs and studied their performance with a variety of file system
-combinations with NVM storage devices. He is also working on a <a
-href="nvm.html">DeepMap</a> project, investigating the problem of data
-placement on deep memory hierarchy. Youngjae is also working on I/O
+combinations with NVM storage devices. 
+
+He is also working on investigating the problem of efficient data
+placement on deep memory hierarchies.
+
+Youngjae is also working on I/O
 optimization to parallel file systems. Youngjae has been working on
 the <a href="nvm.html#ActiveFlash">Active Flash</a> project, which
 enables an in-situ scientific data analysis on SSDs. He also works on
