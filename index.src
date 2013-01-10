@@ -16,7 +16,7 @@
     The Technology Integration (TechInt) group is charged with
     delivering new technologies into the Leadership Computing Facility
     (OLCF) and other projects at ORNL by identifying gaps in the
-    system software stack and working with the R&D community to
+    system software stack and working with the R&amp;D community to
     develop, harden, and deploy solutions. Their technology scope
     includes archival storage, parallel file systems, data management,
     high-performance networking, and architecture. TechInt staff work
@@ -30,7 +30,7 @@
 %include('content_close.inc')
 </td></tr><tr><td id="vlayout-bottom">
 
-  <script language="JavaScript" type="text/javascript" src="js/version.js"></script>
+  <script type="text/javascript" src="js/version.js"></script>
   <div class="version">
     <script type="text/javascript">
       version();

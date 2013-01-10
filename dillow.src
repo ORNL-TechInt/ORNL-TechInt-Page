@@ -9,7 +9,7 @@
 %include('content_intro.inc')
 <h2>David Dillow</h2>
 
-<p/>Dave Dillow is an Advanced Systems Architect and Developer at
+<p>Dave Dillow is an Advanced Systems Architect and Developer at
 the National Center for Computational Sciences located at Oak Ridge
 National Laboratory. He joined NCCS in 2007 to deploy the first
 large-scale, routed Lustre file system, and he currently co-chairs
@@ -18,24 +18,24 @@ combines his interest in operating systems, parallel computing, and
 high- performance networks and storage to design systems for future
 supercomputers.
 
-<p/>During the deployment of <a href="storage.html#Spider">Spider</a>, Dave designed the network
+<p>During the deployment of <a href="storage.html#Spider">Spider</a>, Dave designed the network
 infrastructure and developed the fine-grained routing framework that
 allowed the file system to overcome network congestion and provide
 better end-user performance, meeting the project performance goals.
 Dave works on the team enhancing OLCF file systems to support future
 generations of our leadership computing platforms.
 
-<p/>Recent work includes, an implementation of CCI embeded in the
+<p>Recent work includes, an implementation of CCI embeded in the
 SeaStar firmware called <a href="networking.html#DStar">DStar</a>,
 which provides about half the latency of the vendor-provided network
 stack.
 
-<p/>Dave has been one of lead developers
+<p>Dave has been one of lead developers
 on <a href="data.html#ADARA">ADARA</a>, a project to improve real time
 data acquisition at the Spallation Neutron Source allowing more
 efficient and effective use of the facility.
 
-<p/>Dave is also working with several other group members on an LDRD
+<p>Dave is also working with several other group members on an LDRD
 project called <a href="storage.html#SOS">Scalable Object Store</a> (SOS), which investigates
 innovative mechanisms for future storage systems that will scale to
 extreme capacity and bandwidth.

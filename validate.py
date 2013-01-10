@@ -26,6 +26,9 @@ def main(args):
     p.add_option('-w', '--w3c',
                  action='store_true', default=False, dest='w3c',
                  help='send file to validator.w3.org')
+    p.add_option('-r', '--rm',
+                 action='store_true', default=False, dest='passrm',
+                 help='rm validation output on pass')
     p.add_option('-v', '--verbose',
                  action='store_true', default=False, dest='verbose',
                  help='more output')
@@ -108,8 +111,9 @@ def w3c_validate(filename):
                 '(': '%28',
                 ')': '%29'}
     validator = "http://validator.w3.org"
-    host = "http://users.nccs.gov/~tpb/techint_olcf"
-    uri = xml.escape("uri=%s/%s" % (host, filename), entities)
+    host = "http://users.nccs.gov/"
+    path = "~tpb/techint"
+    uri = xml.escape("uri=%s%s/%s" % (host, path, filename), entities)
     charset = xml.escape("charset=(detect+automatically)", entities)
     doctype = "doctype=Inline"
     group = "group=0"
@@ -126,6 +130,24 @@ def w3c_validate(filename):
     h.writelines(text)
     h.close()
     print("Validation output is in %s" % vname)
+    assess_validation(vname)
+    
+# ---------------------------------------------------------------------------
+def assess_validation(filename):
+    f = open(filename)
+    v = f.readlines()
+    f.close()
+
+    passed = False
+    for line in v:
+        if "Passed" in line:
+            print line
+            passed = True
+        if 'class="msg"' in line:
+            print line
+
+    if passed:
+        os.unlink(filename)
 
 # ---------------------------------------------------------------------------
 class TIParser(HTMLParser.HTMLParser):
@@ -164,7 +186,7 @@ class TIParser(HTMLParser.HTMLParser):
         self.charset = 'missing'
         self.description = 'missing'
         self.title = 'missing'
-        self.nostack = ['p', 'br', 'meta', 'li']
+        self.nostack = ['p', 'br', 'meta', 'li', 'dd', 'dt']
         self.stack = []
 
         self.catch_tabs()

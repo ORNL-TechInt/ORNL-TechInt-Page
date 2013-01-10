@@ -7,19 +7,16 @@
 %include('hdrnav.inc')
 
 %include('content_intro.inc')
-    <a name="ADARA" />
-    <h2 class="title">ADARA</h2>
+    <h2 class="title" id="ADARA">ADARA</h2>
 %include('content_close.inc')
 
 
 %include('content_intro.inc')
-    <a name="UVCDAT" />
-    <h2 class="title">UV/CDAT</h2>
+    <h2 class="title" id="UVCDAT">UV/CDAT</h2>
 %include('content_close.inc')
 
 %include('content_intro.inc')
-    <a name="PARCAT" />
-    <h2 class="title">ParCAT</h2>
+    <h2 class="title" id="PARCAT">ParCAT</h2>
 
 <p>
 ParCAT (parallel climate analysis tool) is a focused, easy-to-use
@@ -41,8 +38,7 @@ Contributors: Brian Smith
 %include('content_close.inc')
 
 %include('content_intro.inc')
-    <a name="ESGF" />
-    <h2 class="title">Earth System Grid Federation</h2>
+    <h2 class="title" id="ESGF">Earth System Grid Federation</h2>
 
     <h3>Overview</h3>
 
@@ -98,7 +94,7 @@ Details about other ESGF related projects can be seen in the <a href="http://esg
 
 <br>Contributors: John Harney, Feiyi Wang, Tom Barron, and Ross Miller
 
-<p>Selected Publications</p>
+<p>Selected Publications
 <p>
 <ul>
 
@@ -133,7 +129,6 @@ Details about other ESGF related projects can be seen in the <a href="http://esg
   stage</em>.</li>
 
 </ul>
-</p>
 
     <h3>ESGF Web-FE </h3>
 
@@ -218,7 +213,7 @@ The search module makes two high-level web services
 available to clients:
 
 <ul>
- <li/>The Indexing Service is used to parse the metadata content
+ <li>The Indexing Service is used to parse the metadata content
  available at some repository (located by its URL), and ingest it in
  the back-end metadata storage. So far ESGF has focused mostly on
  parsing metadata from <a href="http://unidata.ucar.edu/projects/THREDDS">THREDDS catalogs</a>, although support for
@@ -230,7 +225,7 @@ available to clients:
  historical reasons, the Indexing Service is currently exposed through
  the Hessian protocol.
 
- <li/>The Search Service is used to query the index metadata content
+ <li>The Search Service is used to query the index metadata content
  to retrieve matching results that include descriptive information, as
  well as all the available data access endpoints (HTTP, GridFTP,
  OpenDAP, LAS etc…). The search service is invoked by clients through
@@ -302,12 +297,10 @@ it will appear in the search and discovery interface.
 %include('content_close.inc')
 
 %include('content_intro.inc')
-    <a name="CMS" />
-    <h2 class="title">CMS</h2>
+    <h2 class="title" id="CMS">CMS</h2>
 %include('content_close.inc')
 
 %include('content_intro.inc')
-    <a name="NIH" />
-    <h2 class="title">NIH Oncology Data</h2>
+    <h2 class="title" id="NIH">NIH Oncology Data</h2>
 %include('content_close.inc')
 %include('html_close.inc')

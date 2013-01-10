@@ -33,9 +33,8 @@ Oral, Feiyi Wang, and James Simmons
 %include('content_close.inc')
 
 %include('content_intro.inc')
-    <a name="NVMalloc"/>
-    <h2 class="title"><a href="http://users.nccs.gov/~vazhkuda/NVMalloc.html" 
-    target="_">NVMalloc</a></h2>
+    <h2 id="NVMalloc" class="title"><a href="http://users.nccs.gov/~vazhkuda/NVMalloc.html" 
+    target="_blank">NVMalloc</a></h2>
 
 
 <p>DRAM is a precious resource in extreme-scale machines and is
@@ -57,27 +56,27 @@ inovolves several areas.
 
 <ul>
 
-  <li/>Exploring NVM as a secondary memory partition for HPC systems 
+  <li>Exploring NVM as a secondary memory partition for HPC systems 
 
-  <li/>Developing NVMalloc library with a suite of services that
+  <li>Developing NVMalloc library with a suite of services that
   enables applications to access NVM systems
 
-  <li/>Studying the performance of NVMalloc with various HPC benchmark
+  <li>Studying the performance of NVMalloc with various HPC benchmark
   suits
 
-  <li/>Developing data management techniques to efficiently use the
+  <li>Developing data management techniques to efficiently use the
   NVM partition and DRAM partition
 
 </ul>
 
-    <p/>Contributors: Youngjae Kim, Chao Wang, and Sudharshan Vazhkudai
+    <p>Contributors: Youngjae Kim, Chao Wang, and Sudharshan Vazhkudai
 
 
-<ul type="circle">
-  <li/>Selected publications
-    <ul type="square">
+<ul>
+  <li>Selected publications
+    <ul>
 
-      <li/>Chao Wang, Sudharshan Vazhkudai, Xiaosong Ma, Fei Meng,
+      <li>Chao Wang, Sudharshan Vazhkudai, Xiaosong Ma, Fei Meng,
       Youngjae Kim, Christian Engelmann, "NVMalloc: Exposing an
       Aggregate SSD Store as a Memory Partition in Extreme-Scale
       Machines", <i>Proceedings of the 26th IEEE Int'l Parallel and
@@ -89,8 +88,7 @@ inovolves several areas.
 %include('content_close.inc')
 
 %include('content_intro.inc')
-<a name="ActiveFlash">
-<h2>Active Flash</h2>
+<h2 id="ActiveFlash">Active Flash</h2>
 
 Modern scientific discovery is increasingly driven by large-scale
 supercomputing simulations, followed byÿdata analysis tasks. These
@@ -120,18 +118,18 @@ associated main memory. The work involves several areas.
 
 Contributors: Sudharshan Vazhkudai and Youngjae Kim
 
-<ul type="circle">
-  <li/>Selected publications
-    <ul type="square">
+<ul>
+  <li>Selected publications
+    <ul>
 
-      <li/>Devesh Tiwari, Simona Bobila, Sudharshan Vazhkudai,
+      <li>Devesh Tiwari, Simona Bobila, Sudharshan Vazhkudai,
       Youngjae Kim, Xiaosong Ma, Peter Desnoyers, Yan Solin, "Active
       Flash: Towards Energy-Efficient, In-Situ Data Analytics on
       Extreme-Scale Machines,", <i>(To appear) Proceedings of the
       USENIX Conference on File and Storage Technologies (FAST 2013),
       February, 2013. (24/127 = 18.9%)</i>
 
-      <li/>Simona Boboila, Youngjae Kim, Sudharshan Vazhkudai, Peter
+      <li>Simona Boboila, Youngjae Kim, Sudharshan Vazhkudai, Peter
       Desnoyers, Galen M. Shipman, "Active Flash: Out-of-core Data
       Analytics on Flash Storage", <i>(Proceedings of the 28th IEEE
       Symposium on Massive Storage Systems and Technologies (MSST
@@ -152,27 +150,27 @@ challenges on SSD based storage systems. The work involves several
 areas.
 
 <ul>
-  <li/>Benchmarking SSDs and understanding their performance and behavior
-  <li/>Detailed performance modeling of SSDs for different HPC workloads 
-  <li/>Improving performance of individual SSDs and arrays of SSDs
+  <li>Benchmarking SSDs and understanding their performance and behavior
+  <li>Detailed performance modeling of SSDs for different HPC workloads 
+  <li>Improving performance of individual SSDs and arrays of SSDs
 
-  <li/>Developing internal flash management algorithms (GC, FTL, etc)
+  <li>Developing internal flash management algorithms (GC, FTL, etc)
   for high performance SSD based storage systems
 
 </ul>
 
 Contributors: Youngjae Kim, Sarp Oral, and Dave Dillow
 
-<ul type="circle">
-  <li/>Selected publications
-    <ul type="square">
+<ul>
+  <li>Selected publications
+    <ul>
 
-      <li/>Youngjae Kim, Junghee Lee, Sarp Oral, David Dillow, Feiyi
+      <li>Youngjae Kim, Junghee Lee, Sarp Oral, David Dillow, Feiyi
       Wang, Galen M. Shipman, "Coordinating Garbage Collection for
       Arrays of Solid-state Drives", <i>(To appear) IEEE Transactions
       on Computers (IEEE TC), 2013.</i>
 
-      <li/>Junghee Lee, Youngjae Kim, Galen M. Shipman, Sarp Oral,
+      <li>Junghee Lee, Youngjae Kim, Galen M. Shipman, Sarp Oral,
       Jongman Kim, "Preemptible I/O Scheduling of Garbage Collection
       for Solid-state Drives", <i>(To appear) IEEE Transactions on
       Computer-Aided Design of Integrated Circuits and Systems (IEEE

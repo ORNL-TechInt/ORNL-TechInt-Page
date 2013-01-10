@@ -13,22 +13,23 @@
 and core specialization projects. He works on the open-source, network
 abstraction layer, the
 <a href="http://www.olcf.ornl.gov/center-projects/common-communication-interface/"
-target="_">
+target="other">
 Common Communication Interface (CCI)</a> project. He has helped refine the
 API and worked on many of the underlying transports. He is also working on
 the addition of wide-area, heterogeneous routing. Scott also works on 
 Functional Partitioning, which seeks to provide distributed services on large,
 many-core machines to improve performance and reliability.</p>
 
-<p>Prior to joining ORNL, Scott worked at <a href="http://www.myri.com" target="_">Myricom</a>,
-where his projects included MPICH2-MX, BMI-MX (PVFS2 over MX), MXLND (Lustre over MX),
-and other projects. Scott had also worked in the <a href="http://loci.eecs.utk.edu"
-target="_">
-Logistical Computing and Internetworking Lab (LoCI)</a> at the University of 
-Tennessee where he focused on distributed storage over the wide-area.</p>
+<p>Prior to joining ORNL, Scott worked at <a
+href="http://www.myri.com" target="other">Myricom</a>, where his
+projects included MPICH2-MX, BMI-MX (PVFS2 over MX), MXLND (Lustre
+over MX), and other projects. Scott had also worked in the <a
+href="http://loci.eecs.utk.edu" target="other"> Logistical Computing and
+Internetworking Lab (LoCI)</a> at the University of Tennessee where he
+focused on distributed storage over the wide-area.</p>
 
 <p>Scott received a B.S. in Business Administration in 1987 and a M.S. in Computer
-Science in 2002, both from the <a href="http://www.utk.edu" target="_">University of
+Science in 2002, both from the <a href="http://www.utk.edu" target="other">University of
 Tennessee</a>.</p>
 %include('content_close.inc')
 %include('html_close.inc')

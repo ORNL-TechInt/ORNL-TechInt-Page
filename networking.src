@@ -10,13 +10,12 @@
     <div class="right cci">
        <a
         href="http://www.olcf.ornl.gov/center-projects/common-communication-interface/"
-        target="_">
+        target="other">
         <img class="rounded networking" src="cci-logo-text-01.png" alt="CCI Logo"/>
        </a>
     </div>
 
-    <a name="CCI"/>
-    <h2>Common Communication Interface (CCI)</h2>
+    <h2 id="CCI">Common Communication Interface (CCI)</h2>
     <p>The CCI project is an open-source communication interface that aims to
     provide a simple and portable API, high performance, scalability for
     the largest deployments, and robustness in the presence of faults. It
@@ -43,15 +42,14 @@
     <p>We are currently supporting Sockets (UDP and TCP), OpenFabrics Verbs 
     (InfiniBand and RoCE), Cray GNI (Gemini and Aries), Cray Portals 3.3 
     (SeaStar), as well as raw Ethernet (IP-bypass). Visit 
-    <a href="http://cci-forum.com/" target="_">CCI Forum</a> for release
+    <a href="http://cci-forum.com/" target="other">CCI Forum</a> for release
     information.</p>
 
-    <p/>Contributors: Scott Atchley
+    <p>Contributors: Scott Atchley
 %include('content_close.inc')
 
 %include('content_intro.inc')
-    <a name="Terabit"/>
-    <h2>An Adaptive End-to-End Approach for Terabit Data Movement Optimization</h2>
+    <h2 id="Terabit">An Adaptive End-to-End Approach for Terabit Data Movement Optimization</h2>
 
     <p>This is the work related to <em>An Adaptive End-to-End Approach for
         Terabit Data Movement Optimization</em> project, the goal of this project 
@@ -63,18 +61,17 @@
       <li>Optimization of accesses to parallel file systems</li>
     </ul>
 
-    <p/>Contributors: Scott Atchley, Youngjae Kim
+    <p>Contributors: Scott Atchley, Youngjae Kim
 %include('content_close.inc')
 
 %include('content_intro.inc')
-    <a name="DStar"/>
-    <h2>DStar</h2>
+    <h2 id="DStar">DStar</h2>
     <p>DStar is a native implementation of CCI embedded in SeaStar
       firmware. By replacing Cray Portals, CCI can achieve a latency
       of about 3 &#956;s compared to around 6 &#956;s when using
       Portals for point-to-point small messages. CCI on DStar can even
       send a 4 KiB message in less than 6 &#956;s.</p>
 
-    <p/>Contributors: David Dillow
+    <p>Contributors: David Dillow
 %include('content_close.inc')
 %include('html_close.inc')

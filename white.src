@@ -7,10 +7,10 @@
 %include('content_intro.inc')
 <h2>Vicky White</h2>
 
-<p/>Vicky has worked on the <a href="storage.html#HPSS">High
+<p>Vicky has worked on the <a href="storage.html#HPSS">High
      Performance Storage System</a> (HPSS) since the project started
      in 1993. She graduated from 
-<a href="http://www.tntech.edu/" target="_">Tennessee Technology
+<a href="http://www.tntech.edu/" target="other">Tennessee Technology
      University</a> in 1984 with a degree in Computer Science. Skilled
      in C and Java programming, she has contributed to the Storage
      System Manager subsystem, having done most of the development of

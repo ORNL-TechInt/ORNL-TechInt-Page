@@ -6,7 +6,7 @@
 %include('hdrnav.inc')
 
 %include('content_intro.inc')
-<h2><a href="http://users.nccs.gov/~yk7/index.html" target="_">Youngjae Kim</a></h2>
+<h2><a href="http://users.nccs.gov/~yk7/index.html" target="other">Youngjae Kim</a></h2>
 
 <p>
 Youngjae joined ORNL in 2009 as an I/O systems computational
@@ -34,7 +34,7 @@ and SSDs. He had developed storage capacity planner and dynamic
 controller for hybrid storage system. Youngjae is also an adjunct
 professor in the School of Electrical and Computer Engineering at
 Georgia Institute of Technology. For more information, visit his
-<a href="http://users.nccs.gov/~yk7" target="_">personal webpage</a>.
+<a href="http://users.nccs.gov/~yk7" target="other">personal webpage</a>.
 
 %include('content_close.inc')
 %include('html_close.inc')

@@ -8,30 +8,29 @@
 %include('content_intro.inc')
 <h2>Publications</h2>
 
-  <a name="2013" />
-  <h3>2013</h3>
+  <h3 id="2013">2013</h3>
   <ul class="year_list">
 
     <!-- *************************************************************** -->
-    <!-- <li/><h4>File and Storage Systems</h4> <ul> </ul> -->
+    <!-- <li><h4>File and Storage Systems</h4> <ul> </ul> -->
 
     <!-- *************************************************************** -->
-    <li/><h4>Non-Volatile Memory</h4>
+    <li><h4>Non-Volatile Memory</h4>
     <ul>
 
-      <li/><strong>Active Flash: Towards Energy-Efficient, In-Situ
+      <li><strong>Active Flash: Towards Energy-Efficient, In-Situ
         Data Analytics on Extreme-Scale Machines</strong>, Devesh
         Tiwari, Simona Bobila, Sudharshan Vazhkudai, Youngjae Kim,
         Xiaosong Ma, Peter Desnoyers, Yan Solin. <em>(To appear)
         Proceedings of the USENIX Conference on File and Storage
         Technologies (FAST 2013)</em>, 2013.
 
-      <li/><strong>Coordinating Garbage Collection for Arrays of
+      <li><strong>Coordinating Garbage Collection for Arrays of
         Solid-state Drives</strong>, Youngjae Kim, Junghee Lee, Sarp
         Oral, David Dillow, Feiyi Wang, Galen M. Shipman, <em>(to
         appear) IEEE Transactions on Computers (IEEE TC)</em>.
 
-      <li/><strong>Preemptible I/O Scheduling of Garbage Collection
+      <li><strong>Preemptible I/O Scheduling of Garbage Collection
         for Solid-state Drives</strong>, Junghee Lee, Youngjae Kim,
         Galen M. Shipman, Sarp Oral, Jongman Kim, <em>(to appear) IEEE
         Transactions on Computer-Aided Design of Integrated Circuits
@@ -40,10 +39,10 @@
       </ul>
 
     <!-- *************************************************************** -->
-    <li/><h4>Data Management</h4> 
+    <li><h4>Data Management</h4> 
     <ul> 
 
-      <li/><strong>Design and Implementation of a Scalable Climate
+      <li><strong>Design and Implementation of a Scalable Climate
         Data System in Support of HPC Environment</strong>, 
         Feiyi Wang<sup>1</sup>, 
         John Harney<sup>1</sup>, 
@@ -61,21 +60,20 @@
 
     </ul>
     <!-- *************************************************************** -->
-    <!-- <li/><h4>Networking</h4> <ul> </ul> -->
+    <!-- <li><h4>Networking</h4> <ul> </ul> -->
     <!-- *************************************************************** -->
-    <!-- <li/><h4>Computer Architecture</h4> <ul> </ul> -->
+    <!-- <li><h4>Computer Architecture</h4> <ul> </ul> -->
   </ul>
 
 
-  <a name="2012" />
-  <h3>2012</h3>
+  <h3 id="2012">2012</h3>
   <ul class="year_list">
 
     <!-- *************************************************************** -->
-    <li/><h4>File and Storage Systems</h4>
+    <li><h4>File and Storage Systems</h4>
     <ul>
 
-      <li/><strong>Characterizing Output Bottlenecks in a
+      <li><strong>Characterizing Output Bottlenecks in a
           Supercomputer </strong>, Bing Xie, Jeff Chase, David Dillow,
           Oleg Drokin, Scott Klasky, Sarp Oral, Norbert
           Podhorszki, <em>Proceedings of Supercomputing (SC): the 25th
@@ -84,14 +82,14 @@
           City, UT, November
           2012. <a href="http://dl.acm.org/ft_gateway.cfm?id=2389007&amp;ftid=1303139&amp;dwn=1&amp;CFID=221538026&amp;CFTOKEN=44765174">pdf</a>
 
-      <li/><strong>A Next-Generation Parallel File System Environment
+      <li><strong>A Next-Generation Parallel File System Environment
         for the OLCF</strong>, David A. Dillow, Douglas Fuller, Raghul
         Gunasekaran, Jason J. Hill, Youngjae Kim, Sarp Oral, Doug M.
         Reitz, Galen M. Shipman, James A. Simmons, Feiyi Wang,
         Feiyi, <em>Proceedings of the Cray User Goup conference (CUG
         2012)</em>, Stuttgart, Germany, April 29-May 3, 2012.
 
-      <li/><strong>Technical Overview of the OLCF's Next Generation
+      <li><strong>Technical Overview of the OLCF's Next Generation
         Parallel File System</strong>, Galen M. Shipman, David A.
         Dillow, Jason J. Hill, Youngjae Kim, Sarp Oral, Doug M. Reitz,
         James A. Simmons, <em>Proceedings of Lustre User Group Meetings
@@ -99,7 +97,7 @@
         2012. <a href="http://www.opensfs.org/wp-content/uploads/2011/11/oral-lug-2012.pdf">talk
         (pdf)</a>
 
-      <li/><strong>Distributed Storage Systems for Data Intensive
+      <li><strong>Distributed Storage Systems for Data Intensive
         Computing</strong>, Sudharshan S. Vazhkudai, Ali R. Butt,
         Xiaosong Ma, <em>Book Chapter in Data Intensive Distributed
         Computing: Challenges and Solutions for Large-scale
@@ -110,9 +108,9 @@
     </ul>
 
     <!-- *************************************************************** -->
-    <li/><h4>Non-Volatile Memory</h4>
+    <li><h4>Non-Volatile Memory</h4>
     <ul>
-      <li/><strong>Reducing Data Movement Costs using Energy-Efficient
+      <li><strong>Reducing Data Movement Costs using Energy-Efficient
         Active Computation on SSD</strong>, Devesh Tiwari, Sudharshan
         S. Vazhkudai, Youngjae Kim, Xiaosong Ma, Simona Boboila, Peter
         J. Desnoyers, <em>Proceedings of the USENIX Workshop on
@@ -120,7 +118,7 @@
         with OSDI'12)</em>, Hollywood, CA, October 2012.
           <a href="https://www.usenix.org/system/files/conference/hotpower12/hotpower12-final33.pdf">pdf</a>
 
-      <li/><strong>Active Flash: Out-of-core Data Analytics on Flash
+      <li><strong>Active Flash: Out-of-core Data Analytics on Flash
         Storage</strong>, Simona Boboila, Youngjae Kim, Sudharshan S.
         Vazhkudai, Peter J. Desnoyers, Galen M.
         Shipman, <em>Proceedings of the 28th IEEE Conference on Mass
@@ -129,7 +127,7 @@
         <a href="http://www.csm.ornl.gov/~vazhkuda/msst12.pdf">pdf</a>
 
 
-      <li/><strong>NVMalloc: Exposing an Aggregate SSD Store as a
+      <li><strong>NVMalloc: Exposing an Aggregate SSD Store as a
         Memory Partition in Extreme-Scale Machines</strong>, Chao
         Wang, Sudharshan S. Vazhkudai, Xiaosong Ma, Fei Meng, Youngjae
         Kim, Christian Engelmann, <em>Proceedings of the 26th IEEE
@@ -137,13 +135,13 @@
         2012)</em>, Shanghai, China, May 2012.
         <a href="http://www.csm.ornl.gov/~vazhkuda/NVMalloc.pdf">pdf</a>
 
-      <li/><strong>Comparing Coordinated Garbage Collection Algorithms
+      <li><strong>Comparing Coordinated Garbage Collection Algorithms
         for Arrays of Solid-state Drives</strong>, Junghee Lee,
         Youngjae Kim, Sarp Oral, Galen M. Shipman, David A. Dillow,
         Feiyi Wang, <em>Proceedings of the 3rd Non-Volatile Memories
         Workshop (NVMW 2012)</em>, San Diego, CA, March 2012.
 
-      <li/><strong>Active Flash: Performance-Energy Tradeoffs for
+      <li><strong>Active Flash: Performance-Energy Tradeoffs for
         Out-of-Core Processing on Non-Volatile Memory
         Devices</strong>, Simona Boboila, Youngjae Kim, Sudharshan S.
         Vazhkudai, Peter J. Desnoyers, Galen M. Shipman, <em>Poster in
@@ -154,7 +152,7 @@
         <a href="http://users.nccs.gov/~yk7/papers/active-flash-poster.pdf">poster
         (pdf)</a>
 
-      <li/><strong>Multi-level Hybrid Cache: Impact and
+      <li><strong>Multi-level Hybrid Cache: Impact and
         Feasibility</strong>, Zhe Zhang, Youngjae Kim, Xiaosong Ma,
         Galen M. Shipman, Yuanyuan Zhou, <em>Technical Report
         (ORNL/TM-2010/297), National Center for Computational
@@ -164,43 +162,43 @@
     </ul>
 
     <!-- *************************************************************** -->
-    <li/><h4>Data Management</h4>
+    <li><h4>Data Management</h4>
     <ul>
-      <li/><strong>Workload Characterization and Performance Implications of
+      <li><strong>Workload Characterization and Performance Implications of
         Large-Scale Blog Servers</strong>, Myeongjae Jeon, Youngjae Kim, Jaeho
         Hwang, Joonwon Lee, Euiseong Seo, <em>ACM Transactions on the Web
         (ACM TWEB)</em>, Volume 6, Issue 4, November, 2012.
 
-      <li/><strong>Big Data Platforms as a Service: Challenges and
+      <li><strong>Big Data Platforms as a Service: Challenges and
         Approach</strong>, James Horey, Edmon Begoli, Raghul Gunasekaran,
         Seung-Hwan Lim, James Nutaro
         <em>Proceedings of the 3rd USENIX Workshop on Hot Topics in
         Cloud Computing (HotCloud 2012)</em>, Boston, MA, June 2012.
         <a href="https://www.usenix.org/system/files/conference/hotcloud12/hotcloud12-final61.pdf">pdf</a>
 
-      <li/><strong>Practical Application of Parallel Coordinates for
+      <li><strong>Practical Application of Parallel Coordinates for
         Climate Model Analysis</strong>, Chad A. Steed, Galen M. Shipman,
         Peter E. Thornton, Daniel M. Ricciuto, David J. Erickson III,
         Marcia L. Branstetter, <em>Proceedings of the International
         Conference on Computer Science--Workshop on Data Mining in
         Earth Science</em>, pp. 877–886, June 2012.
         <a href="http://climatemodeling.science.energy.gov/publications/practical-application-parallel-coordinates-climate-model-analysis-0"
-        target="_">link will open in new window/tab</a>
+        target="other">link will open in new window/tab</a>
    
     </ul>
 
     <!-- *************************************************************** -->
-    <!-- <li/><h4>Networking</h4> <ul> </ul> -->
+    <!-- <li><h4>Networking</h4> <ul> </ul> -->
 
     <!-- *************************************************************** -->
-    <li/><h4>Computer Architecture</h4>
+    <li><h4>Computer Architecture</h4>
     <ul>
-      <li/><strong>On Timely Staging of HPC Job Input Data</strong>, Henry M.
+      <li><strong>On Timely Staging of HPC Job Input Data</strong>, Henry M.
         Monti, Ali R. Butt, Sudharshan S. Vazhkudai, <em>IEEE
         Transactions on Parallel and Distributed Systems (TPDS)</em>,
         2012.
 
-      <li/> <strong>On the Use of GPUs in Realizing Cost-Effective
+      <li> <strong>On the Use of GPUs in Realizing Cost-Effective
         Distributed RAID</strong>, Aleksandr Khasymski, M. Mustafa Rafique,
         Ali R. Butt, Sudharshan S. Vazhkudai, Dimitrios S.
         Nikolopoulos, <em>Proceedings of the IEEE International
@@ -209,7 +207,7 @@
         D.C., August 2012.
         <a href="http://www.csm.ornl.gov/~vazhkuda/mascots12_gpu_raid.pdf">pdf</a>
 
-      <li/><strong>D-Factor: A Quantitative Model of Application Slow-Down
+      <li><strong>D-Factor: A Quantitative Model of Application Slow-Down
         in Shared Service Systems with Multiple Resources</strong>,
         Seung-Hwan. Lim, Jae-Seok Huh, Youngjae Kim, Galen M. Shipman,
         Chita Das, <em>Proceedings of the ACM Int'l Conference on
@@ -220,21 +218,20 @@
     </ul>
   </ul>
 
-  <a name="2011" />
-  <h3>2011</h3>
+  <h3 id="2011">2011</h3>
   <ul class="year_list">
 
     <!-- *************************************************************** -->
-    <li/><h4>File and Storage Systems</h4>
+    <li><h4>File and Storage Systems</h4>
     <ul> 
-      <li/><strong>Dynamic Thermal Management for High-Performance Storage
+      <li><strong>Dynamic Thermal Management for High-Performance Storage
         Systems</strong>, Youngjae Kim, Sudhanva Gurumurthi, Anand
         Sivasubramaniam. <em>Book Chapter in Handbook of Energy-aware
         and Green Computing</em>, Editors: Ishfaq Ahmad and Sanjay
         Rank, Publisher: Chapman and Hall/CRC Press Taylor and Francis
         Group LLC, December 26. 2011. ISBN-13: 978-1439850804.
    
-      <li/><strong>Enhancing I/O Throughput via Efficient Routing and
+      <li><strong>Enhancing I/O Throughput via Efficient Routing and
         Placement for Large-scale Parallel File Systems</strong>, David
         Dillow, Sarp Oral, Galen M. Shipman, Zhe Zhang, Youngjae Kim,
         <em>Proceedings of the 30th IEEE Int'l Performance Computing
@@ -242,14 +239,14 @@
         November 17-19, 2011.
         <a href="http://users.nccs.gov/~yk7/papers/ipccc11.pdf">pdf</a>
 
-      <li/><strong>Oak Ridge Leadership Computing Facility Position
+      <li><strong>Oak Ridge Leadership Computing Facility Position
         Paper</strong>, Sarp Oral, Jason Hill, Kevin G. Thach, Norbert
         Podhorszki, Scott A. Klasky, James H. Rogers, Galen M.
         Shipman, <em> Fifth U.S. Department of Energy Best Practices
         Workshop on File Systems &amp; Archives.</em>, San Francisco,
         CA, September, 2011.
    
-      <li/><strong>Provisioning a Multi-Tiered Data Staging Area for
+      <li><strong>Provisioning a Multi-Tiered Data Staging Area for
         Extreme-Scale Machines</strong>, Ramya Prabhakar, Sudharshan
         Vazhkudai, Youngjae Kim, Ali Butt, Min Li, Mahmut Kandemir,
         <em>Proceedings of the 31th Int'l Conference on Distributed
@@ -257,23 +254,23 @@
         June 20-24, 2011.
         <a href="http://www.csm.ornl.gov/~vazhkuda/ICDCS11.pdf">pdf</a>
       
-      <li/><strong>I/O Congestion Avoidance via Routing and Object
+      <li><strong>I/O Congestion Avoidance via Routing and Object
         Placement</strong>, David A. Dillow, Galen M. Shipman, Sarp
         Oral, Zhe Zhang, <em>Proceedings of the Cray User Goup
         conference (CUG 2011)</em>, Alaska, May, 2011.
         <!-- <a href="">pdf</a> -->
 
-      <li/><strong>Testing methodology for large-scale file
+      <li><strong>Testing methodology for large-scale file
         systems</strong>, Sarp Oral, <em>Proceedings of Lustre User
         Group Meetings (LUG 2011)</em>, Orlando, FL, April, 2011.
    
     </ul>
 
     <!-- *************************************************************** -->
-    <li/><h4>Non-Volatile Memory</h4>
+    <li><h4>Non-Volatile Memory</h4>
     <ul>
 
-      <li/><strong>HybridStore: A Cost-Efficient, High-Performance
+      <li><strong>HybridStore: A Cost-Efficient, High-Performance
         Storage System Combining SSDs and HDDs</strong>, Youngjae Kim,
         Aayush Gupta, Bhuvan Urgaonkar, Peter Berman, Anand
         Sivasubramaniam, <em>Proceedings of the 19th IEEE Int'l
@@ -282,7 +279,7 @@
         25-27,
         2011. <a href="http://csl.cse.psu.edu/publications/mascots11.pdf">pdf</a>
 
-      <li/><strong>Harmonia: A Globally Coordinated Garbage Collector
+      <li><strong>Harmonia: A Globally Coordinated Garbage Collector
         for Arrays of Solid-state Drives</strong>, Youngjae Kim, Sarp
         Oral, Galen M. Shipman, Junghee Lee, David Dillow, Feiyi
         Wang. <em>Proceedings of the 27th IEEE Symposium on Massive
@@ -291,20 +288,20 @@
         2011. <a href="http://info.ornl.gov/sites/publications/files/Pub29553.pdf">pdf</a>
       
 
-      <li/><strong>A Semi-Preemptive Garbage Collector for Solid State
+      <li><strong>A Semi-Preemptive Garbage Collector for Solid State
         Drives</strong>, Junghee Lee, Youngjae Kim, Galen M. Shipman,
         Sarp Oral, Feiyi Wang, Jongman Kim, <em>Proceedings of the
         IEEE Int'l Symposium on Performance Analysis of Systems and
         Software (ISPASS 2011)</em>, Austin, TX, April 10-12, 2011.
         <a href="http://users.nccs.gov/~fwang2/papers/ispass11.pdf">pdf</a>
 
-      <li/><strong>A Comprehensive Study on Energy Efficiency and
+      <li><strong>A Comprehensive Study on Energy Efficiency and
         Performance of Flash-based SSD</strong>, Seon-Yeong. Park,
         Youngjae Kim, Bhuvan Urgaonkar, Joonwon Lee, Euiseong
         Seo, <em>Elsevier Journal of System Architecture (Elsevier
         JSA)</em>, Volume 57, Issue 4, Pages 354-365, April 2011.
       
-      <li/><strong>Pathological Behavior of SSDs and Application in
+      <li><strong>Pathological Behavior of SSDs and Application in
         HPC Storage</strong>, Youngjae Kim, Junghee Lee, Galen M.
         Shipman, <em>Proceedings of the 2nd Non-Volatile Memories
         Workshop (NVMW 2011)</em>, San Diego, CA, March 2011.
@@ -312,19 +309,19 @@
     </ul>
 
     <!-- *************************************************************** -->
-    <li/><h4>Data Management</h4> 
+    <li><h4>Data Management</h4> 
     <ul> 
-      <li/><strong>Building a Large-Scale Climate Data Systems for HPC
+      <li><strong>Building a Large-Scale Climate Data Systems for HPC
         Environment</strong>, Feiyi Wang, John Harney, Galen Shipman, Dean
         William, Luca Ciquini, <em>Proceedings of IEEE 7th
         International Conference on Next Generation Web Service
         Practices</em>, Salamanca, Spain, October 19-21, 2011.
         <a href="http://info.ornl.gov/sites/publications/files/Pub31897.pdf">pdf</a>
    
-      <li/><strong>Metadata - Beyond Hierarchy and POSIX Attributes</strong>,
+      <li><strong>Metadata - Beyond Hierarchy and POSIX Attributes</strong>,
         Galen M. Shipman, <em>HEC FSIO 2011 Workshop</em>, August, 2011. 
  
-      <li/><strong>Characterizing Application Runtime Behavior from
+      <li><strong>Characterizing Application Runtime Behavior from
         System Logs and Metrics</strong>, Raghul Gunasekaran, David A.
         Dillow, Galen M. Shipman, Richard Vuduc, Edmond
         Chow, <em>Proceedings of Workshop on Characterizing
@@ -332,7 +329,7 @@
         with ICS'11)</em>, Tucson, AZ, June,
         2011. <a href="http://info.ornl.gov/sites/publications/files/Pub29636.pdf">pdf</a>
 
-      <li/><strong>Real-Time System Log Monitoring/Analytics
+      <li><strong>Real-Time System Log Monitoring/Analytics
         Framework</strong>, Gunasekaran Raghul, Oral Sarp, Dillow A.
         Dave, Byung-Hoon Park, Galen M. Shipman, Al
         Geist, <em>Proceedings of the Cray User Goup conference (CUG
@@ -343,17 +340,17 @@
     </ul>
 
     <!-- *************************************************************** -->
-    <li/><h4>Networking</h4> 
+    <li><h4>Networking</h4> 
     <ul> 
 
-      <li/><strong>The Common Communication Interface (CCI)</strong>,
+      <li><strong>The Common Communication Interface (CCI)</strong>,
         Scott Atchley, David A. Dillow, Galen M. Shipman, Patrick
         Geoffray, Jeffrey M. Squyres, George Bosilca, Ronald Minnich,
         <em>Proceedings of the 2011 IEEE 19th Annual Symposium on High
         Performance Interconnects (HOTI 2011)</em>, August, 2011.
         <a href="http://www.olcf.ornl.gov/wp-content/uploads/2011/06/HotI2011-CCI.pdf">pdf</a>
 
-      <li/><strong>Migration, Assignment, and Scheduling of Jobs in
+      <li><strong>Migration, Assignment, and Scheduling of Jobs in
         Virtualized Environment</strong>, Seung-Hwan Lim, Jae-Seok
         Huh, Youngjae Kim, Chita Das, <em>Proceedings of the 3rd
         USENIX Workshop on Hot Topics in Cloud Computing (HotCloud
@@ -365,15 +362,14 @@
 
   </ul>
   
-  <a name="2010"/>
-  <h3>2010</h3>
+  <h3 id="2010">2010</h3>
   <ul class="year_list">
 
     <!-- *************************************************************** -->
-    <li/><h4>File and Storage Systems</h4>
+    <li><h4>File and Storage Systems</h4>
     <ul>
 
-      <li/><strong>Workload Characterization of a Leadership Class
+      <li><strong>Workload Characterization of a Leadership Class
         Storage</strong>, Youngjae Kim, Raghul Gunasekaran, Galen M.
         Shipman, David Dillow, Zhe Zhang, Brad
         Settlemyer, <em>Proceedings of the 5th Petascale Data Storage
@@ -381,22 +377,22 @@
         LA, November
         2010. <a href="http://www.pdsw.org/pdsw10/resources/papers/kim.pdf">pdf</a>
 
-      <li/><strong>Parallelism in System Tools</strong>, Kenneth D.
+      <li><strong>Parallelism in System Tools</strong>, Kenneth D.
         Matney, Sr, Galen M. Shipman, <em>Proceedings of the Cray User
         Goup conference (CUG 2011)</em>, Edinburgh, United Kingdom,
         May, 2010.
 
-      <li/><strong>Lessons Learned in Deploying the World's Largest
+      <li><strong>Lessons Learned in Deploying the World's Largest
         Scale Lustre File System</strong>, Galen M. Shipman, David A.
         Dillow, Sarp Oral, Feiyi Wang, Douglas Fuller, Jason Hill, Zhe
         Zhang, <em>Proceedings of the Cray User Goup conference (CUG
         2011)</em>, Edinburgh, United Kingdom, May, 2010.
         <a href="http://www4.ncsu.edu/~zzhang3/pubs/lessons-spider-cug10.pdf">pdf</a>,
         <a href="http://www.osti.gov/energycitations/product.biblio.jsp?osti_id=1016043"
-        target="_">link
+        target="other">link
         opens in new window/tab</a>
    
-      <li/><strong>Efficient Journaling for the Spider Storage
+      <li><strong>Efficient Journaling for the Spider Storage
         System</strong>, Sarp Oral, Feiyi Wang, Galen M. Shipman,
         David A. Dillow, Ross Miller, Proceedings of the 8th USENIX
         conference on File and storage technologies (FAST 2010), San
@@ -406,9 +402,9 @@
     </ul>
 
     <!-- *************************************************************** -->
-    <li/><h4>Non-Volatile Memory</h4>
+    <li><h4>Non-Volatile Memory</h4>
     <ul>
-      <li/><strong>An Empirical Study of Redundant Array of
+      <li><strong>An Empirical Study of Redundant Array of
         Independent Solid-State Drives (RAIS)</strong>, Youngjae Kim,
         Sarp Oral, David Dillow, Feiyi Wang, Douglas Fuller, Steve
         Poole, Galen M. Shipman. <em>Technical Report
@@ -420,10 +416,10 @@
     </ul>
 
     <!-- *************************************************************** -->
-    <li/><h4>Computer Architecture</h4>
+    <li><h4>Computer Architecture</h4>
     <ul> 
 
-      <li/><strong>Functional Partitioning to Optimize End-to-End
+      <li><strong>Functional Partitioning to Optimize End-to-End
         Performance on Many-Core Architectures</strong>, Min Li, Sudharshan
         Vazhkudai, Ali Butt, Fei Meng, Xiaosong Ma, Youngjae Kim,
         Christian Engelmann, Galen M. Shipman. <em>Proceedings of
@@ -432,7 +428,7 @@
         (SC 2010)</em>, New Orleans, LA, November 2010.
         <a href="http://www.csm.ornl.gov/~engelman/publications/li10functional.pdf">pdf</a>
 
-      <li/><strong>Reducing Application Runtime Variability on Jaguar
+      <li><strong>Reducing Application Runtime Variability on Jaguar
         XT5</strong>, Sarp Oral, Feiyi Wang, David A. Dillow, Ross Miller,
         Galen M. Shipman, Don Maxwell, Dave Henseler, Jeff Becklehimer,
         Jeff Larkin, <em>Proceedings of the Cray User Goup conference
@@ -442,62 +438,61 @@
     </ul>
   </ul>
 
-  <a name="2009" />
-  <h3>2009 and earlier</h3>
+  <h3 id="2009">2009 and earlier</h3>
   <ul class="year_list">
 
     <!-- *************************************************************** -->
-    <li/><h4>File and Storage Systems</h4>
+    <li><h4>File and Storage Systems</h4>
     <ul>
-      <li/><strong>The Spider Center Wide File System; From Concept to
+      <li><strong>The Spider Center Wide File System; From Concept to
         Reality</strong>, Galen M. Shipman, David A, Dillow, Sarp
         Oral, Feiyi Wang, <em>Proceedings of the Cray User Goup
         conference (CUG 2009)</em>, Atlanta, GA, May, 2009.
         <a href="http://www.nccs.gov/wp-content/uploads/2010/01/shipman_paper.pdf">pdf</a>
 
-      <li/><strong>Understanding Lustre Internals</strong>, Feiyi
+      <li><strong>Understanding Lustre Internals</strong>, Feiyi
         Wang, Sarp Oral, Galen M. Shipman, Oleg Drokin, Tom Wang,
         Isaac Huang, <em>Technical Report (ORNL/TM-2009/117). National
         Center for Computational Sciences, Oak Ridge National
         Laboratory</em>, April,
         2009. <a href="http://info.ornl.gov/sites/publications/files/Pub15218.pdf">pdf</a>
 
-      <li/><strong>A first look at scalable I/O in Linux
+      <li><strong>A first look at scalable I/O in Linux
         commands</strong>, Kenneth D. Matney, Sr, Sarp Oral, Richard
         Shane Canon, <em>Proceedings of the 9th LCI International
         Conference on High-Performance Clustered Computing</em>,
         Urbana-Champaign, IL, April,
         2008. <a href="http://www.osti.gov/energycitations/product.biblio.jsp?osti_id=929789"
-        target="_">link opens in new window/tab</a>
+        target="other">link opens in new window/tab</a>
 
-      <li/><strong>Empirical Analysis of a Large-Scale Hierarchical
+      <li><strong>Empirical Analysis of a Large-Scale Hierarchical
         Storage System</strong>, Weikuan Yu, Sarp Oral, R. Shane
         Canon, Jeffrey S. Vetter, and Ramanan Sankaran, <em>Lecture
         Notes in Computer Science</em>, pp. 130-140, Volume 5168/2008,
         ISBN 978-3-540-85450-0, Springer Berlin/Heidelberg, 2008.
 
-      <li/><strong>Performance Characterization and Optimization of
+      <li><strong>Performance Characterization and Optimization of
         Parallel I/O on the Cray XT</strong>, Weikuan Yu, Jeffrey
         Vetter, and Sarp Oral, <em>Proc. of IEEE Int. Symp. on
         Parallel and Distributed Processing (IPDPS) 2008</em>, Miami,
         Florida, April, 2008.
 
-      <li/><strong>XT7? Integrating and Operating a Conjoined XT3+XT4
+      <li><strong>XT7? Integrating and Operating a Conjoined XT3+XT4
         System</strong>, R. Shane Canon, Don E. Maxwell, Josh Lothian,
         Sr. Kenneth D. Matney, Makia Minich, Sarp Oral, Jeff L.
         Becklehimer, and Cathy H. Williams, Cray Users Group (CUG)
         Meeting, Seattle, Washington, May, 2007.
 
-      <li/><strong>Efficiency Evaluation of Cray XT Parallel IO
+      <li><strong>Efficiency Evaluation of Cray XT Parallel IO
         Stack</strong>, Weikuan Yu, Sarp Oral, Jeffrey Vetter, and
         Richard Barrett, Cray User Group (CUG) Meeting, Seattle,
         Washington, May, 2007.
 
-      <li/><strong>A Center-Wide file System Using Lustre</strong>, R.
+      <li><strong>A Center-Wide file System Using Lustre</strong>, R.
         Shane Canon and Sarp Oral, Proc. of Cray Users Group (CUG)
         Meeting, Lugano, Switzerland, May, 2006.
 
-      <li/><strong>Lustre: A How-to Guide for Installing and
+      <li><strong>Lustre: A How-to Guide for Installing and
         Configuring Lustre 1.4.1</strong>, Richard Alexander, Chad
         Kerner, Jeffrey Kuehn, Jeff Layton, Patrice Lucas, Hong Ong,
         Sarp Oral, Lex Stein, Joshua Schroeder, Steve Woods, and Scott
@@ -506,9 +501,9 @@
     </ul>
 
     <!-- *************************************************************** -->
-    <li/><h4>Computer Architecture</h4>
+    <li><h4>Computer Architecture</h4>
     <ul>
-      <li/><strong>MPI Support for Multi-Core Architectures: Optimized
+      <li><strong>MPI Support for Multi-Core Architectures: Optimized
         Shared Memory Collectives</strong>, Galen M. Shipman, Richard
         L. Graham, <em>Proceedings of the 15th European PVM/MPI Users'
         Group Meeting on Recent Advances in Parallel Virtual Machine

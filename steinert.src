@@ -8,9 +8,9 @@
 %include('content_intro.inc')
 <h2>Deryl Steinert</h2>
 
-<p/>Deryl has worked on the <a href="storage.html#HPSS">High Performance
+<p>Deryl has worked on the <a href="storage.html#HPSS">High Performance
 Storage System</a> (HPSS) since the project started in 1993. He
-graduated from <a href="http://www.psu.edu" target="_">Pennsylvania
+graduated from <a href="http://www.psu.edu" target="other">Pennsylvania
 State University</a> in 1981 with a B.Sc. in Computer Science. Skilled
 in C and Java programming, he is the lead developer for the Storage
 System Manager subsystem, having done most of the development of the

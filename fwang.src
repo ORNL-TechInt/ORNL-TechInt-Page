@@ -7,21 +7,21 @@
 
 %include('content_intro.inc')
 
-<h2><a href="http://www.ccs.ornl.gov/~fwang2" target="_">Feiyi Wang</a></h2>
+<h2><a href="http://www.ccs.ornl.gov/~fwang2" target="other">Feiyi Wang</a></h2>
 
-<p/>Feiyi Wang received his Ph.D. in Computer Engineering from 
-<a href="http://www.ncsu.edu/" target="_">North
+<p>Feiyi Wang received his Ph.D. in Computer Engineering from 
+<a href="http://www.ncsu.edu/" target="other">North
 Carolina State University</a> (NCSU). Before he joined Oak Ridge National
 Laboratory as research scientist, he worked at 
-<a href="http://www.cisco.com/" target="_">Cisco Systems</a> and
-<a href="https://www.mcnc.org/" target="_">Microelectronic Center of
+<a href="http://www.cisco.com/" target="other">Cisco Systems</a> and
+<a href="https://www.mcnc.org/" target="other">Microelectronic Center of
 North Carolina</a>
 (MCNC) as a lead developer
 and principal investigator for several DARPA-funded projects. His
 current research interests include high performance storage system,
 parallel I/O and file systems, fault tolerance and system simulation,
 and scientific data management and integration. Dr. Wang is a senior
-member of <a href="http://www.ieee.org" target="_">IEEE</a>.
+member of <a href="http://www.ieee.org" target="other">IEEE</a>.
 
 %include('content_close.inc')
 %include('html_close.inc')
