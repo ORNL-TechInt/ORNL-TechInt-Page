@@ -8,29 +8,30 @@
 %include('content_intro.inc')
 <h2><a href="http://users.nccs.gov/~yk7/index.html" target="_">Youngjae Kim</a></h2>
 
-<p/>Youngjae is a Research and Development Staff Member at US Department
-of Energy's Oak Ridge National Laboratory and works as an I/O Systems
-Computational Scientist for the National Center for Computational
-Sciences. 
+<p>
+Youngjae joined ORNL in 2009 as an I/O systems computational
+scientist. He works on the <a href="nvm.html#NVMalloc">NVMalloc
+project</a>, developing the NVMalloc libraries. He has refined the
+APIs and studied their performance with a variety of file system
+combinations with NVM storage devices. He is also working on a <a
+href="nvm.html">DeepMap</a> project, investigating the problem of data
+placement on deep memory hierarchy. Youngjae is also working on I/O
+optimization to parallel file systems. Youngjae has been working on
+the <a href="nvm.html#ActiveFlash">Active Flash</a> project, which
+enables an in-situ scientific data analysis on SSDs. He also works on
+flash storage system research. His research interests include
+operating systems, parallel I/O and file systems, storage systems,
+emerging storage technologies, and performance evaluation.
 
-<p/>Youngjae's research interests include operating systems, parallel I/O
-and file systems, storage systems, emerging storage technologies, and
-performance evaluation. His current research projects include (i)
-NVMalloc libraries offering extended memory partitions using NVRAM
-devices for applications, (ii) a large-scale Flash-based storage
-system, (iii) efficient I/O scheduling algorithms for parallel file
-systems, and (iv) Active Flash that enables out-of-core computation on
-NVRAM devices. 
-
-<p/>Youngjae received his B.S. degree in Computer Science from 
-<a href="http://www.sogang.ac.kr/english/" target="_">Sogang
-University</a>, Korea in 2001, M.S. degree
-from <a href="http://www.kaist.edu" target="_">KAIST</a> in 2003 and
-Ph.D. degree in Computer Science and Engineering from
-<a href="http://www.psu.edu" target="_">Pennsylvania
-State University</a> in 2009. Youngjae is also an adjunct professor in the
-<a href="http://www.ece.gatech.edu/" target="_">School of Electrical
-and Computer Engineering</a> at Georgia Institute of Technology.
+<p>
+Youngjae received a Ph.D. degree in Computer Science and Engineering
+from Pennsylvania State University in 2009. At Penn State, he
+investigated the problem of building hybrid storage systems using HDDs
+and SSDs. He had developed storage capacity planner and dynamic
+controller for hybrid storage system. Youngjae is also an adjunct
+professor in the School of Electrical and Computer Engineering at
+Georgia Institute of Technology. For more information, visit his
+<a href="http://users.nccs.gov/~yk7" target="_">personal webpage</a>.
 
 %include('content_close.inc')
 %include('html_close.inc')

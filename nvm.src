@@ -89,6 +89,7 @@ inovolves several areas.
 %include('content_close.inc')
 
 %include('content_intro.inc')
+<a name="ActiveFlash">
 <h2>Active Flash</h2>
 
 Modern scientific discovery is increasingly driven by large-scale
