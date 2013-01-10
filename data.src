@@ -96,7 +96,7 @@ These projects are described in more detail below.
 <p>
 Details about other ESGF related projects can be seen in the <a href="http://esgf.org">ESGF main page</a>. 
 
-Contributors: John Harney, Feiyi Wang, Tom Barron, Ross Miller
+<br>Contributors: John Harney, Feiyi Wang, Tom Barron, and Ross Miller
 
 <p>Selected Publications</p>
 <p>
@@ -268,11 +268,37 @@ read-only operations by outside clients.
 
 
     <h3>EZ-Pub</h3>
+<p>
+The Search and Front-End components help users gain access to data.
+For data to be available for discovery and download, it must first be
+published into the system. EZ-Pub provides a simple, stream-lined
+method for climate scientists to share their data with colleagues
+through the ESG Federation.
+
+<p>
+EZ-Pub conducts a dialog with the user to collect metadata describing
+the files to be published.
+
+<p>
+After collecting the user-provided metadata, EZ-Pub can work with
+multiple mechanisms to stage the metadata and data to the data node
+where it will be housed. Staging options include GridFTP Lite and
+Globus Online.
+
+<p>
+Once data files have been staged, they are scanned to collect internal
+metadata like file sizes, modification times, variable names, units,
+etc., and that information is formatted into xml files suitable for
+inclusion in a THREDDS catalog. These xml files are added to the
+THREDDS catalog and the THREDDS server is re-initialized so that it
+will be aware of the new files.
+
+<p>
+Finally, Solr is invoked to harvest the new metadata from THREDDS so
+it will appear in the search and discovery interface.
 
     <h3>ESGF SRM</h3>
 
-<p>
-Contributors: John Harney, Tom Barron
 %include('content_close.inc')
 
 %include('content_intro.inc')
