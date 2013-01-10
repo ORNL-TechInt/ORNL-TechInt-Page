@@ -1,0 +1,19 @@
+%include('html_intro.inc')
+    <meta name="keywords" content="jobs">
+    <meta name="description" content="NCCS TechInt group openings">
+    <title>Technology Integration Group: Jobs</title>
+%include('hdbody.inc')
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
+<h2>Opportunities in Technology Integration</h2>
+
+<ul>
+ <li />...
+</ul>
+
+<p><a href="http://www.olcf.ornl.gov/about/careers/">Careers in the Oak Ridge Leadership Computing Facility</a>
+<br><a href="http://jobs.ornl.gov/">Jobs at ORNL</a>
+
+%include('content_close.inc')
+%include('html_close.inc')

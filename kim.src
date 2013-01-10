@@ -1,0 +1,36 @@
+%include('html_intro.inc')
+    <meta name="keywords" content="members">
+    <meta name="description" content="NCCS TechInt group member page">
+    <title>Technology Integration Group: Youngjae Kim</title>
+%include('hdbody.inc')
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
+<h2><a href="http://users.nccs.gov/~yk7/index.html" target="_">Youngjae Kim</a></h2>
+
+<p/>Youngjae is a Research and Development Staff Member at US Department
+of Energy's Oak Ridge National Laboratory and works as an I/O Systems
+Computational Scientist for the National Center for Computational
+Sciences. 
+
+<p/>Youngjae's research interests include operating systems, parallel I/O
+and file systems, storage systems, emerging storage technologies, and
+performance evaluation. His current research projects include (i)
+NVMalloc libraries offering extended memory partitions using NVRAM
+devices for applications, (ii) a large-scale Flash-based storage
+system, (iii) efficient I/O scheduling algorithms for parallel file
+systems, and (iv) Active Flash that enables out-of-core computation on
+NVRAM devices. 
+
+<p/>Youngjae received his B.S. degree in Computer Science from 
+<a href="http://www.sogang.ac.kr/english/" target="_">Sogang
+University</a>, Korea in 2001, M.S. degree
+from <a href="http://www.kaist.edu" target="_">KAIST</a> in 2003 and
+Ph.D. degree in Computer Science and Engineering from
+<a href="http://www.psu.edu" target="_">Pennsylvania
+State University</a> in 2009. Youngjae is also an adjunct professor in the
+<a href="http://www.ece.gatech.edu/" target="_">School of Electrical
+and Computer Engineering</a> at Georgia Institute of Technology.
+
+%include('content_close.inc')
+%include('html_close.inc')

@@ -1,0 +1,20 @@
+%include('html_intro.inc')
+    <meta name="keywords" content="members">
+    <meta name="description" content="NCCS TechInt group member page">
+    <title>Technology Integration Group: Deryl Steinert</title>
+%include('hdbody.inc')
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
+<h2>Deryl Steinert</h2>
+
+<p/>Deryl has worked on the <a href="storage.html#HPSS">High Performance
+Storage System</a> (HPSS) since the project started in 1993. He
+graduated from <a href="http://www.psu.edu" target="_">Pennsylvania
+State University</a> in 1981 with a B.Sc. in Computer Science. Skilled
+in C and Java programming, he is the lead developer for the Storage
+System Manager subsystem, having done most of the development of the
+graphical administrative interface for HPSS.
+
+%include('content_close.inc')
+%include('html_close.inc')

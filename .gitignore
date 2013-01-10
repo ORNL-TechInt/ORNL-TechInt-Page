@@ -1,7 +1,12 @@
+mkhtml
+edit_cmsg
 version.js
 validate
 QUESTIONS
 scroll-md.png
+*.html
+*.pyc
+*.test
 *.do
 *.ignore
 *~

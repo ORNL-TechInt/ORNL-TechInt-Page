@@ -1,0 +1,14 @@
+%include('html_intro.inc')
+    <meta name="keywords" content="members">
+    <meta name="description" content="NCCS TechInt group member page">
+    <title>Technology Integration Group: John Harney</title>
+%include('hdbody.inc')
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
+<h2>John Harney</h2>
+<p>John Harney joined ORNL as a Postdoctoral Research Associate in 2010 after earning a PhD in computer science from the University of Georgia.   At UGA, he investigated the problem of building Web service compositions using decision-theoretic planners, as well as understanding volatility and its effect on compositions.   He has published and presented papers in the WWW, ICSOC and ICWS conferences, and has served as a technical referee in several other venues.  At ORNL, he is currently responsible for improving front end portal and search services for the Earth System Grid project, which aims to provide climate scientists a platform to publish and analyze climate data. His current research interests lie in scientific data management, Web services, the semantic Web, and artificial intelligence.  For more information, visit his <a href="http://users.nccs.gov/~8xo">personal page</a>.</p>
+
+
+%include('content_close.inc')
+%include('html_close.inc')

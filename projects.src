@@ -1,0 +1,39 @@
+%include('html_intro.inc')
+    <meta name="keywords" content="projects">
+    <meta name="description" content="NCCS TechInt group thrust areas">
+    <title>Technology Integration Group: Projects</title>
+%include('hdbody.inc')
+
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
+    <h2 class="title">Thrust Areas</h2>
+    <ul>
+      <li/><a href="storage.html">File and Storage
+      Systems</a> projects explore the limits of current
+      hardware capabilities both in terms of capacity (volume of data)
+      and capability (speed of reading and writing).
+
+      <li/><a href="nvm.html">Non-Volatile Memory</a>
+      experiments study the use of solid state devices and flash
+      memory as components of high performance storage systems.
+
+      <li/><a href="data.html">Data Management</a>
+      projects focus on managing large quantities of data across a
+      range of scientific disciplines, ensuring the integrity of the
+      data and its appropriate availability to legitimate users.
+
+      <li/><a href="networking.html">Networking</a>
+      projects seek to reduce latency and improve throughput, whether 
+      in the interconnect of a high performance cluster, within the
+      data center, across heterogeneous hardware and protocols, or
+      between institutions.
+
+      <li/><a href="architecture.html">Computer
+      Architecture</a> explores various options for architecting high
+      performance computational platforms optimized for scientific
+      discovery.
+
+    </ul>
+%include('content_close.inc')
+%include('html_close.inc')

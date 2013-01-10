@@ -1,0 +1,42 @@
+%include('html_intro.inc')
+    <meta name="keywords" content="index">
+    <meta name="description" content="NCCS TechInt group home page">
+    <title>Technology Integration Group, National Center for Computational
+         Sciences, ORNL</title>
+%include('hdbody.inc')
+
+%include('hdrnav.inc')
+
+<table id="vlayout">
+<tr><td id="vlayout-top">
+%include('content_intro.inc')
+    <h2 class="title">About the ORNL Technology Integration Group</h2>
+
+    <p>
+    The Technology Integration (TechInt) group is charged with
+    delivering new technologies into the Leadership Computing Facility
+    (OLCF) and other projects at ORNL by identifying gaps in the
+    system software stack and working with the R&D community to
+    develop, harden, and deploy solutions. Their technology scope
+    includes archival storage, parallel file systems, data management,
+    high-performance networking, and architecture. TechInt staff work
+    behind the scenes to develop the infrastructure that supports the
+    NCCS systems and keep it ahead of the technology curve. They
+    research and evaluate emerging technologies in the aforementioned
+    areas and provide the systems programming to seamlessly integrate
+    technologies and tools into the infrastructure as they are
+    adopted.
+
+%include('content_close.inc')
+</td></tr><tr><td id="vlayout-bottom">
+
+  <script language="JavaScript" type="text/javascript" src="js/version.js"></script>
+  <div class="version">
+    <script type="text/javascript">
+      version();
+    </script>
+  </div>
+
+</td></tr></table>
+
+%include('html_close.inc')

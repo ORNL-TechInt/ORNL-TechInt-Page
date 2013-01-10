@@ -9,6 +9,8 @@ import re
 import sys
 
 import HTMLParser
+import urllib2
+import xml.sax.saxutils as xml
 
 from optparse import *
 
@@ -21,6 +23,9 @@ def main(args):
     p.add_option('-d', '--debug',
                  action='store_true', default=False, dest='debug',
                  help='debug')
+    p.add_option('-w', '--w3c',
+                 action='store_true', default=False, dest='w3c',
+                 help='send file to validator.w3.org')
     p.add_option('-v', '--verbose',
                  action='store_true', default=False, dest='verbose',
                  help='more output')
@@ -37,7 +42,10 @@ def main(args):
 
     for filename in flist:
         if verbose(): print filename
-        check_file(filename)
+        if o.w3c:
+            w3c_validate(filename)
+        else:
+            check_file(filename)
 
     sys.exit(exit_value())
 
@@ -91,6 +99,35 @@ def verbose(value=None):
     return rval
 
 # ---------------------------------------------------------------------------
+def w3c_validate(filename):
+    """
+    For index.html, the validation URL is http://validator.w3.org/check?uri=http%3A%2F%2Fusers.nccs.gov%2F~tpb%2Ftechint_olcf%2Findex.html&charset=%28detect+automatically%29&doctype=Inline&group=0&user-agent=W3C_Validator%2F1.3
+    """
+    entities = {':': '%3a',
+                '/': '%2F',
+                '(': '%28',
+                ')': '%29'}
+    validator = "http://validator.w3.org"
+    host = "http://users.nccs.gov/~tpb/techint_olcf"
+    uri = xml.escape("uri=%s/%s" % (host, filename), entities)
+    charset = xml.escape("charset=(detect+automatically)", entities)
+    doctype = "doctype=Inline"
+    group = "group=0"
+    agent = xml.escape("user-agent=W3C_Validator/1.3", entities)
+    
+    url = "%s/check?%s&%s&%s&%s&%s" % (validator, uri, charset, doctype,
+                                       group, agent)
+    # print url
+
+    page = urllib2.urlopen(url)
+    text = page.readlines()
+    vname = "validation_%s" % filename
+    h = open(vname, 'w')
+    h.writelines(text)
+    h.close()
+    print("Validation output is in %s" % vname)
+
+# ---------------------------------------------------------------------------
 class TIParser(HTMLParser.HTMLParser):
     # -----------------------------------------------------------------------
     def __init__(self, filename="", text=""):
@@ -125,8 +162,9 @@ class TIParser(HTMLParser.HTMLParser):
         self.css = 'missing'
         self.filetype = 'missing'
         self.charset = 'missing'
+        self.description = 'missing'
         self.title = 'missing'
-        self.nostack = ['p', 'br']
+        self.nostack = ['p', 'br', 'meta', 'li']
         self.stack = []
 
         self.catch_tabs()
@@ -200,6 +238,15 @@ class TIParser(HTMLParser.HTMLParser):
             self.doctype = "present"
             
     # -----------------------------------------------------------------------
+    def handle_div(self, tag, attrs):
+        """
+        This gets called on <div> tags
+        """
+        if 'div' in self.stack:
+            # self.errmsg('warning: nested <div> tags detected', 0)
+            pass
+
+    # -----------------------------------------------------------------------
     def handle_head(self, tag, attrs):
         """
         This gets called when the parser sees a <head> tag.
@@ -214,6 +261,16 @@ class TIParser(HTMLParser.HTMLParser):
         self.body = 'open'
         
     # -----------------------------------------------------------------------
+    def handle_img(self, tag, attrs):
+        if 'alt' not in [n for (n, v) in attrs]:
+            self.errmsg("<img> tag needs an 'alt' attribute")
+
+    # -----------------------------------------------------------------------
+    def handle_input(self, tag, attrs):
+        if 'alt' not in [n for (n,v) in attrs]:
+            self.errmsg("<input> tag needs an 'alt' attribute")
+
+    # -----------------------------------------------------------------------
     def handle_link(self, tag, attrs):
         """
         This gets called when the parser sees a <link> tag. At least
@@ -226,7 +283,7 @@ class TIParser(HTMLParser.HTMLParser):
     def handle_meta(self, tag, attrs):
         """
         Handling for meta tags. Two things must be specified with meta
-        tags: filetype (e.g., <meta name="filetype" content="index" />) and charset
+        tags: filetype (e.g., <meta name="keywords" content="index" />) and charset
         (e.g., <meta charset="utf-8" />). They can both be specified in a single
         meta tag or split up.
         """
@@ -234,12 +291,23 @@ class TIParser(HTMLParser.HTMLParser):
         for tup in attrs:
             ad[tup[0]] = tup[1]
         if 'name' in ad.keys() \
-           and 'filetype' == ad['name'] \
+           and 'keywords' == ad['name'] \
            and 'content' in ad.keys():
-            self.filetype = 'present'
             self.filetype = ad['content']
+        if 'name' in ad.keys() \
+           and 'description' == ad['name']:
+            self.description = 'present'
         if 'charset' in ad.keys():
             self.charset = 'present'
+
+    # -----------------------------------------------------------------------
+    def handle_script(self, tag, attrs):
+        """
+        Handle <script> tags.
+        """
+        if 'head' in self.stack:
+            self.errmsg('Please put your <script> tags at the end of '
+                        + '<body> rather than in <head>', 0)
 
     # -----------------------------------------------------------------------
     def handle_title(self, tag, attrs):
@@ -346,14 +414,12 @@ class TIParser(HTMLParser.HTMLParser):
 
         if self.filetype == 'missing':
             self.errmsg("Filetype missing. Please add "
-                        + "'<meta name=\"filetype\" content=\"[ft]\" /> "
+                        + "'<meta name=\"keywords\" content=\"[ft]\" /> "
                         + "where 'ft' is one of 'about', 'proj', 'member', "
                         + "'contact', 'jobs', 'nav', 'pub', or 'software' "
                         + "in the <head> section.")
-        elif self.filetype == 'index' and self.title == 'missing':
-            self.errmsg("A <title> tag is needed for this file.")
-        elif self.filetype != 'index' and self.title != 'missing':
-            self.errmsg("This file should not have a <title> tag.")
+        elif self.title == 'missing':
+            self.errmsg("A <title> tag is needed for this file.", 0)
             
         if self.charset == 'missing':
             self.errmsg("Charset not specified. Please add "
@@ -364,7 +430,12 @@ class TIParser(HTMLParser.HTMLParser):
             self.errmsg("No CSS link found in <head>. Please add at least "
                         + "<link rel='stylesheet' type='text/css' "
                         + "href='techint_f.css' />")
-        
+
+        if self.description == 'missing':
+            self.errmsg("File description not found. Please add at least "
+                        + '<meta name="description" content="page description"> '
+                        + 'in the <head> section.')
+                        
     # -----------------------------------------------------------------------
     def standard_tag_checks(self, tag, attrs):
         """
@@ -396,6 +467,9 @@ class TIParser(HTMLParser.HTMLParser):
         elif 1 == len(self.stack) and tag != 'head' and tag != 'body':
             self.errmsg("stray '%s' tag found" % tag)
 
+        if tag == 'style' or 'style' in [n for (n,v) in attrs]:
+            self.errmsg('warning: external styling is prefered', 0)
+            
         self.handle_named_tag(tag, attrs)
         self.catch_unquoted_attrs(self.get_starttag_text(), attrs)
         self.catch_deprecated_tags(tag)

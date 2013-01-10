@@ -1,0 +1,20 @@
+%include('html_intro.inc')
+    <meta name="keywords" content="members">
+    <meta name="description" content="NCCS TechInt group member page">
+    <title>Technology Integration Group: Ross Miller</title>
+%include('hdbody.inc')
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
+<h2>Ross Miller</h2>
+
+<p>Ross joined the Technology Integration group in 2009.
+
+<p>Since joining Technology Integration, among other assignments, Ross
+  has worked on Spider, the Lustre file system that supported Jaguar;
+  the Earth System Grid, publishing and curating climate data; and
+  developing the Mantid software as part of the ADARA project at the
+  Spallation Neutron Source.
+
+%include('content_close.inc')
+%include('html_close.inc')

@@ -1,0 +1,45 @@
+%include('html_intro.inc')
+    <meta name="keywords" content="members">
+    <meta name="description" content="NCCS TechInt group member page">
+    <title>Technology Integration Group: Sarp Oral</title>
+%include('hdbody.inc')
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
+<h2><a href="http://www.ccs.ornl.gov/~oral" target="_">Sarp Oral</a></h2>
+
+<p/>Dr. Sarp Oral is a Research and Development Staff Member at the
+<a href="http://www.olcf.ornl.gov/" target="_">Oak Ridge
+Leadership Computing Facility</a> (OLCF) of 
+<a href="http://www.ornl.gov" target="_">Oak Ridge National
+Laboratory</a>, where he is a member of the Technology Integration
+Group and the Task Lead for the
+<a href="storage.html">File and Storage Systems projects</a>. 
+
+<p/>His research and development interests are focused on computer
+benchmarking, parallel I/O and file systems, high-performance
+computing and networking, system and storage area networks, computer
+architecture, fault-tolerance, storage technologies and networked
+storage. 
+
+<p/>Dr. Oral holds a Ph.D. in Computer Engineering from
+<a href="www.ufl.edu" target="_">University of Florida</a>
+and an M.Sc. in Biomedical Engineering from
+<a href="http://www.cu.edu.tr/Content/Asp/English/index.asp"
+target="_">Cukurova University</a>, Turkey. During his Ph.D. studies
+Dr. Oral has served as the High Performance Networking Group Leader
+and also as the Associate Laboratory Director at the
+<a href="" target="_">High-Performance Computing
+Simulation Lab</a>, University of Florida under Dr. Alan D. George, his
+Ph.D. advisor. 
+
+<p/>Dr. Oral is currently serving as the Co-Chair of
+<a href="http://www.opensfs.org" target="_">OpenSFS</a> Benchmarking
+Work Group (BWG) and also as a member of the
+<a href="lustre.org" target="_">
+Lustre</a> User Group Meeting Organizing Committee. He can be reached
+at oralhs at ornl dot gov.
+
+
+%include('content_close.inc')
+%include('html_close.inc')

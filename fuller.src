@@ -1,0 +1,21 @@
+%include('html_intro.inc')
+    <meta name="keywords" content="members">
+    <meta name="description" content="NCCS TechInt group member page">
+    <title>Technology Integration Group: Doug Fuller</title>
+%include('hdbody.inc')
+%include('hdrnav.inc')
+%include('content_intro.inc')
+<h2>Doug Fuller</h2>
+
+<p>Doug joined the Technology Integration group in 2009 from Arizona
+  State University, where he architected and led the implementation of
+  high performance Linux Infiniband clusters based on Lustre, MPI, and
+  OpenMP.
+
+<p>Doug received his B.Sc. from Iowa State University in 2002 and his
+  M.Sc. in Computer Science from Iowa State University in 2005.
+
+<p>In addition to other projects, Doug led the effort to stand up the
+NOAA system Gaea.
+%include('content_close.inc')
+%include('html_close.inc')
