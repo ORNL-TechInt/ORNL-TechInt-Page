@@ -37,6 +37,13 @@ cloning your copy of the repo, you can activate these hooks by running
 This creates the appropriate symlinks from .git/hooks to scripts in
 githooks.
 
+Available hook scripts include
+
+   set-version: generate js/version.js, based on the output of 'git
+      describe'. mk_symlinks links this as the post-commit hook.
+
+   post-merge: call set-version, then run make to rebuild the html
+      files. mk_symlinks links this as the post-merge hook.
 
 Special Measures
 ----------------
@@ -117,3 +124,21 @@ Implications
 
     * Run make.
 
+Makefile Targets
+----------------
+
+The following targets are available in the Makefile:
+
+ * all: rebuild all html files from .src and .inc files
+
+ * %.html: tells make that foo.html depends on foo.src as well as
+       all the .inc files
+    
+ * mkhtml: creates symlink mkhtml -> mkhtml.py if needed
+
+ * clean: removes generated files
+
+ * w3valid: runs each .html file through validator.w3.org. If there
+       are errors in foo.html, they are saved in validation_foo.html.
+
+ * valid: run the local python validation checks on the .html files.

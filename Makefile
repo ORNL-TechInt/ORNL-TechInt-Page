@@ -52,5 +52,5 @@ clean:
 w3valid: all
 	validate -r -w *.html
 
-valid:
+valid: all
 	validate *.html
