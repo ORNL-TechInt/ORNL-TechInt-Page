@@ -13,4 +13,4 @@ ln -s ../../githooks/set-version .git/hooks/post-commit
 
 # We also want to regenerate js/version.js after 'git pull'. The
 # post-merge hook takes care of this.
-ln -s ../../githooks/set-version .git/hooks/post-merge
+ln -s ../../githooks/post-merge .git/hooks/post-merge
