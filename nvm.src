@@ -7,6 +7,32 @@
 %include('hdrnav.inc')
 
 %include('content_intro.inc')
+<div class="overview">
+In the following projects, we explore non-volatile memory devices from
+several perspectives including fault tolerance, memory extension, and
+out-of-core data analytics.
+</div>
+%include('content_close.inc')
+
+%include('content_intro.inc')
+<h2>Burst Buffers</h2>
+
+Massively parallel scientific applications, running on extreme-scale
+supercomputers, produce hundreds of terabytes of checkpoint snapshot
+data per run, driving the need for storage solutions to improve their
+I/O performance. Traditional parallel file systems (PFS) in high
+performance computing (HPC) systems are unable to keep up with such
+high data rates, creating a storage wall. Our goal in this effort is
+to explore the construction of an SSD-based burst buffer solution that
+is able to act as a performance impedance matching device by absorbing
+application checkpoint data and seamlessly draining it to the PFS.
+
+<p>Contributors: Doug Fuller, Sudharshan Vazhkudai, Dave Dillow, Sarp
+Oral, Feiyi Wang, and James Simmons
+
+%include('content_close.inc')
+
+%include('content_intro.inc')
     <a name="NVMalloc"/>
     <h2 class="title"><a href="http://users.nccs.gov/~vazhkuda/NVMalloc.html" 
     target="_">NVMalloc</a></h2>
@@ -44,7 +70,7 @@ inovolves several areas.
 
 </ul>
 
-    <p/>Contributors: Youngjae Kim, Chao Wang, Sudharshan Vazhkudai
+    <p/>Contributors: Youngjae Kim, Chao Wang, and Sudharshan Vazhkudai
 
 
 <ul type="circle">
@@ -63,44 +89,35 @@ inovolves several areas.
 %include('content_close.inc')
 
 %include('content_intro.inc')
-<h2>Burst Buffers</h2>
-
-Solid-state Disks (SSDs) do not have any mechanical moving parts and
-provide low-latency access, hig h throughput and less power compared
-to Hard Disk Drives (HDDs). However, integrating SSDs into exis ting
-HPC systems is non-trivial because Flash memory suffers from limits on
-its reliability, and an order of magnitude more expensive than the
-HDDs. Thus, HPC architects and researchers have been exploring various
-storage systems designs using SSDs to build cost-efficient storage
-systems. One of the proposed designs is to build a SSD tier to use for
-burst buffers to absorb burst of application I/O requests. Thus we
-explore various design space of the SSD tiers for burst buffer. The
-work involves several areas.
-
-
-<ul>
-  <li/>Designing SSD tiers for burst buffer in HPC systems
-  <li/>Developing detailed performance and energy models for the study of the feasibility of the tiered architecture 
-  <li/>Identifying various application scenarios (eg. I/O checkpointing) of maximizing the use of the burst buffer
-  <li/>Studying application scheduling for the efficient use of the burst buffer
-</ul>
-
-Contributors: Sudharshan Vazhkudai
-%include('content_close.inc')
-
-%include('content_intro.inc')
 <h2>Active Flash</h2>
 
-This is the work related to out-of-core analytics on SSDs. In this project, we propose Active Flash, to expedite data analysis pipelines by migrating to the location of the data, the flash device itself. Active Flash has the potential to enable true out-of-core data analytics by freeing up both the compute core and the associated main memory. The work involves several areas. 
+Modern scientific discovery is increasingly driven by large-scale
+supercomputing simulations, followed byÿdata analysis tasks. These
+data analyses are either performed offline, on smaller-scale clusters,
+or on the uspercomputer itself. Unfortunately, these techniques sffer
+from performance and energy inefficiencies due to increased data
+movement between the compute and storageÿsubsystems. We propose Active
+Flash, an in-situ scientific data analysis approach, wherein data
+analysis is conducted on the solid-state device (SSD), whereÿthe data
+already resides.ÿActive Flash has the potential to enable true
+out-of-core data analytics by freeing up both the compute core and the
+associated main memory. The work involves several areas.
 
 <ul>
-  <li/>Developing analytics models for the performance and energy feasibility of Active Flash, and comparing them against traditional in-situ and offline data analysis schemes
-  <li/>Building an Active Flash prototype to demonstrate its viability
-  <li/>Studying co-scheduling of analyses and internal flash management activities on the SSDs controller 
-  <li/>Defining efficient representations of data object interfaces for Active Flash 
+  <li>Developing analytical models for the performance and energy
+  feasibility of Active Flash, and comparing them against traditional
+  in-situ and offline data analysis schemes
+
+  <li>Building an Active Flash prototype to demonstrate its viability
+
+  <li>Studying co-scheduling of analyses and internal flash management
+  activities on the SSDs controller
+
+  <li>Defining efficient representations of data object interfaces for
+  Active Flash
 </ul>
 
-Contributors: Sudharshan Vazhkudai, Youngjae Kim
+Contributors: Sudharshan Vazhkudai and Youngjae Kim
 
 <ul type="circle">
   <li/>Selected publications
@@ -126,11 +143,12 @@ Contributors: Sudharshan Vazhkudai, Youngjae Kim
 %include('content_intro.inc')
 <h2>Flash Storage Systems</h2>
 
-Although SSDs offer significant performance improvements over had disk
-drives (HDDs) for a number of workloads, they can exhibit substantial
-variance in request latency and throughput as a result of garbage
-collection (GC). Thus, in this project, we explore design challenges
-on SSD based storage systems. The work involves several areas.
+Although SSDs offer significant performance improvements over hard
+disk drives (HDDs) for a number of workloads, they can exhibit
+substantial variance in request latency and throughput as a result of
+garbage collection (GC). Thus, in this project, we explore design
+challenges on SSD based storage systems. The work involves several
+areas.
 
 <ul>
   <li/>Benchmarking SSDs and understanding their performance and behavior

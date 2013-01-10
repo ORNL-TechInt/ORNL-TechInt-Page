@@ -14,9 +14,10 @@
       hardware capabilities both in terms of capacity (volume of data)
       and capability (speed of reading and writing).
 
-      <li/><a href="nvm.html">Non-Volatile Memory</a>
-      experiments study the use of solid state devices and flash
-      memory as components of high performance storage systems.
+      <li/>In the <a href="nvm.html">Non-Volatile Memory</a> projects,
+      we explore non-volatile memory devices from several perspectives
+      including fault tolerance, memory extension, and out-of-core
+      data analytics.
 
       <li/><a href="data.html">Data Management</a>
       projects focus on managing large quantities of data across a

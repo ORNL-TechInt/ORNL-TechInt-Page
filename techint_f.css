@@ -257,6 +257,16 @@ html {
     height: 2.5em;
     width: 14em;
 }
+.overview {
+    font-size: 18px;
+    letter-spacing: -.05em;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 10px 0px 10px 0px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: black;
+    width: 620px;
+}
 .right {
     float: right;
 }
