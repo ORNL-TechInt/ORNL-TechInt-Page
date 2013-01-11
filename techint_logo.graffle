@@ -42,22 +42,24 @@
 	<key>ColumnSpacing</key>
 	<real>36</real>
 	<key>CreationDate</key>
-	<string>2012-11-01 13:33:19 -0400</string>
+	<string>2012-11-01 17:33:19 +0000</string>
 	<key>Creator</key>
 	<string>Tom Barron</string>
 	<key>DisplayScale</key>
-	<string>1 0/72 in = 1 0/72 in</string>
+	<string>1 0/72 in = 1.0000 in</string>
 	<key>GraphDocumentVersion</key>
 	<integer>8</integer>
 	<key>GraphicsList</key>
 	<array>
 		<dict>
 			<key>Bounds</key>
-			<string>{{196.25, 258}, {31.5, 30}}</string>
+			<string>{{161.3435155746113, 256.01487181192158}, {31.5, 30}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
 			<integer>50</integer>
+			<key>Rotation</key>
+			<real>45</real>
 			<key>Shape</key>
 			<string>Circle</string>
 			<key>Style</key>
@@ -95,11 +97,13 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{106.25, 229}, {31.5, 30}}</string>
+			<string>{{118.21000192223205, 171.86916485072169}, {31.5, 30}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
 			<integer>49</integer>
+			<key>Rotation</key>
+			<real>45</real>
 			<key>Shape</key>
 			<string>Circle</string>
 			<key>Style</key>
@@ -130,11 +134,13 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{45.5, 200.5}, {31.5, 30}}</string>
+			<string>{{95.405808228965498, 108.75988462982221}, {31.5, 30}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
 			<integer>48</integer>
+			<key>Rotation</key>
+			<real>45</real>
 			<key>Shape</key>
 			<string>Circle</string>
 			<key>Style</key>
@@ -172,11 +178,13 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{226.5, 200.5}, {31.5, 30}}</string>
+			<string>{{223.39213562373101, 236.74621202458746}, {31.5, 30}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
 			<integer>47</integer>
+			<key>Rotation</key>
+			<real>45</real>
 			<key>Shape</key>
 			<string>Circle</string>
 			<key>Style</key>
@@ -216,11 +224,13 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{106.25, 173}, {31.5, 30}}</string>
+			<string>{{157.80798166867859, 132.27118510427505}, {31.5, 30}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
 			<integer>46</integer>
+			<key>Rotation</key>
+			<real>45</real>
 			<key>Shape</key>
 			<string>Circle</string>
 			<key>Style</key>
@@ -258,11 +268,13 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{106.25, 58}, {31.5, 30}}</string>
+			<string>{{239.12526150513179, 50.953905267821796}, {31.5, 30}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
 			<integer>45</integer>
+			<key>Rotation</key>
+			<real>45</real>
 			<key>Shape</key>
 			<string>Circle</string>
 			<key>Style</key>
@@ -300,11 +312,13 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{76, 115.5}, {31.5, 30}}</string>
+			<string>{{177.07664145601206, 70.222565055155428}, {31.5, 30}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
 			<integer>44</integer>
+			<key>Rotation</key>
+			<real>45</real>
 			<key>Shape</key>
 			<string>Circle</string>
 			<key>Style</key>
@@ -347,11 +361,13 @@
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{161, 94.5}, {31.5, 30}}</string>
+					<string>{{252.02996026178675, 115.47739905109438}, {31.5, 30}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
 					<integer>52</integer>
+					<key>Rotation</key>
+					<real>45</real>
 					<key>Shape</key>
 					<string>Circle</string>
 					<key>Style</key>
@@ -389,11 +405,13 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{282.5, 94.5}, {31.5, 30}}</string>
+					<string>{{337.94343417595246, 201.39087296526012}, {31.5, 30}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
 					<integer>53</integer>
+					<key>Rotation</key>
+					<real>45</real>
 					<key>Shape</key>
 					<string>Circle</string>
 					<key>Style</key>
@@ -431,11 +449,13 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{221.75, 123}, {31.5, 30}}</string>
+					<string>{{274.83415395505273, 178.58667927199397}, {31.5, 30}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
 					<integer>54</integer>
+					<key>Rotation</key>
+					<real>45</real>
 					<key>Shape</key>
 					<string>Circle</string>
 					<key>Style</key>
@@ -466,11 +486,13 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{221.75, 66}, {31.5, 30}}</string>
+					<string>{{315.13924048268598, 138.28159274436075}, {31.5, 30}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
 					<integer>55</integer>
+					<key>Rotation</key>
+					<real>45</real>
 					<key>Shape</key>
 					<string>Circle</string>
 					<key>Style</key>
@@ -501,11 +523,13 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{192.5, 67}, {90, 85}}</string>
+					<string>{{265.73669721886949, 130.93413600817735}, {90, 85}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
 					<integer>56</integer>
+					<key>Rotation</key>
+					<real>45</real>
 					<key>Shape</key>
 					<string>Rectangle</string>
 					<key>Style</key>
@@ -539,14 +563,18 @@
 			</array>
 			<key>ID</key>
 			<integer>51</integer>
+			<key>Rotation</key>
+			<real>45</real>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{167, 200.5}, {31.5, 30}}</string>
+			<string>{{181.31928214313132, 194.67335854398792}, {31.5, 30}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
 			<integer>38</integer>
+			<key>Rotation</key>
+			<real>45</real>
 			<key>Shape</key>
 			<string>Circle</string>
 			<key>Style</key>
@@ -584,11 +612,13 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{196.25, 143}, {31.5, 30}}</string>
+			<string>{{242.66079541106438, 174.6975919754679}, {31.5, 30}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
 			<integer>37</integer>
+			<key>Rotation</key>
+			<real>45</real>
 			<key>Shape</key>
 			<string>Circle</string>
 			<key>Style</key>
@@ -626,11 +656,13 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{167, 173}, {90, 85}}</string>
+			<string>{{172.75215549283789, 187.85623189369471}, {90, 85}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
 			<integer>33</integer>
+			<key>Rotation</key>
+			<real>45</real>
 			<key>Shape</key>
 			<string>Rectangle</string>
 			<key>Style</key>
@@ -663,11 +695,13 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{77, 173}, {90, 85}}</string>
+			<string>{{109.11254518604839, 124.21662158690506}, {90, 85}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
 			<integer>31</integer>
+			<key>Rotation</key>
+			<real>45</real>
 			<key>Shape</key>
 			<string>Rectangle</string>
 			<key>Style</key>
@@ -700,11 +734,13 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{136.625, 115.5}, {31.5, 30}}</string>
+			<string>{{219.94499006544658, 113.09091366458986}, {31.5, 30}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
 			<integer>43</integer>
+			<key>Rotation</key>
+			<real>45</real>
 			<key>Shape</key>
 			<string>Circle</string>
 			<key>Style</key>
@@ -735,11 +771,13 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{77, 88}, {90, 85}}</string>
+			<string>{{169.21662158690509, 64.112545186048337}, {90, 85}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
 			<integer>3</integer>
+			<key>Rotation</key>
+			<real>45</real>
 			<key>Shape</key>
 			<string>Rectangle</string>
 			<key>Style</key>
@@ -843,7 +881,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2012-11-01 13:54:33 -0400</string>
+	<string>2013-01-11 20:03:18 +0000</string>
 	<key>Modifier</key>
 	<string>Tom Barron</string>
 	<key>NotesVisible</key>
@@ -861,6 +899,11 @@
 			<string>float</string>
 			<string>41</string>
 		</array>
+		<key>NSHorizonalPagination</key>
+		<array>
+			<string>coded</string>
+			<string>BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU051bWJlcgCEhAdOU1ZhbHVlAISECE5TT2JqZWN0AIWEASqEhAFxlwCG</string>
+		</array>
 		<key>NSLeftMargin</key>
 		<array>
 			<string>float</string>
@@ -870,6 +913,11 @@
 		<array>
 			<string>size</string>
 			<string>{612, 792}</string>
+		</array>
+		<key>NSPrintReverseOrientation</key>
+		<array>
+			<string>int</string>
+			<string>0</string>
 		</array>
 		<key>NSRightMargin</key>
 		<array>
@@ -928,7 +976,7 @@
 		<key>SidebarWidth</key>
 		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{0, 0}, {575, 733}}</string>
+		<string>{{0, 0}, {575, 732}}</string>
 		<key>Zoom</key>
 		<real>1</real>
 		<key>ZoomValues</key>

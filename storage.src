@@ -13,12 +13,53 @@
 
 %include('content_intro.inc')
     <h2 id="Spider" class="title">Spider</h2>
+
+<p>
+Spider, a Lustre-based center-wide ﬁle system, delivers up to 240 GB/s
+of ﬁle system level throughput and provides 10.7 PB of formatted disk
+capacity to NCCS users. Since it is connected to all major NCCS
+computational resources, it provides a means of sharing data among
+platforms, reducing the need for long transfers of large files between
+machines.
+
+<p>
+Through careful analysis, Spider was engineered to be fault tolerant,
+so that if one platform using Spider fails, the impact on other platforms using the
+storage system is minimized.
+
+<p>
+Spider's architecture also allows for the addition of storage capacity
+with minimal reconfiguration so that the storage pool can 
+scale as needed to support center requirements.
 %include('content_close.inc')
 
 %include('content_intro.inc')
     <h2 id="HPSS" class="title">HPSS</h2>
-%include('content_close.inc')
 
+<p>
+HPSS is the result of over a decade of collaboration among five
+Department of Energy laboratories and IBM, with significant
+contributions by universities and other laboratories worldwide.
+
+<p>
+HPSS can manage petabytes of data on disk and robotic tape libraries,
+providing highly flexible and scalable hierarchical storage management
+that keeps recently used data on disk and less recently used data on
+tape. Through the use of cluster, LAN and/or SAN technology, HPSS
+aggregate the capacity and performance of many computers, disks, and
+tape drives into a single virtual file system of exceptional size and
+versatility. This approach enables HPSS to easily meet otherwise
+unachievable demands of total storage capacity, file sizes, data
+rates, and number of objects stored.
+
+<p>
+TechInt members developed and maintain components of HPSS responsible
+for the administrative interfaces, low level data management, and
+logging.
+
+<p>
+Contributors: Deryl Steinert, Vicky White, and Tom Barron
+%include('content_close.inc')
 
 %include('content_intro.inc')
     <h2 id="Spider2" class="title">Spider2</h2>
