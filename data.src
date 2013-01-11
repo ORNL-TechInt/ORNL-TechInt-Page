@@ -42,6 +42,10 @@ feedback from their experiments. Moving forward, ADARA will be
 deployed in production across a number of beam lines at SNS as the
 capabilities developed within ADARA continue to be adopted by the SNS
 facility.
+
+<p>
+Contributors: Dave Dillow, Feiyi Wang, Dale Stansberry, and Ross Miller
+
 %include('content_close.inc')
 
 
