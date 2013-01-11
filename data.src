@@ -10,11 +10,6 @@
     <h2 class="title" id="ADARA">ADARA</h2>
 %include('content_close.inc')
 
-
-%include('content_intro.inc')
-    <h2 class="title" id="UVCDAT">UV/CDAT</h2>
-%include('content_close.inc')
-
 %include('content_intro.inc')
     <h2 class="title" id="PARCAT">ParCAT</h2>
 
