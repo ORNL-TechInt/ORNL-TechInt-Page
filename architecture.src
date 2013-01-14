@@ -12,7 +12,7 @@
 <p>With the leveling off of processor clockspeeds, chip manufacturers have
 increased the number of cores to consume the additional transitors promised by
 Moore's Law. As we move towards exascale systems, we may see higher core counts
-per node including more cores per socket, more sockets, add add-in boards such
+per node including more cores per socket, more sockets, and add-in boards such
 as GP-GPUs and many-core coprocessors connected via PCI Express. As users
 initially port their applications to Titan's GP-GPUs, they may not fully utilize
 the CPUs leaving them available for functional partitioning.</p>
