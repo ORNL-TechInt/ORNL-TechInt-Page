@@ -22,7 +22,10 @@ small subset of cores on a many-core systems. These services may include I/O
 buffering, which would allow the application to resume computation more quickly,
 or various forms of fine-grain analysis.</p>
 
-    <p>Contributors: Scott Atchley, Sudharshan Vazhkudai
+    <p>Contributors: Scott Atchley and Sudharshan Vazhkudai
+
+    <p>Status: On-going
+
 %include('content_close.inc')
 %include('html_close.inc')
 

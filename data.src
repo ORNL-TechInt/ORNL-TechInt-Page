@@ -46,6 +46,9 @@ facility.
 <p>
 Contributors: Dave Dillow, Feiyi Wang, Dale Stansberry, and Ross Miller
 
+<p>
+Status: On-going
+
 %include('content_close.inc')
 
 
@@ -69,6 +72,10 @@ released as an open source project.
 
 <p>
 Contributors: Brian Smith
+
+<p>
+Status: Complete
+
 %include('content_close.inc')
 
 %include('content_intro.inc')
@@ -127,7 +134,9 @@ These projects are described in more detail below.
 Details about other ESGF related projects can be seen on the <a
 href="http://esgf.org">ESGF main page</a>.
 
-<br>Contributors: John Harney, Feiyi Wang, Tom Barron, and Ross Miller
+<p>Contributors: John Harney, Feiyi Wang, Tom Barron, and Ross Miller
+
+<p>Status: On-going
 
 <p>Selected Publications
 <p>

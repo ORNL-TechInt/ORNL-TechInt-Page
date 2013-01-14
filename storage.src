@@ -7,7 +7,7 @@
 %include('hdrnav.inc')
 
 <!-- For each project, we want to include information about 1) who
-     works on it, 2) what its status is (completed, ongoing, in
+     works on it, 2) what its status is (completed, ongoing , in
      maintenance, etc.), 3) links to related software or papers on the
      software/publications pages, and 4) funding agency -->
 
@@ -170,10 +170,10 @@ Quality of Service (QOS), heterogeneous storage media, and object
 replication and morphing.
 
 <p>
-Status: On-going
+Contributors: Bradley Settlemyer, David Dillow, Feiyi Wang, and Sarp Oral
 
 <p>
-Contributors: Bradley Settlemyer, David Dillow, Feiyi Wang, and Sarp Oral
+Status: On-going
 
 %include('content_close.inc')
 
@@ -254,10 +254,10 @@ of I/O actually performed by the application on a per-file,
 per-process, or global basis.
 
 <p>
-Status: Completed
+Contributors: Ken Matney, James Simmons, and Douglas Fuller
 
 <p>
-Contributors: Ken Matney, James Simmons, and Douglas Fuller
+Status: Completed
 
 %include('content_close.inc')
 
@@ -289,11 +289,11 @@ Ridge Leadership Computing Facility-3 (OLCF-3) Scalable Storage System
 representative of common I/O workloads.
 
 <p>
-Status: On-going
-
-<p>
 Contributors: Sarp Oral, David Dillow, Youngjae Kim, Feiyi Wang, and James
 Simmons
+
+<p>
+Status: On-going
 
 %include('content_close.inc')
 
@@ -335,7 +335,9 @@ behavior of their application.
 
 <p>
 Contributors: Raghul Gunasekaran, Sudharshan Vazhkudai, Yang Liu
-(NCSU), Xiaosong Ma (NCSU)
+(NCSU), and Xiaosong Ma (NCSU)
+
+<p>Status: On-going
  
 %include('content_close.inc')
 
@@ -386,9 +388,11 @@ ensuring proper execution of community involvement in Lustre, creating an
 open forum for     community discussion, and advising the OpenSFS Board of
 Directors on the community’s goals and perspective on Lustre.
 
-Status: On-going
-
+<p>
 Contributors: David Dillow, Sarp Oral, and James Simmons
+
+<p>
+Status: On-going
 
 %include('content_close.inc')
 
@@ -413,10 +417,10 @@ community in porting and developing tools to leverage this incredibly
 powerful compute platform.
 
 <p>
-Status: Completed
+Contributors: Douglas Fuller and Sarp Oral
 
 <p>
-Contributors: Douglas Fuller and Sarp Oral
+Status: Completed
 
 %include('content_close.inc')
 %include('html_close.inc')

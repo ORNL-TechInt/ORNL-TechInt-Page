@@ -46,6 +46,9 @@
     information.</p>
 
     <p>Contributors: Scott Atchley
+
+    <p>Status: Complete
+
 %include('content_close.inc')
 
 %include('content_intro.inc')
@@ -62,16 +65,22 @@
     </ul>
 
     <p>Contributors: Scott Atchley, Youngjae Kim
+
+    <p>Status: On-going
+
 %include('content_close.inc')
 
 %include('content_intro.inc')
     <h2 id="DStar">DStar</h2>
     <p>DStar is a native implementation of CCI embedded in SeaStar
       firmware. By replacing Cray Portals, CCI can achieve a latency
-      of about 3 &#956;s compared to around 6 &#956;s when using
+      of about 3 &micro;s compared to around 6 &micro;s when using
       Portals for point-to-point small messages. CCI on DStar can even
-      send a 4 KiB message in less than 6 &#956;s.</p>
+      send a 4 KiB message in less than 6 &micro;s.</p>
 
     <p>Contributors: David Dillow
+
+    <p>Status: On-going
+
 %include('content_close.inc')
 %include('html_close.inc')

@@ -30,6 +30,9 @@ application checkpoint data and seamlessly draining it to the PFS.
 <p>Contributors: Doug Fuller, Sudharshan Vazhkudai, Dave Dillow, Sarp
 Oral, Feiyi Wang, and James Simmons
 
+<p>
+Status: On-going
+
 %include('content_close.inc')
 
 %include('content_intro.inc')
@@ -71,6 +74,7 @@ inovolves several areas.
 
     <p>Contributors: Youngjae Kim, Chao Wang, and Sudharshan Vazhkudai
 
+    <p>Status: Complete
 
 <ul>
   <li>Selected publications
@@ -116,7 +120,9 @@ associated main memory. The work involves several areas.
   Active Flash
 </ul>
 
-Contributors: Sudharshan Vazhkudai and Youngjae Kim
+<p>Contributors: Sudharshan Vazhkudai and Youngjae Kim
+
+<p>Status: On-going
 
 <ul>
   <li>Selected publications
@@ -159,7 +165,9 @@ areas.
 
 </ul>
 
-Contributors: Youngjae Kim, Sarp Oral, and Dave Dillow
+<p>Contributors: Youngjae Kim, Sarp Oral, and Dave Dillow
+
+<p>Status: On-going
 
 <ul>
   <li>Selected publications
