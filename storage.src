@@ -11,81 +11,294 @@
      maintenance, etc.), 3) links to related software or papers on the
      software/publications pages, and 4) funding agency -->
 
+<!-- ---------------------------------------------------------- -->
+%include('content_intro.inc')
+    <h2 id="Invictus" class="title">Invictus</h2>
+
+<p>
+
+Oak Ridge Leadership Computing Facility (OLCF) at Oak Ridge National
+Laboratory (ORNL) has a long history of deploying the world's fastest
+supercomputers for enabling open science. Coupled with other OLCF
+computational resources, <a
+href="http://www.olcf.ornl.gov/titan">Titan</a>, a 27 PFLOPS Cray XK7
+system, radically increases the I/O demand beyond the capabilities of
+the existing Spider parallel file system. The new <a
+href="http://www.lustre.org">Lustre</a> parallel file system, code
+named Invictus, is designed to provide more than 18 PB to open science
+users at OLCF at an aggregate bandwidth of 1 TB/s.
+
+<p>
+Contributors: Sarp Oral, David Dillow, Feiyi Wang, Douglas Fuller, Jason
+Hill, Dustin Leverman, and Blake Caldwell
+
+<p>
+Status: On-going
+
+%include('content_close.inc')
+
+
+<!-- ---------------------------------------------------------- -->
 %include('content_intro.inc')
     <h2 id="Spider" class="title">Spider</h2>
 
 <p>
-Spider, a Lustre-based center-wide ﬁle system, delivers up to 240 GB/s
-of ﬁle system level throughput and provides 10.7 PB of formatted disk
-capacity to NCCS users. Since it is connected to all major NCCS
-computational resources, it provides a means of sharing data among
-platforms, reducing the need for long transfers of large files between
-machines.
+The Spider system at the Oak Ridge National Laboratory’s (ORNL)
+Leadership Computing Facility (OLCF) was the world’s largest scale
+Lustre parallel file system at the time of deployment. The project
+started in 2005 and was successfully deployed and delivered to users
+in 2008. Envisioned as a shared parallel file system, Spider is
+capable of delivering 240 GB/s aggregate throughput on a file system
+with 10 PB of usable space, supporting over 26,000 clients
+concurrently accessing the file system to support workloads of the
+OLCF’s diverse computational platforms.
 
 <p>
-Through careful analysis, Spider was engineered to be fault tolerant,
-so that if one platform using Spider fails, the impact on other platforms using the
-storage system is minimized.
+Contributors: Galen Shipman, David Dillow, Sarp Oral, Feiyi Wang, Ross
+Miller, and Jason Hill
 
 <p>
-Spider's architecture also allows for the addition of storage capacity
-with minimal reconfiguration so that the storage pool can 
-scale as needed to support center requirements.
+Status: Completed
+
 %include('content_close.inc')
 
+<!-- ---------------------------------------------------------- -->
 %include('content_intro.inc')
     <h2 id="HPSS" class="title">HPSS</h2>
 
 <p>
-HPSS is the result of over a decade of collaboration among five
-Department of Energy laboratories and IBM, with significant
-contributions by universities and other laboratories worldwide.
+<a href="http://www.hpss-collaboration.org/" target="other">HPSS</a>
+is the result of over a decade of collaboration among five Department
+of Energy laboratories and IBM, with significant contributions by
+universities and other laboratories worldwide.
 
 <p>
 HPSS can manage petabytes of data on disk and robotic tape libraries,
 providing highly flexible and scalable hierarchical storage management
 that keeps recently used data on disk and less recently used data on
 tape. Through the use of cluster, LAN and/or SAN technology, HPSS
-aggregate the capacity and performance of many computers, disks, and
+aggregates the capacity and performance of many computers, disks, and
 tape drives into a single virtual file system of exceptional size and
 versatility. This approach enables HPSS to easily meet otherwise
 unachievable demands of total storage capacity, file sizes, data
 rates, and number of objects stored.
 
-<p>
-TechInt members developed and maintain components of HPSS responsible
-for the administrative interfaces, low level data management, and
-logging.
+<p> 
+Technology Integration members developed and maintain components
+of HPSS responsible for the administrative interfaces, low level data
+management, and logging.
 
 <p>
 Contributors: Deryl Steinert, Vicky White, and Tom Barron
+
+<p>
+Status: On-going
+
 %include('content_close.inc')
 
-%include('content_intro.inc')
-    <h2 id="Spider2" class="title">Spider2</h2>
-%include('content_close.inc')
-
-
-%include('content_intro.inc')
-    <h2 id="LUT" class="title">Luster User Tools (LUT)</h2>
-%include('content_close.inc')
-
-
-%include('content_intro.inc')
-    <h2 id="Ceph" class="title">Ceph</h2>
-%include('content_close.inc')
-
-
-%include('content_intro.inc')
-    <h2 id="Benchmarks" class="title">Benchmarks</h2>
-%include('content_close.inc')
-
-
+<!-- ---------------------------------------------------------- -->
 %include('content_intro.inc')
     <h2 id="LustreEval" class="title">Lustre Evaluation</h2>
+
+<p>
+Oak Ridge Leadership Computing Facility (OLCF) at Oak Ridge National
+Laboratory (ORNL) has been running numerous Lustre file systems at
+medium to very large scales (in terms of performance, capacity, and
+client counts) since 2005. The Lustre file system architecture was
+started as a DOE-funded research project in 1999 by Peter Braam, a
+Senior Systems Scientist at <a href="http://www.cmu.edu/"
+target="other">Carnegie Mellon University</a> at the time. Lustre is
+an open-source project.
+
+<p>
+Often times, due to running at very large scales, OLCF systems have unique
+challenges with Lustre that will not be visible at any other facility or
+data center. In order to anticipate and address these challenges ahead of
+time, the Technology Integration Group actively engages in evaluating the
+Lustre development branches.
+
+<p>
+Contributors: James Simmons, David Dillow, Jason Hill, and Sarp Oral
+
+<p>
+Status: On-going
+
+%include('content_close.inc')
+
+<!-- ---------------------------------------------------------- -->
+%include('content_intro.inc')
+    <h2 id="Ceph" class="title">Ceph Evaluation</h2>
+
+<p>
+
+The <a href="http://ceph.com/" target="other">Ceph</a> file and
+storage system is an emerging new technology. It started as a doctoral
+research project at the <a href="http://www.ucsc.edu/"
+target="other">University of California Santa Cruz</a>, and was funded
+by the <a href="http://nnsa.energy.gov/" target="other">DOE/NNSA</a>
+involving <a href="https://www.llnl.gov/" target="other">LLNL</a>, <a href="http://www.lanl.gov/">LANL</a>, and <a href="http://www.sandia.gov/">Sandia National Laboratories</a>. Ceph is an
+open-source project and offers some very interesting key storage
+features such as object replication and object placement. Technology
+Integration Group's Ceph Evaluation project aims at gaining a
+comprehensive understanding of the Ceph technology, delivering a Proof
+of Concept (POC) test deployment, and optimizing the POC installation
+based on OLCF's use cases and requirements.
+
+<p>
+Contributors: Feiyi Wang, Douglas Fuller, James Simmons, Jason Hill,
+Dustin Leverman, Blake Caldwell, and Sarp Oral
+
+<p>
+Status: On-going
+
 %include('content_close.inc')
 
 
+<!-- ---------------------------------------------------------- -->
+%include('content_intro.inc')
+    <h2 id="SOS" class="title">Towards a Resilient and Scalable Infrastructure for Big Data</h2>
+
+<p>
+Towards a Resilient and Scalable Infrastructure for Big Data is an Oak
+Ridge National Laboratory (ORNL) Laboratory Directed Research and
+Development (LDRD) funded project. This project focuses on researching
+various possible architectures for designing a scalable object storage
+system for efficiently solving scientific and commercial Big Data
+problems. Key areas of interest are asynchronous object storage APIs and
+I/O programming models, object storage architectures, I/O scheduling for
+Quality of Service (QOS), heterogeneous storage media, and object
+replication and morphing.
+
+<p>
+Status: On-going
+
+<p>
+Contributors: Bradley Settlemyer, David Dillow, Feiyi Wang, and Sarp Oral
+
+%include('content_close.inc')
+
+
+<!-- ---------------------------------------------------------- -->
+%include('content_intro.inc')
+    <h2 id="LUT" class="title">Luster User Tools Development</h2>
+
+<p>
+
+Although Lustre is heavily used in the high-performance computing
+(HPC) domain (supporting more than 70% of the <a
+href="http://www.top500.org" target="other">Top500</a> supercomputers
+in the world), there are few user-level diagnostic and analysis tools
+specific to Lustre. In order to better serve the Oak Ridge Leadership
+Computing Facility (OLCF) users, the Technology Integration Group
+started developing custom user tools for Lustre file system in 2006. A
+series of tools emerged as a result of this effort. 
+
+<p>
+
+The first of these tools, <em>libLUT</em> contains header files, man
+pages, buildable source code, and a sample integration module for the
+Cray XT. The package provides the following interfaces to support
+manipulation of Lustre meta-data:
+
+<pre>
+             lut_getdl ............ Retrieve Lustre directory meta-data
+             lut_getfl ............ Retrieve Lustre file meta-data
+             lut_getm ............. Retrieve meta-data, including Lustre
+             lut_getsl ............ Retrieve filesystem Lustre OST count
+             lut_putl ............. Set Lustre meta-data
+             lut_putm ............. Set meta-data, including Lustre
+</pre>
+
+<p>
+
+Another tool developed in this effort is SpeedCopy (<em>spdcp</em>).
+Spdcp is a batch-aware copy tool, such that, when necessary, a batch
+job is automatically spawned to acquire needed client resources to
+improve the efficiency of the copy operation. In addition, the copy is
+Lustre-aware and will copy the Lustre striping meta-data. In essence,
+this allows copies within the same Lustre filesystem to spread the I/O
+requests across all the OSTs in the filesystem; instead of
+concentrating on a single or group of OSTs.
+
+<p>
+The I/O Tracing and Allocation Library tool, <em>IOTA</em> was also developed as part
+of this effort. IOTA is an I/O tuning and profiling tool which can be used
+to help  applications make more efficient use of system resources.  At
+present, tuning support is limited to the Lustre filesystem. IOTA consists
+of a set of libraries compiled for the application execution environment
+(currently, Linux for the x86-64 processor and  Cray Linux Environment
+(CLE) for the Cray XT family of computer systems), support for Environment
+Modules, a sample profile data reduction application (riota), and man
+pages. The following POSIX interfaces are traced:
+
+<pre>
+    creat
+    open
+    dup
+    close
+    fstat
+    lstat
+    stat
+    lseek
+    read
+    pread
+    write
+    pwrite
+</pre>
+
+<p>
+IOTA supports the ability to perform a post-mortem analysis of the I/O
+records for errors which might
+have been ignored by the application, performance anomalies, or quantities
+of I/O actually performed by the application on a per-file,
+per-process, or global basis.
+
+<p>
+Status: Completed
+
+<p>
+Contributors: Ken Matney, James Simmons, and Douglas Fuller
+
+%include('content_close.inc')
+
+
+<!-- ---------------------------------------------------------- -->
+%include('content_intro.inc')
+    <h2 id="Benchmarks" class="title">I/O Benchmarks</h2>
+
+<p>
+Evaluating or assessing the performance of a parallel file system is
+achieved by exercising a predefined set I/O workloads on the target
+parallel file system. This process allows one the ability to identify the
+existing performance response and compare it to a past value. The Technology
+Integration Group is heavily invested in developing and running
+I/O benchmarks at various levels, such as at the block-level or Lustre
+file-system-level, to support procurement, deployment, performance configuring,
+or health assessment of Oak Ridge Leadership Computing Facility (OLCF)
+parallel file systems. Of the in-house developed tools, <em>fair-lio</em> is a
+block-level synthetic I/O exerciser designed as a speed/skew
+benchmark. The memory buffers are accessed in a round-robin fashion over
+the submitted requests so that any scatter/gather issues are seen by all
+targets in a balanced manner. The fair-lio benchmark is an open source
+project and was also used in the OLCF-3 Scalable Storage Systems
+Procurement effort to assess the block-level performance of offered
+solutions. Fair-lio was distributed as a part of a benchmark suite which
+was designed to establish the performance profile of the proposed Oak
+Ridge Leadership Computing Facility-3 (OLCF-3) Scalable Storage System
+(SSS) by executing a series of scripts and synthetic benchmarks
+representative of common I/O workloads.
+
+<p>
+Status: On-going
+
+<p>
+Contributors: Sarp Oral, David Dillow, Youngjae Kim, Feiyi Wang, and James
+Simmons
+
+%include('content_close.inc')
+
+
+<!-- ---------------------------------------------------------- -->
 %include('content_intro.inc')
     <h2 id="IOCoord" class="title">I/O Coordination</h2>
 
@@ -105,32 +318,105 @@ runtime behavior of the applications tend to be impacted differently by
 the availability of shared resources and also varies based on the
 needs of the specific scientific user.
 
-<p>
-The objective of this project is to characterize the I/O usage
-patterns of user-applications from the perspective of backend storage
-servers while minimizing overhead and interference with the
-application's I/O activities, and build an I/O-aware decision making
-capability, to guide decisions about issues such as scheduling.
+<p> 
+This project has two objectives. The first is to characterize the
+I/O usage patterns of user applications from the perspective of
+backend storage servers while minimizing overhead and interference
+with the application's I/O activities. The second is to build an
+I/O-aware decision making capability that can be used to guide
+decisions about issues such as scheduling.
 
 <p>
-At OLCF, the spider storage system is available as four partitions and
+At OLCF, the Spider storage system is available as four partitions and
 the users are allowed to use all or any of them during runtime. The
 immediate goal of the project is to enable scientific users to choose
 the best file system partition based on current loads and known I/O
 behavior of their application.
 
 <p>
-Contributors: Raghul, Sudharshan, Yang Liu (NCSU), Xiaosong Ma (NCSU)
+Contributors: Raghul Gunasekaran, Sudharshan Vazhkudai, Yang Liu
+(NCSU), Xiaosong Ma (NCSU)
  
 %include('content_close.inc')
 
 
+<!-- ---------------------------------------------------------- -->
 %include('content_intro.inc')
-    <h2 id="SOS" class="title">Scalable Object Storage</h2>
+    <h2 id="OpenSFS" class="title">OpenSFS</h2>
+
+<p>
+
+Open Scalable File Systems (<a href="http://www.opensfs.org/"
+target="other">OpenSFS</a>) is a non-profit industry organization that
+supports vendor-neutral development and promotion of Lustre, an
+open-source file system that supports many of the world’s largest and
+most complex computing environments. Oak Ridge National Laboratory is
+one of the four founders of the OpenSFS organization. Oak Ridge
+Leadership Computing Facility (OLCF) at ORNL is a leader in the Lustre
+community and also is an active member of OpenSFS. OLCF participates
+in almost all OpenSFS efforts, particularly in the Technical Working
+Group (TWG), the Benchmarking Working Group (BWG), and the Community
+Development Working Group (CDWG).
+
+<p>
+Dave Dillow and John Carrier (Cray) lead the TWG which focuses on
+gathering technical requirements for new Lustre feature developments and
+major bug fixes, generating statements of work/requests for proposals,
+developing resource allocation proposals, working with contractors on
+technical requirements, and creating high level estimates of impacts/costs
+to meet requirements. 
+
+<p>
+The BWG is led by Sarp Oral and Richard Roloff (Cray)
+and focuses on researching primary I/O workloads in high performance
+parallel file systems configurations, studying existing benchmarking tools
+that best emulate these workloads towards producing a report that best
+matches existing benchmarking tools available to the workloads defined,
+and producing a set of instructions for download, execution and analysis
+for the benchmarking tools recommended, and working with OpenSFS to make
+progress on these goals, either through contracting resources or through
+other affiliations. 
+
+<p>
+The CDWG focuses on facilitating discussions and drafting
+a community development model for Lustre, taking into consideration the
+needs/concerns of Lustre vendors, delivering short and long term goals to
+the OpenSFS Board of Directors for community development of Lustre,
+ensuring proper execution of community involvement in Lustre, creating an
+open forum for     community discussion, and advising the OpenSFS Board of
+Directors on the community’s goals and perspective on Lustre.
+
+Status: On-going
+
+Contributors: David Dillow, Sarp Oral, and James Simmons
+
 %include('content_close.inc')
 
 
+<!-- ---------------------------------------------------------- -->
 %include('content_intro.inc')
     <h2 id="NOAA" class="title">NOAA</h2>
+
+<p>
+
+The Technology Integration Group played a key role in the architecture
+and implementation of the <a href="www.ncrc.gov"
+target="other">National Climate Computing Research Center</a>, a joint
+effort between Oak Ridge National Laboratory (ORNL) and the <a
+href="http://www.noaa.gov" target="other">National Oceanic and
+Atmospheric Administration</a> (NOAA). NCRC's primary compute platform,
+Gaea, has evolved through a three-phase deployment into a 1.1 PFLOPS
+system supporting atmospheric research. Group members helped specify,
+procure, and test the machine through each deployment phase. In
+addition, the Technology Integration Group has assisted the NOAA user
+community in porting and developing tools to leverage this incredibly
+powerful compute platform.
+
+<p>
+Status: Completed
+
+<p>
+Contributors: Douglas Fuller and Sarp Oral
+
 %include('content_close.inc')
 %include('html_close.inc')
