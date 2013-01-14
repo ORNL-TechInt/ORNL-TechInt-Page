@@ -76,8 +76,7 @@ inovolves several areas.
 
     <p>Status: Complete
 
-<ul>
-  <li>Selected publications
+<p>Selected publications
     <ul>
 
       <li>Chao Wang, Sudharshan Vazhkudai, Xiaosong Ma, Fei Meng,
@@ -88,7 +87,6 @@ inovolves several areas.
       May 21-25, 2012. (118/569 = 20.7%)</i>
 
     </ul>
-</ul>
 %include('content_close.inc')
 
 %include('content_intro.inc')
@@ -124,8 +122,7 @@ associated main memory. The work involves several areas.
 
 <p>Status: On-going
 
-<ul>
-  <li>Selected publications
+<p>Selected publications
     <ul>
 
       <li>Devesh Tiwari, Simona Bobila, Sudharshan Vazhkudai,
@@ -142,7 +139,6 @@ associated main memory. The work involves several areas.
       2012), Monterey, CA, April 16-20, 2012. (14/57 = 24.5%)</i>
 
     </ul>
-</ul>
 %include('content_close.inc')
 
 %include('content_intro.inc')
@@ -169,8 +165,7 @@ areas.
 
 <p>Status: On-going
 
-<ul>
-  <li>Selected publications
+<p>Selected publications
     <ul>
 
       <li>Youngjae Kim, Junghee Lee, Sarp Oral, David Dillow, Feiyi
@@ -185,6 +180,6 @@ areas.
       TCAD), 2013.</i>
 
     </ul>
-</ul>
+
 %include('content_close.inc')
 %include('html_close.inc')
