@@ -31,6 +31,7 @@ individuals to advance the state of the art.
 | <a href="#LUT">Lustre User Tools Developement</a>
 | <a href="#Benchmarks">I/O Benchmarks</a>
 | <a href="#IOCoord">I/O Coordination</a>
+| <a href="#IOCharacterization">I/O Workload Characterization</a>
 | <a href="#OpenSFS">OpenSFS</a>
 | <a href="#NOAA">NOAA</a>
 </div>
@@ -55,8 +56,8 @@ named Invictus, is designed to provide more than 18 PB to open science
 users at OLCF at an aggregate bandwidth of 1 TB/s.
 
 <p>
-Contributors: Sarp Oral, David Dillow, Feiyi Wang, Douglas Fuller, Jason
-Hill, Dustin Leverman, and Blake Caldwell
+Contributors: Sarp Oral, David Dillow, Feiyi Wang, Youngjae Kim,
+Douglas Fuller, Jason Hill, Dustin Leverman, and Blake Caldwell
 
 <p>
 Status: On-going
@@ -378,6 +379,35 @@ Contributors: Raghul Gunasekaran, Sudharshan Vazhkudai, Yang Liu
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
+
+<!-- ---------------------------------------------------------- -->
+%include('content_intro.inc')
+    <h2 id="IOCharacterization">I/O Workload Characterization</h2>
+
+<p>
+Understanding workload characteristics is critical for optimizing and
+improving the performance of current systems and software, and
+architecting new storage systems based on observed workload patterns.
+In this project, we characterize the scientific workloads of the HPC
+(High Performance Computing) storage cluster, Spider, at the Oak Ridge
+Leadership Computing Facility (OLCF). Spider provides an aggregate
+bandwidth of over 240 GB/s with over 10 petabytes of RAID 6 formatted
+capacity. We characterize the system utilization, the read and write
+requests, idle time, and the distribution of read requests to write
+requests for the storage system. We also study applications' I/O
+characteristics by collecting block-level and RPC (remote procedure
+call) trace information from the OSSs (object storage servers). The analysis of the
+block level traces and RPC logs will help optimize individual
+applications' behavior and profile application I/O access patterns.
+
+<p>
+Contributors: Youngjae Kim, Raghul Gunasekaran, Sarp Oral, and David Dillow
+
+<p>
+Status: Completed
+
+  <p>&nbsp; <a class="right" href="#">Top</a>
+%include('content_close.inc')
 
 <!-- ---------------------------------------------------------- -->
 %include('content_intro.inc')
