@@ -6,6 +6,24 @@
 
 %include('hdrnav.inc')
 
+<!-- ---------------------------------------------------------- -->
+%include('content_intro.inc')
+<div class="overview">
+The Technology Integration Group's Networking projects focus on data
+movement at all scales and levels of abstraction -- among processors
+within a supercomputer, among computers across continents, across
+diverse hardware transport mechanisms using a variety of protocol
+stacks.
+</div>
+<div class="plinks">
+<a href="#CCI">Common Communication Interface</a> 
+| <a href="#Terabit">Terabit Data Movement Optimization</a> 
+| <a href="#DStar">DStar</a>
+</div>
+
+%include('content_close.inc')
+
+<!-- ---------------------------------------------------------- -->
 %include('content_intro.inc')
     <div class="right cci">
        <a
@@ -49,8 +67,10 @@
 
     <p>Status: On-going
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
+<!-- ---------------------------------------------------------- -->
 %include('content_intro.inc')
     <h2 id="Terabit">An Adaptive End-to-End Approach for Terabit Data Movement Optimization</h2>
 
@@ -68,8 +88,10 @@
 
     <p>Status: On-going
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
+<!-- ---------------------------------------------------------- -->
 %include('content_intro.inc')
     <h2 id="DStar">DStar</h2>
     <p>DStar is a native implementation of CCI embedded in SeaStar
@@ -82,5 +104,6 @@
 
     <p>Status: On-going
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 %include('html_close.inc')

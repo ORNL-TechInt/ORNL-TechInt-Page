@@ -30,6 +30,9 @@ body {
     width: 30%;
     height: 20%;
 }
+.plinks {
+    text-align: center;
+}
 .header {
     background: url("images/header-tile2.png") repeat-x 
                 scroll left -9px #F0F0F0;

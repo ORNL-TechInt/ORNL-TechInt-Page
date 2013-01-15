@@ -6,6 +6,26 @@
 
 %include('hdrnav.inc')
 
+<!-- ---------------------------------------------------------- -->
+%include('content_intro.inc')
+<div class="overview">
+
+Data management and analysis is the focus of this area. The projects
+below exemplify the Technology Integration Group's contributions to
+data management and analysis, from data modeling or capture through
+publication, search and discovery, and retrieval to analysis and
+visualization.
+
+</div>
+<div class="plinks">
+<a href="#ADARA">ADARA</a> 
+| <a href="#PARCAT">ParCAT</a> 
+| <a href="#ESGF">ESGF</a>
+| <a href="#NIH">NIH Oncology Data</a>
+</div>
+
+%include('content_close.inc')
+
 %include('content_intro.inc')
     <h2 class="title" id="ADARA">ADARA</h2>
 <p>
@@ -49,6 +69,7 @@ Contributors: Dave Dillow, Feiyi Wang, Dale Stansberry, and Ross Miller
 <p>
 Status: On-going
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 
@@ -76,6 +97,7 @@ Contributors: Brian Smith
 <p>
 Status: Complete
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 %include('content_intro.inc')
@@ -347,16 +369,36 @@ it will appear in the search and discovery interface.
     <h3>ESGF SRM</h3>
 -->
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 <!--
 %include('content_intro.inc')
     <h2 class="title" id="CMS">CMS</h2>
-%include('content_close.inc')
-
-%include('content_intro.inc')
-    <h2 class="title" id="NIH">NIH Oncology Data</h2>
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 -->
+
+%include('content_intro.inc')
+    <h2 class="title" id="NIH">A Portal for Oncology Data</h2>
+
+<p>
+The purpose of this proposal is to define, build and host a pilot
+informatics infrastructure data center to support the twelve NIH
+Physical Sciences-Oncology Centers (PS-OC). The proposal will cover
+all aspects of the pilot informatics system, including documentation,
+front end web portal, software deployment, back-end data access and
+storage, data security, data visualization and user support. The
+deliverable is a prototype system and feasibility study for a
+long-term PS-OC Data Coordinating Center (PS-OC DCC).
+
+<p>
+Contributors: Sudharshan Vazhkudai, Ali Passian (MSED), and Chao Wang
+
+<p>
+Status: Ongoing
+
+  <p>&nbsp; <a class="right" href="#">Top</a>
+%include('content_close.inc')
 
 %include('html_close.inc')

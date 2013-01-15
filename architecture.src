@@ -6,6 +6,22 @@
 
 %include('hdrnav.inc')
 
+<!-- ---------------------------------------------------------- -->
+%include('content_intro.inc')
+<div class="overview">
+
+These projects relate to innovations in computer architecture that aim
+to improve and stabilize performance.
+
+</div>
+<div class="plinks">
+<a href="#Many-Core">Functional Partitioning of Many-Core Nodes</a> 
+| <a href="#OSNoise">Reducing Application Runtime Variability on Jaguar XT5</a> 
+</div>
+
+%include('content_close.inc')
+
+<!-- ---------------------------------------------------------- -->
 %include('content_intro.inc')
     <h2 id="Many-Core">Functional Partitioning of Many-Core Nodes</h2>
 
@@ -26,11 +42,13 @@ or various forms of fine-grain analysis.</p>
 
     <p>Status: On-going
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
+<!-- ---------------------------------------------------------- -->
 %include('content_intro.inc')
 
-   <h2 id="SysNoise">Reducing Application Runtime Variability on
+   <h2 id="OSNoise">Reducing Application Runtime Variability on
    Jaguar XT5</h2>
 
 <p>
@@ -65,7 +83,7 @@ Shipman, and Feiyi Wang, Jeff Becklehimer (Cray), and Jeff Larkin (Cray)
 <p>
 Status: Completed
 
-
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 %include('html_close.inc')
 

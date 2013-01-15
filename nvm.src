@@ -12,10 +12,17 @@ In the following projects, we explore non-volatile memory devices from
 several perspectives including fault tolerance, memory extension, and
 out-of-core data analytics.
 </div>
+<div class="plinks">
+<a href="#Burst">Burst Buffers</a> 
+| <a href="#NVMalloc">NVMalloc</a> 
+| <a href="#ActiveFlash">ActiveFlash</a>
+| <a href="#Flash">Flash Storage Systems</a>
+</div>
+
 %include('content_close.inc')
 
 %include('content_intro.inc')
-<h2>Burst Buffers</h2>
+<h2 id="Burst">Burst Buffers</h2>
 
 Massively parallel scientific applications, running on extreme-scale
 supercomputers, produce hundreds of terabytes of checkpoint snapshot
@@ -32,7 +39,7 @@ Oral, Feiyi Wang, and James Simmons
 
 <p>
 Status: On-going
-
+  <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 %include('content_intro.inc')
@@ -87,6 +94,7 @@ inovolves several areas.
       May 21-25, 2012. (118/569 = 20.7%)</i>
 
     </ul>
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 %include('content_intro.inc')
@@ -139,10 +147,11 @@ associated main memory. The work involves several areas.
       2012), Monterey, CA, April 16-20, 2012. (14/57 = 24.5%)</i>
 
     </ul>
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 %include('content_intro.inc')
-<h2>Flash Storage Systems</h2>
+<h2 id="Flash">Flash Storage Systems</h2>
 
 Although SSDs offer significant performance improvements over hard
 disk drives (HDDs) for a number of workloads, they can exhibit
@@ -181,5 +190,6 @@ areas.
 
     </ul>
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 %include('html_close.inc')

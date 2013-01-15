@@ -13,6 +13,32 @@
 
 <!-- ---------------------------------------------------------- -->
 %include('content_intro.inc')
+<div class="overview">
+
+The projects on this page explore extreme scale storage in terms of
+bandwidth, capacity, performance, reliability, scalability, and
+usability. Some projects are local and specific to OLCF while
+others involve collaboration with diverse organizations and
+individuals to advance the state of the art.
+</div>
+<div class="plinks">
+<a href="#Invictus">Invictus</a> 
+| <a href="#Spider">Spider</a> 
+| <a href="#HPSS">HPSS</a>
+| <a href="#LustreEval">Lustre Evaluation</a>
+| <a href="#Ceph">Ceph Evaluation</a>
+| <a href="#SOS">Towards a Resilient and Scalable Infrastructure for Big Data</a>
+| <a href="#LUT">Lustre User Tools Developement</a>
+| <a href="#Benchmarks">I/O Benchmarks</a>
+| <a href="#IOCoord">I/O Coordination</a>
+| <a href="#OpenSFS">OpenSFS</a>
+| <a href="#NOAA">NOAA</a>
+</div>
+
+%include('content_close.inc')
+
+<!-- ---------------------------------------------------------- -->
+%include('content_intro.inc')
     <h2 id="Invictus" class="title">Invictus</h2>
 
 <p>
@@ -35,6 +61,7 @@ Hill, Dustin Leverman, and Blake Caldwell
 <p>
 Status: On-going
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 
@@ -60,6 +87,7 @@ Miller, and Jason Hill
 <p>
 Status: Completed
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 <!-- ---------------------------------------------------------- -->
@@ -94,6 +122,7 @@ Contributors: Deryl Steinert, Vicky White, and Tom Barron
 <p>
 Status: On-going
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 <!-- ---------------------------------------------------------- -->
@@ -123,6 +152,7 @@ Contributors: James Simmons, David Dillow, Jason Hill, and Sarp Oral
 <p>
 Status: On-going
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 <!-- ---------------------------------------------------------- -->
@@ -153,6 +183,7 @@ Dustin Leverman, Blake Caldwell, and Sarp Oral
 <p>
 Status: On-going
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 
@@ -177,12 +208,13 @@ Contributors: Bradley Settlemyer, David Dillow, Feiyi Wang, and Sarp Oral
 <p>
 Status: On-going
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 
 <!-- ---------------------------------------------------------- -->
 %include('content_intro.inc')
-    <h2 id="LUT" class="title">Luster User Tools Development</h2>
+    <h2 id="LUT" class="title">Lustre User Tools Development</h2>
 
 <p>
 
@@ -261,6 +293,7 @@ Contributors: Ken Matney, James Simmons, and Douglas Fuller
 <p>
 Status: Completed
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 
@@ -297,6 +330,7 @@ Simmons
 <p>
 Status: On-going
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 
@@ -341,6 +375,7 @@ Contributors: Raghul Gunasekaran, Sudharshan Vazhkudai, Yang Liu
 
 <p>Status: On-going
  
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 
@@ -396,6 +431,7 @@ Contributors: David Dillow, Sarp Oral, and James Simmons
 <p>
 Status: On-going
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 
@@ -424,5 +460,6 @@ Contributors: Douglas Fuller and Sarp Oral
 <p>
 Status: Completed
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 %include('html_close.inc')
