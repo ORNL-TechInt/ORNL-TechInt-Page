@@ -6,7 +6,7 @@
 
 %include('hdrnav.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
 <div class="overview">
 The Technology Integration Group's Networking projects focus on data
@@ -23,7 +23,7 @@ stacks.
 
 %include('content_close.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <div class="right cci">
        <a
@@ -70,7 +70,7 @@ stacks.
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 id="Terabit">An Adaptive End-to-End Approach for Terabit Data Movement Optimization</h2>
 
@@ -91,7 +91,7 @@ stacks.
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 id="DStar">DStar</h2>
     <p>DStar is a native implementation of CCI embedded in SeaStar

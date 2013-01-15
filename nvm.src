@@ -6,7 +6,7 @@
 
 %include('hdrnav.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
 <div class="overview">
 In the following projects, we explore non-volatile memory devices from
@@ -22,7 +22,7 @@ out-of-core data analytics.
 
 %include('content_close.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
 <h2 id="Burst">Burst Buffers</h2>
 
@@ -44,7 +44,7 @@ Status: On-going
   <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 id="NVMalloc" class="title"><a href="http://users.nccs.gov/~vazhkuda/NVMalloc.html" 
     target="other">NVMalloc</a></h2>
@@ -100,7 +100,7 @@ inovolves several areas.
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
 <h2 id="ActiveFlash">Active Flash</h2>
 
@@ -154,7 +154,7 @@ associated main memory. The work involves several areas.
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
 <h2 id="Flash">Flash Storage Systems</h2>
 

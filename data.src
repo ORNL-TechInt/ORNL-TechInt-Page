@@ -6,7 +6,7 @@
 
 %include('hdrnav.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
 <div class="overview">
 
@@ -26,7 +26,7 @@ visualization.
 
 %include('content_close.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 class="title" id="ADARA">ADARA</h2>
 <p>
@@ -73,7 +73,7 @@ Status: On-going
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 class="title" id="PARCAT">ParCAT</h2>
 
@@ -101,7 +101,7 @@ Status: Complete
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 class="title" id="ESGF">Earth System Grid Federation</h2>
 
@@ -374,7 +374,7 @@ it will appear in the search and discovery interface.
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 <!--
 %include('content_intro.inc')
     <h2 class="title" id="CMS">CMS</h2>
@@ -382,7 +382,7 @@ it will appear in the search and discovery interface.
 %include('content_close.inc')
 -->
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 class="title" id="NIH">A Portal for Oncology Data</h2>
 

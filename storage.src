@@ -11,7 +11,7 @@
      maintenance, etc.), 3) links to related software or papers on the
      software/publications pages, and 4) funding agency -->
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
 <div class="overview">
 
@@ -38,7 +38,7 @@ individuals to advance the state of the art.
 
 %include('content_close.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 id="Invictus" class="title">Invictus</h2>
 
@@ -66,7 +66,7 @@ Status: On-going
 %include('content_close.inc')
 
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 id="Spider" class="title">Spider</h2>
 
@@ -91,7 +91,7 @@ Status: Completed
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 id="HPSS" class="title">HPSS</h2>
 
@@ -126,7 +126,7 @@ Status: On-going
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 id="LustreEval" class="title">Lustre Evaluation</h2>
 
@@ -156,7 +156,7 @@ Status: On-going
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 id="Ceph" class="title">Ceph Evaluation</h2>
 
@@ -188,7 +188,7 @@ Status: On-going
 %include('content_close.inc')
 
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 id="SOS" class="title">Towards a Resilient and Scalable Infrastructure for Big Data</h2>
 
@@ -213,7 +213,7 @@ Status: On-going
 %include('content_close.inc')
 
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 id="LUT" class="title">Lustre User Tools Development</h2>
 
@@ -298,7 +298,7 @@ Status: Completed
 %include('content_close.inc')
 
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 id="Benchmarks" class="title">I/O Benchmarks</h2>
 
@@ -335,7 +335,7 @@ Status: On-going
 %include('content_close.inc')
 
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 id="IOCoord" class="title">I/O Coordination</h2>
 
@@ -380,7 +380,7 @@ Contributors: Raghul Gunasekaran, Sudharshan Vazhkudai, Yang Liu
 %include('content_close.inc')
 
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 id="IOCharacterization">I/O Workload Characterization</h2>
 
@@ -409,7 +409,7 @@ Status: Completed
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 id="OpenSFS" class="title">OpenSFS</h2>
 
@@ -465,7 +465,7 @@ Status: On-going
 %include('content_close.inc')
 
 
-<!-- ********************************************************** -->
+<!-- ========================================================== -->
 %include('content_intro.inc')
     <h2 id="NOAA" class="title">NOAA</h2>
 
