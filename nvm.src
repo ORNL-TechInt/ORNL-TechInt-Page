@@ -37,7 +37,7 @@ Status: On-going
 
 %include('content_intro.inc')
     <h2 id="NVMalloc" class="title"><a href="http://users.nccs.gov/~vazhkuda/NVMalloc.html" 
-    target="_blank">NVMalloc</a></h2>
+    target="other">NVMalloc</a></h2>
 
 
 <p>DRAM is a precious resource in extreme-scale machines and is

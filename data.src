@@ -132,7 +132,7 @@ These projects are described in more detail below.
 
 <p>
 Details about other ESGF related projects can be seen on the <a
-href="http://esgf.org">ESGF main page</a>.
+href="http://esgf.org" target="other">ESGF main page</a>.
 
 <p>Contributors: John Harney, Feiyi Wang, Tom Barron, and Ross Miller
 
@@ -234,10 +234,11 @@ discussed in the next section.
 
 <p>
 The ORNL ESGF Portal site is located at <a
-href="http://esg.ccs.ornl.gov">http://esg.ccs.ornl.gov</a>
+href="http://esg.ccs.ornl.gov" target="other">http://esg.ccs.ornl.gov</a>
 
     <h3>ESGF Search</h3>
 
+<p>
 The ESGF search module, deployed as part of an ESGF Index Node, is
 responsible for making the data holdings of one or more ESGF Data
 Nodes discoverable and accessible by clients. Its two main features
@@ -245,23 +246,29 @@ are the ability to execute distributed searches across the federation,
 and the support for a well defined REST API that insulates clients
 from the specific query syntax of the back-end metadata repository.
 Although the software is architected to allow for pluggable back-ends,
-currently it uses <a href="http://lucene.apache.org/solr/">Apache Solr</a> as the underlying search engine.
-Solr is a very popular search engine, used in many commercial web
-sites, that features high performance text and faceted searching,
-geospatial and temporal querying, and partition of searchable metadata
-across multiple local indexes (“cores”) and distributed servers
-(“shards”). 
+currently it uses <a href="http://lucene.apache.org/solr/"
+target="other">Apache Solr</a> as the underlying search engine. Solr
+is a very popular search engine, used in many commercial web sites,
+that features high performance text and faceted searching, geospatial
+and temporal querying, and partition of searchable metadata across
+multiple local indexes (“cores”) and distributed servers (“shards”).
 
 <p>
 The search module makes two high-level web services
 available to clients:
 
 <ul>
- <li>The Indexing Service is used to parse the metadata content
+
+ <li>
+
+ The Indexing Service is used to parse the metadata content
  available at some repository (located by its URL), and ingest it in
  the back-end metadata storage. So far ESGF has focused mostly on
- parsing metadata from <a href="http://unidata.ucar.edu/projects/THREDDS">THREDDS catalogs</a>, although support for
- other repositories such as <a href="http://gcmd.nasa.gov">GCMD</a> archives is forthcoming. Indexing
+ parsing metadata from <a
+ href="http://www.unidata.ucar.edu/projects/THREDDS/" target="other">THREDDS</a>
+ catalogs, although support for
+ other repositories such as <a href="http://gcmd.nasa.gov"
+ target="other">GCMD</a> archives is forthcoming. Indexing
  operations are subject to authorization according to the local
  policies established at the Index Node: the client must present a
  valid SSL certificate belonging to a user that has been granted
@@ -342,6 +349,7 @@ it will appear in the search and discovery interface.
 
 %include('content_close.inc')
 
+<!--
 %include('content_intro.inc')
     <h2 class="title" id="CMS">CMS</h2>
 %include('content_close.inc')
@@ -349,4 +357,6 @@ it will appear in the search and discovery interface.
 %include('content_intro.inc')
     <h2 class="title" id="NIH">NIH Oncology Data</h2>
 %include('content_close.inc')
+-->
+
 %include('html_close.inc')

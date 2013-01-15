@@ -21,10 +21,10 @@ Oak Ridge Leadership Computing Facility (OLCF) at Oak Ridge National
 Laboratory (ORNL) has a long history of deploying the world's fastest
 supercomputers for enabling open science. Coupled with other OLCF
 computational resources, <a
-href="http://www.olcf.ornl.gov/titan">Titan</a>, a 27 PFLOPS Cray XK7
+href="http://www.olcf.ornl.gov/titan" target="other">Titan</a>, a 27 PFLOPS Cray XK7
 system, radically increases the I/O demand beyond the capabilities of
 the existing Spider parallel file system. The new <a
-href="http://www.lustre.org">Lustre</a> parallel file system, code
+href="http://www.lustre.org" target="other">Lustre</a> parallel file system, code
 named Invictus, is designed to provide more than 18 PB to open science
 users at OLCF at an aggregate bandwidth of 1 TB/s.
 
@@ -136,13 +136,15 @@ storage system is an emerging new technology. It started as a doctoral
 research project at the <a href="http://www.ucsc.edu/"
 target="other">University of California Santa Cruz</a>, and was funded
 by the <a href="http://nnsa.energy.gov/" target="other">DOE/NNSA</a>
-involving <a href="https://www.llnl.gov/" target="other">LLNL</a>, <a href="http://www.lanl.gov/">LANL</a>, and <a href="http://www.sandia.gov/">Sandia National Laboratories</a>. Ceph is an
-open-source project and offers some very interesting key storage
-features such as object replication and object placement. Technology
-Integration Group's Ceph Evaluation project aims at gaining a
-comprehensive understanding of the Ceph technology, delivering a Proof
-of Concept (POC) test deployment, and optimizing the POC installation
-based on OLCF's use cases and requirements.
+involving <a href="https://www.llnl.gov/" target="other">LLNL</a>, <a
+href="http://www.lanl.gov/" target="other">LANL</a>, and <a
+href="http://www.sandia.gov/" target="other">Sandia National
+Laboratories</a>. Ceph is an open-source project and offers some very
+interesting key storage features such as object replication and object
+placement. Technology Integration Group's Ceph Evaluation project aims
+at gaining a comprehensive understanding of the Ceph technology,
+delivering a Proof of Concept (POC) test deployment, and optimizing
+the POC installation based on OLCF's use cases and requirements.
 
 <p>
 Contributors: Feiyi Wang, Douglas Fuller, James Simmons, Jason Hill,
@@ -404,7 +406,7 @@ Status: On-going
 <p>
 
 The Technology Integration Group played a key role in the architecture
-and implementation of the <a href="www.ncrc.gov"
+and implementation of the <a href="http://www.ncrc.gov"
 target="other">National Climate Computing Research Center</a>, a joint
 effort between Oak Ridge National Laboratory (ORNL) and the <a
 href="http://www.noaa.gov" target="other">National Oceanic and
