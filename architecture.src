@@ -6,7 +6,7 @@
 
 %include('hdrnav.inc')
 
-<!-- ---------------------------------------------------------- -->
+<!-- ********************************************************** -->
 %include('content_intro.inc')
 <div class="overview">
 
@@ -21,7 +21,7 @@ to improve and stabilize performance.
 
 %include('content_close.inc')
 
-<!-- ---------------------------------------------------------- -->
+<!-- ********************************************************** -->
 %include('content_intro.inc')
     <h2 id="Many-Core">Functional Partitioning of Many-Core Nodes</h2>
 
@@ -45,7 +45,7 @@ or various forms of fine-grain analysis.</p>
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
-<!-- ---------------------------------------------------------- -->
+<!-- ********************************************************** -->
 %include('content_intro.inc')
 
    <h2 id="OSNoise">Reducing Application Runtime Variability on
@@ -73,7 +73,7 @@ each node.  The scientific application was then run on the remaining
 seven cores in each node.  Our results showed that we were able to improve
 the MPI_Allreduce performance by two orders of magnitude and to boost
 the Parallel Ocean Program (POP) performance over 30% using this
-Technique.
+technique.
 
 
 <p>
