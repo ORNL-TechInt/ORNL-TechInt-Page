@@ -65,6 +65,7 @@
     <!-- <li><h4>Computer Architecture</h4> <ul> </ul> -->
   </ul>
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 
   <h3 id="2012">2012</h3>
   <ul class="year_list">
@@ -217,6 +218,7 @@
 
     </ul>
   </ul>
+  <p>&nbsp; <a class="right" href="#">Top</a>
 
   <h3 id="2011">2011</h3>
   <ul class="year_list">
@@ -361,6 +363,7 @@
     </ul>
 
   </ul>
+  <p>&nbsp; <a class="right" href="#">Top</a>
   
   <h3 id="2010">2010</h3>
   <ul class="year_list">
@@ -437,6 +440,7 @@
 
     </ul>
   </ul>
+  <p>&nbsp; <a class="right" href="#">Top</a>
 
   <h3 id="2009">2009 and earlier</h3>
   <ul class="year_list">
@@ -512,5 +516,6 @@
    
     </ul>
   </ul>
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 %include('html_close.inc')
