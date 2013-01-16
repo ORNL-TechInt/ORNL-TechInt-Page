@@ -10,7 +10,7 @@
 <table id="vlayout">
 <tr><td id="vlayout-top">
 %include('content_intro.inc')
-    <h2 class="title">About the ORNL Technology Integration Group</h2>
+    <h2 class="title">About the Technology Integration Group</h2>
 
     <p>
     The Technology Integration (TechInt) group is charged with

@@ -1,7 +1,11 @@
   <div class="header">
     <div id="hbanner">
       <table class="header"><tr>
-        <td id="logo"><img src="images/olcf-logo.png" alt="OLCF Logo"/></td>
+        <td id="logo">
+           <a href="https://www.olcf.ornl.gov" target="other">
+             <img src="images/olcf-logo.png" alt="OLCF Logo"/>
+           </a>
+        </td>
         <td id="page_title"><h1>Technology Integration</h1></td>
       </tr></table>
     </div>

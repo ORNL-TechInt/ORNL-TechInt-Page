@@ -48,7 +48,9 @@ body {
 html {
     height: 100%;
 }
-
+.indented {
+    margin-left: 3em;
+}
 #logo {
     width: 323px;
     float: left;

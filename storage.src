@@ -135,10 +135,8 @@ Oak Ridge Leadership Computing Facility (OLCF) at Oak Ridge National
 Laboratory (ORNL) has been running numerous Lustre file systems at
 medium to very large scales (in terms of performance, capacity, and
 client counts) since 2005. The Lustre file system architecture was
-started as a DOE-funded research project in 1999 by Peter Braam, a
-Senior Systems Scientist at <a href="http://www.cmu.edu/"
-target="other">Carnegie Mellon University</a> at the time. Lustre is
-an open-source project.
+started as a DOE-funded research project in 1999. Lustre is an
+open-source project.
 
 <p>
 Often times, due to running at very large scales, OLCF systems have unique
@@ -218,7 +216,6 @@ Status: On-going
     <h2 id="LUT" class="title">Lustre User Tools Development</h2>
 
 <p>
-
 Although Lustre is heavily used in the high-performance computing
 (HPC) domain (supporting more than 70% of the <a
 href="http://www.top500.org" target="other">Top500</a> supercomputers
@@ -229,7 +226,6 @@ started developing custom user tools for Lustre file system in 2006. A
 series of tools emerged as a result of this effort. 
 
 <p>
-
 The first of these tools, <em>libLUT</em> contains header files, man
 pages, buildable source code, and a sample integration module for the
 Cray XT. The package provides the following interfaces to support
@@ -266,20 +262,19 @@ of a set of libraries compiled for the application execution environment
 Modules, a sample profile data reduction application (riota), and man
 pages. The following POSIX interfaces are traced:
 
-<pre>
-    creat
-    open
-    dup
-    close
-    fstat
-    lstat
-    stat
-    lseek
-    read
-    pread
-    write
+<p class="indented">
+    creat,
+    open,
+    dup,
+    close,
+    fstat,
+    lstat,
+    stat,
+    lseek,
+    read,
+    pread,
+    write,
     pwrite
-</pre>
 
 <p>
 IOTA supports the ability to perform a post-mortem analysis of the I/O
