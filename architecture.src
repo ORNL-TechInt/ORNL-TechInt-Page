@@ -11,11 +11,11 @@
 <div class="overview">
 
 These projects relate to innovations in computer architecture that aim
-to improve and stabilize performance.
+to improve performance, reduce variability, and enhance reliability.
 
 </div>
 <div class="plinks">
-<a href="#Many-Core">Functional Partitioning of Many-Core Nodes</a> 
+<a href="#Many-Core">Exploiting Many-Core Architectures for End-to-End Science</a> 
 | <a href="#OSNoise">Reducing Application Runtime Variability on Jaguar XT5</a> 
 </div>
 
@@ -23,7 +23,7 @@ to improve and stabilize performance.
 
 <!-- ========================================================== -->
 %include('content_intro.inc')
-    <h2 id="Many-Core">Functional Partitioning of Many-Core Nodes</h2>
+    <h2 id="Many-Core">Exploiting Many-Core Architectures for End-to-End Science</h2>
 
 <p>With the leveling off of processor clockspeeds, chip manufacturers have
 increased the number of cores to consume the additional transitors promised by
@@ -36,7 +36,7 @@ the CPUs leaving them available for functional partitioning.</p>
 <p>This effort will explore providing runtime services to applications using a
 small subset of cores on a many-core systems. These services may include I/O
 buffering, which would allow the application to resume computation more quickly,
-or various forms of fine-grain analysis.</p>
+or various forms of fine-grain analysis or transformations.</p>
 
     <p>Contributors: Scott Atchley and Sudharshan Vazhkudai
 

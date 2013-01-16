@@ -53,6 +53,12 @@
       <dt><strong>Luster User Tools</strong>
         <dd>A collection of parallel tools for fast operations on
         Lustre file systems.
+
+      <dt><strong>CCI</strong>
+        <dd>A network abstraction layer that provides a simple, portable
+        communication interface. Supports multiple interconnects.
+        <a href="http://cci-forum.com/?page_id=46" target="other">Download Page</a>
+
     </dl>
 
   </ul>
