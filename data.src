@@ -420,12 +420,41 @@ Status: On-going
 %include('content_close.inc')
 
 <!-- ========================================================== -->
-<!--
 %include('content_intro.inc')
-    <h2 class="title" id="CMS">CMS</h2>
+    <h2 class="title" id="NoSQL">NoSQL Data Stores</h2>
+
+<p>
+This project explores Hadoop and key-value stores to support Big Data
+analytics, and how these systems can co-exist with cloud
+infrastructure. We currently support a Hadoop installation for
+healthcare data analytics and are exploring similar systems for
+scientific data sets and analysis.
+
+<p>
+For health-care analytics, we are building a capability named
+"Cloud-get" which will provide access to large volumes of data on
+virtualized servers where analysis tools can be applied to the data
+directly.
+
+<p>
+Data scientists will be able to apply this capability in their domain
+of interest to access and analyze large amounts of data in a flexible
+way. Keeping the data in the data center will avoid the usual time
+delays and security risk associated with large data transfers.
+Virtualizing the analysis environment will provide a high level of
+administrative control over the resources and minimize the risk
+normally associated with malicious intrusions.
+
+<p>
+Contributors: Raghul Gunasekaran, James Horey (CSED), and
+Seung-Hwan Lim (CSED)
+
+<p>
+Status: On-going
+
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
--->
+
 
 <!-- ========================================================== -->
 %include('content_intro.inc')
