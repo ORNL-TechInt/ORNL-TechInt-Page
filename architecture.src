@@ -18,7 +18,7 @@ applicable to the OLCF roadmap.
 </div>
 <div class="plinks">
 <a href="#Many-Core">Exploiting Many-Core Architectures for End-to-End Science</a> 
-| <a href="#OSNoise">Reducing Application Runtime Variability on Jaguar XT5</a> 
+<br><a href="#OSNoise">Reducing Application Runtime Variability on Jaguar XT5</a> 
 </div>
 
 %include('content_close.inc')

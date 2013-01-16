@@ -186,6 +186,11 @@
         <a href="http://climatemodeling.science.energy.gov/publications/practical-application-parallel-coordinates-climate-model-analysis-0"
         target="other">link will open in new window/tab</a>
    
+      <li><strong>On Timely Staging of HPC Job Input Data</strong>, Henry M.
+        Monti, Ali R. Butt, Sudharshan S. Vazhkudai, <em>IEEE
+        Transactions on Parallel and Distributed Systems (TPDS)</em>,
+        2012.
+
     </ul>
 
     <!-- ============================================================== -->
@@ -194,11 +199,6 @@
     <!-- ============================================================== -->
     <li><h4>Computer Architecture</h4>
     <ul>
-      <li><strong>On Timely Staging of HPC Job Input Data</strong>, Henry M.
-        Monti, Ali R. Butt, Sudharshan S. Vazhkudai, <em>IEEE
-        Transactions on Parallel and Distributed Systems (TPDS)</em>,
-        2012.
-
       <li> <strong>On the Use of GPUs in Realizing Cost-Effective
         Distributed RAID</strong>, Aleksandr Khasymski, M. Mustafa Rafique,
         Ali R. Butt, Sudharshan S. Vazhkudai, Dimitrios S.
