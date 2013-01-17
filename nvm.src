@@ -17,7 +17,7 @@ out-of-core data analytics.
 <a href="#Burst">Burst Buffers</a> 
 | <a href="#NVMalloc">NVMalloc</a> 
 | <a href="#ActiveFlash">ActiveFlash</a>
-| <a href="#Flash">Flash Storage Systems</a>
+| <a href="#Emerging">Emerging Storage Technologies</a>
 </div>
 
 %include('content_close.inc')
@@ -156,44 +156,57 @@ associated main memory. The work involves several areas.
 
 <!-- ========================================================== -->
 %include('content_intro.inc')
-<h2 id="Flash">Flash Storage Systems</h2>
+<h2 id="Emerging">Emerging Storage Technologies</h2>
 
-Although SSDs offer significant performance improvements over hard
-disk drives (HDDs) for a number of workloads, they can exhibit
-substantial variance in request latency and throughput as a result of
-garbage collection (GC). Thus, in this project, we explore design
-challenges on SSD based storage systems. The work involves several
-areas.
+<p>
+Hard disk drives (HDDs) have been the preferred media for data storage in
+high-performance computing. A center-wider file system at ORNL has
+deployed 13,440 HDDs for back-end storage systems, running the Lustre
+parallel file system. However, there are shortcomings inherent to HDDs.
+Alongside improvements in HDD technology, significant advances have also
+been made in various forms of solid-state memory such as NAND flash
+memory, phase-change memories (PRAM), and spin-transfer torque memories
+(STT-RAM). These emerging storage technologies close a huge gap between
+DRAM and disk based storage systems. In this project, we evaluate these
+emerging memory technologies to coexist with magnetic disks, and address
+technology challenges towards employing these memory devices in HPC
+storage systems. More specifically we measure the technology's impact on
+I/O intensive scientific applications. The work includes several areas.
 
 <ul>
-  <li>Benchmarking SSDs and understanding their performance and behavior
-  <li>Detailed performance modeling of SSDs for different HPC workloads 
-  <li>Improving performance of individual SSDs and arrays of SSDs
+  <li>Benchmarking emerging memory technologies and studying their
+      performance and behavior
 
-  <li>Developing internal flash management algorithms (GC, FTL, etc)
-  for high performance SSD based storage systems
+  <li>Detailed performance modeling of these memory devices for different
+      scientific applications
 
+  <li>Identifying technology challenges towards employing these devices in
+      HPC storage systems
+
+  <li>Understanding internal memory management algorithms at the device
+      controller
 </ul>
 
-<p>Contributors: Youngjae Kim, Sarp Oral, and Dave Dillow
+<p>
+Contributors: Youngjae Kim, Sarp Oral, Dave Dillow, and Sudharshan Vazhkudai
 
-<p>Status: On-going
+<p>
+Status: On-going
 
-<p>Selected publications
-    <ul>
+<p>
+Selected publications:
+  <ul>
+    <li>Youngjae Kim, Junghee Lee, Sarp Oral, David Dillow, Feiyi
+    Wang, Galen M. Shipman, "Coordinating Garbage Collection for
+    Arrays of Solid-state Drives", (To appear) IEEE Transactions on
+    Computers (IEEE TC), 2013.
 
-      <li>Youngjae Kim, Junghee Lee, Sarp Oral, David Dillow, Feiyi
-      Wang, Galen M. Shipman, "Coordinating Garbage Collection for
-      Arrays of Solid-state Drives", <i>(To appear) IEEE Transactions
-      on Computers (IEEE TC), 2013.</i>
-
-      <li>Junghee Lee, Youngjae Kim, Galen M. Shipman, Sarp Oral,
-      Jongman Kim, "Preemptible I/O Scheduling of Garbage Collection
-      for Solid-state Drives", <i>(To appear) IEEE Transactions on
-      Computer-Aided Design of Integrated Circuits and Systems (IEEE
-      TCAD), 2013.</i>
-
-    </ul>
+    <li>Ramya Prabhakar, Sudharshan Vazhkudai, Youngjae Kim, Ali Butt,
+    Min Li, Mahmut Kandemir, Provisioning a Multi-Tiered Data Staging
+    Area for Extreme-Scale Machines, Proceedings of the 31th Int'l
+    Conference on Distributed Computing Systems (ICDCS 2011),
+    Minneapolis, Minnesota, June 20-24, 2011.
+  </ul>
 
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
