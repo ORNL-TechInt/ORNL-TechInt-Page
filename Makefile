@@ -43,6 +43,9 @@ all: mkhtml $(ALL_MEMBERS) $(ALL_OTHER)
 %.html: %.src $(ALL_INC)
 	./mkhtml $<
 
+README.html: README.md
+	Markdown.pl $< > $@
+
 mkhtml: mkhtml.py
 	ln -s mkhtml.py mkhtml
 

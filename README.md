@@ -6,7 +6,7 @@ Technology Integration Group, NCCS, ORNL.
 
 The master copy resides at
 
-   https://github.com/ORNL-TechInt/ORNL-TechInt-Page
+    https://github.com/ORNL-TechInt/ORNL-TechInt-Page
 
 
 Gitting a Copy
@@ -17,49 +17,57 @@ organization, you can get a development copy of the repository that
 will allow you make changes to the site and push them back into the
 repository:
 
- $ git clone git@github.com:ORNL-TechInt/ORNL-TechInt-Page.git [dirname]
+    $ git clone git@github.com:ORNL-TechInt/ORNL-TechInt-Page.git [dirname]
 
 Alternatively, you can get a read-only copy of the site:
 
- $ git clone git://github.com/ORNL-TechInt/ORNL-TechInt-Page.git [dirname]
+    $ git clone git://github.com/ORNL-TechInt/ORNL-TechInt-Page.git [dirname]
 
+To get your github account added to the ORNL-TechInt organization,
+send a request to tbarron at ornl dot gov. In what follows, I'll use
+"$TECHINT" to refer to the git working directory.
 
+ 
 Git Hooks
 ---------
 
-A pre-commit hook can be used to validate the HTML before completing
-the commit and a post-commit hook can be used to update the version
-value displayed at the bottom of the main page of the site. After
-cloning your copy of the repo, you can activate these hooks by running
+Hook scripts are available for 1) updating js/version.js with the
+output 'git describe' so that the site version and last update time is
+displayed on the About page, and 2) running make to process .src files
+to generate the .html files.
 
-   $ ./githooks/mk_symlinks
+After cloning your copy of the repo, you can activate these hooks by
+running
 
-This creates the appropriate symlinks from .git/hooks to scripts in
-githooks.
+    $ $TECHINT/githooks/mk_symlinks
+
+This creates the appropriate symlinks from .git/hooks to the scripts
+in $TECHINT/githooks.
 
 Available hook scripts include
 
-   set-version: generate js/version.js, based on the output of 'git
-      describe'. mk_symlinks links this as the post-commit hook.
+>    set-version: generate js/version.js, based on the output of 'git
+>      describe'. mk_symlinks links this as the post-commit hook.
+>
+>    post-merge: call set-version, then run make to rebuild the html
+>      files. mk_symlinks links this as the post-merge hook.
 
-   post-merge: call set-version, then run make to rebuild the html
-      files. mk_symlinks links this as the post-merge hook.
 
 Special Measures
 ----------------
 
 To style these pages similarly to olcf.ornl.gov, it's necessary to put
-the same header on them. This header consists of a combination of HTML
-and CSS. Since the html files include the css file, this can easily be
-done with a single copy of the css.
+the same header on them that the OLCF site uses. This header consists
+of a combination of HTML and CSS. Since the html files include the css
+file, this can easily be done with a single copy of the css.
 
 However, the HTML specification doesn't provide a way for including
 common HTML snippets into multiple files. So we're faced with either
 maintaining the same navigation code across 30+ files or finding some
-way of incorporating a single copy of the code in to the 30+ files.
+way of incorporating a single copy of the code into the 30+ files.
 
 To address this, I have written a small python script call mkhtml that
-understands simple includes and conditionals. For exmaple, index.html
+understands simple includes and conditionals. For example, index.html
 is generated from index.src, which includes directives like
 
     %include('hdrnav.inc')
@@ -76,16 +84,17 @@ In turn, hdrnav.inc contains the following:
 
 Each .src file contains a <meta ...> tag like the following:
 
-    <meta name="filetype" content="index" />
+    <meta name="keywords" content="index" />
 
 mkhtml.py notices when this goes by and sets variable self.filetype to
-the value indicated by the content attribute. This allows for the
-currently active tab in the menu bar to be a different color from the
-others.
+the value indicated by the content attribute. The code above allows
+for the currently active tab in the menu bar to be a different color
+from the others.
 
 There is also a Makefile with the dependencies defined so after
 editing a .src or .inc file, you can just run make to rebuild the HTML
 files.
+
 
 Implications
 ------------
@@ -96,12 +105,14 @@ Implications
    redeploying the files must run make after the .src files are up to
    date to rebuild the .html files.
 
- * The .css file will be reloaded by browsing requests directly, so
-   there's no need to rebuild after changing the .css.
+ * The .css file will be reloaded by browsing requests directly (the
+   user may need to issue a refresh), so there's no need to rebuild
+   after changing the .css.
 
  * To add a new member to the group, a new thrust area, or a new year
    to the publications or software categories, several files must be
-   updated. Let's take a new group member as an example. Here are the steps:
+   updated. Let's take a new group member as an example. Here are the
+   steps:
 
     * Create a new .src file based on the person's name. The
       convention so far has been to use last names unless that results
@@ -122,7 +133,9 @@ Implications
 
     * Pull the changes into the deployment directory.
 
-    * Run make.
+    * Run make (this step can be automated using the post merge git
+      hook described above).
+
 
 Makefile Targets
 ----------------
@@ -133,6 +146,8 @@ The following targets are available in the Makefile:
 
  * %.html: tells make that foo.html depends on foo.src as well as
        all the .inc files
+
+ * README.html: run Markdown.pl to generate README.html
     
  * mkhtml: creates symlink mkhtml -> mkhtml.py if needed
 
