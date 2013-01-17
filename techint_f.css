@@ -14,7 +14,9 @@ abbr,acronym{border:0;font-variant:normal;}legend{color:#000;}
 input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select { *font-size:100%; }
 .clear { clear:both; display: block; visibility: hidden;}a:hover, .sidebar a:hover, .leftContent a:hover { color: #000000; }
 
-
+/* ---------------------------------------------------------------------------
+** Most General -- unqualified tags
+*/
 
 body {
     /* background-color: #000fff; */
@@ -23,16 +25,59 @@ body {
     font-size: 12px;
     line-height: 1.75em;
 }
-.cci {
+html {
+    height: 100%;
+}
+h2 {
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+h3 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    padding-bottom: 0px;
+}
+h4 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    margin-top: -5px;
+    margin-bottom: -10px;
+}
+h5 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    padding-bottom: 0px;
+}
+
+/* ---------------------------------------------------------------------------
+** Classes identified by styling
+*/
+
+.right {
+    float: right;
+}
+.indented {
+    margin-left: 3em;
+}
+
+/* ---------------------------------------------------------------------------
+** Most specific: classes identified by design element
+*/
+
+/* -- The ADARA logo on data.html */
+.adara {
+    width: 100%;
+}
+/* -- Flow text around logos inside project write-ups */
+.logo-flow {
+    float: right;
     margin-left: 10px;
     margin-right: 5px;
     margin-top: 1em;
-    width: 30%;
+    width: 40%;
     height: 20%;
 }
+/* -- Center the project links at the top of each project page */
 .plinks {
     text-align: center;
 }
+/* -- The black textured background at the top of the page */
 .header {
     background: url("images/header-tile2.png") repeat-x 
                 scroll left -9px #F0F0F0;
@@ -41,16 +86,11 @@ body {
     padding: 0;
     width: 100%;
 }
+/* -- Container for the OLCF logo and "Technology Integration" page title */
 #hbanner {
     width: 968px; margin: 0px auto 0px auto; height:97px; padding:0;
 }
-
-html {
-    height: 100%;
-}
-.indented {
-    margin-left: 3em;
-}
+/* -- Styling for the OLCF logo on the left of the header */
 #logo {
     width: 323px;
     float: left;
@@ -59,6 +99,13 @@ html {
     display: inline;
     margin-left: 0;
 }
+/* -- Styling for the CCI logo on the networking page */
+.networking {
+   background-color: white;
+   width: 60%;
+   float: right;
+}
+/* -- Styling for the "Technology Integration" page title top right */
 #page_title {
     font-family: "Arial Black", Gadget, sans-serif;
     color: white;
@@ -78,6 +125,7 @@ html {
     line-height: 38px;
     padding: 5px 0;
 }
+/* -- Create the top edge of a write-up box */
 .box-top {
     background: url("images/cat-section-shade.png") no-repeat scroll 0 0 transparent;
     height: 8px;
@@ -86,6 +134,7 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
+/* -- Bottom edge of a write-up box */
 .box-bottom {
     background: url("images/cat-section-shade.png") no-repeat scroll 0 -8px transparent;
     height: 8px;
@@ -93,9 +142,11 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
+/* -- Allow some space after the bottom of the last write-up on each page */
 .end-space {
     padding-bottom: 1em;
 }
+/* -- Styling for the text inside a write-up box */
 .page_content {
     background-color: white;
     background: url("images/cat-section-vertical-shade.png") repeat-y scroll 0 0 #FFFFFF;
@@ -146,6 +197,7 @@ html {
 .page_content em {
     font-style: italic;
 }
+/* -- Create the green menu bar in the header */
 .navbar {
     font-family: 'Arial';
     font-size: small;
@@ -157,6 +209,7 @@ html {
     padding:0;
     width:968px;
 }
+/* -- Style the menu bar and its contents */
 .nav {
     list-style: none;
     font-weight: bold;
@@ -195,6 +248,7 @@ html {
     background: #016db9;
     text-decoration: none;
 }
+/* -- Give the currently active tab a contrasting color */
 .current_page {
     background-color: #eeeeee;
     background: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 80%);
@@ -249,6 +303,7 @@ html {
     /* this sets the background color of dropdown menu items when hovered */
     background: #004932;
 }
+/* -- Provide some padding at the right end of the menu bar */
 .navfill {
     /* this provides the filler at the right end of the menu bar */
     background: -moz-linear-gradient(top, #03875e 0%, #05523a 80%);
@@ -262,6 +317,7 @@ html {
     height: 2.5em;
     width: 14em;
 }
+/* -- Style the overview text at the top of each project page */
 .overview {
     font-size: 18px;
     letter-spacing: -.05em;
@@ -272,9 +328,7 @@ html {
     color: black;
     width: 620px;
 }
-.right {
-    float: right;
-}
+/* -- Style the version display at the bottom of the About page */
 .version {
     font-family: "Arial Black", Gadget, sans-serif;
     font-size: small;
@@ -282,33 +336,14 @@ html {
     text-align: right;
     padding-top: 100px;
 }
+/* -- Styling for the list of years on the publications and software pages */
 .year_list ul {
     list-style-type: circle;
 }
-.networking {
-   background-color: white;
-   width: 100%;
-}
-.rounded {
-   border-radius: 10px;
-}
-/* tags */
-h2 {
-    font-family: "Arial Black", Gadget, sans-serif;
-}
-h3 {
-    font-family: "Arial Black", Gadget, sans-serif;
-    padding-bottom: 0px;
-}
-h4 {
-    font-family: "Arial Black", Gadget, sans-serif;
-    margin-top: -5px;
-    margin-bottom: -10px;
-}
-h5 {
-    font-family: "Arial Black", Gadget, sans-serif;
-    padding-bottom: 0px;
-}
+
+/* -- Style the table that provides vertical layout on the About page
+** to space the version line toward the bottom of the window 
+*/
 #vlayout {
     height: 100%;
     width: 100%;

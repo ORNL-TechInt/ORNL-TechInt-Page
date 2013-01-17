@@ -25,11 +25,11 @@ stacks.
 
 <!-- ========================================================== -->
 %include('content_intro.inc')
-    <div class="right cci">
+    <div class="logo-flow">
        <a
         href="http://www.olcf.ornl.gov/center-projects/cci-common-communication-interface/"
         target="other">
-        <img class="rounded networking" src="images/cci-logo-text-01.png" alt="CCI Logo"/>
+        <img class="networking" src="images/cci-logo-text-01.png" alt="CCI Logo"/>
        </a>
     </div>
 

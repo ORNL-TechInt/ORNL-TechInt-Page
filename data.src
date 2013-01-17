@@ -32,7 +32,12 @@ visualization.
 
 <!-- ========================================================== -->
 %include('content_intro.inc')
+    <div class="logo-flow">
+      <img class="adara" src="images/ADARA_Logo.png" alt="ADARA Logo"/>
+    </div>
+
     <h2 class="title" id="ADARA">ADARA</h2>
+    
 <p>
 In addition to hosting the world's fastest supercomputer, ORNL also
 operates the world's brightest neutron source, the Spallation Neutron

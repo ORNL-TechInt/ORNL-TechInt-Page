@@ -93,8 +93,13 @@ Status: Completed
 
 <!-- ========================================================== -->
 %include('content_intro.inc')
-    <h2 id="HPSS" class="title">HPSS</h2>
+    <div class="logo-flow">
+      <a href="http://www.hpss-collaboration.org/" target="other">
+        <img src="images/hpss_logo.jpg"/>
+      </a>
+    </div>
 
+    <h2 id="HPSS" class="title">HPSS</h2>
 <p>
 <a href="http://www.hpss-collaboration.org/" target="other">HPSS</a>
 is the result of over a decade of collaboration among five Department
