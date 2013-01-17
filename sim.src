@@ -12,16 +12,16 @@
 <p>
 Hyogi joined the Technology Integration group in 2013 as an intern. He
 is pursuing his Ph.D. degree in Computer Science at <a
-href="http://www.vt.edu">Virginia Tech</a>. His primary research
-interest is focused on deploying non-volatile memory devices to the
-distributed computing environments. He is also interested in general
-topics in file and storage systems.
+href="http://www.vt.edu" target="other">Virginia Tech</a>. His primary
+research interest is focused on deploying non-volatile memory devices
+to the distributed computing environments. He is also interested in
+general topics in file and storage systems.
 
 <p>
 He earned his M.S. degree in Computer Engineering in 2008 and B.S. in
 Civil Engineering in 2005, both from <a
-href="http://www.hanyang.ac.kr/english/">Hanyang University</a> in
-South Korea.
+href="http://www.hanyang.ac.kr/english/" target="other">Hanyang
+University</a> in South Korea.
 
 %include('content_close.inc')
 %include('html_close.inc')

@@ -8,9 +8,6 @@
 
 %include('content_intro.inc')
 <ul>
- <li><a href="vazhkudai.html">Sudharshan
- Vazhkudai</a> (Group Leader)
- <li><a href="mowery.html">Sonya Mowery</a> (Group Secretary)
  <li><a href="atchley.html">Scott Atchley</a>
  <li><a href="barron.html">Tom Barron</a>
  <li><a href="dillow.html">David Dillow</a>
@@ -19,12 +16,15 @@
  <li><a href="harney.html">John Harney</a>
  <li><a href="kim.html">Youngjae Kim</a>
  <li><a href="miller.html">Ross Miller</a>
+ <li><a href="mowery.html">Sonya Mowery</a> (Group Secretary)
  <li><a href="oral.html">Sarp Oral</a>
  <li><a href="sim.html">Hyogi Sim</a>
  <li><a href="simmons.html">James Simmons</a>
  <li><a href="smith.html">Brian Smith</a>
  <li><a href="stansberry.html">Dale Stansberry</a>
  <li><a href="steinert.html">Deryl Steinert</a>
+ <li><a href="vazhkudai.html">Sudharshan
+ Vazhkudai</a> (Group Leader)
  <li><a href="cwang.html">Chao Wang</a>
  <li><a href="fwang.html">Feiyi Wang</a>
  <li><a href="white.html">Vicky White</a>

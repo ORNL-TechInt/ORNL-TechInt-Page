@@ -39,8 +39,6 @@
       <li><a href="members.html">Members</a>
 %endif
         <ul>
-          <li><a href="vazhkudai.html">Sudharshan Vazhkudai (group leader)</a>
-          <li><a href="mowery.html">Sonya Mowery (group secretary)</a>
           <li><a href="atchley.html">Scotty Atchley</a>
           <li><a href="barron.html">Tom Barron</a>
           <li><a href="dillow.html">David Dillow</a>
@@ -49,12 +47,14 @@
           <li><a href="harney.html">John Harney</a>
           <li><a href="kim.html">Youngjae Kim</a>
           <li><a href="miller.html">Ross Miller</a>
+          <li><a href="mowery.html">Sonya Mowery (group secretary)</a>
           <li><a href="oral.html">Sarp Oral</a>
           <li><a href="sim.html">Hyogi Sim</a>
           <li><a href="simmons.html">James Simmons</a>
           <li><a href="smith.html">Brian Smith</a>
           <li><a href="stansberry.html">Dale Stansberry</a>
           <li><a href="steinert.html">Deryl Steinert</a>
+          <li><a href="vazhkudai.html">Sudharshan Vazhkudai (group leader)</a>
           <li><a href="cwang.html">Chao Wang</a>
           <li><a href="fwang.html">Feiyi Wang</a>
           <li><a href="white.html">Vicky White</a>

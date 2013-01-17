@@ -95,7 +95,7 @@ Status: Completed
 %include('content_intro.inc')
     <div class="logo-flow">
       <a href="http://www.hpss-collaboration.org/" target="other">
-        <img src="images/hpss_logo.jpg"/>
+        <img src="images/hpss_logo.jpg" alt="HPSS Logo"/>
       </a>
     </div>
 

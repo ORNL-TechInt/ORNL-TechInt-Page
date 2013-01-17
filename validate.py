@@ -260,6 +260,17 @@ class TIParser(HTMLParser.HTMLParser):
             self.doctype = "present"
             
     # -----------------------------------------------------------------------
+    def handle_a(self, tag, attrs):
+        """
+        This gets called when we see an <a> tag
+        """
+        ad  = dict(attrs)
+        if 'href' in ad.keys() \
+               and ad['href'].startswith('http:') \
+               and 'target' not in ad.keys():
+            self.errmsg("External link with not target attribute")
+
+    # -----------------------------------------------------------------------
     def handle_div(self, tag, attrs):
         """
         This gets called on <div> tags
