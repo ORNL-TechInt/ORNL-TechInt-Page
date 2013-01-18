@@ -19,7 +19,7 @@ He is also working on investigating the problem of efficient data
 placement on deep memory hierarchies.
 
 Youngjae is also working on I/O
-optimization to parallel file systems. Youngjae has been working on
+optimization of parallel file systems. Youngjae has been working on
 the <a href="nvm.html#ActiveFlash">Active Flash</a> project, which
 enables an in-situ scientific data analysis on SSDs. He also works on
 flash storage system research. His research interests include
@@ -27,14 +27,18 @@ operating systems, parallel I/O and file systems, storage systems,
 emerging storage technologies, and performance evaluation.
 
 <p>
+
 Youngjae received a Ph.D. degree in Computer Science and Engineering
-from Pennsylvania State University in 2009. At Penn State, he
-investigated the problem of building hybrid storage systems using HDDs
-and SSDs. He had developed storage capacity planner and dynamic
-controller for hybrid storage system. Youngjae is also an adjunct
-professor in the School of Electrical and Computer Engineering at
-Georgia Institute of Technology. For more information, visit his
-<a href="http://users.nccs.gov/~yk7" target="other">personal webpage</a>.
+from <a href="http://www.psu.edu/" target="other">Pennsylvania State
+University</a> in 2009. At Penn State, he investigated the problem of
+building hybrid storage systems using HDDs and SSDs. He had developed
+a storage capacity planner and a dynamic controller for hybrid storage
+system. Youngjae is also an adjunct professor in the <a
+href="http://www.ece.gatech.edu/" target="other">School of Electrical
+and Computer Engineering</a> at <a href="http://www.gatech.edu/"
+target="other">Georgia Institute of Technology</a>. For more
+information, visit his <a href="http://users.nccs.gov/~yk7"
+target="other">personal webpage</a>.
 
 %include('content_close.inc')
 %include('html_close.inc')

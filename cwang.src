@@ -5,7 +5,9 @@
 %include('hdbody.inc')
 %include('hdrnav.inc')
 %include('content_intro.inc')
-<h2><a href="https://sites.google.com/site/wangchao98/">Chao Wang</a></h2>
+
+<h2><a href="https://sites.google.com/site/wangchao98/"
+target="other">Chao Wang</a></h2>
 
 <p>Chao is a Research Associate of the Technology Integration
 (TechInt) Group in the National Center for Computational Sciences

@@ -15,7 +15,7 @@ National Laboratory. He joined NCCS in 2007 to deploy the first
 large-scale, routed Lustre file system, and he currently co-chairs
 Open Scalable File Systems Technology Working Group. His research
 combines his interest in operating systems, parallel computing, and
-high- performance networks and storage to design systems for future
+high-performance networks and storage to design systems for future
 supercomputers.
 
 <p>During the deployment of <a href="storage.html#Spider">Spider</a>, Dave designed the network
@@ -25,7 +25,7 @@ better end-user performance, meeting the project performance goals.
 Dave works on the team enhancing OLCF file systems to support future
 generations of our leadership computing platforms.
 
-<p>Recent work includes, an implementation of CCI embeded in the
+<p>Recent work includes an implementation of CCI embedded in the
 SeaStar firmware called <a href="networking.html#DStar">DStar</a>,
 which provides about half the latency of the vendor-provided network
 stack.

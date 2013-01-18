@@ -7,15 +7,20 @@
 %include('content_intro.inc')
 <h2>Doug Fuller</h2>
 
-<p>Doug joined the Technology Integration group in 2009 from Arizona
-  State University, where he architected and led the implementation of
+<p>Doug joined the Technology Integration group in 2009 from <a
+  href="http://www.asu.edu/" target="other">Arizona State
+  University</a>, where he architected and led the implementation of
   high performance Linux Infiniband clusters based on Lustre, MPI, and
   OpenMP.
 
-<p>Doug received his B.Sc. from Iowa State University in 2002 and his
-  M.Sc. in Computer Science from Iowa State University in 2005.
+<p>Doug received his B.Sc. from <a href="http://www.iastate.edu/"
+  target="other">Iowa State University</a> in 2002 and his M.Sc. in
+  Computer Science from Iowa State University in 2005.
 
 <p>In addition to other projects, Doug led the effort to stand up the
-NOAA system Gaea.
+NOAA system <a
+href="http://researchmatters.noaa.gov/news/Pages/gaea1.aspx"
+target="other">Gaea</a>.
+
 %include('content_close.inc')
 %include('html_close.inc')

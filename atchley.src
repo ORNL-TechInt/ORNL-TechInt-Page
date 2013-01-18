@@ -12,7 +12,7 @@
 <p>Scott joined ORNL in 2011 as a HPC Systems Engineer. He works on networking
 and core specialization projects. He works on the open-source, network
 abstraction layer, the
-<a href="http://www.olcf.ornl.gov/center-projects/common-communication-interface/"
+<a href="http://www.olcf.ornl.gov/center-projects/cci-common-communication-interface/"
 target="other">
 Common Communication Interface (CCI)</a> project. He has helped refine the
 API and worked on many of the underlying transports. He is also working on
