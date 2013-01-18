@@ -50,7 +50,7 @@ mkhtml: mkhtml.py
 	ln -s mkhtml.py mkhtml
 
 clean:
-	rm -rf $(ALL_MEMBERS) $(ALL_OTHER) validation_*.html
+	rm -rf $(ALL_MEMBERS) $(ALL_OTHER) validation_*.html README.html
 
 w3valid: all
 	validate -r -w *.html
