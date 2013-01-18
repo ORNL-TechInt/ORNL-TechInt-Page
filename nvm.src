@@ -63,7 +63,7 @@ is an approach for exploiting NVM as a secondary memory partition so
 that applications can explicitly allocate and manipulate memory
 regions therein. More specifically, it is a middleware library with a
 suite of services that enables applications to access node-local or
-distributed NVM storage system in a seamless fashion. The work
+distributed NVM storage systems in a seamless fashion. The work
 inovolves several areas.
 
 
@@ -71,11 +71,11 @@ inovolves several areas.
 
   <li>Exploring NVM as a secondary memory partition for HPC systems 
 
-  <li>Developing NVMalloc library with a suite of services that
+  <li>Developing the NVMalloc library with a suite of services that
   enables applications to access NVM systems
 
   <li>Studying the performance of NVMalloc with various HPC benchmark
-  suits
+  suites
 
   <li>Developing data management techniques to efficiently use the
   NVM partition and DRAM partition
@@ -105,26 +105,26 @@ inovolves several areas.
 <h2 id="ActiveFlash">Active Flash</h2>
 
 Modern scientific discovery is increasingly driven by large-scale
-supercomputing simulations, followed byÿdata analysis tasks. These
+supercomputing simulations, followed by data analysis tasks. These
 data analyses are either performed offline, on smaller-scale clusters,
-or on the uspercomputer itself. Unfortunately, these techniques sffer
+or on the supercomputer itself. Unfortunately, these techniques suffer
 from performance and energy inefficiencies due to increased data
-movement between the compute and storageÿsubsystems. We propose Active
+movement between the compute and storage subsystems. We propose Active
 Flash, an in-situ scientific data analysis approach, wherein data
-analysis is conducted on the solid-state device (SSD), whereÿthe data
-already resides.ÿActive Flash has the potential to enable true
+analysis is conducted on the solid-state device (SSD), where the data
+already resides. Active Flash has the potential to enable true
 out-of-core data analytics by freeing up both the compute core and the
 associated main memory. The work involves several areas.
 
 <ul>
   <li>Developing analytical models for the performance and energy
-  feasibility of Active Flash, and comparing them against traditional
+  feasibility of Active Flash, and comparing those models against traditional
   in-situ and offline data analysis schemes
 
   <li>Building an Active Flash prototype to demonstrate its viability
 
   <li>Studying co-scheduling of analyses and internal flash management
-  activities on the SSDs controller
+  activities on the SSD controller
 
   <li>Defining efficient representations of data object interfaces for
   Active Flash
@@ -159,19 +159,20 @@ associated main memory. The work involves several areas.
 <h2 id="Emerging">Emerging Storage Technologies</h2>
 
 <p>
-Hard disk drives (HDDs) have been the preferred media for data storage in
-high-performance computing. A center-wider file system at ORNL has
+Hard disk drives (HDDs) have been the preferred media for data storage
+in high-performance computing. A center-wide file system at ORNL has
 deployed 13,440 HDDs for back-end storage systems, running the Lustre
-parallel file system. However, there are shortcomings inherent to HDDs.
-Alongside improvements in HDD technology, significant advances have also
-been made in various forms of solid-state memory such as NAND flash
-memory, phase-change memories (PRAM), and spin-transfer torque memories
-(STT-RAM). These emerging storage technologies close a huge gap between
-DRAM and disk based storage systems. In this project, we evaluate these
-emerging memory technologies to coexist with magnetic disks, and address
-technology challenges towards employing these memory devices in HPC
-storage systems. More specifically we measure the technology's impact on
-I/O intensive scientific applications. The work includes several areas.
+parallel file system. However, there are shortcomings inherent to
+HDDs. Alongside improvements in HDD technology, significant advances
+have also been made in various forms of solid-state memory such as
+NAND flash memory, phase-change memories (PRAM), and spin-transfer
+torque memories (STT-RAM). These emerging storage technologies close a
+huge gap between DRAM and disk based storage systems. In this project,
+we evaluate these emerging memory technologies, study how they are to
+coexist with magnetic disks, and address technology challenges towards
+employing these memory devices in HPC storage systems. More
+specifically we measure the technology's impact on I/O intensive
+scientific applications. The work includes several areas.
 
 <ul>
   <li>Benchmarking emerging memory technologies and studying their

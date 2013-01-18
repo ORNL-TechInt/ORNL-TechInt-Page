@@ -24,7 +24,7 @@ individuals to advance the state of the art.
 <div class="plinks">
 <a href="#Invictus">Invictus</a> 
 | <a href="#Spider">Spider</a> 
-| <a href="#HPSS">HPSS</a>
+| <a href="#HPSS">High Performance Storage System</a>
 | <a href="#LustreEval">Lustre Evaluation</a>
 | <a href="#Ceph">Ceph Evaluation</a>
 | <a href="#SOS">Towards a Resilient and Scalable Infrastructure for Big Data</a>
@@ -47,13 +47,13 @@ individuals to advance the state of the art.
 Oak Ridge Leadership Computing Facility (OLCF) at Oak Ridge National
 Laboratory (ORNL) has a long history of deploying the world's fastest
 supercomputers for enabling open science. Coupled with other OLCF
-computational resources, <a
-href="http://www.olcf.ornl.gov/titan" target="other">Titan</a>, a 27 PFLOPS Cray XK7
-system, radically increases the I/O demand beyond the capabilities of
-the existing Spider parallel file system. The new <a
-href="http://www.lustre.org" target="other">Lustre</a> parallel file system, code
-named Invictus, is designed to provide more than 18 PB to open science
-users at OLCF at an aggregate bandwidth of 1 TB/s.
+computational resources, <a href="http://www.olcf.ornl.gov/titan"
+target="other">Titan</a>, a 27 petaflop/second Cray XK7 system,
+radically increases the I/O demand beyond the capabilities of the
+existing Spider parallel file system. The new <a
+href="http://www.lustre.org" target="other">Lustre</a> parallel file
+system, code named Invictus, is designed to provide more than 18 petabytes to
+open science users at OLCF at an aggregate bandwidth of 1 terabytes/second.
 
 <p>
 Contributors: Sarp Oral, David Dillow, Feiyi Wang, Youngjae Kim,
@@ -76,8 +76,8 @@ Leadership Computing Facility (OLCF) was the world’s largest scale
 Lustre parallel file system at the time of deployment. The project
 started in 2005 and was successfully deployed and delivered to users
 in 2008. Envisioned as a shared parallel file system, Spider is
-capable of delivering 240 GB/s aggregate throughput on a file system
-with 10 PB of usable space, supporting over 26,000 clients
+capable of delivering 240 gigabyte/second aggregate throughput on a file system
+with 10 petabytes of usable space, supporting over 26,000 clients
 concurrently accessing the file system to support workloads of the
 OLCF’s diverse computational platforms.
 
@@ -101,10 +101,11 @@ Status: Completed
 
     <h2 id="HPSS" class="title">HPSS</h2>
 <p>
-<a href="http://www.hpss-collaboration.org/" target="other">HPSS</a>
-is the result of over a decade of collaboration among five Department
-of Energy laboratories and IBM, with significant contributions by
-universities and other laboratories worldwide.
+<a href="http://www.hpss-collaboration.org/" target="other">High
+Performance Storage System</a> (HPSS) is the result of over a decade
+of collaboration among five Department of Energy laboratories and IBM,
+with significant contributions by universities and other laboratories
+worldwide.
 
 <p>
 HPSS can manage petabytes of data on disk and robotic tape libraries,
@@ -166,7 +167,7 @@ Status: On-going
 <p>
 
 The <a href="http://ceph.com/" target="other">Ceph</a> file and
-storage system is an emerging new technology. It started as a doctoral
+storage system is an emerging technology. It started as a doctoral
 research project at the <a href="http://www.ucsc.edu/"
 target="other">University of California Santa Cruz</a>, and was funded
 by the <a href="http://nnsa.energy.gov/" target="other">DOE/NNSA</a>
@@ -304,7 +305,7 @@ Status: Completed
 
 <p>
 Evaluating or assessing the performance of a parallel file system is
-achieved by exercising a predefined set I/O workloads on the target
+achieved by exercising a predefined set of I/O workloads on the target
 parallel file system. This process allows one the ability to identify the
 existing performance response and compare it to a past value. The Technology
 Integration Group is heavily invested in developing and running
@@ -364,11 +365,12 @@ I/O-aware decision making capability that can be used to guide
 decisions about issues such as scheduling.
 
 <p>
+
 At OLCF, the Spider storage system is available as four partitions and
 the users are allowed to use all or any of them during runtime. The
 immediate goal of the project is to enable scientific users to choose
-the best file system partition based on current loads and known I/O
-behavior of their application.
+the best file system partition based on current loads and what they
+know about the I/O behavior of their application.
 
 <p>
 Contributors: Raghul Gunasekaran, Sudharshan Vazhkudai, Yang Liu
@@ -391,7 +393,7 @@ architecting new storage systems based on observed workload patterns.
 In this project, we characterize the scientific workloads of the HPC
 (High Performance Computing) storage cluster, Spider, at the Oak Ridge
 Leadership Computing Facility (OLCF). Spider provides an aggregate
-bandwidth of over 240 GB/s with over 10 petabytes of RAID 6 formatted
+bandwidth of over 240 gigabyte/second with over 10 petabytes of RAID 6 formatted
 capacity. We characterize the system utilization, the read and write
 requests, idle time, and the distribution of read requests to write
 requests for the storage system. We also study applications' I/O
@@ -438,7 +440,7 @@ to meet requirements.
 <p>
 The BWG is led by Sarp Oral and Richard Roloff (Cray)
 and focuses on researching primary I/O workloads in high performance
-parallel file systems configurations, studying existing benchmarking tools
+parallel file system configurations, studying existing benchmarking tools
 that best emulate these workloads towards producing a report that best
 matches existing benchmarking tools available to the workloads defined,
 and producing a set of instructions for download, execution and analysis
@@ -477,7 +479,7 @@ target="other">National Climate Computing Research Center</a>, a joint
 effort between Oak Ridge National Laboratory (ORNL) and the <a
 href="http://www.noaa.gov" target="other">National Oceanic and
 Atmospheric Administration</a> (NOAA). NCRC's primary compute platform,
-Gaea, has evolved through a three-phase deployment into a 1.1 PFLOPS
+Gaea, has evolved through a three-phase deployment into a 1.1 petaflop/second
 system supporting atmospheric research. Group members helped specify,
 procure, and test the machine through each deployment phase. In
 addition, the Technology Integration Group has assisted the NOAA user
