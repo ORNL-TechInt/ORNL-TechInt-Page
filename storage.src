@@ -22,7 +22,7 @@ others involve collaboration with diverse organizations and
 individuals to advance the state of the art.
 </div>
 <div class="plinks">
-<a href="#Invictus">Invictus</a> 
+<a href="#Spider2">Spider 2</a> 
 | <a href="#Spider">Spider</a> 
 | <a href="#HPSS">High Performance Storage System</a>
 | <a href="#LustreEval">Lustre Evaluation</a>
@@ -40,7 +40,7 @@ individuals to advance the state of the art.
 
 <!-- ========================================================== -->
 %include('content_intro.inc')
-    <h2 id="Invictus" class="title">Invictus</h2>
+    <h2 id="Spider2" class="title">Spider 2</h2>
 
 <p>
 
@@ -52,7 +52,7 @@ target="other">Titan</a>, a 27 petaflop/second Cray XK7 system,
 radically increases the I/O demand beyond the capabilities of the
 existing Spider parallel file system. The new <a
 href="http://www.lustre.org" target="other">Lustre</a> parallel file
-system, code named Invictus, is designed to provide more than 18 petabytes to
+system is designed to provide more than 18 petabytes to
 open science users at OLCF at an aggregate bandwidth of 1 terabytes/second.
 
 <p>
