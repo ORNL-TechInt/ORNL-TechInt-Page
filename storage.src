@@ -53,7 +53,7 @@ radically increases the I/O demand beyond the capabilities of the
 existing Spider parallel file system. The new <a
 href="http://www.lustre.org" target="other">Lustre</a> parallel file
 system is designed to provide more than 18 petabytes to
-open science users at OLCF at an aggregate bandwidth of 1 terabytes/second.
+open science users at OLCF at an aggregate bandwidth of 1 terabyte/second.
 
 <p>
 Contributors: Sarp Oral, David Dillow, Feiyi Wang, Youngjae Kim,
