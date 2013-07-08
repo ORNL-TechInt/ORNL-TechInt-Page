@@ -113,13 +113,13 @@ providing highly flexible and scalable hierarchical storage management
 that keeps recently used data on disk and less recently used data on
 tape. Through the use of cluster, LAN and/or SAN technology, HPSS
 aggregates the capacity and performance of many computers, disks, and
-tape drives into a single virtual file system of exceptional size and
+tape drives into a single virtual archival system of exceptional size and
 versatility. This approach enables HPSS to easily meet otherwise
 unachievable demands of total storage capacity, file sizes, data
 rates, and number of objects stored.
 
 <p> 
-Technology Integration members developed and maintain components
+Technology Integration members develop and maintain components
 of HPSS responsible for the administrative interfaces, low level data
 management, and logging.
 
