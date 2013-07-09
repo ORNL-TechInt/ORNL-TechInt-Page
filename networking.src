@@ -18,7 +18,6 @@ stacks.
 <div class="plinks">
 <a href="#CCI">Common Communication Interface</a> 
 | <a href="#Terabit">Terabit Data Movement Optimization</a> 
-| <a href="#DStar">DStar</a>
 </div>
 
 %include('content_close.inc')
@@ -59,11 +58,11 @@ stacks.
 
     <p>We are currently supporting Sockets (UDP and TCP), OpenFabrics Verbs 
     (InfiniBand and RoCE), Cray GNI (Gemini and Aries), Cray Portals 3.3 
-    (SeaStar), as well as raw Ethernet (IP-bypass). Visit 
-    <a href="http://cci-forum.com/" target="other">CCI Forum</a> for release
-    information.</p>
+    (SeaStar), D-Star (a native CCI implementation on SeaStar), as well as raw
+    Ethernet (IP-bypass). Visit <a href="http://cci-forum.com/"
+    target="other">CCI Forum</a> for release information.</p>
 
-    <p>Contributors: Scott Atchley
+    <p>Contributors: Scott Atchley, David Dillow
 
     <p>Status: On-going
 
@@ -85,22 +84,6 @@ stacks.
     </ul>
 
     <p>Contributors: Scott Atchley, Youngjae Kim
-
-    <p>Status: On-going
-
-  <p>&nbsp; <a class="right" href="#">Top</a>
-%include('content_close.inc')
-
-<!-- ========================================================== -->
-%include('content_intro.inc')
-    <h2 id="DStar">DStar</h2>
-    <p>DStar is a native implementation of CCI embedded in SeaStar
-      firmware. By replacing Cray Portals, CCI can achieve a latency
-      of about 3 &micro;s compared to around 6 &micro;s when using
-      Portals for point-to-point small messages. CCI on DStar can even
-      send a 4 KiB message in less than 6 &micro;s.</p>
-
-    <p>Contributors: David Dillow
 
     <p>Status: On-going
 
