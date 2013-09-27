@@ -1,0 +1,21 @@
+%include('html_intro.inc')
+    <meta name="keywords" content="members">
+    <meta name="description" content="NCCS TechInt group member page">
+    <title>Technology Integration Group: Devesh Tiwari</title>
+%include('hdbody.inc')
+%include('hdrnav.inc')
+%include('content_intro.inc')
+<h2>Devesh Tiwari</h2>
+
+<p>Devesh joined the Technology Integration group in 2013 from <a
+  href="http://www.ncsu.edu/" target="other">North Carolina State
+  University</a>, where he got a Ph.D. in Computer Science.
+
+<p>Devesh received his B.Sc. from <a href="http://www.iastate.edu/"
+  target="other">India Institute of Technology Kanpur</a>.
+
+<p>Devesh focuses on the energy efficiency of ORNL's supercomputers while
+expediting the process of scientific discovery.
+
+%include('content_close.inc')
+%include('html_close.inc')

@@ -1,0 +1,22 @@
+%include('html_intro.inc')
+    <meta name="keywords" content="members">
+    <meta name="description" content="NCCS TechInt group member page">
+    <title>Technology Integration Group: Saurabh Gupta</title>
+%include('hdbody.inc')
+%include('hdrnav.inc')
+%include('content_intro.inc')
+<h2>Saurabh Gupta</h2>
+
+<p>Saurabh joined the Technology Integration group in 2013 after interning in the group. He has also had internships at Intel and IBM India. Saurabh plans to complete his Ph.D. at <a
+  href="http://www.ncsu.edu/" target="other">North Carolina State
+  University</a> in 2014.
+
+<p>Saurabh received his M.Sc. and B.Sc. in Electrical Engineering from <a
+  href="http://www.iastate.edu/" target="other">India Institute of Technology
+  Kanpur</a>.
+
+<p>Saurabh focuses on innovations to optimize memory access and management in
+supercompters.
+
+%include('content_close.inc')
+%include('html_close.inc')
