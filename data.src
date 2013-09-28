@@ -25,6 +25,7 @@ and visualization.
 | <a href="#EZ-Pub">EZ-Pub</a>
 <br> <a href="#NoSQL">NoSQL Data Stores</a>
 | <a href="#NIH">NIH Oncology Data</a>
+| <a href="#DOI">DOIs for HPC Data</a>
 </div>
 
 %include('content_close.inc')
@@ -489,6 +490,50 @@ long-term PS-OC Data Coordinating Center (PS-OC DCC).
 
 <p>
 Contributors: Sudharshan Vazhkudai, Ali Passian (MSED), and Chao Wang
+
+<p>
+Status: Ongoing
+
+  <p>&nbsp; <a class="right" href="#">Top</a>
+%include('content_close.inc')
+
+<!-- ========================================================== -->
+%include('content_intro.inc')
+    <h2 class="title" id="DOI">DOIs for HPC Data</h2>
+
+<p>
+Recent directives from federal agencies outline a new desire and
+requirement to provide access to scientific data arising from
+taxpayer-funded research. The provision of this data will require new
+policies and procedures including a much-improved mechanism for dataset
+identification and tracking.
+
+<p>
+To this end, we are exploring the viability of digital object identifiers
+(DOI) as a means to track data products emanating from scientific
+simulations. DOI is a mechanism that can be used to help track,
+identify, and share the data sets that are produced by researchers
+globally. 
+
+<p> 
+The ability to facilitate data-related services via DOIs has new uses for
+both the HPC center and the end-user. The center could utilize DOIs in their
+interactions with funding agencies by providing improved accounting and
+visibility of our user facility's data production. The center can also directly
+benefit from new "data strategies" such as data warehousing and other beneficial
+schemes that result from the improved planning information associated with DOIs
+and Data Management Planning. From a user standpoint, DOIs help facilitate data
+sharing, enable publication credit, enable data preservation beyond the lifetime
+of the project at the center, facilitate lineage tracking, and facilitate the
+use of intermediate data products.
+
+<p>
+We are working on creating a workflow so that users can obtain DOIs for
+their data products of interest. We are working with OSTI in trying to
+create this infrastructure.
+
+<p>
+Contributors: Sudharshan Vazhkudai, Terry Jones (CSMD), Doug Fuller
 
 <p>
 Status: Ongoing
