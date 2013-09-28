@@ -18,6 +18,7 @@ ALL_OTHER = index.html \
     software.html \
     storage.html
 
+# gupta.html
 ALL_MEMBERS = atchley.html \
     barron.html \
     cwang.html \
@@ -25,7 +26,6 @@ ALL_MEMBERS = atchley.html \
     fuller.html \
     fwang.html \
     gunasekaran.html \
-    gupta.html \
     harney.html \
     kim.html \
     miller.html \
