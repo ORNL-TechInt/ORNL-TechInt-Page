@@ -87,5 +87,21 @@ Status: Completed
 
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
+
+<!-- ========================================================== -->
+%include('content_intro.inc')
+    <h2 id="Process-Placement">Improving Application Performance by Avoiding Floating-Point Unit Contention on Titan</h2>
+
+<p>Titan's compute nodes include an AMD Opteron&#8482; 6274 (Interlagos) CPU and a Nvidia Kepler&#8482; GPGPU. Applications may use the CPU, GPGPU, or both. The <a href="https://www.olcf.ornl.gov/kb_articles/xk7-cpu-description/" target="other">Interlagos CPU</a> has eight <i>bulldozer</i> modules. Each bulldozer has two integer units and one floating-point unit. Applications, which are floating-point intensive and which use the CPU for some or all computation, may see improved performance (i.e. reduced walltime) if they place one process per bulldozer. Typical application speedup is 1.5-2.0, with an average of 1.7.</p>
+
+<p>This effort provides feedback to the user when their job submission tries to reduce floating-point unit contention, but the user fails to set the requisite flags to obtain the improved performance. We are also exploring the ability to provide alternative job submission options, which will set the appropriate flags for the user based on the type of job.</p>
+
+    <p>Contributors: Scott Atchley and Sudharshan Vazhkudai
+
+    <p>Status: On-going
+
+  <p>&nbsp; <a class="right" href="#">Top</a>
+%include('content_close.inc')
+
 %include('html_close.inc')
 
