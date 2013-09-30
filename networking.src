@@ -17,7 +17,8 @@ stacks.
 </div>
 <div class="plinks">
 <a href="#CCI">Common Communication Interface</a> 
-| <a href="#Terabit">Terabit Data Movement Optimization</a> 
+<br><a href="#Terabit">Terabit Data Movement Optimization</a>
+<br><a href="#Staged-Data-Movement">Staged Data Movement using Multiple Network Paths for Improved Throughput</a>
 </div>
 
 %include('content_close.inc')
@@ -84,6 +85,19 @@ stacks.
     </ul>
 
     <p>Contributors: Scott Atchley, Youngjae Kim
+
+    <p>Status: On-going
+
+  <p>&nbsp; <a class="right" href="#">Top</a>
+%include('content_close.inc')
+
+<!-- ========================================================== -->
+%include('content_intro.inc')
+    <h2 id="Staged-Data-Movement">Staged Data Movement using Multiple Network Paths for Improved Throughput</h2>
+
+    <p>This effort is working to develop tools that will improve bulk data movement of large scientific datasets between DOE's facilities and collaborating institutions. The initial tool will allow a user to specify a set of files, the source and destination institutions, as well as intermediate facilities that can assist in the transfer. The tool will then try to transfer some data directly from source to destination while simultaneously transferring data to the intermediate locations and from there to the destination. The user may see improved throughput by taking advantage of dedicated paths between the various locations. This is a form of overlay routing using common tools such as scp, bbcp, GridFTP, etc.</p>
+
+    <p>Contributors: Scott Atchley and Sudharshan Vazhkudai
 
     <p>Status: On-going
 
