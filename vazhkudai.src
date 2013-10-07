@@ -5,7 +5,8 @@
 %include('hdbody.inc')
 %include('hdrnav.inc')
 %include('content_intro.inc')
-<h2><a href="http://www.ccs.ornl.gov/~vazhkuda" target="other">Sudharshan Vazhkudai</a></h2>
+
+<h2><a href="http://users.nccs.gov/~vazhkuda" target="other">Sudharshan Vazhkudai</a></h2>
 
 <p>
 Sudharshan is the Group Leader of the Technology Integration group in

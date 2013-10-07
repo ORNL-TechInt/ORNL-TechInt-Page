@@ -4,10 +4,9 @@
     <title>Technology Integration Group: Feiyi Wang</title>
 %include('hdbody.inc')
 %include('hdrnav.inc')
-
 %include('content_intro.inc')
 
-<h2><a href="http://www.ccs.ornl.gov/~fwang2" target="other">Feiyi Wang</a></h2>
+<h2><a href="http://users.nccs.gov/~fwang2" target="other">Feiyi Wang</a></h2>
 
 <p>Feiyi Wang received his Ph.D. in Computer Engineering from 
 <a href="http://www.ncsu.edu/" target="other">North

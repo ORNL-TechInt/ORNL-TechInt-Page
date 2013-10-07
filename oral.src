@@ -4,9 +4,9 @@
     <title>Technology Integration Group: Sarp Oral</title>
 %include('hdbody.inc')
 %include('hdrnav.inc')
-
 %include('content_intro.inc')
-<h2><a href="http://www.ccs.ornl.gov/~oral" target="other">Sarp Oral</a></h2>
+
+<h2><a href="http://users.nccs.gov/~oral" target="other">Sarp Oral</a></h2>
 
 <p>Dr. Sarp Oral is a Research and Development Staff Member at the
 <a href="http://www.olcf.ornl.gov/" target="other">Oak Ridge
