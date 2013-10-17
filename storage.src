@@ -27,12 +27,13 @@ individuals to advance the state of the art.
 | <a href="#HPSS">High Performance Storage System</a>
 | <a href="#LustreEval">Lustre Evaluation</a>
 | <a href="#Ceph">Ceph Evaluation</a>
-| <a href="#SOS">Towards a Resilient and Scalable Infrastructure for Big Data</a>
-| <a href="#LUT">Lustre User Tools Developement</a>
+<br> <a href="#SOS">Towards a Resilient and Scalable Infrastructure for Big Data</a>
+| <a href="#LUT">Lustre User Tools Development</a>
+<br> <a href="#ParallelTools">Parallel File System Tools Development</a>
 | <a href="#Benchmarks">I/O Benchmarks</a>
 | <a href="#IOCoord">I/O Coordination</a>
 | <a href="#IOCharacterization">I/O Workload Characterization</a>
-| <a href="#OpenSFS">OpenSFS</a>
+<br> <a href="#OpenSFS">OpenSFS</a>
 | <a href="#NOAA">NOAA</a>
 </div>
 
@@ -43,24 +44,30 @@ individuals to advance the state of the art.
     <h2 id="Spider2" class="title">Spider 2</h2>
 
 <p>
-
 Oak Ridge Leadership Computing Facility (OLCF) at Oak Ridge National
 Laboratory (ORNL) has a long history of deploying the world's fastest
 supercomputers for enabling open science. Coupled with other OLCF
-computational resources, <a href="http://www.olcf.ornl.gov/titan"
-target="other">Titan</a>, a 27 petaflop/second Cray XK7 system,
+computational resources, Titan 
+&lt;<a href="http://www.olcf.ornl.gov/titan" target="other">http://www.olcf.ornl.gov/titan</a>&gt;, 
+a 27
+petaflop/second Cray XK7 system,
 radically increases the I/O demand beyond the capabilities of the
-existing Spider parallel file system. The new <a
-href="http://www.lustre.org" target="other">Lustre</a> parallel file
-system is designed to provide more than 18 petabytes to
-open science users at OLCF at an aggregate bandwidth of 1 terabyte/second.
+existing Spider parallel file system. The new Lustre
+&lt;<a href="http://www.lustre.org" target="other">http://www.lustre.org</a>&gt;
+parallel file
+system is designed to provide roughly 30 petabytes of usable capacity to
+open science users at OLCF at an aggregate bandwidth of more than 1
+terabytes/second.
 
 <p>
-Contributors: Sarp Oral, David Dillow, Feiyi Wang, Youngjae Kim,
-Douglas Fuller, Jason Hill, Dustin Leverman, and Blake Caldwell
+Contributors: Sarp Oral, David Dillow, James Simmons, Feiyi Wang, Youngjae
+Kim,
+Douglas Fuller, Jason Hill, Dustin Leverman, Blake Caldwell, and
+Sudharshan Vazhkudai
 
 <p>
 Status: On-going
+
 
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
@@ -101,8 +108,9 @@ Status: Completed
 
     <h2 id="HPSS" class="title">HPSS</h2>
 <p>
-<a href="http://www.hpss-collaboration.org/" target="other">High
-Performance Storage System</a> (HPSS) is the result of over a decade
+High Performance Storage System (HPSS) 
+&lt;<a href="http://www.hpss-collaboration.org/" target="other">http://www.hpss-collaboration.org/</a>&gt;
+is the result of over a decade
 of collaboration among five Department of Energy laboratories and IBM,
 with significant contributions by universities and other laboratories
 worldwide.
@@ -186,7 +194,7 @@ Contributors: Feiyi Wang, Douglas Fuller, James Simmons, Jason Hill,
 Dustin Leverman, Blake Caldwell, and Sarp Oral
 
 <p>
-Status: On-going
+Status: Completed
 
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
@@ -223,8 +231,9 @@ Status: On-going
 
 <p>
 Although Lustre is heavily used in the high-performance computing
-(HPC) domain (supporting more than 70% of the <a
-href="http://www.top500.org" target="other">Top500</a> supercomputers
+(HPC) domain (supporting more than 70% of the Top500 &lt;<a
+href="http://www.top500.org" target="other">http://www.top500.org</a>&gt;
+supercomputers
 in the world), there are few user-level diagnostic and analysis tools
 specific to Lustre. In order to better serve the Oak Ridge Leadership
 Computing Facility (OLCF) users, the Technology Integration Group
@@ -234,70 +243,56 @@ series of tools emerged as a result of this effort.
 <p>
 The first of these tools, <em>libLUT</em> contains header files, man
 pages, buildable source code, and a sample integration module for the
-Cray XT. The package provides the following interfaces to support
-manipulation of Lustre meta-data:
-
-<pre>
-             lut_getdl ............ Retrieve Lustre directory meta-data
-             lut_getfl ............ Retrieve Lustre file meta-data
-             lut_getm ............. Retrieve meta-data, including Lustre
-             lut_getsl ............ Retrieve filesystem Lustre OST count
-             lut_putl ............. Set Lustre meta-data
-             lut_putm ............. Set meta-data, including Lustre
-</pre>
+Cray XT.
 
 <p>
-
 Another tool developed in this effort is SpeedCopy (<em>spdcp</em>).
 Spdcp is a batch-aware copy tool, such that, when necessary, a batch
 job is automatically spawned to acquire needed client resources to
 improve the efficiency of the copy operation. In addition, the copy is
-Lustre-aware and will copy the Lustre striping meta-data. In essence,
-this allows copies within the same Lustre filesystem to spread the I/O
-requests across all the OSTs in the filesystem; instead of
-concentrating on a single or group of OSTs.
+Lustre-aware and will copy the Lustre striping meta-data.
 
 <p>
 The I/O Tracing and Allocation Library tool, <em>IOTA</em> was also developed as part
 of this effort. IOTA is an I/O tuning and profiling tool which can be used
-to help  applications make more efficient use of system resources.  At
-present, tuning support is limited to the Lustre filesystem. IOTA consists
-of a set of libraries compiled for the application execution environment
-(currently, Linux for the x86-64 processor and  Cray Linux Environment
-(CLE) for the Cray XT family of computer systems), support for Environment
-Modules, a sample profile data reduction application (riota), and man
-pages. The following POSIX interfaces are traced:
-
-<p class="indented">
-    creat,
-    open,
-    dup,
-    close,
-    fstat,
-    lstat,
-    stat,
-    lseek,
-    read,
-    pread,
-    write,
-    pwrite
-
-<p>
-IOTA supports the ability to perform a post-mortem analysis of the I/O
-records for errors which might
-have been ignored by the application, performance anomalies, or quantities
-of I/O actually performed by the application on a per-file,
-per-process, or global basis.
+to help applications make more efficient use of system resources. 
 
 <p>
 Contributors: Ken Matney, James Simmons, and Douglas Fuller
 
 <p>
-Status: Completed
+Status: Completed, Deprecated
 
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
+
+<!-- ========================================================== -->
+%include('content_intro.inc')
+    <h2 id="ParallelTools" class="title">
+    Parallel File System Tools Development
+    </h2>
+
+<p>
+The lack of user-level parallel file system tools has been a long-standing
+problem in the HPC community. Increased size and complexity of scientific
+data sets only make this problem worse.
+
+<p>
+A collaboration has been established between OLCF/ORNL, LLNL, LANL, ANL,
+DDN, Auburn University, and others to address this problem. So far the
+collaboration has produced early versions of parallel list, copy, remove,
+find, and tar.  Work is planned to start parallel compare, and sync tools
+next.
+
+<p>
+Contributors: Feiyi Wang, Douglas Fuller, Sarp Oral
+
+<p>
+Status: On-going
+
+  <p>&nbsp; <a class="right" href="#">Top</a>
+%include('content_close.inc')
 
 <!-- ========================================================== -->
 %include('content_intro.inc')
