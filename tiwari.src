@@ -46,19 +46,21 @@ Computer Science and Engineering from IIT Kanpur,
 India.  Devesh was born in Allahabad, UP, India and
 completed his schooling from Government Intermediate
 College (GIC), Allahabad. </p>
-			
-<p>His personal webpage is here:
-https://sites.google.com/site/deveshdtiwari/</p>
 
-%<p>Devesh joined the Technology Integration group in 2013 from <a
-%  href="http://www.ncsu.edu/" target="other">North Carolina State
-%  University</a>, where he got a Ph.D. in Computer Science.
-%
-%<p>Devesh received his B.Sc. from <a href="http://www.iastate.edu/"
-%  target="other">India Institute of Technology Kanpur</a>.
-%
-%<p>Devesh focuses on the energy efficiency of ORNL's supercomputers while
-expediting the process of scientific discovery.
+<p>His personal webpage is here:
+<A HREF="https://sites.google.com/site/deveshdtiwari/"> https://sites.google.com/site/deveshdtiwari/</A></p>
+
+<!--
+<p>Devesh joined the Technology Integration group in 2013 from <a
+  href="http://www.ncsu.edu/" target="other">North Carolina State
+  University</a>, where he got a Ph.D. in Computer Science.
+
+<p>Devesh received his B.Sc. from <a href="http://www.iastate.edu/"
+  target="other">India Institute of Technology Kanpur</a>.
+
+<p>Devesh focuses on the energy efficiency of ORNL's supercomputers while
+xpediting the process of scientific discovery.
+-->
 
 %include('content_close.inc')
 %include('html_close.inc')
