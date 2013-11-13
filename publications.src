@@ -12,35 +12,69 @@
   <ul class="year_list">
 
     <!-- ============================================================== -->
-    <!-- <li><h4>File and Storage Systems</h4> <ul> </ul> -->
+    <li><h4>File and Storage Systems</h4> <ul> </ul> 
+    <ul>
+
+      <li><strong>Asynchronous Object Storage with QoS for Scientific and Commercial Big Data</strong>, 
+      Michael J. Brim, David A. Dillow, Sarp Oral, Bradley W. Settlemyer, Feiyi Wang, 
+      <em>Proceedings of the 8th Parallel Data Storage Workshop (PDSW) held in conjunction with SC'13</em>, Denver, CO, November 2013. 
+
+      <li><strong>Performance and Scalability Evaluation of the Ceph Parallel File System</strong>,
+     Feiyi Wang, Mark Nelson, Sarp Oral, Scott Atchely, Sage Weil, Brad Settlemyer, Blake Caldwell, Jason Hill, 
+      <em>Proceedings of the 8th Parallel Data Storage Workshop (PDSW) held in conjunction with SC'13</em>, Denver, CO, November 2013. 
+
+      <li><strong>HybridPlan: A Capacity Planning Technique for Projecting Storage Requirements in Hybrid Storage Systems</strong>, 
+      Youngjae Kim, Aayush Gupta, Bhuvan Urgaonkar, Piotr Berman, Anand Sivasubramaniam, 
+      <em>(to Appear) Springer Journal of Supercomputing (JSC)</em> (DOI: 10.1007/s11227-013-0999-3)
+
+
+      <li><strong>OLCF's 1 TB/s, Next-Generation Lustre File System</strong>, 
+      Sarp Oral, David A. Dillow, Douglas Fuller, Jason Hill, Dustin Leverman, Sudharshan S. Vazhkudai, Feiyi Wang, Youngjae Kim, James Rogers, James Simmons, Ross Miller, 
+      <em>Proceedings of the Cray User Group Conference (CUG)</em>, Napa Valley, California, May 2013.
+
+      <li><strong>Taking Advantage of Multicore for the Lustre Gemini LND Driver</strong>, 
+      James A. Simmons and John Lewis, 
+      <em>Proceedings of the Cray User Group Conference (CUG)</em>, Napa Valley, California, May 2013.
+    </ul>
+ 
 
     <!-- ============================================================== -->
     <li><h4>Non-Volatile Memory</h4>
     <ul>
 
-      <li><strong>Active Flash: Towards Energy-Efficient, In-Situ
-        Data Analytics on Extreme-Scale Machines</strong>, Devesh
-        Tiwari, Simona Bobila, Sudharshan Vazhkudai, Youngjae Kim,
-        Xiaosong Ma, Peter Desnoyers, Yan Solin. <em>(To appear)
-        Proceedings of the USENIX Conference on File and Storage
-        Technologies (FAST 2013)</em>, 2013.
-
       <li><strong>Coordinating Garbage Collection for Arrays of
         Solid-state Drives</strong>, Youngjae Kim, Junghee Lee, Sarp
         Oral, David Dillow, Feiyi Wang, Galen M. Shipman, <em>(to
-        appear) IEEE Transactions on Computers (IEEE TC)</em>.
+        appear) IEEE Transactions on Computers (IEEE TC)</em> (DOI: 10.1109/TC.2012.256) 
+   
+      <li><strong>A Temporal Locality-aware Page-Mapped Flash Translation Layer</strong>, 
+        Youngjae Kim, Aayush Gupta, Bhuvan Urgaonkar, 
+        <em>Journal of Computer Science and Technology (JCST)</em>, Vol. 28, No. 6, pp. 1025-1044, November 2013.
 
       <li><strong>Preemptible I/O Scheduling of Garbage Collection
         for Solid-state Drives</strong>, Junghee Lee, Youngjae Kim,
-        Galen M. Shipman, Sarp Oral, Jongman Kim, <em>(to appear) IEEE
-        Transactions on Computer-Aided Design of Integrated Circuits
-        and Systems (IEEE TCAD)</em>.
+        Galen M. Shipman, Sarp Oral, Jongman Kim, 
+        <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits
+        and Systems (IEEE TCAD)</em>, Vol. 32, No. 2, pp. 247-260, February 2013.
+
+      <li><strong>Active Flash: Towards Energy-Efficient, In-Situ
+        Data Analytics on Extreme-Scale Machines</strong>, Devesh
+        Tiwari, Simona Bobila, Sudharshan Vazhkudai, Youngjae Kim,
+        Xiaosong Ma, Peter Desnoyers, Yan Solin. 
+        <em>Proceedings of the USENIX Conference on File and Storage
+        Technologies (FAST 2013)</em>, 2013.
 
       </ul>
 
     <!-- ============================================================== -->
     <li><h4>Data Management</h4> 
     <ul> 
+
+      <li><strong>Timely Staging of HPC Job Input Data</strong>, 
+        Henry Monti, Ali R. Butt, Sudharshan S. Vazhkudai, 
+        <em>IEEE Transactions on Parallel and Distributed Systems (TPDS)</em>, 
+        Vol. 24, No. 9, pp. 1841-1851, September 2013.
+
 
       <li><strong>Design and Implementation of a Scalable Climate
         Data System in Support of HPC Environment</strong>, 
@@ -60,7 +94,18 @@
 
     </ul>
     <!-- ============================================================== -->
-    <!-- <li><h4>Networking</h4> <ul> </ul> -->
+    <li><h4>Networking</h4> <ul> </ul> 
+
+    <ul>
+       <li><strong>Layout-aware I/O Scheduling for Terabit Data Movement</strong>, 
+	 Youngjae Kim, Scott Atchley, Geoffroy R. Vallee, Galen M. Shipman.
+	<em>Proceedings of the Workshop on Distributed Storage Systems and Coding for Big Data held in conjunction with IEEE Big Data'13</em>, San Jose, CA, October 2013. 
+
+       <li><strong>End-to-End Data Movement Using MPI-IO Over Routed Terabits Infrastructures</strong>, 
+	 Geoffroy R. Vallee, Scott Atchley, Youngjae Kim, Galen M. Shipman.
+	<em>Proceedings of the IEEE/ACM International Workshop on Network-aware Data Management in conjunction with SC'13</em>, Denver, CO, November 2013. 
+    </ul>
+
     <!-- ============================================================== -->
     <!-- <li><h4>Computer Architecture</h4> <ul> </ul> -->
   </ul>
@@ -106,7 +151,6 @@
         Information Management</em>, Editor: Tevfik Kosar, IGI Global
         Books, January 2012. (ISBN: 9781615209712, DOI:
         10.4018/978-1-61520-971-2)
-
     </ul>
 
     <!-- ============================================================== -->
