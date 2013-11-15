@@ -268,7 +268,7 @@ class TIParser(HTMLParser.HTMLParser):
         if 'href' in ad.keys() \
                and ad['href'].startswith('http:') \
                and 'target' not in ad.keys():
-            self.errmsg("External link with not target attribute")
+            self.errmsg("External link with no target attribute")
 
     # -----------------------------------------------------------------------
     def handle_div(self, tag, attrs):
