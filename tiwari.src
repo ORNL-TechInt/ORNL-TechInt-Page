@@ -8,9 +8,9 @@
 <h2>Devesh Tiwari</h2>
 
 <p>Devesh is a Research Scientist - Computer Systems Architect in the
-Technology Integration group in the <a href="National Center for Computational
-Sciences" target="other"> http://www.nccs.gov/</a> at <a href="Oak Ridge National 
-Laboratory (ORNL)" target="other"> http://www.ornl.gov/</a>.  He is passionate about
+Technology Integration group in the <A HREF="National Center for Computational
+Sciences"> http://www.nccs.gov/</A> at <A HREF="Oak Ridge National 
+Laboratory (ORNL)"> http://www.ornl.gov/</A>.  He is passionate about
 making large-scale computing systems more energy efficient while expediting the
 process of scientific discovery. </p>
 
@@ -19,8 +19,8 @@ modeling and analysis. He enthusiastically works on developing novel
 techniques and deploying useful tools that improve the
 energy-efficiency and resilience of these large-scale systems. </p>
 
-<p>Devesh <a href="led the Active Flash" target="other">
-https://www.usenix.org/conference/fast13/active-flash-towards-energy-efficient-situ-data-analytics-extreme-scale-machines</a>
+<p>Devesh <A HREF="led the Active Flash">
+https://www.usenix.org/conference/fast13/active-flash-towards-energy-efficient-situ-data-analytics-extreme-scale-machines</A>
 project that makes a case for
 energy-efficient in-situ scientific data analysis on SSD
 controllers. Active Flash project is being extended to
@@ -37,27 +37,27 @@ IPDPS 2012, and received best talk award at
 IBM’s Student Workshop on Frontiers of Cloud
 Computing organized by IBM Thomas J. Watson
 research center. He has also spent brief
-research stints at <a href="National University of
-Singapore" target="other"> http://www.nus.edu.sg/</a> and <a href="Seoul National University,
-South Korea" target="other"> http://www.useoul.edu/</a>.</p>
+research stints at <A HREF="National University of
+Singapore"> http://www.nus.edu.sg/</A> and <A HREF="Seoul National University,
+South Korea"> http://www.useoul.edu/</A>.</p>
 
 <p>Devesh has also served on technical program committees of various
 conferences
 including IPDPS, ICDCS, ISPASS and CCGrid, and organized a BoF session at
 SOSP.</p>
 
-<p>Devesh received a PhD degree in Computer Engineering from <a href="North
-Carolina State University" target="other"> http://www.ncsu.edu/</a> and a bachelors degree in
-Computer Science and Engineering from <a href="IIT Kanpur" target="other">
-http://www.iitk.ac.in/</a>,
-India.  Devesh was born in <a href="Allahabad, UP, India" target="other">
-http://en.wikipedia.org/wiki/History_of_Allahabad</a> and
+<p>Devesh received a PhD degree in Computer Engineering from <A HREF="North
+Carolina State University"> http://www.ncsu.edu/</A> and a bachelors degree in
+Computer Science and Engineering from <A HREF="IIT Kanpur">
+http://www.iitk.ac.in/</A>,
+India.  Devesh was born in <A HREF="Allahabad, UP, India">
+http://en.wikipedia.org/wiki/History_of_Allahabad</A> and
 completed his schooling from Government Intermediate
 College (GIC), Allahabad. </p>
 
 <p>His personal webpage is here:
-<a href="https://sites.google.com/site/deveshdtiwari/" target="other">
-https://sites.google.com/site/deveshdtiwari/</a></p>
+<A HREF="https://sites.google.com/site/deveshdtiwari/">
+https://sites.google.com/site/deveshdtiwari/</A></p>
 
 
 %include('content_close.inc')
