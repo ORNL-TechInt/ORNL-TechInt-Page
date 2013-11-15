@@ -98,12 +98,12 @@
 
     <ul>
        <li><strong>Layout-aware I/O Scheduling for Terabit Data Movement</strong>, 
-	 Youngjae Kim, Scott Atchley, Geoffroy R. Vallee, Galen M. Shipman.
-	<em>Proceedings of the Workshop on Distributed Storage Systems and Coding for Big Data held in conjunction with IEEE Big Data'13</em>, San Jose, CA, October 2013. 
+       Youngjae Kim, Scott Atchley, Geoffroy R. Vallee, Galen M. Shipman.
+       <em>Proceedings of the Workshop on Distributed Storage Systems and Coding for Big Data held in conjunction with IEEE Big Data'13</em>, San Jose, CA, October 2013. 
 
        <li><strong>End-to-End Data Movement Using MPI-IO Over Routed Terabits Infrastructures</strong>, 
-	 Geoffroy R. Vallee, Scott Atchley, Youngjae Kim, Galen M. Shipman.
-	<em>Proceedings of the IEEE/ACM International Workshop on Network-aware Data Management in conjunction with SC'13</em>, Denver, CO, November 2013. 
+       Geoffroy R. Vallee, Scott Atchley, Youngjae Kim, Galen M. Shipman.
+       <em>Proceedings of the IEEE/ACM International Workshop on Network-aware Data Management in conjunction with SC'13</em>, Denver, CO, November 2013. 
     </ul>
 
     <!-- ============================================================== -->

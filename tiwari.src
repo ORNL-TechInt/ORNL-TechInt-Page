@@ -59,17 +59,7 @@ College (GIC), Allahabad. </p>
 <A HREF="https://sites.google.com/site/deveshdtiwari/">
 https://sites.google.com/site/deveshdtiwari/</A></p>
 
-<!--
-<p>Devesh joined the Technology Integration group in 2013 from <a
-  href="http://www.ncsu.edu/" target="other">North Carolina State
-  University</a>, where he got a Ph.D. in Computer Science.
 
-<p>Devesh received his B.Sc. from <a href="http://www.iastate.edu/"
-  target="other">India Institute of Technology Kanpur</a>.
-
-<p>Devesh focuses on the energy efficiency of ORNL's supercomputers while
-xpediting the process of scientific discovery.
--->
 
 %include('content_close.inc')
 %include('html_close.inc')
