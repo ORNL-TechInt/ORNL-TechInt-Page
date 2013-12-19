@@ -8,6 +8,39 @@
 %include('content_intro.inc')
 <h2>Publications</h2>
 
+  <h3 id="2014">2013</h3>
+  <ul class="year_list">
+
+    <!-- ============================================================== -->
+    <li><h4>File and Storage Systems</h4> <ul> </ul> 
+    <ul>
+      <li><strong>Automatic Identification of Applications I/O Signatures from Noisy Server-Side Traces</strong>, 
+      Yang Liu, Raghul Gunasekaran, Xiaosong Ma, Sudharshan S. Vazhkudai.
+        <em>(to appear) Proceedings of the USENIX Conference on File and Storage
+        Technologies (FAST 2014)</em>, Santa Clara, California, February 2014.
+
+      <li><strong>Synchronous I/O Scheduling of Independent Write Caches for an Array of SSDs</strong>, 
+      Junghee Lee, Youngjae Kim, Jongman Kim, Galen M. Shipman.
+        <em>(to appear) IEEE Computer Architecture Letters (CAL), 2014.
+    </ul>
+	
+    <!-- ============================================================== -->
+    <li><h4>Non-Volatile Memory</h4>
+
+    <!-- ============================================================== -->
+    <li><h4>Data Management</h4> 
+
+    <!-- ============================================================== -->
+    <li><h4>Networking</h4> <ul> </ul> 
+
+    <!-- ============================================================== -->
+    <!-- <li><h4>Computer Architecture</h4> <ul> </ul> -->
+
+  </ul>
+
+  <p>&nbsp; <a class="right" href="#">Top</a>
+
+
   <h3 id="2013">2013</h3>
   <ul class="year_list">
 
@@ -97,13 +130,19 @@
     <li><h4>Networking</h4> <ul> </ul> 
 
     <ul>
+       <li><strong>End-to-End Data Movement Using MPI-IO Over Routed Terabits Infrastructures</strong>, 
+       Geoffroy R. Vallee, Scott Atchley, Youngjae Kim, Galen M. Shipman.
+       <em>Proceedings of the IEEE/ACM International Workshop on Network-aware Data Management in conjunction with SC'13</em>, Denver, CO, November 2013. 
+
        <li><strong>Layout-aware I/O Scheduling for Terabit Data Movement</strong>, 
        Youngjae Kim, Scott Atchley, Geoffroy R. Vallee, Galen M. Shipman.
        <em>Proceedings of the Workshop on Distributed Storage Systems and Coding for Big Data held in conjunction with IEEE Big Data'13</em>, San Jose, CA, October 2013. 
 
-       <li><strong>End-to-End Data Movement Using MPI-IO Over Routed Terabits Infrastructures</strong>, 
-       Geoffroy R. Vallee, Scott Atchley, Youngjae Kim, Galen M. Shipman.
-       <em>Proceedings of the IEEE/ACM International Workshop on Network-aware Data Management in conjunction with SC'13</em>, Denver, CO, November 2013. 
+
+      <li><strong>SeaStar Unchained: Multiplying the Performance of the Cray SeaStar Network</strong>, 
+      David A. Dillow, Scott Atchley,
+      <em>Proceedings of the Cray User Group Conference (CUG)</em>, Napa Valley, California, May 2013.
+
     </ul>
 
     <!-- ============================================================== -->
