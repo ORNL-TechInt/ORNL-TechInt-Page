@@ -8,7 +8,7 @@
 %include('content_intro.inc')
 <h2>Publications</h2>
 
-  <h3 id="2014">2013</h3>
+  <h3 id="2014">2014</h3>
   <ul class="year_list">
 
     <!-- ============================================================== -->
@@ -21,9 +21,9 @@
 
       <li><strong>Synchronous I/O Scheduling of Independent Write Caches for an Array of SSDs</strong>, 
       Junghee Lee, Youngjae Kim, Jongman Kim, Galen M. Shipman.
-        <em>(to appear) IEEE Computer Architecture Letters (CAL), 2014.
+        <em>(to appear) IEEE Computer Architecture Letters (CAL)</em>, 2014.
     </ul>
-	
+
     <!-- ============================================================== -->
     <li><h4>Non-Volatile Memory</h4>
 
