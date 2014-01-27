@@ -21,7 +21,6 @@ ALL_OTHER = index.html \
 ALL_MEMBERS = atchley.html \
     barron.html \
     cwang.html \
-    dillow.html \
     fuller.html \
     fwang.html \
     gunasekaran.html \
