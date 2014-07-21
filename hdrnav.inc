@@ -41,10 +41,9 @@
         <ul>
           <li><a href="atchley.html">Scotty Atchley</a>
           <li><a href="barron.html">Tom Barron</a>
-          <li><a href="dillow.html">David Dillow</a>
           <li><a href="fuller.html">Doug Fuller</a>
           <li><a href="gunasekaran.html">Raghul Gunasekaran</a>
-          <!-- <li><a href="gupta.html">Saurabh Gupta</a> -->
+          <li><a href="gupta.html">Saurabh Gupta</a>
           <li><a href="harney.html">John Harney</a>
           <li><a href="kim.html">Youngjae Kim</a>
           <li><a href="miller.html">Ross Miller</a>
