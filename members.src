@@ -29,6 +29,7 @@
  <li><a href="cwang.html">Chao Wang</a>
  <li><a href="fwang.html">Feiyi Wang</a>
  <li><a href="white.html">Vicky White</a>
+ <li><a href="zimmer.html">Chris Zimmer</a>
 </ul>
 %include('content_close.inc')
 %include('html_close.inc')

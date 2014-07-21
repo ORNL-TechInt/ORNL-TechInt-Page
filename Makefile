@@ -37,7 +37,9 @@ ALL_MEMBERS = atchley.html \
     steinert.html \
     tiwari.html \
     vazhkudai.html \
-    white.html
+    white.html \
+    zimmer.html
+
 
 all: mkhtml $(ALL_MEMBERS) $(ALL_OTHER)
 

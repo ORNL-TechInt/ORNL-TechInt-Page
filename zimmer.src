@@ -1,0 +1,23 @@
+%include('html_intro.inc')
+    <meta name="keywords" content="members">
+    <meta name="description" content="NCCS TechInt group member page">
+    <title>Technology Integration Group: Youngjae Kim</title>
+%include('hdbody.inc')
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
+<h2><a href="" target="other">Chris Zimmer</a></h2>
+
+<p>
+Christopher Zimmer joined the Technology Integration (TechInt) group at ORNL as
+an HPC Systems Engineer in 2014. He was previously employed at Cisco Systems
+and worked on simulation based data plane and IO optimization. Christopher
+holds a PhD. in Computer Science from North Carolina State University where his
+work focused on real-time and high-performance message passing for
+network-on-chip processors. He also holds an MS in Computer Science from
+Florida State University where he researched architected register design to
+enable resource intensive compiler optimizations in register-constrained
+processors.
+
+%include('content_close.inc')
+%include('html_close.inc')
