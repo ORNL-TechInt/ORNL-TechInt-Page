@@ -101,9 +101,10 @@ Implications
 
  * To change HTML content, edit the corresponding .src file. If you're
    just updating the git repository so someone else can fetch it and
-   deploy your change, that's all you need to do. The person
-   redeploying the files must run make after the .src files are up to
-   date to rebuild the .html files.
+   deploy your change, that's all you need to do (well, except for
+   'git commit -a' and 'git push'). The person redeploying the files
+   must run make after the .src files are up to date to rebuild the
+   .html files.
 
  * The .css file will be reloaded by browsing requests directly (the
    user may need to issue a refresh), so there's no need to rebuild
@@ -125,16 +126,18 @@ Implications
 
     * Add a new <li> tag for the new entry in members.src.
 
-    * For a new year in publications or software, add the new material
-      to publications.src or software.src and a new <li> tag in
-      hdrnav.inc.
-
     * Commit and push the changes.
 
     * Pull the changes into the deployment directory.
 
     * Run make (this step can be automated using the post merge git
       hook described above).
+
+ * For a new year in publications or software, add the new material to
+   publications.src or software.src and a new &lt;li> tag in hdrnav.inc.
+   After that, commit and push the changes, pull the update into the
+   deployment directory, and (unless it's automated) run make to
+   generate the .html files.
 
 
 Makefile Targets

@@ -54,8 +54,13 @@ mkhtml: mkhtml.py
 clean:
 	rm -rf $(ALL_MEMBERS) $(ALL_OTHER) validation_*.html README.html
 
-w3valid: all
+w3valid: all validate
 	validate -r -w *.html
 
-valid: all
+valid: all validate
 	validate *.html
+
+validate:
+	if [[ ! -x validate ]]; then \
+		ln -s validate.py validate; \
+	fi

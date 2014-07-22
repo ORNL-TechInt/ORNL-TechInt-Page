@@ -58,6 +58,7 @@
           <li><a href="cwang.html">Chao Wang</a>
           <li><a href="fwang.html">Feiyi Wang</a>
           <li><a href="white.html">Vicky White</a>
+          <li><a href="zimmer.html">Chris Zimmer</a>
         </ul>
 %ifeq(self.filetype, 'pub')
       <li class="current_page">
