@@ -36,7 +36,7 @@ to explore the construction of an SSD-based burst buffer solution that
 is able to act as a performance impedance matching device by absorbing
 application checkpoint data and seamlessly draining it to the PFS.
 
-<p>Contributors: Doug Fuller, Sudharshan Vazhkudai, Dave Dillow, Sarp
+<p>Contributors: Doug Fuller, Sudharshan Vazhkudai, Sarp
 Oral, Feiyi Wang, and James Simmons
 
 <p>
@@ -189,7 +189,7 @@ scientific applications. The work includes several areas.
 </ul>
 
 <p>
-Contributors: Youngjae Kim, Sarp Oral, Dave Dillow, and Sudharshan Vazhkudai
+Contributors: Youngjae Kim, Sarp Oral, and Sudharshan Vazhkudai
 
 <p>
 Status: On-going

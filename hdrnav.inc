@@ -30,7 +30,7 @@
           <li><a href="nvm.html">Non-Volatile Memory</a>
           <li><a href="data.html">Data Management</a>
           <li><a href="networking.html">Networking</a>
-          <li><a href="architecture.html">Computer Architecture</a>
+          <li><a href="architecture.html">System Architecture and Resilience</a>
         </ul>
 %ifeq(self.filetype, 'members')
       <li class="current_page">

@@ -34,7 +34,7 @@
     <li><h4>Networking</h4> <ul> </ul> 
 
     <!-- ============================================================== -->
-    <!-- <li><h4>Computer Architecture</h4> <ul> </ul> -->
+    <!-- <li><h4>System Architecture and Resilience</h4> <ul> </ul> -->
 
   </ul>
 
@@ -146,7 +146,7 @@
     </ul>
 
     <!-- ============================================================== -->
-    <!-- <li><h4>Computer Architecture</h4> <ul> </ul> -->
+    <!-- <li><h4>System Architecture and Resilience</h4> <ul> </ul> -->
   </ul>
 
   <p>&nbsp; <a class="right" href="#">Top</a>
@@ -286,7 +286,7 @@
     <!-- <li><h4>Networking</h4> <ul> </ul> -->
 
     <!-- ============================================================== -->
-    <li><h4>Computer Architecture</h4>
+    <li><h4>System Architecture and Resilience</h4>
     <ul>
 
       <li> <strong>On the Use of GPUs in Realizing Cost-Effective
@@ -517,7 +517,7 @@
     </ul>
 
     <!-- ============================================================== -->
-    <li><h4>Computer Architecture</h4>
+    <li><h4>System Architecture and Resilience</h4>
     <ul> 
 
       <li><strong>Functional Partitioning to Optimize End-to-End
@@ -607,7 +607,7 @@
     </ul>
 
     <!-- ============================================================== -->
-    <li><h4>Computer Architecture</h4>
+    <li><h4>System Architecture and Resilience</h4>
     <ul>
       <li><strong>MPI Support for Multi-Core Architectures: Optimized
         Shared Memory Collectives</strong>, Galen M. Shipman, Richard

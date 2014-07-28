@@ -1,7 +1,7 @@
 %include('html_intro.inc')
     <meta name="keywords" content="projects">
     <meta name="description" content="NCCS TechInt group thrust area">
-    <title>Technology Integration Group: Computer Architecture</title>
+    <title>Technology Integration Group: System Architecture and Resilience</title>
 %include('hdbody.inc')
 
 %include('hdrnav.inc')
@@ -10,17 +10,63 @@
 %include('content_intro.inc')
 <div class="overview">
 
-These projects relate to innovations in computer architecture that aim
-to improve performance, reduce variability, and enhance reliability.
-They may also involve evaluation of new processor technologies as
-applicable to the OLCF roadmap.
+These projects relate to innovations in system architecture that aim
+to improve performance, reduce variability, and enhance
+reliability/resilience. They may also involve evaluation of new
+processor technologies as applicable to the OLCF roadmap.
 
 </div>
 <div class="plinks">
-<a href="#Many-Core">Exploiting Many-Core Architectures for End-to-End Science</a> 
+<a href="#Placement">Impacts of Job Placement and Routing Topology on Aggregate I/O Throughput</a>
+<br><a href="#Many-Core">Exploiting Many-Core Architectures for End-to-End Science</a> 
 <br><a href="#OSNoise">Reducing Application Runtime Variability on Jaguar XT5</a> 
 <br><a href="#Process-Placement">Improving Application Performance by Avoiding Floating-Point Unit Contention on Titan</a> 
 </div>
+
+%include('content_close.inc')
+
+<!-- ========================================================== -->
+%include('content_intro.inc')
+
+    <h2 id="Placement">Impacts of Job Placement and Routing Topology
+    on Aggregate I/O Throughput</h2>
+
+    <p>High-bandwidth file-systems are critical to today’s
+    super-computing applications. To achieve the level of performance
+    necessary for leadership class of applications, the underlying
+    network must facilitate high aggregate-bandwidth demands.
+    Unfortunately, in such a large-scale network, congestion at
+    routers leads to limited overall I/O performance and high
+    variability.
+
+    <p>In this effort, our goal is to identify and understand
+    bottlenecks in the interconnection-network pertaining to the file
+    system I/O traffic. This work will involve analyzing impact of job
+    placement, router placement on performance, and studying how these
+    configurations play a role in reducing congestion in the
+    interconnection-network. During the course of this investigation
+    we seek to:
+
+    <ol class="numbered"> 
+
+    <li class="numbered">Understand the dynamic behavior of our current system via
+    careful experimentation and investigation, and identify where
+    bottlenecks occur,</li>
+
+    <li>Develop simulated models of the network for an in-depth study
+    of network dynamics in presence of real-life workload scenarios,</li>
+
+    <li>Identify heuristics or layouts that improve upon the existing
+    topology, and
+
+    <li>Come up with optimal I/O router layouts for current and
+    several other network topologies for future systems. 
+
+    </ol>
+
+    <p>Contributors: Saurabh Gupta, Chris Zimmer, and Sudharshan Vazhkudai
+
+    <p>Status: On-going
 
 %include('content_close.inc')
 

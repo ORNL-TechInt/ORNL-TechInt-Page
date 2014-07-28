@@ -60,7 +60,7 @@ open science users at OLCF at an aggregate bandwidth of more than 1
 terabytes/second.
 
 <p>
-Contributors: Sarp Oral, David Dillow, James Simmons, Feiyi Wang, Youngjae
+Contributors: Sarp Oral, James Simmons, Feiyi Wang, Youngjae
 Kim,
 Douglas Fuller, Jason Hill, Dustin Leverman, Blake Caldwell, and
 Sudharshan Vazhkudai
@@ -160,7 +160,7 @@ time, the Technology Integration Group actively engages in evaluating the
 Lustre development branches.
 
 <p>
-Contributors: James Simmons, David Dillow, Jason Hill, and Sarp Oral
+Contributors: James Simmons, Jason Hill, and Sarp Oral
 
 <p>
 Status: On-going
@@ -216,7 +216,7 @@ Quality of Service (QOS), heterogeneous storage media, and object
 replication and morphing.
 
 <p>
-Contributors: Bradley Settlemyer, David Dillow, Feiyi Wang, and Sarp Oral
+Contributors: Bradley Settlemyer, Feiyi Wang, and Sarp Oral
 
 <p>
 Status: On-going
@@ -321,7 +321,7 @@ Ridge Leadership Computing Facility-3 (OLCF-3) Scalable Storage System
 representative of common I/O workloads.
 
 <p>
-Contributors: Sarp Oral, David Dillow, Youngjae Kim, Feiyi Wang, and James
+Contributors: Sarp Oral, Youngjae Kim, Feiyi Wang, and James
 Simmons
 
 <p>
@@ -425,7 +425,7 @@ Group (TWG), the Benchmarking Working Group (BWG), and the Community
 Development Working Group (CDWG).
 
 <p>
-Dave Dillow and John Carrier (Cray) lead the TWG which focuses on
+Jason Hill and John Carrier (Cray) lead the TWG which focuses on
 gathering technical requirements for new Lustre feature developments and
 major bug fixes, generating statements of work/requests for proposals,
 developing resource allocation proposals, working with contractors on
@@ -453,7 +453,7 @@ open forum for     community discussion, and advising the OpenSFS Board of
 Directors on the community’s goals and perspective on Lustre.
 
 <p>
-Contributors: David Dillow, Sarp Oral, and James Simmons
+Contributors: Jason Hill, Sarp Oral, and James Simmons
 
 <p>
 Status: On-going

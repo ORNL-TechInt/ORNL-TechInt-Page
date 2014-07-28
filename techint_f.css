@@ -181,8 +181,20 @@ h5 {
 .page_content dd {
     margin-left: 2em;
 }
-.page_content li {
-    list-style: disc outside none;
+.page_content ol > li {
+    list-style-type: decimal;
+    list-style-position: outside;
+    list-style-image: none;
+    position: relative;
+    left: 2em;
+    width: 580px;
+    padding-top: .75em;
+    padding-bottom: .5em;
+}
+.page_content ul > li {
+    list-style-type: disc;
+    list-style-position: outside;
+    list-style-image: none;
     position: relative;
     left: 2em;
     width: 580px;
