@@ -14,34 +14,11 @@ several perspectives including fault tolerance, memory extension, and
 out-of-core data analytics.
 </div>
 <div class="plinks">
-<a href="#Burst">Burst Buffers</a> 
-| <a href="#NVMalloc">NVMalloc</a> 
+<a href="#NVMalloc">NVMalloc</a> 
 | <a href="#ActiveFlash">ActiveFlash</a>
 | <a href="#Emerging">Emerging Storage Technologies</a>
 </div>
 
-%include('content_close.inc')
-
-<!-- ========================================================== -->
-%include('content_intro.inc')
-<h2 id="Burst">Burst Buffers</h2>
-
-Massively parallel scientific applications, running on extreme-scale
-supercomputers, produce hundreds of terabytes of checkpoint snapshot
-data per run, driving the need for storage solutions to improve their
-I/O performance. Traditional parallel file systems (PFS) in high
-performance computing (HPC) systems are unable to keep up with such
-high data rates, creating a storage wall. Our goal in this effort is
-to explore the construction of an SSD-based burst buffer solution that
-is able to act as a performance impedance matching device by absorbing
-application checkpoint data and seamlessly draining it to the PFS.
-
-<p>Contributors: Doug Fuller, Sudharshan Vazhkudai, Sarp
-Oral, Feiyi Wang, and James Simmons
-
-<p>
-Status: On-going
-  <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 <!-- ========================================================== -->
