@@ -22,7 +22,32 @@
       <li><strong>Synchronous I/O Scheduling of Independent Write Caches for an Array of SSDs</strong>, 
       Junghee Lee, Youngjae Kim, Jongman Kim, Galen M. Shipman.
         <em>(to appear) IEEE Computer Architecture Letters (CAL)</em>, 2014.
+
+      <li><strong>Best Practices and Lessons Learned from Deploying
+          and Operating Large-Scale Data-Centric Parallel File
+          Systems</strong>, Sarp Oral, James Simmons, Jason Hill,
+          Dustin Leverman, Feiyi Wang, Matt Ezell, Ross Miller,
+          Douglas Fuller, Raghul Gunasekaran, Youngjae Kim, Saurabh
+          Gupta, Devesh Tiwari, Sudharshan S. Vazhkudai, James H.
+          Rogers, David Dillow, Arthur S. Bland.
+
+          <em>Proceedings of
+          Supercomputing 2014 (SC14): 27th IEEE/ACM Int'l Conference
+          on High Performance Computing, Networking, Storage and
+          Analysis</em>, New Orleans, Louisiana, November 2014.
+
+
+       <li><strong>Realizing Accelerated Cost-Effective Distributed
+           RAID</strong>, Aleksandr Khasymski, M. Mustafa Rafique, Ali
+           R. Butt, Sudharshan S. Vazhkudai, and Dimitrios S.
+           Nikolopoulos. Chapter in <em>Handbook on Data Centers</em>,
+           edited by Albert Y. Zomaya and Samee U. Khan, Springer,
+           2014. <a target="_blank"
+           href="http://users.nccs.gov/~vazhkuda/gpuRAIDchapter.pdf">pdf</a>
+
+
     </ul>
+
 
     <!-- ============================================================== -->
     <li><h4>Non-Volatile Memory</h4>
@@ -34,7 +59,32 @@
     <li><h4>Networking</h4> <ul> </ul> 
 
     <!-- ============================================================== -->
-    <!-- <li><h4>System Architecture and Resilience</h4> <ul> </ul> -->
+    <li><h4>System Architecture and Resilience</h4> 
+    <ul> 
+
+       <li><strong>Lazy Checkpointing: Exploiting Temporal Locality in
+           Failures to Mitigate Checkpointing Overheads on
+           Extreme-Scale Systems</strong>,
+
+           Devesh Tiwari, Saurabh Gupta, Sudharshan S. Vazhkudai, 
+
+           <em>Proceedings of the 44th Annual IEEE/IFIP International
+           Conference on Dependable Systems and Networks (DSN
+           2014)</em>, Atlanta, Georgia, June 2014. <a target="_blank"
+           href="http://users.nccs.gov/~vazhkuda/DSN2014.pdf">pdf</a>
+
+
+       <li><strong>Transparent Fault Tolerance for Job Input Data in
+           HPC Environments</strong>,
+
+           Chao Wang, Sudharshan S. Vazhkudai, Xiaosong Ma, Frank Mueller,
+
+           Chapter in <em>Handbook on Data Centers</em>, edited by
+           Albert Y. Zomaya and Samee U. Khan, Springer, 2014. <a
+           target="_blank"
+           href="http://users.nccs.gov/~vazhkuda/FT_book_chapter.pdf">pdf</a>
+
+    </ul>
 
   </ul>
 
@@ -103,12 +153,6 @@
     <li><h4>Data Management</h4> 
     <ul> 
 
-      <li><strong>Timely Staging of HPC Job Input Data</strong>, 
-        Henry Monti, Ali R. Butt, Sudharshan S. Vazhkudai, 
-        <em>IEEE Transactions on Parallel and Distributed Systems (TPDS)</em>, 
-        Vol. 24, No. 9, pp. 1841-1851, September 2013.
-
-
       <li><strong>Design and Implementation of a Scalable Climate
         Data System in Support of HPC Environment</strong>, 
         Feiyi Wang<sup>1</sup>, 
@@ -130,18 +174,35 @@
     <li><h4>Networking</h4> <ul> </ul> 
 
     <ul>
-       <li><strong>End-to-End Data Movement Using MPI-IO Over Routed Terabits Infrastructures</strong>, 
-       Geoffroy R. Vallee, Scott Atchley, Youngjae Kim, Galen M. Shipman.
-       <em>Proceedings of the IEEE/ACM International Workshop on Network-aware Data Management in conjunction with SC'13</em>, Denver, CO, November 2013. 
+
+      <li><strong>SeaStar Unchained: Multiplying the Performance of
+      the Cray SeaStar Network</strong>, David A. Dillow, Scott
+      Atchley, <em>Proceedings of the Cray User Group Conference
+      (CUG)</em>, Napa Valley, California, May 2013.
+
+      <li><strong>On Timely Staging of HPC Job Input Data</strong>, Henry
+        Monti, Ali R. Butt, Sudharshan S. Vazhkudai, <em>IEEE
+        Transactions on Parallel and Distributed Systems (TPDS)</em>,
+        Vol. 24, No. 9, pp. 1841-1851, September 2013. 
+
+        <a target="_blank"
+        href="http://users.nccs.gov/~vazhkuda/Staging-TPDS-2013.pdf">pdf</a>
+
+        <a target="_blank"
+        href="http://users.nccs.gov/~vazhkuda/Staging-Supplement-TPDS-2013.pdf">Supplement
+        (pdf)</a>
 
        <li><strong>Layout-aware I/O Scheduling for Terabit Data Movement</strong>, 
        Youngjae Kim, Scott Atchley, Geoffroy R. Vallee, Galen M. Shipman.
        <em>Proceedings of the Workshop on Distributed Storage Systems and Coding for Big Data held in conjunction with IEEE Big Data'13</em>, San Jose, CA, October 2013. 
 
+       <li><strong>End-to-End Data Movement Using MPI-IO Over Routed
+           Terabits Infrastructures</strong>, Geoffroy R. Vallee,
+           Scott Atchley, Youngjae Kim, Galen M. Shipman.
+           <em>Proceedings of the IEEE/ACM International Workshop on
+           Network-aware Data Management in conjunction with
+           SC'13</em>, Denver, CO, November 2013.
 
-      <li><strong>SeaStar Unchained: Multiplying the Performance of the Cray SeaStar Network</strong>, 
-      David A. Dillow, Scott Atchley,
-      <em>Proceedings of the Cray User Group Conference (CUG)</em>, Napa Valley, California, May 2013.
 
     </ul>
 
