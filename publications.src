@@ -245,9 +245,10 @@
       Atchley, <em>Proceedings of the Cray User Group Conference
       (CUG)</em>, Napa Valley, California, May 2013.
 
-      <li><strong>On Timely Staging of HPC Job Input Data</strong>, 
-
+      <li>
           H. Monti, A. R. Butt, S.S. Vazhkudai, 
+
+          <strong>On Timely Staging of HPC Job Input Data</strong>, 
 
           <em>IEEE Transactions on Parallel and Distributed Systems
           (TPDS)</em>, Vol. 24, No. 9, pp. 1841-1851, September 2013.
