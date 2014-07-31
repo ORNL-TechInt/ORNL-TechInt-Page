@@ -14,22 +14,47 @@
     <!-- ============================================================== -->
     <li><h4>File and Storage Systems</h4> <ul> </ul> 
     <ul>
-      <li><strong>Automatic Identification of Applications I/O Signatures from Noisy Server-Side Traces</strong>, 
-      Yang Liu, Raghul Gunasekaran, Xiaosong Ma, Sudharshan S. Vazhkudai.
-        <em>(to appear) Proceedings of the USENIX Conference on File and Storage
-        Technologies (FAST 2014)</em>, Santa Clara, California, February 2014.
 
-      <li><strong>Synchronous I/O Scheduling of Independent Write Caches for an Array of SSDs</strong>, 
-      Junghee Lee, Youngjae Kim, Jongman Kim, Galen M. Shipman.
-        <em>(to appear) IEEE Computer Architecture Letters (CAL)</em>, 2014.
+      <li>
+          Youngjae Kim, Aayush Gupta, Bhuvan Urgaonkar, Piotr Berman,
+          Anand Sivasubramaniam,
 
-      <li><strong>Best Practices and Lessons Learned from Deploying
-          and Operating Large-Scale Data-Centric Parallel File
-          Systems</strong>, Sarp Oral, James Simmons, Jason Hill,
+          <strong>"HybridPlan: A Capacity Planning Technique for
+          Projecting Storage Requirements in Hybrid Storage
+          Systems"</strong>, 
+
+          <em>Springer Journal of Supercomputing
+          (JSC)</em>, Vol. 67, No. 1, pp. 277-303, January 2014.
+
+
+      <li><strong>Automatic Identification of Applications I/O
+          Signatures from Noisy Server-Side Traces</strong>,
+
+          Yang Liu, Raghul Gunasekaran, Xiaosong Ma, Sudharshan S.
+          Vazhkudai. 
+
+          <em>(to appear) Proceedings of the USENIX Conference on File
+          and Storage Technologies (FAST 2014)</em>, Santa Clara,
+          California, February 2014.
+
+      <li><strong>Synchronous I/O Scheduling of Independent Write
+          Caches for an Array of SSDs</strong>,
+
+          Junghee Lee, Youngjae Kim, Jongman Kim, Galen M. Shipman.
+
+          <em>(to appear) IEEE Computer Architecture Letters
+          (CAL)</em>, 2014.
+
+      <li>
+          Sarp Oral, James Simmons, Jason Hill,
           Dustin Leverman, Feiyi Wang, Matt Ezell, Ross Miller,
           Douglas Fuller, Raghul Gunasekaran, Youngjae Kim, Saurabh
           Gupta, Devesh Tiwari, Sudharshan S. Vazhkudai, James H.
-          Rogers, David Dillow, Arthur S. Bland.
+          Rogers, David Dillow, Arthur S. Bland,
+
+          <strong>"Best Practices and Lessons Learned from Deploying
+          and Operating Large-Scale Data-Centric Parallel File
+          Systems"</strong>, 
 
           <em>Proceedings of
           Supercomputing 2014 (SC14): 27th IEEE/ACM Int'l Conference
@@ -37,12 +62,15 @@
           Analysis</em>, New Orleans, Louisiana, November 2014.
 
 
-       <li><strong>Realizing Accelerated Cost-Effective Distributed
-           RAID</strong>, Aleksandr Khasymski, M. Mustafa Rafique, Ali
-           R. Butt, Sudharshan S. Vazhkudai, and Dimitrios S.
-           Nikolopoulos. Chapter in <em>Handbook on Data Centers</em>,
-           edited by Albert Y. Zomaya and Samee U. Khan, Springer,
-           2014. <a target="_blank"
+       <li>Aleksandr Khasymski, M. Mustafa Rafique, Ali R. Butt,
+           Sudharshan S. Vazhkudai, and Dimitrios S. Nikolopoulos,
+
+           <strong>"Realizing Accelerated Cost-Effective Distributed
+           RAID"</strong>, 
+
+           Chapter in <em>Handbook on Data Centers</em>, edited by
+           Albert Y. Zomaya and Samee U. Khan, Springer, 2014. <a
+           target="_blank"
            href="http://users.nccs.gov/~vazhkuda/gpuRAIDchapter.pdf">pdf</a>
 
 
@@ -51,7 +79,28 @@
 
     <!-- ============================================================== -->
     <li><h4>Non-Volatile Memory</h4>
+    <ul>
 
+      <li>
+          Youngjae Kim, Junghee Lee, Sarp Oral, David Dillow, Feiyi
+          Wang, Galen M. Shipman,
+
+          <strong>"Coordinating Garbage Collection for Arrays of
+          Solid-state Drives"</strong>, 
+
+          <em>IEEE Transactions on Computers (IEEE TC)</em>, Vol. 63,
+          No. 4, pp. 888-901, April 2014.
+   
+      <li><strong>"Coordinated Garbage Collection for RAID Array of
+          Solid State Disks"</strong>,
+
+          Inventors (ordered by inventor's last name) David Dillow,
+          Youngjae Kim, Sarp Oral, Galen Shipman, Feiyi Wang, 
+
+          U.S. Patent No. 8,713,268, Issued: April 29, 2014.
+
+    </ul>
+    
     <!-- ============================================================== -->
     <li><h4>Data Management</h4> 
 
@@ -62,26 +111,42 @@
     <li><h4>System Architecture and Resilience</h4> 
     <ul> 
 
-       <li><strong>Lazy Checkpointing: Exploiting Temporal Locality in
-           Failures to Mitigate Checkpointing Overheads on
-           Extreme-Scale Systems</strong>,
+       <li>
+           Raghul Gunasakaren and Youngjae Kim, 
 
+           <strong>"Feedback Computing in Leadership Compute
+           Systems"</strong>,
+
+           <em>Proceedings of the 9th International Workshop of
+           Feedback Computing in conjunction with ICAC'14 (Feedback
+           Computing'14)</em>, Philadelphia, June 2014.
+
+
+       <li>
            Devesh Tiwari, Saurabh Gupta, Sudharshan S. Vazhkudai, 
+
+           <strong>"Lazy Checkpointing: Exploiting Temporal Locality in
+           Failures to Mitigate Checkpointing Overheads on
+           Extreme-Scale Systems"</strong>,
 
            <em>Proceedings of the 44th Annual IEEE/IFIP International
            Conference on Dependable Systems and Networks (DSN
-           2014)</em>, Atlanta, Georgia, June 2014. <a target="_blank"
+           2014)</em>, Atlanta, Georgia, June 2014. 
+
+           <a target="_blank"
            href="http://users.nccs.gov/~vazhkuda/DSN2014.pdf">pdf</a>
 
 
-       <li><strong>Transparent Fault Tolerance for Job Input Data in
-           HPC Environments</strong>,
-
+       <li>
            Chao Wang, Sudharshan S. Vazhkudai, Xiaosong Ma, Frank Mueller,
 
+           <strong>"Transparent Fault Tolerance for Job Input Data in
+           HPC Environments"</strong>,
+
            Chapter in <em>Handbook on Data Centers</em>, edited by
-           Albert Y. Zomaya and Samee U. Khan, Springer, 2014. <a
-           target="_blank"
+           Albert Y. Zomaya and Samee U. Khan, Springer, 2014. 
+
+           <a target="_blank"
            href="http://users.nccs.gov/~vazhkuda/FT_book_chapter.pdf">pdf</a>
 
     </ul>
@@ -98,41 +163,41 @@
     <li><h4>File and Storage Systems</h4> <ul> </ul> 
     <ul>
 
-      <li><strong>Asynchronous Object Storage with QoS for Scientific and Commercial Big Data</strong>, 
-      Michael J. Brim, David A. Dillow, Sarp Oral, Bradley W. Settlemyer, Feiyi Wang, 
-      <em>Proceedings of the 8th Parallel Data Storage Workshop (PDSW) held in conjunction with SC'13</em>, Denver, CO, November 2013. 
+      <li><strong>Asynchronous Object Storage with QoS for Scientific
+      and Commercial Big Data</strong>, Michael J. Brim, David A.
+      Dillow, Sarp Oral, Bradley W. Settlemyer, Feiyi Wang,
+      <em>Proceedings of the 8th Parallel Data Storage Workshop (PDSW)
+      held in conjunction with SC'13</em>, Denver, CO, November 2013.
 
-      <li><strong>Performance and Scalability Evaluation of the Ceph Parallel File System</strong>,
-     Feiyi Wang, Mark Nelson, Sarp Oral, Scott Atchely, Sage Weil, Brad Settlemyer, Blake Caldwell, Jason Hill, 
-      <em>Proceedings of the 8th Parallel Data Storage Workshop (PDSW) held in conjunction with SC'13</em>, Denver, CO, November 2013. 
+      <li><strong>Performance and Scalability Evaluation of the Ceph
+     Parallel File System</strong>, Feiyi Wang, Mark Nelson, Sarp
+     Oral, Scott Atchely, Sage Weil, Brad Settlemyer, Blake Caldwell,
+     Jason Hill, <em>Proceedings of the 8th Parallel Data Storage
+     Workshop (PDSW) held in conjunction with SC'13</em>, Denver, CO,
+     November 2013.
 
-      <li><strong>HybridPlan: A Capacity Planning Technique for Projecting Storage Requirements in Hybrid Storage Systems</strong>, 
-      Youngjae Kim, Aayush Gupta, Bhuvan Urgaonkar, Piotr Berman, Anand Sivasubramaniam, 
-      <em>(to Appear) Springer Journal of Supercomputing (JSC)</em> (DOI: 10.1007/s11227-013-0999-3)
+      <li><strong>OLCF's 1 TB/s, Next-Generation Lustre File
+      System</strong>, Sarp Oral, David A. Dillow, Douglas Fuller,
+      Jason Hill, Dustin Leverman, Sudharshan S. Vazhkudai, Feiyi
+      Wang, Youngjae Kim, James Rogers, James Simmons, Ross Miller,
+      <em>Proceedings of the Cray User Group Conference (CUG)</em>,
+      Napa Valley, California, May 2013.
 
+      <li><strong>Taking Advantage of Multicore for the Lustre Gemini
+      LND Driver</strong>, James A. Simmons and John Lewis,
+      <em>Proceedings of the Cray User Group Conference (CUG)</em>,
+      Napa Valley, California, May 2013.
 
-      <li><strong>OLCF's 1 TB/s, Next-Generation Lustre File System</strong>, 
-      Sarp Oral, David A. Dillow, Douglas Fuller, Jason Hill, Dustin Leverman, Sudharshan S. Vazhkudai, Feiyi Wang, Youngjae Kim, James Rogers, James Simmons, Ross Miller, 
-      <em>Proceedings of the Cray User Group Conference (CUG)</em>, Napa Valley, California, May 2013.
-
-      <li><strong>Taking Advantage of Multicore for the Lustre Gemini LND Driver</strong>, 
-      James A. Simmons and John Lewis, 
-      <em>Proceedings of the Cray User Group Conference (CUG)</em>, Napa Valley, California, May 2013.
     </ul>
- 
 
     <!-- ============================================================== -->
     <li><h4>Non-Volatile Memory</h4>
     <ul>
 
-      <li><strong>Coordinating Garbage Collection for Arrays of
-        Solid-state Drives</strong>, Youngjae Kim, Junghee Lee, Sarp
-        Oral, David Dillow, Feiyi Wang, Galen M. Shipman, <em>(to
-        appear) IEEE Transactions on Computers (IEEE TC)</em> (DOI: 10.1109/TC.2012.256) 
-   
-      <li><strong>A Temporal Locality-aware Page-Mapped Flash Translation Layer</strong>, 
-        Youngjae Kim, Aayush Gupta, Bhuvan Urgaonkar, 
-        <em>Journal of Computer Science and Technology (JCST)</em>, Vol. 28, No. 6, pp. 1025-1044, November 2013.
+      <li><strong>A Temporal Locality-aware Page-Mapped Flash
+        Translation Layer</strong>, Youngjae Kim, Aayush Gupta, Bhuvan
+        Urgaonkar, <em>Journal of Computer Science and Technology
+        (JCST)</em>, Vol. 28, No. 6, pp. 1025-1044, November 2013.
 
       <li><strong>Preemptible I/O Scheduling of Garbage Collection
         for Solid-state Drives</strong>, Junghee Lee, Youngjae Kim,
@@ -180,17 +245,19 @@
       Atchley, <em>Proceedings of the Cray User Group Conference
       (CUG)</em>, Napa Valley, California, May 2013.
 
-      <li><strong>On Timely Staging of HPC Job Input Data</strong>, Henry
-        Monti, Ali R. Butt, Sudharshan S. Vazhkudai, <em>IEEE
-        Transactions on Parallel and Distributed Systems (TPDS)</em>,
-        Vol. 24, No. 9, pp. 1841-1851, September 2013. 
+      <li><strong>On Timely Staging of HPC Job Input Data</strong>, 
 
-        <a target="_blank"
-        href="http://users.nccs.gov/~vazhkuda/Staging-TPDS-2013.pdf">pdf</a>
+          H. Monti, A. R. Butt, S.S. Vazhkudai, 
 
-        <a target="_blank"
-        href="http://users.nccs.gov/~vazhkuda/Staging-Supplement-TPDS-2013.pdf">Supplement
-        (pdf)</a>
+          <em>IEEE Transactions on Parallel and Distributed Systems
+          (TPDS)</em>, Vol. 24, No. 9, pp. 1841-1851, September 2013.
+
+          <a target="_blank"
+          href="http://users.nccs.gov/~vazhkuda/Staging-TPDS-2013.pdf">pdf</a>
+
+          <a target="_blank"
+          href="http://users.nccs.gov/~vazhkuda/Staging-Supplement-TPDS-2013.pdf">Supplement
+          (pdf)</a>
 
        <li><strong>Layout-aware I/O Scheduling for Terabit Data Movement</strong>, 
        Youngjae Kim, Scott Atchley, Geoffroy R. Vallee, Galen M. Shipman.
