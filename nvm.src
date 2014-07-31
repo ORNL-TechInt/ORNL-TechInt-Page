@@ -14,7 +14,9 @@ several perspectives including fault tolerance, memory extension, and
 out-of-core data analytics.
 </div>
 <div class="plinks">
-<a href="#NVMalloc">NVMalloc</a> 
+<a href="#SSDlifetime">SSD Lifetime Analysis under Checkpointing and
+Memory Extension Workload</a>
+<br><a href="#NVMalloc">NVMalloc</a> 
 | <a href="#ActiveFlash">ActiveFlash</a>
 | <a href="#Emerging">Emerging Storage Technologies</a>
 </div>
