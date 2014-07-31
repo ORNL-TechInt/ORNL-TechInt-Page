@@ -260,9 +260,12 @@
           href="http://users.nccs.gov/~vazhkuda/Staging-Supplement-TPDS-2013.pdf">Supplement
           (pdf)</a>
 
-       <li><strong>Layout-aware I/O Scheduling for Terabit Data Movement</strong>, 
-       Youngjae Kim, Scott Atchley, Geoffroy R. Vallee, Galen M. Shipman.
-       <em>Proceedings of the Workshop on Distributed Storage Systems and Coding for Big Data held in conjunction with IEEE Big Data'13</em>, San Jose, CA, October 2013. 
+       <li><strong>Layout-aware I/O Scheduling for Terabit Data
+       Movement</strong>, Youngjae Kim, Scott Atchley, Geoffroy R.
+       Vallee, Galen M. Shipman. <em>Proceedings of the Workshop on
+       Distributed Storage Systems and Coding for Big Data held in
+       conjunction with IEEE Big Data'13</em>, San Jose, CA, October
+       2013.
 
        <li><strong>End-to-End Data Movement Using MPI-IO Over Routed
            Terabits Infrastructures</strong>, Geoffroy R. Vallee,

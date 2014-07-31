@@ -23,6 +23,39 @@ out-of-core data analytics.
 
 <!-- ========================================================== -->
 %include('content_intro.inc')
+
+    <h2 id="SSDlifetime" class="title">SSD Lifetime Analysis under
+    Checkpointing and Memory Extension Workload</h2>
+
+    <p>Future extreme-scale compute systems will take advantage of the
+    non-volatile memory technology for both memory extension and
+    checkpointing. While SSD devices offer desirable properties such
+    as lower cost ($/GB) and power consumption than DRAM, they suffer
+    from poor random write performance and write endurance problems.
+    Specifically the SSD lifetime can be highly influenced by the
+    access pattern, the level of over-provisioning, and the choices of
+    garbage collection reclaiming policy and wear-leveling techniques
+    on the SSDs. In this project, we explore the SSD lifetime and
+    performance issues for various scientific applications on
+    extreme-scale systems that employ SSDs for both memory extension
+    as well as checkpointing. The work involves several areas.
+
+    <ul>
+    <li>Characterizing memory accesses and checkpoint I/O of HPC applications
+    on the SSDs.
+
+    <li>SSD lifetime analysis for different scientific applications.
+
+    <li>Developing techniques to improve the SSD lifetime in both checkpoint
+    and memory extension libraries.
+
+    </ul>
+
+    <p>Contributors: Youngjae Kim, Chao Wang, and Sudharshan Vazhkudai
+%include('content_close.inc')
+
+<!-- ========================================================== -->
+%include('content_intro.inc')
     <h2 id="NVMalloc" class="title"><a href="http://users.nccs.gov/~vazhkuda/NVMalloc.html" 
     target="other">NVMalloc</a></h2>
 
