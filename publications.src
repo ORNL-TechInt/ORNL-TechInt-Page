@@ -8,6 +8,19 @@
 %include('content_intro.inc')
 <h2>Publications</h2>
 
+  <!--
+  * Our citation format is 
+  *
+  * [Title] [Author names] [Published conference or journal names], [Date, Place, etc]
+  *
+  * Title is <strong></strong> with no quotes.
+  *
+  * Publication is <em></em>, date, place, etc are not.
+  *
+  * No matter what format a citation is submitted in, it should be
+  * arranged as described above for display on this page.
+  -->
+
   <h3 id="2014">2014</h3>
   <ul class="year_list">
 
@@ -16,12 +29,12 @@
     <ul>
 
       <li>
+          <strong>HybridPlan: A Capacity Planning Technique for
+          Projecting Storage Requirements in Hybrid Storage
+          Systems</strong>, 
+
           Youngjae Kim, Aayush Gupta, Bhuvan Urgaonkar, Piotr Berman,
           Anand Sivasubramaniam,
-
-          <strong>"HybridPlan: A Capacity Planning Technique for
-          Projecting Storage Requirements in Hybrid Storage
-          Systems"</strong>, 
 
           <em>Springer Journal of Supercomputing
           (JSC)</em>, Vol. 67, No. 1, pp. 277-303, January 2014.
@@ -46,15 +59,15 @@
           (CAL)</em>, 2014.
 
       <li>
+          <strong>Best Practices and Lessons Learned from Deploying
+          and Operating Large-Scale Data-Centric Parallel File
+          Systems</strong>, 
+
           Sarp Oral, James Simmons, Jason Hill,
           Dustin Leverman, Feiyi Wang, Matt Ezell, Ross Miller,
           Douglas Fuller, Raghul Gunasekaran, Youngjae Kim, Saurabh
           Gupta, Devesh Tiwari, Sudharshan S. Vazhkudai, James H.
           Rogers, David Dillow, Arthur S. Bland,
-
-          <strong>"Best Practices and Lessons Learned from Deploying
-          and Operating Large-Scale Data-Centric Parallel File
-          Systems"</strong>, 
 
           <em>Proceedings of
           Supercomputing 2014 (SC14): 27th IEEE/ACM Int'l Conference
@@ -62,11 +75,12 @@
           Analysis</em>, New Orleans, Louisiana, November 2014.
 
 
-       <li>Aleksandr Khasymski, M. Mustafa Rafique, Ali R. Butt,
-           Sudharshan S. Vazhkudai, and Dimitrios S. Nikolopoulos,
+       <li>
+           <strong>Realizing Accelerated Cost-Effective Distributed
+           RAID</strong>, 
 
-           <strong>"Realizing Accelerated Cost-Effective Distributed
-           RAID"</strong>, 
+           Aleksandr Khasymski, M. Mustafa Rafique, Ali R. Butt,
+           Sudharshan S. Vazhkudai, and Dimitrios S. Nikolopoulos,
 
            Chapter in <em>Handbook on Data Centers</em>, edited by
            Albert Y. Zomaya and Samee U. Khan, Springer, 2014. <a
@@ -82,17 +96,17 @@
     <ul>
 
       <li>
+          <strong>Coordinating Garbage Collection for Arrays of
+          Solid-state Drives</strong>, 
+
           Youngjae Kim, Junghee Lee, Sarp Oral, David Dillow, Feiyi
           Wang, Galen M. Shipman,
-
-          <strong>"Coordinating Garbage Collection for Arrays of
-          Solid-state Drives"</strong>, 
 
           <em>IEEE Transactions on Computers (IEEE TC)</em>, Vol. 63,
           No. 4, pp. 888-901, April 2014.
    
-      <li><strong>"Coordinated Garbage Collection for RAID Array of
-          Solid State Disks"</strong>,
+      <li><strong>Coordinated Garbage Collection for RAID Array of
+          Solid State Disks</strong>,
 
           Inventors (ordered by inventor's last name) David Dillow,
           Youngjae Kim, Sarp Oral, Galen Shipman, Feiyi Wang, 
@@ -112,10 +126,10 @@
     <ul> 
 
        <li>
-           Raghul Gunasakaren and Youngjae Kim, 
+           <strong>Feedback Computing in Leadership Compute
+           Systems</strong>,
 
-           <strong>"Feedback Computing in Leadership Compute
-           Systems"</strong>,
+           Raghul Gunasakaren and Youngjae Kim, 
 
            <em>Proceedings of the 9th International Workshop of
            Feedback Computing in conjunction with ICAC'14 (Feedback
@@ -123,11 +137,11 @@
 
 
        <li>
-           Devesh Tiwari, Saurabh Gupta, Sudharshan S. Vazhkudai, 
-
-           <strong>"Lazy Checkpointing: Exploiting Temporal Locality in
+           <strong>Lazy Checkpointing: Exploiting Temporal Locality in
            Failures to Mitigate Checkpointing Overheads on
-           Extreme-Scale Systems"</strong>,
+           Extreme-Scale Systems</strong>,
+
+           Devesh Tiwari, Saurabh Gupta, Sudharshan S. Vazhkudai, 
 
            <em>Proceedings of the 44th Annual IEEE/IFIP International
            Conference on Dependable Systems and Networks (DSN
@@ -138,10 +152,10 @@
 
 
        <li>
-           Chao Wang, Sudharshan S. Vazhkudai, Xiaosong Ma, Frank Mueller,
+           <strong>Transparent Fault Tolerance for Job Input Data in
+           HPC Environments</strong>,
 
-           <strong>"Transparent Fault Tolerance for Job Input Data in
-           HPC Environments"</strong>,
+           Chao Wang, Sudharshan S. Vazhkudai, Xiaosong Ma, Frank Mueller,
 
            Chapter in <em>Handbook on Data Centers</em>, edited by
            Albert Y. Zomaya and Samee U. Khan, Springer, 2014. 
