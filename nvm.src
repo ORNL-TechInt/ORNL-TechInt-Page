@@ -29,7 +29,7 @@ Memory Extension Workload</a>
     <h2 id="SSDlifetime" class="title">SSD Lifetime Analysis under
     Checkpointing and Memory Extension Workload</h2>
 
-    <p>Future extreme-scale compute systems will take advantage of the
+    <p>Future extreme-scale compute systems will take advantage of
     non-volatile memory technology for both memory extension and
     checkpointing. While SSD devices offer desirable properties such
     as lower cost ($/GB) and power consumption than DRAM, they suffer
