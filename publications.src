@@ -17,6 +17,10 @@
   *
   * Publication is <em></em>, date, place, etc are not.
   *
+  * Publications are ordered from most to least recent. If a date does
+  * not include a month, the item sorts to the bottom (oldest)
+  * position in the list.
+  *
   * No matter what format a citation is submitted in, it should be
   * arranged as described above for display on this page.
   -->
@@ -29,6 +33,32 @@
     <ul>
 
       <li>
+          <strong>Best Practices and Lessons Learned from Deploying
+          and Operating Large-Scale Data-Centric Parallel File
+          Systems</strong>, 
+
+          Sarp Oral, James Simmons, Jason Hill,
+          Dustin Leverman, Feiyi Wang, Matt Ezell, Ross Miller,
+          Douglas Fuller, Raghul Gunasekaran, Youngjae Kim, Saurabh
+          Gupta, Devesh Tiwari, Sudharshan S. Vazhkudai, James H.
+          Rogers, David Dillow, Arthur S. Bland, Galen M. Shipman,
+
+          <em>Proceedings of
+          Supercomputing 2014 (SC14): 27th IEEE/ACM Int'l Conference
+          on High Performance Computing, Networking, Storage and
+          Analysis</em>, New Orleans, Louisiana, November 2014.
+
+      <li><strong>Automatic Identification of Applications I/O
+          Signatures from Noisy Server-Side Traces</strong>,
+
+          Yang Liu, Raghul Gunasekaran, Xiaosong Ma, Sudharshan S.
+          Vazhkudai. 
+
+          <em>Proceedings of the USENIX Conference on File
+          and Storage Technologies (FAST 2014)</em>, Santa Clara,
+          California, February 2014.
+
+      <li>
           <strong>HybridPlan: A Capacity Planning Technique for
           Projecting Storage Requirements in Hybrid Storage
           Systems</strong>, 
@@ -39,17 +69,6 @@
           <em>Springer Journal of Supercomputing
           (JSC)</em>, Vol. 67, No. 1, pp. 277-303, January 2014.
 
-
-      <li><strong>Automatic Identification of Applications I/O
-          Signatures from Noisy Server-Side Traces</strong>,
-
-          Yang Liu, Raghul Gunasekaran, Xiaosong Ma, Sudharshan S.
-          Vazhkudai. 
-
-          <em>(to appear) Proceedings of the USENIX Conference on File
-          and Storage Technologies (FAST 2014)</em>, Santa Clara,
-          California, February 2014.
-
       <li><strong>Synchronous I/O Scheduling of Independent Write
           Caches for an Array of SSDs</strong>,
 
@@ -57,23 +76,6 @@
 
           <em>(to appear) IEEE Computer Architecture Letters
           (CAL)</em>, 2014.
-
-      <li>
-          <strong>Best Practices and Lessons Learned from Deploying
-          and Operating Large-Scale Data-Centric Parallel File
-          Systems</strong>, 
-
-          Sarp Oral, James Simmons, Jason Hill,
-          Dustin Leverman, Feiyi Wang, Matt Ezell, Ross Miller,
-          Douglas Fuller, Raghul Gunasekaran, Youngjae Kim, Saurabh
-          Gupta, Devesh Tiwari, Sudharshan S. Vazhkudai, James H.
-          Rogers, David Dillow, Arthur S. Bland,
-
-          <em>Proceedings of
-          Supercomputing 2014 (SC14): 27th IEEE/ACM Int'l Conference
-          on High Performance Computing, Networking, Storage and
-          Analysis</em>, New Orleans, Louisiana, November 2014.
-
 
        <li>
            <strong>Realizing Accelerated Cost-Effective Distributed
@@ -87,13 +89,20 @@
            target="_blank"
            href="http://users.nccs.gov/~vazhkuda/gpuRAIDchapter.pdf">pdf</a>
 
-
     </ul>
 
 
     <!-- ============================================================== -->
     <li><h4>Non-Volatile Memory</h4>
     <ul>
+
+      <li><strong>Coordinated Garbage Collection for RAID Array of
+          Solid State Disks</strong>,
+
+          Inventors (ordered by inventor's last name) David Dillow,
+          Youngjae Kim, Sarp Oral, Galen Shipman, Feiyi Wang, 
+
+          U.S. Patent No. 8,713,268, Issued: April 29, 2014.
 
       <li>
           <strong>Coordinating Garbage Collection for Arrays of
@@ -105,14 +114,6 @@
           <em>IEEE Transactions on Computers (IEEE TC)</em>, Vol. 63,
           No. 4, pp. 888-901, April 2014.
    
-      <li><strong>Coordinated Garbage Collection for RAID Array of
-          Solid State Disks</strong>,
-
-          Inventors (ordered by inventor's last name) David Dillow,
-          Youngjae Kim, Sarp Oral, Galen Shipman, Feiyi Wang, 
-
-          U.S. Patent No. 8,713,268, Issued: April 29, 2014.
-
     </ul>
     
     <!-- ============================================================== -->
@@ -145,11 +146,10 @@
 
            <em>Proceedings of the 44th Annual IEEE/IFIP International
            Conference on Dependable Systems and Networks (DSN
-           2014)</em>, Atlanta, Georgia, June 2014. 
+           2014)</em>, Atlanta, Georgia, June 2014. (Best Paper Finalist)
 
            <a target="_blank"
            href="http://users.nccs.gov/~vazhkuda/DSN2014.pdf">pdf</a>
-
 
        <li>
            <strong>Transparent Fault Tolerance for Job Input Data in
@@ -254,15 +254,24 @@
 
     <ul>
 
-      <li><strong>SeaStar Unchained: Multiplying the Performance of
-      the Cray SeaStar Network</strong>, David A. Dillow, Scott
-      Atchley, <em>Proceedings of the Cray User Group Conference
-      (CUG)</em>, Napa Valley, California, May 2013.
+       <li><strong>End-to-End Data Movement Using MPI-IO Over Routed
+           Terabits Infrastructures</strong>, Geoffroy R. Vallee,
+           Scott Atchley, Youngjae Kim, Galen M. Shipman.
+           <em>Proceedings of the IEEE/ACM International Workshop on
+           Network-aware Data Management in conjunction with
+           SC'13</em>, Denver, CO, November 2013.
+
+       <li><strong>Layout-aware I/O Scheduling for Terabit Data
+       Movement</strong>, Youngjae Kim, Scott Atchley, Geoffroy R.
+       Vallee, Galen M. Shipman. <em>Proceedings of the Workshop on
+       Distributed Storage Systems and Coding for Big Data held in
+       conjunction with IEEE Big Data'13</em>, San Jose, CA, October
+       2013.
 
       <li>
-          H. Monti, A. R. Butt, S.S. Vazhkudai, 
-
           <strong>On Timely Staging of HPC Job Input Data</strong>, 
+
+          H. Monti, A. R. Butt, S.S. Vazhkudai, 
 
           <em>IEEE Transactions on Parallel and Distributed Systems
           (TPDS)</em>, Vol. 24, No. 9, pp. 1841-1851, September 2013.
@@ -274,19 +283,10 @@
           href="http://users.nccs.gov/~vazhkuda/Staging-Supplement-TPDS-2013.pdf">Supplement
           (pdf)</a>
 
-       <li><strong>Layout-aware I/O Scheduling for Terabit Data
-       Movement</strong>, Youngjae Kim, Scott Atchley, Geoffroy R.
-       Vallee, Galen M. Shipman. <em>Proceedings of the Workshop on
-       Distributed Storage Systems and Coding for Big Data held in
-       conjunction with IEEE Big Data'13</em>, San Jose, CA, October
-       2013.
-
-       <li><strong>End-to-End Data Movement Using MPI-IO Over Routed
-           Terabits Infrastructures</strong>, Geoffroy R. Vallee,
-           Scott Atchley, Youngjae Kim, Galen M. Shipman.
-           <em>Proceedings of the IEEE/ACM International Workshop on
-           Network-aware Data Management in conjunction with
-           SC'13</em>, Denver, CO, November 2013.
+      <li><strong>SeaStar Unchained: Multiplying the Performance of
+      the Cray SeaStar Network</strong>, David A. Dillow, Scott
+      Atchley, <em>Proceedings of the Cray User Group Conference
+      (CUG)</em>, Napa Valley, California, May 2013.
 
 
     </ul>
@@ -352,15 +352,6 @@
         href="http://www.usenix.org/system/files/conference/hotpower12/hotpower12-final33.pdf">
         pdf</a>
 
-      <li><strong>Active Flash: Out-of-core Data Analytics on Flash
-        Storage</strong>, Simona Boboila, Youngjae Kim, Sudharshan S.
-        Vazhkudai, Peter J. Desnoyers, Galen M. Shipman,
-        <em>Proceedings of the 28th IEEE Conference on Mass Storage
-        Systems and Technologies (MSST 2012)</em>, Monterey, CA, April
-        2012. <a target="other"
-        href="http://www.csm.ornl.gov/~vazhkuda/msst12.pdf">pdf</a>
-
-
       <li><strong>NVMalloc: Exposing an Aggregate SSD Store as a
         Memory Partition in Extreme-Scale Machines</strong>, Chao
         Wang, Sudharshan S. Vazhkudai, Xiaosong Ma, Fei Meng, Youngjae
@@ -368,6 +359,14 @@
         Int'l Parallel &amp; Distributed Processing Symposium (IPDPS
         2012)</em>, Shanghai, China, May 2012. <a target="other"
         href="http://www.csm.ornl.gov/~vazhkuda/NVMalloc.pdf">pdf</a>
+
+      <li><strong>Active Flash: Out-of-core Data Analytics on Flash
+        Storage</strong>, Simona Boboila, Youngjae Kim, Sudharshan S.
+        Vazhkudai, Peter J. Desnoyers, Galen M. Shipman,
+        <em>Proceedings of the 28th IEEE Conference on Mass Storage
+        Systems and Technologies (MSST 2012)</em>, Monterey, CA, April
+        2012. <a target="other"
+        href="http://www.csm.ornl.gov/~vazhkuda/msst12.pdf">pdf</a>
 
       <li><strong>Comparing Coordinated Garbage Collection Algorithms
         for Arrays of Solid-state Drives</strong>, Junghee Lee,
@@ -531,8 +530,10 @@
         Drives</strong>, Junghee Lee, Youngjae Kim, Galen M. Shipman,
         Sarp Oral, Feiyi Wang, Jongman Kim, <em>Proceedings of the
         IEEE Int'l Symposium on Performance Analysis of Systems and
-        Software (ISPASS 2011)</em>, Austin, TX, April 10-12, 2011. <a
-        target="other"
+        Software (ISPASS 2011)</em>, Austin, TX, April 10-12, 2011.
+        (Best Paper Finalist)
+
+        <a target="other"
         href="http://users.nccs.gov/~fwang2/papers/ispass11.pdf">pdf</a>
 
       <li><strong>A Comprehensive Study on Energy Efficiency and
@@ -717,17 +718,17 @@
         2008. <a href="http://www.osti.gov/energycitations/product.biblio.jsp?osti_id=929789"
         target="other">citation</a>
 
-      <li><strong>Empirical Analysis of a Large-Scale Hierarchical
-        Storage System</strong>, Weikuan Yu, Sarp Oral, R. Shane
-        Canon, Jeffrey S. Vetter, and Ramanan Sankaran, <em>Lecture
-        Notes in Computer Science</em>, pp. 130-140, Volume 5168/2008,
-        ISBN 978-3-540-85450-0, Springer Berlin/Heidelberg, 2008.
-
       <li><strong>Performance Characterization and Optimization of
         Parallel I/O on the Cray XT</strong>, Weikuan Yu, Jeffrey
         Vetter, and Sarp Oral, <em>Proc. of IEEE Int. Symp. on
         Parallel and Distributed Processing (IPDPS) 2008</em>, Miami,
         Florida, April, 2008.
+
+      <li><strong>Empirical Analysis of a Large-Scale Hierarchical
+        Storage System</strong>, Weikuan Yu, Sarp Oral, R. Shane
+        Canon, Jeffrey S. Vetter, and Ramanan Sankaran, <em>Lecture
+        Notes in Computer Science</em>, pp. 130-140, Volume 5168/2008,
+        ISBN 978-3-540-85450-0, Springer Berlin/Heidelberg, 2008.
 
       <li><strong>XT7? Integrating and Operating a Conjoined XT3+XT4
         System</strong>, R. Shane Canon, Don E. Maxwell, Josh Lothian,
