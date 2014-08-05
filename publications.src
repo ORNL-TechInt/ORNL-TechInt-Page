@@ -43,10 +43,10 @@
           Gupta, Devesh Tiwari, Sudharshan S. Vazhkudai, James H.
           Rogers, David Dillow, Arthur S. Bland, Galen M. Shipman,
 
-          <em>Proceedings of
-          Supercomputing 2014 (SC14): 27th IEEE/ACM Int'l Conference
-          on High Performance Computing, Networking, Storage and
-          Analysis</em>, New Orleans, Louisiana, November 2014.
+          <em>Proceedings of Supercomputing 2014 (SC14): 27th IEEE/ACM
+          Int'l Conference on High Performance Computing, Networking,
+          Storage and Analysis</em>, New Orleans, Louisiana, November
+          2014. (Best Paper Finalist)
 
       <li><strong>Automatic Identification of Applications I/O
           Signatures from Noisy Server-Side Traces</strong>,
@@ -150,6 +150,35 @@
 
            <a target="_blank"
            href="http://users.nccs.gov/~vazhkuda/DSN2014.pdf">pdf</a>
+
+       <li>
+           <strong>MapReuse: Reusing Computation in an In-Memory
+           MapReduce System</strong>,
+
+           Devesh Tiwari and Yan Solihin,
+
+           <em>Proceedings of the 29th IEEE International Parallel &
+           Distributed Processing Symposium (IPDPS)</em>, May, 2014.
+
+       <li>
+           <strong>I/O Router Placement and Fine-Grained Routing on
+           Titan to Support Spider II</strong>,
+
+           Matt Ezell, Dave Dillow, Sarp Oral, Feiyi Wang, Devesh
+           Tiwari, Don Maxwell, Dustin Leverman, Jason Hill,
+
+           <em>Proceedings of the Cray User Group Conference
+           (CUG)</em>, May, 2014.
+
+       <li>
+           <strong>SSD Provisioning for Exascale Storage System: When,
+           Where and How much?</strong>, 
+
+           Devesh Tiwari, Sarp Oral, Feiyi Wang, Saurabh Gupta and
+           Josh Judd,
+
+           <em>Proceedings of the Lustre User Group Meetings (LUG)</em>,
+           April, 2014.
 
        <li>
            <strong>Transparent Fault Tolerance for Job Input Data in
