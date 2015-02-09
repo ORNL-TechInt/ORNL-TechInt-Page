@@ -40,12 +40,21 @@ ALL_MEMBERS = atchley.html \
 
 TARGET=$(HOME)/www/techint
 
+XTARGET=$(HOME)/www/x_techint
+
 all: mkhtml $(ALL_MEMBERS) $(ALL_OTHER)
 
 %.html: %.src $(ALL_INC)
 	./mkhtml $<
 
-deploy: version
+deploy_head: version
+	rm -rf $(XTARGET)
+	mkdir -p $(XTARGET)/js
+	git archive --format tar HEAD | (cd $(XTARGET); tar x; make all)
+	cp js/version.js $(XTARGET)/js/version.js
+
+deploy_master: version
+	rm -rf $(TARGET)
 	mkdir -p $(TARGET)/js
 	git archive --format tar master | (cd $(TARGET); tar x; make all)
 	cp js/version.js $(TARGET)/js/version.js
