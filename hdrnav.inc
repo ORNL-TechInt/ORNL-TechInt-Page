@@ -41,7 +41,6 @@
         <ul>
           <li><a href="atchley.html">Scotty Atchley</a>
           <li><a href="barron.html">Tom Barron</a>
-          <li><a href="fuller.html">Doug Fuller</a>
           <li><a href="gunasekaran.html">Raghul Gunasekaran</a>
           <li><a href="gupta.html">Saurabh Gupta</a>
           <li><a href="harney.html">John Harney</a>
