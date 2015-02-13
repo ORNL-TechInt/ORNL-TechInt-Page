@@ -27,6 +27,34 @@ To get your github account added to the ORNL-TechInt organization,
 send a request to tbarron at ornl dot gov. In what follows, I'll use
 "$TECHINT" to refer to the git working directory.
 
+
+Making Changes
+--------------
+
+Edit the files like normal. Git will keep track of your updates. You
+can see the results of your changes by running
+
+    $ make review
+
+and visiting http://users.nccs.gov/~UID/techint/ in your browser
+(where UID is your NCCS username). 'make review' will deploy the site
+in your account at $HOME/www/techint.
+
+
+Deploying Changes
+-----------------
+
+Once you're satisfied with your changes, do the following:
+
+    $ git commit -a  (you'll be asked to write something describing your update)
+    $ git push
+    $ make deploy
+
+This sequence will 1) commit your changes to your local git repo, 2)
+push your changes up to the shared repository at github.com, and 3)
+deploy the files to /ccs/wwwusers/stf008/techint where they'll be
+visible through the URL http://techint.nccs.gov.
+
  
 Git Hooks
 ---------
@@ -149,6 +177,15 @@ The following targets are available in the Makefile:
 
  * %.html: tells make that foo.html depends on foo.src as well as
        all the .inc files
+
+ * review: deploys the site to $HOME/www/techint. After running this,
+   you should be able to view the result in your browser by visiting
+   http://users.nccs.gov/~UID/techint/ (where UID is your lowercase
+   username). Use this to verify that your changes had the effect you
+   intended.
+
+ * deploy: deploys the site to /ccs/wwwusers/stf008/techint, which is
+   where the URL techint.nccs.gov points.
 
  * README.html: run Markdown.pl to generate README.html
     

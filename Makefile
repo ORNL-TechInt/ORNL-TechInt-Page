@@ -53,7 +53,7 @@ deploy_head: version
 	git archive --format tar HEAD | (cd $(XTARGET); tar x; make all)
 	cp js/version.js $(XTARGET)/js/version.js
 
-deploy_master: version
+deploy: version
 	rm -rf $(TARGET)
 	mkdir -p $(TARGET)/js
 	git archive --format tar master | (cd $(TARGET); tar x; make all)
