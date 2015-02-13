@@ -38,9 +38,9 @@ ALL_MEMBERS = atchley.html \
     white.html \
     zimmer.html
 
-TARGET=$(HOME)/www/techint
+TARGET=/ccs/wwwusers/stf008/techint
 
-XTARGET=$(HOME)/www/x_techint
+XTARGET=$(HOME)/www/techint
 
 all: mkhtml $(ALL_MEMBERS) $(ALL_OTHER)
 
