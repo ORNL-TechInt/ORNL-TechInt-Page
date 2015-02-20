@@ -12,7 +12,9 @@ Here's an outline of the recipe for making a change:
 
  * Get a copy of the repo (see "[Gitting a Copy](#copy)")
 
- * Edit the files and review your changes (see "[Making Changes](#changes)")
+ * Edit the files and review your changes (see "[Making
+   Changes](#changes)", "[Special Measures](#special)", and
+   "[Implications](#implications)")
 
  * Deploy the updated files (see "[Deploying Changes](#deploying)")
 
@@ -41,8 +43,10 @@ follows, "$TECHINT" refers to the git working directory.
 Making Changes
 --------------
 
-Edit the files like normal. Git will keep track of your updates. You
-can see the results of your changes by running
+Edit the .src files (see "[Special Measures](#special)" and
+"[Implications](#implications)"below). The .html files are generated
+from the .src files by running mkhtml. Git will keep track of your
+updates. You can see the results of your changes by running
 
     $ make review
 
@@ -67,6 +71,7 @@ deploy the files to /ccs/wwwusers/stf008/techint where they'll be
 visible through the URL http://techint.nccs.gov.
 
  
+<a name="special">
 Special Measures
 ----------------
 
@@ -105,11 +110,8 @@ the value indicated by the content attribute. The code above allows
 for the currently active tab in the menu bar to be a different color
 from the others.
 
-There is also a Makefile with the dependencies defined so after
-editing a .src or .inc file, you can just run make to rebuild the HTML
-files.
 
-
+<a name="implications">
 Implications
 ------------
 
@@ -134,24 +136,24 @@ Implications
       in a collision, in which case we add the first initial (eg.,
       cwang.src and fwang.src for Chao and Feiyi).
 
-    * Add the new file to the list in Makefile.
+    * Add the new file to the ALL_MEMBERS list in Makefile.
 
     * Add a new <li> tag for the new entry in hdrnav.inc.
 
     * Add a new <li> tag for the new entry in members.src.
 
-    * Commit and push the changes.
+    * Run 'make review' to examine the changes in your personal web
+      area (http://users.nccs.gov/~UID/teching/index.html)
 
-    * Pull the changes into the deployment directory.
+    * Once satisfied with your updates, Commit and push the changes in
+      the master branch.
 
-    * Run make (this step can be automated using the post merge git
-      hook described above).
+    * Run 'make deploy' to update the production website at http://techint.nccs.gov.
 
  * For a new year in publications or software, add the new material to
-   publications.src or software.src and a new &lt;li> tag in hdrnav.inc.
-   After that, commit and push the changes, pull the update into the
-   deployment directory, and (unless it's automated) run make to
-   generate the .html files.
+   publications.src or software.src and a new &lt;li> tag in
+   hdrnav.inc. After that, review and verify the changes, then commit
+   and push. Finally, run 'make deploy'.
 
 
 Makefile Targets
@@ -159,7 +161,8 @@ Makefile Targets
 
 The following targets are available in the Makefile:
 
- * all: rebuild all html files from .src and .inc files
+ * all: rebuild all html files from .src and .inc files. This is the
+   default target that gets run if make is invoked with no arguments.
 
  * %.html: tells make that foo.html depends on foo.src as well as
        all the .inc files
