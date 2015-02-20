@@ -138,9 +138,9 @@ Implications
 
     * Add the new file to the ALL_MEMBERS list in Makefile.
 
-    * Add a new <li> tag for the new entry in hdrnav.inc.
+    * Add a new &lt;li> tag for the new entry in hdrnav.inc.
 
-    * Add a new <li> tag for the new entry in members.src.
+    * Add a new &lt;li> tag for the new entry in members.src.
 
     * Run 'make review' to examine the changes in your personal web
       area (http://users.nccs.gov/~UID/teching/index.html)
