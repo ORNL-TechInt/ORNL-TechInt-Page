@@ -14,9 +14,9 @@ Here's an outline of the recipe for making a change:
 
  * Install the git hooks by running $TECHINT/githooks/mk_symlinks (see
    "[Git Hooks](#hooks)") 
-
-   > NOTE: If you don't install the githooks, you'll need
-   > to run githooks/post-merge by hand before deploying)
+   > NOTE: If you don't install the githooks, you'll need to run
+   > githooks/post-merge by hand before deploying to ensure the HTML
+   > files are rebuilt and the version is updated.
 
  * Edit the files and review your changes (see "[Making Changes](#changes)")
 
