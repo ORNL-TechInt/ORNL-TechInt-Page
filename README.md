@@ -13,12 +13,14 @@ Here's an outline of the recipe for making a change:
  * Get a copy of the repo (see "[Gitting a Copy](#copy)")
 
  * Install the git hooks by running $TECHINT/githooks/mk_symlinks (see
-   "Git Hooks") (NOTE: If you don't install the githooks, you'll need
-   to run githooks/post-merge by hand before deploying)
+   "[Git Hooks](#hooks)") 
 
- * Edit the files and review your changes (see "Making Changes")
+   > NOTE: If you don't install the githooks, you'll need
+   > to run githooks/post-merge by hand before deploying)
 
- * Deploy the updated files (see "Deploying Changes")
+ * Edit the files and review your changes (see "[Making Changes](#changes)")
+
+ * Deploy the updated files (see "[Deploying Changes](#deploying)")
 
 
 <a name="copy">
@@ -41,6 +43,7 @@ organization, send a request to tbarron at ornl dot gov. In what
 follows, "$TECHINT" refers to the git working directory.
 
 
+<a name="hooks">
 Git Hooks
 ---------
 
@@ -66,6 +69,7 @@ Available hook scripts include
 >      files. mk_symlinks links this as the post-merge hook.
 
 
+<a name="changes">
 Making Changes
 --------------
 
@@ -79,6 +83,7 @@ and visiting http://users.nccs.gov/~UID/techint/ in your browser
 in your account at $HOME/www/techint.
 
 
+<a name="deploying">
 Deploying Changes
 -----------------
 
