@@ -12,12 +12,6 @@ Here's an outline of the recipe for making a change:
 
  * Get a copy of the repo (see "[Gitting a Copy](#copy)")
 
- * Install the git hooks by running $TECHINT/githooks/mk_symlinks (see
-   "[Git Hooks](#hooks)") 
-   > NOTE: If you don't install the githooks, you'll need to run
-   > githooks/post-merge by hand before deploying to ensure the HTML
-   > files are rebuilt and the version is updated.
-
  * Edit the files and review your changes (see "[Making Changes](#changes)")
 
  * Deploy the updated files (see "[Deploying Changes](#deploying)")
@@ -41,32 +35,6 @@ Alternatively, you can get a read-only copy of the site:
 If you need your github account added to the ORNL-TechInt
 organization, send a request to tbarron at ornl dot gov. In what
 follows, "$TECHINT" refers to the git working directory.
-
-
-<a name="hooks">
-Git Hooks
----------
-
-Hook scripts are available for 1) updating js/version.js with the
-output 'git describe' so that the site version and last update time is
-displayed on the About page, and 2) running make to process .src files
-to generate the .html files.
-
-After cloning your copy of the repo, you can activate these hooks by
-running
-
-    $ $TECHINT/githooks/mk_symlinks
-
-This creates the appropriate symlinks from .git/hooks to the scripts
-in $TECHINT/githooks.
-
-Available hook scripts include
-
->    set-version: generate js/version.js, based on the output of 'git
->      describe'. mk_symlinks links this as the post-commit hook.
->
->    post-merge: call set-version, then run make to rebuild the html
->      files. mk_symlinks links this as the post-merge hook.
 
 
 <a name="changes">
@@ -215,3 +183,7 @@ The following targets are available in the Makefile:
        are errors in foo.html, they are saved in validation_foo.html.
 
  * valid: run the local python validation checks on the .html files.
+
+ * validate: create symlink validate -> validate.py if needed
+
+ * version: generate the javascript version file based on 'git describe'
