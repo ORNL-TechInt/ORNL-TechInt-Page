@@ -51,15 +51,16 @@ updates. You can see the results of your changes by running
     $ make review
 
 and visiting http://users.nccs.gov/~UID/techint/ in your browser
-(where UID is your NCCS username). 'make review' will deploy the site
-in your account at $HOME/www/techint.
+(where UID is your NCCS username). 'make review' deploys the site in
+your account at $HOME/www/techint.
 
 
 <a name="deploying">
 Deploying Changes
 -----------------
 
-Once you're satisfied with your changes, do the following:
+Once you're satisfied with your changes, do the following to deploy
+them to production:
 
     $ git commit -a  (you'll be asked to write something describing your update)
     $ git push
@@ -67,7 +68,7 @@ Once you're satisfied with your changes, do the following:
 
 This sequence will 1) commit your changes to your local git repo, 2)
 push your changes up to the shared repository at github.com, and 3)
-deploy the files to /ccs/wwwusers/stf008/techint where they'll be
+deploy the files to /ccs/wwwproj/stf008/techint where they'll be
 visible through the URL http://techint.nccs.gov.
 
  
@@ -143,7 +144,7 @@ Implications
     * Add a new &lt;li> tag for the new entry in members.src.
 
     * Run 'make review' to examine the changes in your personal web
-      area (http://users.nccs.gov/~UID/teching/index.html)
+      area (http://users.nccs.gov/~UID/techint/index.html)
 
     * Once satisfied with your updates, Commit and push the changes in
       the master branch.
@@ -173,7 +174,7 @@ The following targets are available in the Makefile:
    username). Use this to verify that your changes had the effect you
    intended.
 
- * deploy: deploys the site to /ccs/wwwusers/stf008/techint, which is
+ * deploy: deploys the site to /ccs/wwwproj/stf008/techint, which is
    where the URL techint.nccs.gov points.
 
  * README.html: run Markdown.pl to generate README.html
