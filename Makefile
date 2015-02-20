@@ -38,7 +38,7 @@ ALL_MEMBERS = atchley.html \
     white.html \
     zimmer.html
 
-TARGET=/ccs/wwwusers/stf008/techint
+TARGET=/ccs/wwwproj/stf008/techint
 
 XTARGET=$(HOME)/www/techint
 
@@ -47,7 +47,7 @@ all: mkhtml $(ALL_MEMBERS) $(ALL_OTHER)
 %.html: %.src $(ALL_INC)
 	./mkhtml $<
 
-deploy_head: version
+review: version
 	rm -rf $(XTARGET)
 	mkdir -p $(XTARGET)/js
 	git archive --format tar HEAD | (cd $(XTARGET); tar x; make all)

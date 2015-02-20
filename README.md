@@ -8,7 +8,20 @@ The master copy resides at
 
     https://github.com/ORNL-TechInt/ORNL-TechInt-Page
 
+Here's an outline of the recipe for making a change:
 
+ * Get a copy of the repo (see "[Gitting a Copy](#copy)")
+
+ * Install the git hooks by running $TECHINT/githooks/mk_symlinks (see
+   "Git Hooks") (NOTE: If you don't install the githooks, you'll need
+   to run githooks/post-merge by hand before deploying)
+
+ * Edit the files and review your changes (see "Making Changes")
+
+ * Deploy the updated files (see "Deploying Changes")
+
+
+<a name="copy">
 Gitting a Copy
 --------------
 
@@ -23,9 +36,34 @@ Alternatively, you can get a read-only copy of the site:
 
     $ git clone git://github.com/ORNL-TechInt/ORNL-TechInt-Page.git [dirname]
 
-To get your github account added to the ORNL-TechInt organization,
-send a request to tbarron at ornl dot gov. In what follows, I'll use
-"$TECHINT" to refer to the git working directory.
+If you need your github account added to the ORNL-TechInt
+organization, send a request to tbarron at ornl dot gov. In what
+follows, "$TECHINT" refers to the git working directory.
+
+
+Git Hooks
+---------
+
+Hook scripts are available for 1) updating js/version.js with the
+output 'git describe' so that the site version and last update time is
+displayed on the About page, and 2) running make to process .src files
+to generate the .html files.
+
+After cloning your copy of the repo, you can activate these hooks by
+running
+
+    $ $TECHINT/githooks/mk_symlinks
+
+This creates the appropriate symlinks from .git/hooks to the scripts
+in $TECHINT/githooks.
+
+Available hook scripts include
+
+>    set-version: generate js/version.js, based on the output of 'git
+>      describe'. mk_symlinks links this as the post-commit hook.
+>
+>    post-merge: call set-version, then run make to rebuild the html
+>      files. mk_symlinks links this as the post-merge hook.
 
 
 Making Changes
@@ -56,31 +94,6 @@ deploy the files to /ccs/wwwusers/stf008/techint where they'll be
 visible through the URL http://techint.nccs.gov.
 
  
-Git Hooks
----------
-
-Hook scripts are available for 1) updating js/version.js with the
-output 'git describe' so that the site version and last update time is
-displayed on the About page, and 2) running make to process .src files
-to generate the .html files.
-
-After cloning your copy of the repo, you can activate these hooks by
-running
-
-    $ $TECHINT/githooks/mk_symlinks
-
-This creates the appropriate symlinks from .git/hooks to the scripts
-in $TECHINT/githooks.
-
-Available hook scripts include
-
->    set-version: generate js/version.js, based on the output of 'git
->      describe'. mk_symlinks links this as the post-commit hook.
->
->    post-merge: call set-version, then run make to rebuild the html
->      files. mk_symlinks links this as the post-merge hook.
-
-
 Special Measures
 ----------------
 
