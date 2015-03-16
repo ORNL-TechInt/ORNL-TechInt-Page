@@ -9,18 +9,25 @@
 %include('content_intro.inc')
 <h2>Hyogi Sim</h2> 
 
-<p>
-Hyogi joined the Technology Integration group in 2013 as an intern. He
-is pursuing his Ph.D. degree in Computer Science at <a
-href="http://www.vt.edu" target="other">Virginia Tech</a>. His primary
-research interest is focused on deploying non-volatile memory devices
-into distributed computing environments. He is also interested in
-general topics in file and storage systems.
+<p> Hyogi joined the Technology Integration group in 2015 as a Post
+Masters Research Assistant. His research interests are focused on
+distributed systems and storage systems. He is currently working on
+deploying non-volatile memory devices and technologies in large scale
+systems. Also, he is exploring the hardware and software techniques of
+active storage systems in the scientific computing.
 
-<p>
-He earned his M.S. degree in Computer Engineering in 2008 and B.S. in
-Civil Engineering in 2005, both from <a
-href="http://www.hanyang.ac.kr/english/" target="other">Hanyang
+
+<p> He is currently pursuing a Ph.D. degree in Computer Science at <a
+href="http://www.vt.edu" target="other">Virginia Tech</a>. He is
+advised by Dr. Ali Butt in the 
+<a href="http://research.cs.vt.edu/dssl/index.html" target="other">
+Distributed Systems and Storage Lab
+</a>. 
+He received his
+Masters (2014) in Computer Science from <a href=“http://cs.vt.edu”
+target=“other”>Virginia Tech</a>. He also earned a M.S. in Computer
+Engineering (2008) and B.S. in Civil Engineering (2005), both from the
+<a href=“http://www.hanyang.ac.kr/english/“ target=“other”>Hanyang
 University</a> in South Korea.
 
 %include('content_close.inc')

@@ -48,6 +48,7 @@
           <li><a href="miller.html">Ross Miller</a>
           <li><a href="mowery.html">Sonya Mowery (group secretary)</a>
           <li><a href="oral.html">Sarp Oral</a>
+          <li><a href="sim.html">Hyogi Sim</a>
           <li><a href="simmons.html">James Simmons</a>
           <li><a href="smith.html">Brian Smith</a>
           <li><a href="stansberry.html">Dale Stansberry</a>

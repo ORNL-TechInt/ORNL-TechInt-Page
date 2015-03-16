@@ -29,6 +29,7 @@ ALL_MEMBERS = atchley.html \
     miller.html \
     mowery.html \
     oral.html \
+    sim.html \
     simmons.html \
     smith.html \
     stansberry.html \
@@ -50,7 +51,7 @@ all: mkhtml $(ALL_MEMBERS) $(ALL_OTHER)
 review: version
 	rm -rf $(XTARGET)
 	mkdir -p $(XTARGET)/js
-	git archive --format tar HEAD | (cd $(XTARGET); tar x; make all)
+	tar c . | (cd $(XTARGET); tar x; make all)
 	cp js/version.js $(XTARGET)/js/version.js
 
 deploy: version
