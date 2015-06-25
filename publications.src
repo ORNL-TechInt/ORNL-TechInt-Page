@@ -33,6 +33,20 @@
     <ul>
 
       <li>
+          <strong>Improving Large-scale Storage System Performance via
+          Topology-aware and Balanced Data Placement</strong>,
+
+          Feiyi Wang, Sarp Oral, Saurabh Gupta, Devesh Tiwari, and
+          Sudharshan Vazhkudai
+
+          In <em>Proceedings of 20th IEEE International Conference on
+          Parallel and Distributed Systems (ICPADS 2014)</em>,
+          December, 2014.
+
+          <a target="_blank"
+          href=https://docs.google.com/file/d/0B3-BCOMWWL-Cdjd3OXpnT3JIeEk/edit>pdf</a>
+
+      <li>
           <strong>Best Practices and Lessons Learned from Deploying
           and Operating Large-Scale Data-Centric Parallel File
           Systems</strong>, 
