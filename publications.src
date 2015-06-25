@@ -25,6 +25,71 @@
   * arranged as described above for display on this page.
   -->
 
+  <h3 id="2015">2015</h3>
+  <ul class="year_list">
+
+    <!-- ============================================================== -->
+    <li><h4>File and Storage Systems</h4> <ul> </ul> 
+    <ul>
+
+      <li>
+          <strong>Spatial Locality-Aware Cache Partitioning for
+          Effective Cache Sharing</strong>,
+
+          Saurabh Gupta and Huiyang Zhou,
+
+          To appear in <em>The 44th Internation Conference on Parallel
+          Processing (ICPP 2015)</em>, September, 2015. <a
+          target="_blank"
+          href=https://drive.google.com/open?id=0B3-BCOMWWL-CZWxXUEdUOXhGY00&authuser=0>pdf</a>
+
+      <li>
+          <strong>Understanding and Exploiting Spatial Properties of
+          System Failures on Extreme-Scale HPC Systems</strong>,
+
+          Saurabh Gupta, Devesh Tiwari, Christopher J. Jantzi, James
+          H. Rogers, Don Maxwell,
+
+          In <em>The 45th IEEE Conference on Dependable
+          Systems and Networks (DSN 2015)</em>, June, 2015.
+
+          <a target="_blank"
+          href=https://drive.google.com/open?id=0B3-BCOMWWL-CYWlrcTR6Z0lNeEk&authuser=0>pdf</a>
+
+      <li>
+          <strong>Experience with GPUs on the Titan Supercomputer from
+          a Reliability, Performance and Power Perspective</strong>,
+
+          Devesh Tiwari, Saurabh Gupta, Jim Rogers, Don Maxwell,
+
+          In <em>The 37th Cray user Group (CUG 2015)</em>, April, 2015.
+
+          <!-- <a target="_blank"
+          href="">pdf - missing link</a> -->
+
+
+      <li>
+          <strong>Understanding GPU Errors on Large-scale HPC Systems
+          and the Implications for System Design and
+          Operation</strong>,
+
+          Devesh Tiwari, Saurabh Gupta, Jim Rogers, Don Maxwell, Paolo
+          Rech, Sudharshan Vazhkudai, Daniel Oliveira, Dave Londo,
+          Nathan Debardeleben, Philippe Navaux, Luigi Carro, and
+          Arthur Buddy Bland,
+
+          In <em>Proceedings of 21st IEEE Symposium on High
+          Performance Computer Architecture (HPCA 2015)</em>, February,
+          2015.
+
+          <a target="_blank"
+          href=http://www4.ncsu.edu/~dtiwari2/Papers/2015_HPCA_Tiwari_GPU_Reliability.pdf>pdf</a>
+
+
+    </ul>
+  </ul>
+
+
   <h3 id="2014">2014</h3>
   <ul class="year_list">
 
