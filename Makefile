@@ -24,14 +24,11 @@ ALL_MEMBERS = atchley.html \
     fwang.html \
     gunasekaran.html \
     gupta.html \
-    harney.html \
-    kim.html \
     miller.html \
     mowery.html \
     oral.html \
     sim.html \
     simmons.html \
-    smith.html \
     stansberry.html \
     steinert.html \
     tiwari.html \
