@@ -23,10 +23,10 @@ ALL_MEMBERS = atchley.html \
     cwang.html \
     fwang.html \
     gunasekaran.html \
-    gupta.html \
     miller.html \
     mowery.html \
     oral.html \
+    shin.html \
     sim.html \
     simmons.html \
     stansberry.html \

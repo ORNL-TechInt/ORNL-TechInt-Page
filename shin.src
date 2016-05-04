@@ -1,0 +1,25 @@
+%include('html_intro.inc')
+    <meta name="keywords" content="members">
+    <meta name="description" content="NCCS TechInt group member page">
+    <title>Technology Integration Group: Woong Shin</title>
+%include('hdbody.inc')
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
+<h2><a href="https://sites.google.com/site/saurabg/"
+target="_blank">Woong Shin</a></h2>
+
+<p>Since 2010, Woong Shin has been enrolled at Seoul National
+University pursuing both an MA and PhD in the Computer Science and
+Engineering department. His work in the Distributed Computing Systems
+laboratory there has consisted of systems research, developing
+OS-level improvements in Linux's interaction with SSDs and NVRAM
+devices. He expects to defend his thesis and complete his degrees
+early in 2017.
+
+<p>Before academia, Woong Shin spent seven years working for Samsung
+ Networks and TmaxSoft as a software engineer, building monitoring
+ tools for systems, applications, and networks.
+
+%include('content_close.inc')
+%include('html_close.inc')
