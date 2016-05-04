@@ -6,8 +6,7 @@
 %include('hdrnav.inc')
 
 %include('content_intro.inc')
-<h2><a href="https://sites.google.com/site/saurabg/"
-target="_blank">Woong Shin</a></h2>
+<h2>Woong Shin</h2>
 
 <p>Since 2010, Woong Shin has been enrolled at Seoul National
 University pursuing both an MA and PhD in the Computer Science and
