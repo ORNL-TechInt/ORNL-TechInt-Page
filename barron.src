@@ -9,17 +9,15 @@
 %include('content_intro.inc')
 <h2>Tom Barron</h2> 
 
-<p>Tom is a Unix Systems Programmer. Since coming to ORNL in 2000,
-     Tom has administered systems, written software for
-     the <a href="storage.html#HPSS">HPSS project</a>, and most recently
-     worked on data publication in the <a href="data.html#ESGF">Earth
-     System Grid</a> project.
+<p>Tom is a Unix Systems Programmer. Since coming to ORNL in 2000, Tom
+     has administered systems, written software for the <a
+     href="storage.html#HPSS">HPSS project</a>, worked on data
+     publication in the <a href="data.html#ESGF">Earth System Grid</a>
+     project, and most recently contributed on the Constellation
+     project.
 
 <p>For HPSS, he has contributed to the Storage System Manager
-     subsystem and currently maintains the Logging subsystem. In
-     support of scientific data publication in ESG and other venues,
-     he is currently working on a data publication tool called <a
-     href="software.html">EZ-Pub</a>.
+     subsystem and currently maintains the Logging subsystem.
 
 <p>Tom received a B.Sc. in Computer Science from
      <a href="http://vanderbilt.edu/" target="other">Vanderbilt
