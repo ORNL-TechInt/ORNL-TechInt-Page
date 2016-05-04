@@ -54,6 +54,8 @@ and visiting http://users.nccs.gov/~UID/techint/ in your browser
 (where UID is your NCCS username). 'make review' deploys the site in
 your account at $HOME/www/techint.
 
+NOTE: This will only work on a machine where /ccs/wwwusers is mounted.
+Examples are home, dtnXX, rhea, etc.
 
 <a name="deploying">
 Deploying Changes
@@ -86,7 +88,7 @@ common HTML snippets into multiple files. So we're faced with either
 maintaining the same navigation code across 30+ files or finding some
 way of incorporating a single copy of the code into the 30+ files.
 
-To address this, I have written a small python script call mkhtml that
+To address this, I have written a small python script (mkhtml) that
 understands simple includes and conditionals. For example, index.html
 is generated from index.src, which includes directives like
 
@@ -146,10 +148,12 @@ Implications
     * Run 'make review' to examine the changes in your personal web
       area (http://users.nccs.gov/~UID/techint/index.html)
 
-    * Once satisfied with your updates, Commit and push the changes in
+    * Once satisfied with your updates, commit and push the changes in
       the master branch.
 
-    * Run 'make deploy' to update the production website at http://techint.nccs.gov.
+    * Run 'make deploy' to update the production website at
+      http://techint.nccs.gov. NOTE: This must be done on a machine
+      with /ccs/wwwproj mounted.
 
  * For a new year in publications or software, add the new material to
    publications.src or software.src and a new &lt;li> tag in
