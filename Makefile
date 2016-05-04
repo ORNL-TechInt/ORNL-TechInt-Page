@@ -57,6 +57,7 @@ deploy: version
 	mkdir -p $(TARGET)/js
 	git archive --format tar master | (cd $(TARGET); tar x; make all)
 	cp js/version.js $(TARGET)/js/version.js
+	chmod -R g+w $(TARGET)
 
 README.html: README.md
 	Markdown.pl $< > $@
