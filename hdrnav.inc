@@ -41,6 +41,7 @@
         <ul>
           <li><a href="atchley.html">Scotty Atchley</a>
           <li><a href="barron.html">Tom Barron</a>
+          <li><a href="griffith.html">Mitch Griffith</a>
           <li><a href="gunasekaran.html">Raghul Gunasekaran</a>
           <li><a href="miller.html">Ross Miller</a>
           <li><a href="mowery.html">Sonya Mowery (group secretary)</a>

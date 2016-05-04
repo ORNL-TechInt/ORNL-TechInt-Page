@@ -1,0 +1,25 @@
+%include('html_intro.inc')
+    <meta name="keywords" content="members">
+    <meta name="description" content="NCCS TechInt group member page">
+    <title>Technology Integration Group: Tom Barron</title>
+%include('hdbody.inc')
+
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
+<h2>Mitch Griffith</h2> 
+
+<p>Mitch has been at ORNL since 2004 and with TechInt since 2014. He
+   got his start at ORNL as an intern working on the Resource
+   Allocation and Tracking System (RATS) while a graduate student at
+   East Tennessee State University.
+
+<p>Mitch was a member of the User Assistance and Outreach and
+   Operations groups for a number of years before moving to TechInt to
+   work on HPSS development. Since moving to TechInt, he has worked on
+   automated testing for the HPSS administrative interface, continued
+   providing some support for RATS, and helped develop the Data
+   Movement Agent component of Constellation.
+
+%include('content_close.inc')
+%include('html_close.inc')

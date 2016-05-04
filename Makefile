@@ -22,6 +22,7 @@ ALL_MEMBERS = atchley.html \
     barron.html \
     cwang.html \
     fwang.html \
+    griffith.html \
     gunasekaran.html \
     miller.html \
     mowery.html \
