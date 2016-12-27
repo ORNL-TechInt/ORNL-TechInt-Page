@@ -36,13 +36,13 @@ class Assembler(object):
     # -----------------------------------------------------------------------
     def __init__(self, input_name, ext=None):
         if not input_name.endswith('.src'):
-            raise StandardError("I don't know what to do with %s" % filename)
+            raise StandardError("I don't know what to do with %s" % input_name)
         
         self.iname = input_name
         self.oname = self.output_name(input_name, ext)
         self.instack = []
         self.ifstack = []
-        
+
     # -----------------------------------------------------------------------
     def assemble(self):
         rgx = r"name=['\"]keywords['\"]\s+content=['\"](.*)['\"]"
