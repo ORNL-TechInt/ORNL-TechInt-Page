@@ -5,7 +5,6 @@ mkhtml - generate HTML files from snippets
 import pdb
 import re
 import sys
-import toolframe
 import unittest
 
 from optparse import *
@@ -120,4 +119,5 @@ class MkhtmlTest(unittest.TestCase):
     def test_example(self):
         pass
 
-toolframe.ez_launch(main)
+if __name__ == '__main__':
+    main()
