@@ -1,10 +1,16 @@
 .ignored
+DODO.txt
 mkhtml
 edit_cmsg
+pip.conf
+pytest.ini
 version.js
 validate
 QUESTIONS
 scroll-md.png
+.cache/
+techint/
+.env
 *.html
 *.pyc
 *.test
