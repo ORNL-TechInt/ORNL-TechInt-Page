@@ -85,7 +85,7 @@ target="other">http://www.csm.ornl.gov/newsite/adara.html</a>.
 OLCF Contributors: Feiyi Wang, Dale Stansberry, and Ross Miller
 
 <p>
-Status: On-going
+Status: Ongoing
 
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
@@ -122,6 +122,10 @@ target="_blank">[ConstellationGraph:BigData16]</a>
 The first workflow to be supported in Constellation is the acquisition
 of Digital Object Identifiers for scientific datasets (see "DOIs for
 HPC Data" below).
+
+<p> 
+Contributors: Sudharshan Vazhkudai, Raghul Gunasekaran, Dale
+Stansberry, Tom Barron
 
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
@@ -162,10 +166,42 @@ their data products of interest. We are working with OSTI in trying to
 create this infrastructure.
 
 <p>
-Contributors: Sudharshan Vazhkudai and Doug Fuller
+Contributors: Sudharshan Vazhkudai, Raghul Gunasekaran, Dale
+Stansberry, Mitchell Griffith, Tom Barron
 
 <p>
 Status: Ongoing
+
+  <p>&nbsp; <a class="right" href="#">Top</a>
+%include('content_close.inc')
+
+
+<!-- ========================================================== -->
+%include('content_intro.inc')
+    <h2 class="title" id="GUIDE">GUIDE - Data Analytics on Large-Scale Logs to 
+    Optimize HPC Data Center Operations</h2>
+
+<p>
+GUIDE is a scalable Splunk-based infrastructure which aggregates and
+supports analysis of huge amounts of log data, presenting a window
+into HPC data center operations. Logs include (i) Spider PFS: I/O
+bandwidth data from controllers, Lustre-level profiling data, file
+size distribution of the 1 Billion files and health logs from 2016
+OSTs comprising of 20,160 disks, (ii) Titan CPU/GPU RAS data from
+18,688 nodes, (iii) Moab job scheduler and node allocation data, (iv)
+interconnect congestion data from the 9600 routers, and (v) HPSS
+archival storage usage and file size distribution data from 61 million
+files. GUIDE provides higher-level services using a variety of
+analytics techniques such as the correlation of logs, data mining,
+statistical and visual analytics. These can be used to identify
+hotspots, debug performance bottlenecks and trend analysis for future
+resource provisioning.
+
+<p>
+Contributors: Sudharshan Vazhkudai, Ross Miller, Deryl Steinert
+
+<p>
+Status: Complete
 
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
