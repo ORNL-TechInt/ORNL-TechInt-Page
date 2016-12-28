@@ -101,12 +101,13 @@ inovolves several areas.
 <p>Selected publications
     <ul>
 
-      <li>Chao Wang, Sudharshan Vazhkudai, Xiaosong Ma, Fei Meng,
-      Youngjae Kim, Christian Engelmann, "NVMalloc: Exposing an
-      Aggregate SSD Store as a Memory Partition in Extreme-Scale
-      Machines", <i>Proceedings of the 26th IEEE Int'l Parallel and
-      Distributed Processing Symposium (IPDPS 2012), Shanghai, China,
-      May 21-25, 2012. (118/569 = 20.7%)</i>
+      <li>
+      Chao Wang, Sudharshan Vazhkudai, Xiaosong Ma, Fei Meng, Youngjae
+      Kim, Christian Engelmann, "NVMalloc: Exposing an Aggregate SSD
+      Store as a Memory Partition in Extreme-Scale Machines",
+      <i>Proceedings of the 26th IEEE Int'l Parallel and Distributed
+      Processing Symposium (IPDPS 2012)</i>, Shanghai, China, May
+      21-25, 2012. (118/569 = 20.7%)
       <a href="http://users.nccs.gov/~vazhkuda/NVMalloc.pdf">pdf</a>
 
     </ul>
