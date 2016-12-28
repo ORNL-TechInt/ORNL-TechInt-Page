@@ -18,14 +18,10 @@ and visualization.
 </div>
 <div class="plinks">
 <a href="#ADARA">ADARA</a> 
-| <a href="#PARCAT">ParCAT</a> 
-| <a href="#ESGF">Earth System Grid Federation</a>
-| <a href="#ESGF-Web-FE">ESGF Web Front End</a>
-| <a href="#ESGF-Search">ESGF Search</a>
-| <a href="#EZ-Pub">EZ-Pub</a>
-<br> <a href="#NoSQL">NoSQL Data Stores</a>
-| <a href="#NIH">NIH Oncology Data</a>
+| <a href="#Constellation">Constellation</a>
 | <a href="#DOI">DOIs for HPC Data</a>
+| <a href="#GUIDE">GUIDE</a>
+| <a href="#TagIt">TagIt</a>
 </div>
 
 %include('content_close.inc')
@@ -202,6 +198,39 @@ Contributors: Sudharshan Vazhkudai, Ross Miller, Deryl Steinert
 
 <p>
 Status: Complete
+
+  <p>&nbsp; <a class="right" href="#">Top</a>
+%include('content_close.inc')
+
+<!-- ========================================================== -->
+%include('content_intro.inc')
+    <h2 class="title" id="TagIt">TagIt: An integrated search and
+    discovery service for file systems</h2>
+
+<p>
+TagIt is a novel data management
+service framework supporting annotation, tagging, indexing, and filtering
+operations on files. These services are tightly integrated into a shared-nothing
+GlusterFS distributed file system. TagIt manages a scalable and
+consistent metadata index database (MySQL) inside the file system,
+exploiting readily available resources. It enables advanced tagging that
+allows users to mark entire collections of files down to specific
+portions of a file. It enables the association of operators to a tag for
+pre-processing, filtering, or automatic metadata extraction which are
+seamlessly offloaded to file servers in a load-aware fashion.
+
+<p>
+Hyogi Sim, Youngjae Kim, Sudharshan S. Vazhkudai, Geoffroy R. Vallee,
+Seung-Hwan Lim, and Ali R. Butt, ``TagIt: An Integrated Search and
+Discovery Service for Extreme-Scale File Systems,'' (Poster)
+Proceedings of the USENIX Annual Technical Conference (ATC), Denver,
+CO, June 2016.
+
+<p>
+TechInt contributors: Sudharshan Vazhkudai, Hyogi Sim
+
+<p>
+Status: Ongoing
 
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
