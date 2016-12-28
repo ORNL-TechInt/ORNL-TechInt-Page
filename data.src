@@ -502,15 +502,32 @@ Status: Ongoing
     <h2 class="title" id="Constellation">Constellation</h2>
 
 <p>
-Constellation is an ongoing project to build a comprehensive data
-portal to support scientific workflows involving data, jobs,
-applications, and collaborators at the Oak Ridge Leadership Computing
-Facility.
+Constellation federates metadata from the OLCF resource fabric (stat
+metadata from ~1 Billion files from Spider PFS/HPSS, millions of jobs
+metadata from the scheduler, thousands of users/groups, publications
+and systems), and captures them in a custom-built in-memory graph. It
+builds links or associations among resources (vertices in the graph)
+by correlating the metadata to infer hidden relationships (e.g.,
+linking data to jobs, extracting keywords from publications to link
+together relevant publications or publications, jobs and data). Graph
+traversals and high-performance indexes external to the graph enable
+searches.
 
 <p>
-The first workflow to be supported is the acquisition of Digital
-Object Identifiers for scientific datasets (see "DOIs for HPC Data"
-below).
+The stat metadata index is built using Hbase and Spark queries on PFS
+stat/job metadata. We also build an hierarchical index by extracting
+metadata from within the datasets themselves, and create more metadata
+from base metadata. Based on this graph engine, we can discover
+relationships, suggest related data products/papers of interest,
+identify popular datasets via pagerank, and study and create new
+user-specified “tags” that tie together resources for quick retrieval
+and sharing. <a href="http://users.nccs.gov/~vazhkuda/Constellation.pdf"
+target="_blank">[ConstellationGraph:BigData16]</a>
+
+<p>
+The first workflow to be supported in Constellation is the acquisition
+of Digital Object Identifiers for scientific datasets (see "DOIs for
+HPC Data" below).
 
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
