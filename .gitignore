@@ -17,4 +17,4 @@ techint/
 *.do
 *.ignore
 *~
-
+.#*
