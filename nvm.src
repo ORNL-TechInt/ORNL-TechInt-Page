@@ -278,14 +278,15 @@ Selected publications:
   <ul>
     <li>Youngjae Kim, Junghee Lee, Sarp Oral, David Dillow, Feiyi
     Wang, Galen M. Shipman, "Coordinating Garbage Collection for
-    Arrays of Solid-state Drives", (To appear) IEEE Transactions on
-    Computers (IEEE TC), 2013.
+    Arrays of Solid-state Drives", (To appear) <i>IEEE Transactions on
+    Computers (IEEE TC)</i>, 2013.
 
     <li>Ramya Prabhakar, Sudharshan Vazhkudai, Youngjae Kim, Ali Butt,
-    Min Li, Mahmut Kandemir, Provisioning a Multi-Tiered Data Staging
-    Area for Extreme-Scale Machines, Proceedings of the 31th Int'l
-    Conference on Distributed Computing Systems (ICDCS 2011),
+    Min Li, Mahmut Kandemir, "Provisioning a Multi-Tiered Data Staging
+    Area for Extreme-Scale Machines", <i>Proceedings of the 31th Int'l
+    Conference on Distributed Computing Systems (ICDCS 2011)</i>,
     Minneapolis, Minnesota, June 20-24, 2011.
+    <a href="http://users.nccs.gov/~vazhkuda/ICDCS11.pdf">pdf</a>
   </ul>
 
   <p>&nbsp; <a class="right" href="#">Top</a>

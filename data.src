@@ -220,17 +220,19 @@ pre-processing, filtering, or automatic metadata extraction which are
 seamlessly offloaded to file servers in a load-aware fashion.
 
 <p>
-Hyogi Sim, Youngjae Kim, Sudharshan S. Vazhkudai, Geoffroy R. Vallee,
-Seung-Hwan Lim, and Ali R. Butt, ``TagIt: An Integrated Search and
-Discovery Service for Extreme-Scale File Systems,'' (Poster)
-Proceedings of the USENIX Annual Technical Conference (ATC), Denver,
-CO, June 2016.
-
-<p>
 TechInt contributors: Sudharshan Vazhkudai, Hyogi Sim
 
 <p>
 Status: Ongoing
+
+Selected publications:
+<ul>
+<li>Hyogi Sim, Youngjae Kim, Sudharshan S. Vazhkudai, Geoffroy R. Vallee,
+Seung-Hwan Lim, and Ali R. Butt, "<em>TagIt: An Integrated Search and
+Discovery Service for Extreme-Scale File Systems</em>," (Poster)
+<strong>Proceedings of the USENIX Annual Technical Conference
+(ATC)</strong>, Denver, CO, June 2016.
+</ul>
 
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')

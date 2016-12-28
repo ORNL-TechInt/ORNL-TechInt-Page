@@ -403,6 +403,28 @@ Contributors: Youngjae Kim, Raghul Gunasekaran, Sarp Oral, and David Dillow
 <p>
 Status: Completed
 
+<p>
+Selected publications:
+
+<ul>
+<li>
+Yang Liu, Raghul Gunasekaran, Xiaosong Ma, and Sudharshan S.
+Vazhkudai, "<em>Server-side Log Data Analytics for I/O Workload
+Characterization and Coordination on Large Shared Storage Systems,</em>"
+<strong>Proceedings of Supercomputing 2016 (SC16): 29th Int'l Conference on
+High Performance Computing, Networking, Storage and Analysis</strong>, Salt
+Lake City, UT, November 2016.
+<a href="http://users.nccs.gov/~vazhkuda/PFSsig.pdf">pdf</a>
+
+<li>
+Yang Liu, Raghul Gunasekaran, Xiaosong Ma, Sudharshan S. Vazhkudai,
+"<em>Automatic Identification of Applications I/O Signatures from
+Noisy Server-Side Traces</em>", <strong>Proceedings of the 12th USENIX
+Conference on File and Storage Technologies (FAST '14)</strong>, Santa
+Clara, California, February 2014.
+<a href="http://users.nccs.gov/~vazhkuda/iosi.pdf">pdf</a>
+</ul>
+
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
