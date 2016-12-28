@@ -191,18 +191,21 @@ platform of the Active Flash array. Our results indicate
 that AnalyzeThis is viable, expediting workflow execution
 and minimizing data movement.
 
-<p> <!-- !@! citation needs "Selected publications" above, bullet, italic on journal name -->
-Hyogi Sim, Youngjae Kim, Sudharshan S. Vazhkudai, Devesh Tiwari,
-Ali Anwar, Ali R. Butt, Lavanya Ramakrishnan, "<a
-href="http://users.nccs.gov/~vazhkuda/AnalyzeThis.pdf">AnalyzeThis: An
-Analysis Workflow-Aware Storage System</a>," Proceedings of
-Supercomputing 2015 (SC15): 28th Int'l Conference on High Performance
-Computing, Networking, Storage and Analysis, Austin, TX, November
-2015.
-
 <p>
 TechInt contributors: Sudharshan Vazhkudai, Hyogi Sim
 
+<p>
+Selected publications:
+
+<ul>
+<li>
+Hyogi Sim, Youngjae Kim, Sudharshan S. Vazhkudai, Devesh Tiwari, Ali
+Anwar, Ali R. Butt, Lavanya Ramakrishnan, "AnalyzeThis: An Analysis
+Workflow-Aware Storage System," <i>Proceedings of Supercomputing 2015
+(SC15): 28th Int'l Conference on High Performance Computing,
+Networking, Storage and Analysis</i>, Austin, TX, November 2015.
+<a href="http://users.nccs.gov/~vazhkuda/AnalyzeThis.pdf">pdf</a>
+</ul>
 
 <h3 style="font-size:18px;font-weight:normal" 
     id="AnalyzeThat">AnalyzeThat</h3>
