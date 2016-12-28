@@ -114,7 +114,11 @@ inovolves several areas.
 
 <!-- ========================================================== -->
 %include('content_intro.inc')
-<h2 id="ActiveFlash">Active Flash</h2>
+<h2 id="ActiveProcessing">Active Processing</h2>
+
+<!-- !@! external css seems to be ignored for h3: it sets font-size without effect -->
+<h3 style="font-size:18px;font-weight:normal" 
+    id="ActiveFlash">Active Flash</h3>
 
 Modern scientific discovery is increasingly driven by large-scale
 supercomputing simulations, followed by data analysis tasks. These
@@ -163,7 +167,70 @@ associated main memory. The work involves several areas.
       2012), Monterey, CA, April 16-20, 2012. (14/57 = 24.5%)</i>
 
     </ul>
+
+<h3 style="font-size:18px;font-weight:normal" 
+     id="AnalyzeThis">AnalyzeThis</h3>
+
+<p>
+The need for novel data analysis is urgent in the face of
+a data deluge from modern applications. Traditional approaches
+to data analysis incur significant data movement
+costs, moving data back and forth between the storage system
+and the processor. Emerging Active Flash devices enable
+processing on the flash, where the data already resides.
+An array of such Active Flash devices allows us to revisit how
+analysis workflows interact with storage systems. By seamlessly
+blending together the flash storage and data analysis,
+we create an analysis workflow-aware storage system, AnalyzeThis.
+Our guiding principle is that analysis-awareness be
+deeply ingrained in each and every layer of the storage, elevating
+data analyses as first-class citizens, and transforming
+AnalyzeThis into a potent analytics-aware appliance. We
+implement the AnalyzeThis storage system atop an emulation
+platform of the Active Flash array. Our results indicate
+that AnalyzeThis is viable, expediting workflow execution
+and minimizing data movement.
+
+<p> <!-- !@! citation needs "Selected publications" above, bullet, italic on journal name -->
+Hyogi Sim, Youngjae Kim, Sudharshan S. Vazhkudai, Devesh Tiwari,
+Ali Anwar, Ali R. Butt, Lavanya Ramakrishnan, "<a
+href="http://users.nccs.gov/~vazhkuda/AnalyzeThis.pdf">AnalyzeThis: An
+Analysis Workflow-Aware Storage System</a>," Proceedings of
+Supercomputing 2015 (SC15): 28th Int'l Conference on High Performance
+Computing, Networking, Storage and Analysis, Austin, TX, November
+2015.
+
+<p>
+TechInt contributors: Sudharshan Vazhkudai, Hyogi Sim
+
+
+<h3 style="font-size:18px;font-weight:normal" 
+    id="AnalyzeThat">AnalyzeThat</h3>
+
+<p>
+AnalyzeThat is a programmable shared-memory system for parallel data
+processing with PIM (processing-in-memory) devices.
+
+<p>
+Through a rich PIM-Aware Data Structure (PADS), AnalyzeThat bundles
+data, analysis tasks, and the runtime needed to interface with the PIM
+device array. The PADS abstraction provides (i) a sophisticated
+key-value data container that allows programmers to easily store data
+on multiple PIMs, (ii) a suite of parallel operations with which users
+can easily implement data analysis applications, and (iii) an embedded
+runtime (i.e., hidden from the programmer), which provides the
+mechanisms needed to overlay both the data and the tasks on the PIM
+device array in an intelligent fashion, based on PIM-specific
+information collected from the hardware.
+
+<p>
+Contributors: Hyogi Sim
+
+<!-- !@! citation? -->
+
+
   <p>&nbsp; <a class="right" href="#">Top</a>
+
 %include('content_close.inc')
 
 <!-- ========================================================== -->
