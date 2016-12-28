@@ -499,6 +499,24 @@ Status: Ongoing
 
 <!-- ========================================================== -->
 %include('content_intro.inc')
+    <h2 class="title" id="Constellation">Constellation</h2>
+
+<p>
+Constellation is an ongoing project to build a comprehensive data
+portal to support scientific workflows involving data, jobs,
+applications, and collaborators at the Oak Ridge Leadership Computing
+Facility.
+
+<p>
+The first workflow to be supported is the acquisition of Digital
+Object Identifiers for scientific datasets (see "DOIs for HPC Data"
+below).
+
+  <p>&nbsp; <a class="right" href="#">Top</a>
+%include('content_close.inc')
+
+<!-- ========================================================== -->
+%include('content_intro.inc')
     <h2 class="title" id="DOI">DOIs for HPC Data</h2>
 
 <p>
