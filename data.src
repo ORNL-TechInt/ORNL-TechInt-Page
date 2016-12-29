@@ -126,6 +126,20 @@ Stansberry, Tom Barron
 <p>
 Status: Ongoing
 
+<p>
+Selected publications:
+<ul>
+
+<li> Sudharshan S. Vazhkudai, John Harney, Raghul Gunasekaran, Dale
+Stansberry, Seung-Hwan Lim, Tom Barron, Andrew Nash and Arvind
+Ramanathan, "Constellation: A Science Graph Network for Scalable Data
+and Knowledge Discovery in Extreme-Scale Scientific Collaborations,"
+<i>Proceedings of the IEEE Workshop on Big Data Metadata and
+Management</i>, Washington D.C., December 2016.
+<a href="http://users.nccs.gov/~vazhkuda/Constellation.pdf">pdf</a>
+</ul>
+
+
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
