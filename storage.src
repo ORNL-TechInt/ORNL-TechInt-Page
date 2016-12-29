@@ -22,7 +22,8 @@ others involve collaboration with diverse organizations and
 individuals to advance the state of the art.
 </div>
 <div class="plinks">
-<a href="#Spider2">Spider 2</a> 
+<a href="#MTS">Multi-Tiered Storage</a>
+| <a href="#Spider2">Spider 2</a> 
 | <a href="#Spider">Spider</a> 
 | <a href="#HPSS">High Performance Storage System</a>
 | <a href="#LustreEval">Lustre Evaluation</a>
@@ -38,6 +39,29 @@ individuals to advance the state of the art.
 </div>
 
 %include('content_close.inc')
+
+<!-- ========================================================== -->
+%include('content_intro.inc')
+    <h2 id="MTS" class="title">Multi-Tiered Storage</h2>
+
+<p>
+The Multi-Tiered Storage project is an effort to abstract the multiple
+storage tiers seen in HPC centers, e.g., a distributed SSD-based burst
+buffer, PFS, warm archive and deep archival storage. The team is designing scalable
+NoSQL database catalogs, a unified namespace, and policy-based data migration
+to present a virtual, on- demand storage hierarchy for application
+workflows.
+
+<p>
+Contributors: Hyogi Sim, Woong Shin
+
+<p>
+Status: On-going
+
+
+  <p>&nbsp; <a class="right" href="#">Top</a>
+%include('content_close.inc')
+
 
 <!-- ========================================================== -->
 %include('content_intro.inc')
