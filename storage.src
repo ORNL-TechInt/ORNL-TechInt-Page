@@ -22,7 +22,8 @@ others involve collaboration with diverse organizations and
 individuals to advance the state of the art.
 </div>
 <div class="plinks">
-<a href="#MTS">Multi-Tiered Storage</a>
+<a href="#MDP">Model-Driven Provisioning</a>
+| <a href="#MTS">Multi-Tiered Storage</a>
 | <a href="#Spider2">Spider 2</a> 
 | <a href="#Spider">Spider</a> 
 | <a href="#HPSS">High Performance Storage System</a>
@@ -39,6 +40,42 @@ individuals to advance the state of the art.
 </div>
 
 %include('content_close.inc')
+
+<!-- ========================================================== -->
+%include('content_intro.inc')
+    <h2 id="MDP" class="title">Model-Driven Provisioning</h2>
+
+<p>
+A model-driven provisioning tool to assist storage system
+designers and administrators in reconciling key figures of merit (cost,
+capacity, performance, disk size, rebuild times, redundancy), answering
+what-if scenarios, and determining the relative importance of spare parts in
+maximizing data availability, both during initial system provisioning and
+continuous operations.  Validated the tool with field observed data from
+Spider operations.
+
+<p> Contributors: Sudharshan Vazhkudai, Feiyi Wang, Sarp Oral, Devesh
+Tiwari, Lipeng Wan, Qing Cao
+
+<p>
+Status: On-going
+
+<p>
+Selected Publications:
+<ul>
+<li>
+Lipeng Wan, Feiyi Wang, Sarp Oral, Devesh Tiwari, Sudharshan S.
+Vazhkudai, Qing Cao, "A Practical Approach to Reconciling
+Availability, Performance, and Capacity in Provisioning Extreme-scale
+Storage Systems," <i>Proceedings of Supercomputing 2015 (SC15): 28th
+Int'l Conference on High Performance Computing, Networking, Storage
+and Analysis</i>, Austin, TX, November 2015.
+</ul>
+
+
+  <p>&nbsp; <a class="right" href="#">Top</a>
+%include('content_close.inc')
+
 
 <!-- ========================================================== -->
 %include('content_intro.inc')
