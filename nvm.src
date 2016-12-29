@@ -17,7 +17,7 @@ out-of-core data analytics.
 <a href="#SSDlifetime">SSD Lifetime Analysis under Checkpointing and
 Memory Extension Workload</a>
 <br><a href="#NVMalloc">NVMalloc</a> 
-| <a href="#ActiveFlash">ActiveFlash</a>
+| <a href="#ActiveProcessing">Active Processing</a>
 | <a href="#Emerging">Emerging Storage Technologies</a>
 </div>
 
@@ -155,18 +155,18 @@ associated main memory. The work involves several areas.
 <p>Selected publications
     <ul>
 
-      <li>Devesh Tiwari, Simona Bobila, Sudharshan Vazhkudai,
-      Youngjae Kim, Xiaosong Ma, Peter Desnoyers, Yan Solin, "Active
-      Flash: Towards Energy-Efficient, In-Situ Data Analytics on
+      <li>Devesh Tiwari, Simona Bobila, Sudharshan Vazhkudai, Youngjae
+      Kim, Xiaosong Ma, Peter Desnoyers, Yan Solin, "Active Flash:
+      Towards Energy-Efficient, In-Situ Data Analytics on
       Extreme-Scale Machines,", <i>(To appear) Proceedings of the
-      USENIX Conference on File and Storage Technologies (FAST 2013),
-      February, 2013. (24/127 = 18.9%)</i>
+      USENIX Conference on File and Storage Technologies (FAST
+      2013)</i>, February, 2013. (24/127 = 18.9%)
 
       <li>Simona Boboila, Youngjae Kim, Sudharshan Vazhkudai, Peter
       Desnoyers, Galen M. Shipman, "Active Flash: Out-of-core Data
       Analytics on Flash Storage", <i>(Proceedings of the 28th IEEE
       Symposium on Massive Storage Systems and Technologies (MSST
-      2012), Monterey, CA, April 16-20, 2012. (14/57 = 24.5%)</i>
+      2012)</i>, Monterey, CA, April 16-20, 2012. (14/57 = 24.5%)
 
     </ul>
 
