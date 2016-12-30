@@ -18,3 +18,4 @@ techint/
 *.ignore
 *~
 .#*
+\#*#
