@@ -19,9 +19,7 @@ processor technologies as applicable to the OLCF roadmap.
 <div class="plinks">
 <a href="#Many-Core">Functional Partitioning Runtime for Many-Core Nodes</a>
 <br><a href="#TBSchedule">Top and Bottom Scheduling</a>
-<br><a href="#Placement">Impacts of Job Placement and Routing Topology on Aggregate I/O Throughput</a>
-<br><a href="#OSNoise">Reducing Application Runtime Variability on Jaguar XT5</a>
-<br><a href="#Process-Placement">Improving Application Performance by Avoiding Floating-Point Unit Contention on Titan</a>
+<br><a href="#SCFailure">Supercomputer Failure Analysis</a>
 </div>
 
 %include('content_close.inc')
@@ -111,8 +109,48 @@ November 2010.
 <!-- ========================================================== -->
 %include('content_intro.inc')
 
-    <h2 id="Placement">Impacts of Job Placement and Routing Topology
-    on Aggregate I/O Throughput</h2>
+    <h2 id="SCFailure">Supercomputer Failure Analysis</h2>
+
+    <p>
+    This project analyzes temporal failure characteristics of Titan’s
+    299,008 CPUs and 18,688 GPUs to understand trends in machine
+    failure, MTBF, single bit errors, double bit errors, off the bus
+    errors and temperature correlation to failure
+    [TitanGPUReliability:HPCA15]. This study was the first of its kind
+    for a large-scale GPU deployment. Based on the insights, devised
+    checkpointing advisory tools [LazyChkpt:DSN14] that are saving
+    millions of core hours for production jobs, devised an
+    energy-based scheduling algorithm to schedule large node-count GPU
+    jobs that stress the GPUs more to be scheduled at the bottom of
+    the rack where it is much cooler than the top of the rack, or
+    cordoned off nodes with frequent failures
+
+    <p>TechInt contributors: Devesh Tiwari, Sudharshan Vazhkudai
+
+    <p>Status: Complete
+
+    <p>Selected publications:
+    <ul>
+    <li>
+    Devesh Tiwari, Saurabh Gupta, Jim Rogers, Don Maxwell, Paolo Rech,
+    Sudharshan Vazhkudai, Daniel Oliveira, Dave Londo, Nathan
+    Debardeleben, Philippe Navaux, Luigi Carro, Arthur Buddy Bland,
+    "Understanding GPU Errors on Large-scale HPC Systems and the
+    Implications for System Design and Operation", <i>21st IEEE Symp.
+    on High Performance Computer Architecture (HPCA)</i>, San
+    Francisco, California, February 2015.
+    <a href="http://users.nccs.gov/~vazhkuda/hpca.pdf">pdf</a>
+    <li>
+    Devesh Tiwari, Saurabh Gupta, Sudharshan S. Vazhkudai, "Lazy
+    Checkpointing: Exploiting Temporal Locality in Failures to
+    Mitigate Checkpointing Overheads on Extreme-Scale Systems",
+    <i>Proceedings of the 44th Annual IEEE/IFIP Int'l Conference on
+    Dependable Systems and Networks (DSN 2014)</i>, Atlanta, Georgia,
+    June 2014.
+    <a href="http://users.nccs.gov/~vazhkuda/DSN2014.pdf">pdf</a>
+    </ul>
+
+%include('content_close.inc')
 
     <p>High-bandwidth file-systems are critical to today’s
     super-computing applications. To achieve the level of performance
