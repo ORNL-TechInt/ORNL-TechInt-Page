@@ -9,7 +9,7 @@
 <h2>Publications</h2>
 
   <!--
-  * Our citation format is 
+  * Our citation format is
   *
   * [Title] [Author names] [Published conference or journal names], [Date, Place, etc]
   *
@@ -25,11 +25,157 @@
   * arranged as described above for display on this page.
   -->
 
+  <h3 id="2016">2016</h3>
+  <ul class="year_list">
+
+    <!-- ============================================================== -->
+    <li><h4>Storage</h4>
+    <ul>
+      <li>
+          <strong>Server-side Log Data Analytics for I/O Workload
+          Characterization and Coordination on Large Shared Storage
+          Systems</strong>,
+
+          Yang Liu, Raghul Gunasekaran, Xiaosong Ma, and Sudharshan S.
+          Vazhkudai,
+
+          <em>Proceedings of Supercomputing 2016 (SC16): 29th Int'l
+          Conference on High Performance Computing, Networking,
+          Storage and Analysis</em>, Salt Lake City, UT, November
+          2016.
+
+          <a target="_blank"
+          href="http://users.nccs.gov/~vazhkuda/PFSsig.pdf">pdf</a>
+
+    </ul>
+
+    <!-- ============================================================== -->
+    <li><h4>Data management</h4>
+    <ul>
+      <li>
+          <strong>Constellation: A Science Graph Network for Scalable
+          Data and Knowledge Discovery in Extreme-Scale Scientific
+          Collaborations</strong>,
+
+          Sudharshan S. Vazhkudai, John Harney, Raghul Gunasekaran,
+          Dale Stansberry, Seung-Hwan Lim, Tom Barron, Andrew Nash and
+          Arvind Ramanathan,
+
+          <em>Proceedings of the IEEE Workshop on Big Data Metadata
+          and Management</em>, Washington D.C., December 2016.
+
+          <a href="http://users.nccs.gov/~vazhkuda/Constellation.pdf"
+          target="_blank">pdf</a>
+
+      <li>
+          <strong>An I/O Load Balancing Framework for Large-scale
+          Applications (BPIO 2.0)</strong> (Poster),
+
+          Sarah Neuwirth, Feiyi Wang, Sarp Oral, Sudharshan S.
+          Vazhkudai, Ulrich Bruening,
+
+          <em>Proceedings of Supercomputing 2016 (SC16): 29th Int'l
+          Conference on High Performance Computing, Networking,
+          Storage and Analysis</em>, Salt Lake City, UT, November
+          2016.
+
+          <a target="_blank"
+          href="http://users.nccs.gov/~vazhkuda/sc16-poster.pdf">pdf
+          </a>
+
+      <li>
+          <strong>Using Balanced Data Placement to Address I/O
+          Contention in Production Environments</strong>,
+
+          Sarah Neuwirth, Feiyi Wang, Sarp Oral, Sudharshan S.
+          Vazhkudai, James Rogers, Ulrich Bruening,
+
+          <em>Proceedings of the Int'l Symposium on Computer Architecture
+          and High Performance Computing</em>, Los Angeles, CA, October
+          2016.
+
+          <a href="http://users.nccs.gov/~vazhkuda/balanced-placement.pdf"
+          target="_blank">pdf</a>
+
+      <li>
+          <strong>TagIt: An Integrated Search and Discovery Service
+          for Extreme-Scale File Systems (Poster)</strong>,
+
+          Hyogi Sim, Youngjae Kim, Sudharshan S. Vazhkudai, Geoffroy
+          R. Vallee, Seung-Hwan Lim, and Ali R. Butt,
+
+          <em>Proceedings of the USENIX Annual Technical Conference
+          (ATC)</em>, Denver, CO, June 2016.
+
+    </ul>
+
+    <!-- ============================================================== -->
+    <li><h4>System Architecture and Resilience</h4>
+    <ul>
+      <li>
+          <strong>A Multi-faceted Approach to Job Placement for Improved
+          Performance on Extreme-Scale Systems</strong>,
+
+          Christopher Zimmer, Saurabh Gupta, Scott Atchley, Sudharshan
+          S. Vazhkudai, and Carl Albing,
+
+          Proceedings of Supercomputing 2016 (SC16): 29th Int'l
+          Conference on High Performance Computing, Networking,
+          Storage and Analysis, Salt Lake City, UT, November 2016.
+
+          <a target="_blank"
+          href="http://users.nccs.gov/~vazhkuda/Titan-Scheduling.pdf">
+          pdf</a>
+
+    </ul>
+  </ul>
+
   <h3 id="2015">2015</h3>
   <ul class="year_list">
 
     <!-- ============================================================== -->
-    <li><h4>System Architecture and Resilience</h4> <ul> </ul> 
+    <li><h4>Storage</h4>
+    <ul>
+
+      <li>
+          <strong>A Practical Approach to Reconciling Availability,
+          Performance, and Capacity in Provisioning Extreme-scale
+          Storage Systems</strong>,
+
+          Lipeng Wan, Feiyi Wang, Sarp Oral, Devesh Tiwari, Sudharshan
+          S. Vazhkudai, Qing Cao,
+
+          <em>Proceedings of Supercomputing 2015 (SC15): 28th Int'l
+          Conference on High Performance Computing, Networking,
+          Storage and Analysis</em>, Austin, TX, November 2015
+
+          <a target="_blank"
+          href="http://users.nccs.gov/~vazhkuda/Provisioning.pdf">pdf</a>
+    </ul>
+
+    <!-- ============================================================== -->
+    <li><h4>Non-Volatile Memory</h4>
+    <ul>
+      <li>
+          <strong>AnalyzeThis: An Analysis Workflow-Aware Storage
+          System</strong>,
+
+          Hyogi Sim, Youngjae Kim, Sudharshan S. Vazhkudai, Devesh
+          Tiwari, Ali Anwar, Ali R. Butt, Lavanya Ramakrishnan,
+
+          <em>Proceedings of Supercomputing 2015 (SC15): 28th Int'l
+          Conference on High Performance Computing, Networking,
+          Storage and Analysis</em>, Austin, TX, November 2015.
+
+          <a target="_blank"
+          href="http://users.nccs.gov/~vazhkuda/AnalyzeThis.pdf">
+          pdf
+          </a>
+
+    </ul>
+
+    <!-- ============================================================== -->
+    <li><h4>System Architecture and Resilience</h4>
     <ul>
 
       <li>
@@ -94,7 +240,7 @@
   <ul class="year_list">
 
     <!-- ============================================================== -->
-    <li><h4>File and Storage Systems</h4> <ul> </ul> 
+    <li><h4>File and Storage Systems</h4>
     <ul>
 
       <li>
@@ -114,7 +260,7 @@
       <li>
           <strong>Best Practices and Lessons Learned from Deploying
           and Operating Large-Scale Data-Centric Parallel File
-          Systems</strong>, 
+          Systems</strong>,
 
           Sarp Oral, James Simmons, Jason Hill,
           Dustin Leverman, Feiyi Wang, Matt Ezell, Ross Miller,
@@ -131,7 +277,7 @@
           Signatures from Noisy Server-Side Traces</strong>,
 
           Yang Liu, Raghul Gunasekaran, Xiaosong Ma, Sudharshan S.
-          Vazhkudai. 
+          Vazhkudai.
 
           <em>Proceedings of the USENIX Conference on File
           and Storage Technologies (FAST 2014)</em>, Santa Clara,
@@ -140,7 +286,7 @@
       <li>
           <strong>HybridPlan: A Capacity Planning Technique for
           Projecting Storage Requirements in Hybrid Storage
-          Systems</strong>, 
+          Systems</strong>,
 
           Youngjae Kim, Aayush Gupta, Bhuvan Urgaonkar, Piotr Berman,
           Anand Sivasubramaniam,
@@ -158,7 +304,7 @@
 
        <li>
            <strong>Realizing Accelerated Cost-Effective Distributed
-           RAID</strong>, 
+           RAID</strong>,
 
            Aleksandr Khasymski, M. Mustafa Rafique, Ali R. Butt,
            Sudharshan S. Vazhkudai, and Dimitrios S. Nikolopoulos,
@@ -179,37 +325,37 @@
           Solid State Disks</strong>,
 
           Inventors (ordered by inventor's last name) David Dillow,
-          Youngjae Kim, Sarp Oral, Galen Shipman, Feiyi Wang, 
+          Youngjae Kim, Sarp Oral, Galen Shipman, Feiyi Wang,
 
           U.S. Patent No. 8,713,268, Issued: April 29, 2014.
 
       <li>
           <strong>Coordinating Garbage Collection for Arrays of
-          Solid-state Drives</strong>, 
+          Solid-state Drives</strong>,
 
           Youngjae Kim, Junghee Lee, Sarp Oral, David Dillow, Feiyi
           Wang, Galen M. Shipman,
 
           <em>IEEE Transactions on Computers (IEEE TC)</em>, Vol. 63,
           No. 4, pp. 888-901, April 2014.
-   
+
     </ul>
-    
-    <!-- ============================================================== -->
-    <li><h4>Data Management</h4> 
 
     <!-- ============================================================== -->
-    <li><h4>Networking</h4> <ul> </ul> 
+    <li><h4>Data Management</h4>
 
     <!-- ============================================================== -->
-    <li><h4>System Architecture and Resilience</h4> 
-    <ul> 
+    <li><h4>Networking</h4>
+
+    <!-- ============================================================== -->
+    <li><h4>System Architecture and Resilience</h4>
+    <ul>
 
        <li>
            <strong>Feedback Computing in Leadership Compute
            Systems</strong>,
 
-           Raghul Gunasakaren and Youngjae Kim, 
+           Raghul Gunasakaren and Youngjae Kim,
 
            <em>Proceedings of the 9th International Workshop of
            Feedback Computing in conjunction with ICAC'14 (Feedback
@@ -221,7 +367,7 @@
            Failures to Mitigate Checkpointing Overheads on
            Extreme-Scale Systems</strong>,
 
-           Devesh Tiwari, Saurabh Gupta, Sudharshan S. Vazhkudai, 
+           Devesh Tiwari, Saurabh Gupta, Sudharshan S. Vazhkudai,
 
            <em>Proceedings of the 44th Annual IEEE/IFIP International
            Conference on Dependable Systems and Networks (DSN
@@ -251,7 +397,7 @@
 
        <li>
            <strong>SSD Provisioning for Exascale Storage System: When,
-           Where and How much?</strong>, 
+           Where and How much?</strong>,
 
            Devesh Tiwari, Sarp Oral, Feiyi Wang, Saurabh Gupta and
            Josh Judd,
@@ -266,7 +412,7 @@
            Chao Wang, Sudharshan S. Vazhkudai, Xiaosong Ma, Frank Mueller,
 
            Chapter in <em>Handbook on Data Centers</em>, edited by
-           Albert Y. Zomaya and Samee U. Khan, Springer, 2014. 
+           Albert Y. Zomaya and Samee U. Khan, Springer, 2014.
 
            <a target="_blank"
            href="http://users.nccs.gov/~vazhkuda/FT_book_chapter.pdf">pdf</a>
@@ -282,7 +428,7 @@
   <ul class="year_list">
 
     <!-- ============================================================== -->
-    <li><h4>File and Storage Systems</h4> <ul> </ul> 
+    <li><h4>File and Storage Systems</h4>
     <ul>
 
       <li><strong>Asynchronous Object Storage with QoS for Scientific
@@ -323,32 +469,32 @@
 
       <li><strong>Preemptible I/O Scheduling of Garbage Collection
         for Solid-state Drives</strong>, Junghee Lee, Youngjae Kim,
-        Galen M. Shipman, Sarp Oral, Jongman Kim, 
+        Galen M. Shipman, Sarp Oral, Jongman Kim,
         <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits
         and Systems (IEEE TCAD)</em>, Vol. 32, No. 2, pp. 247-260, February 2013.
 
       <li><strong>Active Flash: Towards Energy-Efficient, In-Situ
         Data Analytics on Extreme-Scale Machines</strong>, Devesh
         Tiwari, Simona Bobila, Sudharshan Vazhkudai, Youngjae Kim,
-        Xiaosong Ma, Peter Desnoyers, Yan Solin. 
+        Xiaosong Ma, Peter Desnoyers, Yan Solin.
         <em>Proceedings of the USENIX Conference on File and Storage
         Technologies (FAST 2013)</em>, 2013.
 
       </ul>
 
     <!-- ============================================================== -->
-    <li><h4>Data Management</h4> 
-    <ul> 
+    <li><h4>Data Management</h4>
+    <ul>
 
       <li><strong>Design and Implementation of a Scalable Climate
-        Data System in Support of HPC Environment</strong>, 
-        Feiyi Wang<sup>1</sup>, 
-        John Harney<sup>1</sup>, 
-        Tom Barron<sup>1</sup>, 
-        Galen Shipman<sup>1</sup>, 
-        Dean Williams<sup>2</sup>, 
-        Luca Cinquini<sup>3</sup>, 
-        <sup>1</sup>Oak Ridge National Laboratory, 
+        Data System in Support of HPC Environment</strong>,
+        Feiyi Wang<sup>1</sup>,
+        John Harney<sup>1</sup>,
+        Tom Barron<sup>1</sup>,
+        Galen Shipman<sup>1</sup>,
+        Dean Williams<sup>2</sup>,
+        Luca Cinquini<sup>3</sup>,
+        <sup>1</sup>Oak Ridge National Laboratory,
            Oak Ridge, Tennessee 37831,
         <sup>2</sup>Lawrence Livermore National Laboratory,
            Livermore, California 94550,
@@ -358,7 +504,7 @@
 
     </ul>
     <!-- ============================================================== -->
-    <li><h4>Networking</h4> <ul> </ul> 
+    <li><h4>Networking</h4>
 
     <ul>
 
@@ -377,9 +523,9 @@
        2013.
 
       <li>
-          <strong>On Timely Staging of HPC Job Input Data</strong>, 
+          <strong>On Timely Staging of HPC Job Input Data</strong>,
 
-          H. Monti, A. R. Butt, S.S. Vazhkudai, 
+          H. Monti, A. R. Butt, S.S. Vazhkudai,
 
           <em>IEEE Transactions on Parallel and Distributed Systems
           (TPDS)</em>, Vol. 24, No. 9, pp. 1841-1851, September 2013.
@@ -399,8 +545,6 @@
 
     </ul>
 
-    <!-- ============================================================== -->
-    <!-- <li><h4>System Architecture and Resilience</h4> <ul> </ul> -->
   </ul>
 
   <p>&nbsp; <a class="right" href="#">Top</a>
@@ -500,7 +644,7 @@
         Sciences, Oak Ridge National Laboratory</em>, February 2012.
         <a target="other"
         href="http://info.ornl.gov/sites/publications/files/Pub27151.pdf">pdf</a>
-   
+
     </ul>
 
     <!-- ============================================================== -->
@@ -527,16 +671,13 @@
         Mining in Earth Science</em>, pp. 877–886, June 2012. <a
         href="http://climatemodeling.science.energy.gov/publications/practical-application-parallel-coordinates-climate-model-analysis-0"
         target="other">link will open in new window/tab</a>
-   
+
       <li><strong>On Timely Staging of HPC Job Input Data</strong>, Henry M.
         Monti, Ali R. Butt, Sudharshan S. Vazhkudai, <em>IEEE
         Transactions on Parallel and Distributed Systems (TPDS)</em>,
         2012.
 
     </ul>
-
-    <!-- ============================================================== -->
-    <!-- <li><h4>Networking</h4> <ul> </ul> -->
 
     <!-- ============================================================== -->
     <li><h4>System Architecture and Resilience</h4>
@@ -569,14 +710,14 @@
 
     <!-- ============================================================== -->
     <li><h4>File and Storage Systems</h4>
-    <ul> 
+    <ul>
       <li><strong>Dynamic Thermal Management for High-Performance Storage
         Systems</strong>, Youngjae Kim, Sudhanva Gurumurthi, Anand
         Sivasubramaniam. <em>Book Chapter in Handbook of Energy-aware
         and Green Computing</em>, Editors: Ishfaq Ahmad and Sanjay
         Rank, Publisher: Chapman and Hall/CRC Press Taylor and Francis
         Group LLC, December 26. 2011. ISBN-13: 978-1439850804.
-   
+
       <li><strong>Enhancing I/O Throughput via Efficient Routing and
         Placement for Large-scale Parallel File Systems</strong>,
         David Dillow, Sarp Oral, Galen M. Shipman, Zhe Zhang, Youngjae
@@ -591,7 +732,7 @@
         Shipman, <em> Fifth U.S. Department of Energy Best Practices
         Workshop on File Systems &amp; Archives.</em>, San Francisco,
         CA, September, 2011.
-   
+
       <li><strong>Provisioning a Multi-Tiered Data Staging Area for
         Extreme-Scale Machines</strong>, Ramya Prabhakar, Sudharshan
         Vazhkudai, Youngjae Kim, Ali Butt, Min Li, Mahmut Kandemir,
@@ -599,7 +740,7 @@
         Computing Systems (ICDCS 2011)</em>, Minneapolis, Minnesota,
         June 20-24, 2011. <a target="other"
         href="http://www.csm.ornl.gov/~vazhkuda/ICDCS11.pdf">pdf</a>
-      
+
       <li><strong>I/O Congestion Avoidance via Routing and Object
         Placement</strong>, David A. Dillow, Galen M. Shipman, Sarp
         Oral, Zhe Zhang, <em>Proceedings of the Cray User Goup
@@ -609,7 +750,7 @@
       <li><strong>Testing methodology for large-scale file
         systems</strong>, Sarp Oral, <em>Proceedings of Lustre User
         Group Meetings (LUG 2011)</em>, Orlando, FL, April, 2011.
-   
+
     </ul>
 
     <!-- ============================================================== -->
@@ -632,7 +773,7 @@
         Systems and Technologies (MSST 2011)</em>, Denver, Colorado,
         May 23-27, 2011. <a target="other"
         href="http://info.ornl.gov/sites/publications/files/Pub29553.pdf">pdf</a>
-      
+
 
       <li><strong>A Semi-Preemptive Garbage Collector for Solid State
         Drives</strong>, Junghee Lee, Youngjae Kim, Galen M. Shipman,
@@ -649,7 +790,7 @@
         Youngjae Kim, Bhuvan Urgaonkar, Joonwon Lee, Euiseong
         Seo, <em>Elsevier Journal of System Architecture (Elsevier
         JSA)</em>, Volume 57, Issue 4, Pages 354-365, April 2011.
-      
+
       <li><strong>Pathological Behavior of SSDs and Application in
         HPC Storage</strong>, Youngjae Kim, Junghee Lee, Galen M.
         Shipman, <em>Proceedings of the 2nd Non-Volatile Memories
@@ -658,8 +799,8 @@
     </ul>
 
     <!-- ============================================================== -->
-    <li><h4>Data Management</h4> 
-    <ul> 
+    <li><h4>Data Management</h4>
+    <ul>
 
       <li><strong>Building a Large-Scale Climate Data Systems for HPC
         Environment</strong>, Feiyi Wang, John Harney, Galen Shipman,
@@ -668,10 +809,10 @@
         Practices</em>, Salamanca, Spain, October 19-21, 2011. <a
         target="other"
         href="http://info.ornl.gov/sites/publications/files/Pub31897.pdf">pdf</a>
-   
+
       <li><strong>Metadata - Beyond Hierarchy and POSIX Attributes</strong>,
-        Galen M. Shipman, <em>HEC FSIO 2011 Workshop</em>, August, 2011. 
- 
+        Galen M. Shipman, <em>HEC FSIO 2011 Workshop</em>, August, 2011.
+
       <li><strong>Characterizing Application Runtime Behavior from
         System Logs and Metrics</strong>, Raghul Gunasekaran, David A.
         Dillow, Galen M. Shipman, Richard Vuduc, Edmond Chow,
@@ -691,8 +832,8 @@
     </ul>
 
     <!-- ============================================================== -->
-    <li><h4>Networking</h4> 
-    <ul> 
+    <li><h4>Networking</h4>
+    <ul>
 
       <li><strong>The Common Communication Interface (CCI)</strong>,
         Scott Atchley, David A. Dillow, Galen M. Shipman, Patrick
@@ -708,14 +849,14 @@
         Huh, Youngjae Kim, Chita Das, <em>Proceedings of the 3rd
         USENIX Workshop on Hot Topics in Cloud Computing (HotCloud
         2011)</em>, Portland, OR, June 2011.
-      
 
-      
+
+
     </ul>
 
   </ul>
   <p>&nbsp; <a class="right" href="#">Top</a>
-  
+
   <h3 id="2010">2010</h3>
   <ul class="year_list">
 
@@ -746,7 +887,7 @@
         <a
         href="http://www.osti.gov/energycitations/product.biblio.jsp?osti_id=1016043"
         target="other">citation</a>
-   
+
       <li><strong>Efficient Journaling for the Spider Storage
         System</strong>, Sarp Oral, Feiyi Wang, Galen M. Shipman,
         David A. Dillow, Ross Miller, Proceedings of the 8th USENIX
@@ -767,13 +908,13 @@
         Center for Computational Sciences, Oak Ridge National
         Laboratory</em>, March 2010. <a target="other"
         href="http://users.nccs.gov/~yk7/papers/rais.pdf">pdf</a>
-   
+
 
     </ul>
 
     <!-- ============================================================== -->
     <li><h4>System Architecture and Resilience</h4>
-    <ul> 
+    <ul>
 
       <li><strong>Functional Partitioning to Optimize End-to-End
         Performance on Many-Core Architectures</strong>, Min Li,
@@ -870,7 +1011,7 @@
         Group Meeting on Recent Advances in Parallel Virtual Machine
         and Message Passing Interface</em>, Dublin, Ireland,
         September, 2008.
-   
+
     </ul>
   </ul>
   <p>&nbsp; <a class="right" href="#">Top</a>
