@@ -191,3 +191,8 @@ The following targets are available in the Makefile:
  * validate: create symlink validate -> validate.py if needed
 
  * version: generate the javascript version file based on 'git describe'
+
+## Potential Improvements
+
+ * With some work, I think we could get rid of mkhtml and replace it with
+   [jekyll](http://jekyllrb.com/) (or some other static file generator).
