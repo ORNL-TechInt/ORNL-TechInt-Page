@@ -17,11 +17,51 @@ processor technologies as applicable to the OLCF roadmap.
 
 </div>
 <div class="plinks">
-<a href="#Placement">Impacts of Job Placement and Routing Topology on Aggregate I/O Throughput</a>
-<br><a href="#Many-Core">Exploiting Many-Core Architectures for End-to-End Science</a> 
-<br><a href="#OSNoise">Reducing Application Runtime Variability on Jaguar XT5</a> 
-<br><a href="#Process-Placement">Improving Application Performance by Avoiding Floating-Point Unit Contention on Titan</a> 
+<a href="#TBSchedule">Top and Bottom Scheduling</a>
+<br><a href="#Placement">Impacts of Job Placement and Routing Topology on Aggregate I/O Throughput</a>
+<br><a href="#Many-Core">Exploiting Many-Core Architectures for End-to-End Science</a>
+<br><a href="#OSNoise">Reducing Application Runtime Variability on Jaguar XT5</a>
+<br><a href="#Process-Placement">Improving Application Performance by Avoiding Floating-Point Unit Contention on Titan</a>
 </div>
+
+%include('content_close.inc')
+
+<!-- ========================================================== -->
+%include('content_intro.inc')
+
+    <h2 id="TBSchedule">Top and Bottom Scheduling</h2>
+
+    <p>
+    To minimize the runtime variability of jobs and reduce node
+    allocation fragmentation, we developed a dual-ended scheduling
+    policy for the Moab scheduler on Titan as opposed to the first-fit
+    policy. Our algorithm schedules large jobs top down and small jobs
+    bottom up, thereby minimizing the fragmentation for large,
+    long-running jobs that is caused by small, short-lived jobs.
+    Further, we also modified the scheduling of nodes to a job to
+    prioritize the z dimension (nodes within a rack), followed by the
+    x dimension (nodes in the racks that are in the same row offer
+    better communication bandwidth) and then the y dimension (columns).
+
+    <p>
+    Thousands of jobs are benefitting from this technique. This
+    project received a Significant Event Award, a prestigious lab-wide
+    recognition.
+
+    <p>Contributors: Chris Zimmer, Scott Atchley, Sudharshan Vazhkudai
+
+    <p>Status: Complete
+
+    <p>Selected publications:
+    <ul>
+    <li>
+    Christopher Zimmer, Saurabh Gupta, Scott Atchley, Sudharshan S.
+    Vazhkudai, and Carl Albing, "A Multi-faceted Approach to Job
+    Placement for Improved Performance on Extreme-Scale Systems,"
+    <i>Proceedings of Supercomputing 2016 (SC16): 29th Int'l
+    Conference on High Performance Computing, Networking, Storage and
+    Analysis</i>, Salt Lake City, UT, November 2016.
+    </ul>
 
 %include('content_close.inc')
 
@@ -47,7 +87,7 @@ processor technologies as applicable to the OLCF roadmap.
     interconnection-network. During the course of this investigation
     we seek to:
 
-    <ol class="numbered"> 
+    <ol class="numbered">
 
     <li class="numbered">Understand the dynamic behavior of our current system via
     careful experimentation and investigation, and identify where
@@ -60,7 +100,7 @@ processor technologies as applicable to the OLCF roadmap.
     topology, and
 
     <li>Come up with optimal I/O router layouts for current and
-    several other network topologies for future systems. 
+    several other network topologies for future systems.
 
     </ol>
 
