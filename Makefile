@@ -30,7 +30,6 @@ ALL_MEMBERS = atchley.html \
     shin.html \
     sim.html \
     simmons.html \
-    stansberry.html \
     steinert.html \
     tiwari.html \
     vazhkudai.html \

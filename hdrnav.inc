@@ -49,7 +49,6 @@
           <li><a href="shin.html">Woong Shin</a>
           <li><a href="sim.html">Hyogi Sim</a>
           <li><a href="simmons.html">James Simmons</a>
-          <li><a href="stansberry.html">Dale Stansberry</a>
           <li><a href="steinert.html">Deryl Steinert</a>
           <li><a href="tiwari.html">Devesh Tiwari</a>
           <li><a href="vazhkudai.html">Sudharshan Vazhkudai (group leader)</a>
