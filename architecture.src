@@ -17,13 +17,56 @@ processor technologies as applicable to the OLCF roadmap.
 
 </div>
 <div class="plinks">
-<a href="#TBSchedule">Top and Bottom Scheduling</a>
+<a href="#Many-Core">Functional Partitioning Runtime for Many-Core Nodes</a>
+<br><a href="#TBSchedule">Top and Bottom Scheduling</a>
 <br><a href="#Placement">Impacts of Job Placement and Routing Topology on Aggregate I/O Throughput</a>
-<br><a href="#Many-Core">Exploiting Many-Core Architectures for End-to-End Science</a>
 <br><a href="#OSNoise">Reducing Application Runtime Variability on Jaguar XT5</a>
 <br><a href="#Process-Placement">Improving Application Performance by Avoiding Floating-Point Unit Contention on Titan</a>
 </div>
 
+%include('content_close.inc')
+
+<!-- ========================================================== -->
+%include('content_intro.inc')
+    <h2 id="Many-Core">Functional Partitioning Runtime for Many-Core Nodes</h2>
+
+<p>With the leveling off of processor clockspeeds, chip manufacturers have
+increased the number of cores to consume the additional transitors promised by
+Moore's Law. As we move towards exascale systems, we may see higher core counts
+per node including more cores per socket, more sockets, and add-in boards such
+as GP-GPUs and many-core coprocessors connected via PCI Express. As users
+initially port their applications to Titan's GP-GPUs, they may not fully utilize
+the CPUs leaving them available for functional partitioning.</p>
+
+<p>This effort will explore providing runtime services to applications
+using a small subset of cores on a many-core systems by developing a
+Functional Partitioning (FP) runtime environment. This environment
+will partition a many-core node such that an end-to-end application
+(simulation + data analysis tasks) can be scheduled in-situ, on the
+same node, alongside the application’s simulation job for better
+end-to-end performance.
+
+<p> Services provided may include I/O buffering, which would allow the
+application to resume computation more quickly, or various forms of
+fine-grain analysis or transformation.</p>
+
+    <p>Contributors: Scott Atchley, Saurabh Gupta, Ross Miller, and
+    Sudharshan Vazhkudai
+
+    <p>Status: On-going
+
+<P>Selected publications:
+<ul><li>
+M. Li, S. S. Vazhkudai, A.R. Butt, F. Meng, X. Ma, Y. Kim, C.
+Engelmann, G. Shipman, "Functional Partitioning to Optimize End-to-End
+Performance on Many-core Architectures", <i>Proceedings of Supercomputing
+2010 (SC10): 23rd IEEE/ACM Int'l Conference on High Performance
+Computing, Networking, Storage and Analysis</i>, New Orleans, Louisiana,
+November 2010.
+<a href="http://users.nccs.gov/~vazhkuda/FP.pdf">pdf</a>
+</ul>
+
+  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 <!-- ========================================================== -->
@@ -108,31 +151,6 @@ processor technologies as applicable to the OLCF roadmap.
 
     <p>Status: On-going
 
-%include('content_close.inc')
-
-<!-- ========================================================== -->
-%include('content_intro.inc')
-    <h2 id="Many-Core">Exploiting Many-Core Architectures for End-to-End Science</h2>
-
-<p>With the leveling off of processor clockspeeds, chip manufacturers have
-increased the number of cores to consume the additional transitors promised by
-Moore's Law. As we move towards exascale systems, we may see higher core counts
-per node including more cores per socket, more sockets, and add-in boards such
-as GP-GPUs and many-core coprocessors connected via PCI Express. As users
-initially port their applications to Titan's GP-GPUs, they may not fully utilize
-the CPUs leaving them available for functional partitioning.</p>
-
-<p>This effort will explore providing runtime services to applications using a
-small subset of cores on a many-core systems. These services may include I/O
-buffering, which would allow the application to resume computation more quickly,
-or various forms of fine-grain analysis or transformation.</p>
-
-    <p>Contributors: Scott Atchley, Saurabh Gupta, Ross Miller, and
-    Sudharshan Vazhkudai
-
-    <p>Status: On-going
-
-  <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
 
 <!-- ========================================================== -->
