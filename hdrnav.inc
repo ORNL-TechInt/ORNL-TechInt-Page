@@ -64,6 +64,7 @@
       <li><a href="publications.html">Publications</a>
 %endif
         <ul>
+          <li><a href="publications.html#2016">2016</a>
           <li><a href="publications.html#2015">2015</a>
           <li><a href="publications.html#2014">2014</a>
           <li><a href="publications.html#2013">2013</a>
