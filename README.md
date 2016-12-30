@@ -1,5 +1,4 @@
-ORNL-TechInt-Page
-=================
+# ORNL-TechInt-Page
 
 This project is for building a public-facing page describing the
 Technology Integration Group, NCCS, ORNL.
@@ -20,8 +19,7 @@ Here's an outline of the recipe for making a change:
 
 
 <a name="copy">
-Gitting a Copy
---------------
+## Gitting a Copy
 
 If you have a github account that is a member of the ORNL-TechInt
 organization, you can get a development copy of the repository that
@@ -35,18 +33,19 @@ Alternatively, you can get a read-only copy of the site:
     $ git clone git://github.com/ORNL-TechInt/ORNL-TechInt-Page.git [dirname]
 
 If you need your github account added to the ORNL-TechInt
-organization, send a request to tbarron at ornl dot gov. In what
-follows, "$TECHINT" refers to the git working directory.
+organization, send a request to tbarron at ornl dot gov or fwang2 at
+ornl dot gov.
+
+In what follows, "$TECHINT" refers to the git working directory.
 
 
 <a name="changes">
-Making Changes
---------------
+## Making Changes
 
 Edit the .src files (see "[Special Measures](#special)" and
-"[Implications](#implications)"below). The .html files are generated
-from the .src files by running mkhtml. Git will keep track of your
-updates. You can see the results of your changes by running
+"[Implications](#implications)"below). Running mkhtml will generate
+.html from the .src files. Git will keep track of your updates. You
+can see the results of your changes by running
 
     $ make review
 
@@ -54,12 +53,11 @@ and visiting http://users.nccs.gov/~UID/techint/ in your browser
 (where UID is your NCCS username). 'make review' deploys the site in
 your account at $HOME/www/techint.
 
-NOTE: This will only work on a machine where /ccs/wwwusers is mounted.
-Examples are home, dtnXX, rhea, etc.
+NOTE: Running 'make review' will only work on a machine where
+/ccs/wwwusers is mounted. Examples are home, dtnXX, rhea, etc.
 
 <a name="deploying">
-Deploying Changes
------------------
+## Deploying Changes
 
 Once you're satisfied with your changes, do the following to deploy
 them to production:
@@ -73,10 +71,9 @@ push your changes up to the shared repository at github.com, and 3)
 deploy the files to /ccs/wwwproj/stf008/techint where they'll be
 visible through the URL http://techint.nccs.gov.
 
- 
+
 <a name="special">
-Special Measures
-----------------
+## Special Measures
 
 To style these pages similarly to olcf.ornl.gov, it's necessary to put
 the same header on them that the OLCF site uses. This header consists
@@ -88,9 +85,10 @@ common HTML snippets into multiple files. So we're faced with either
 maintaining the same navigation code across 30+ files or finding some
 way of incorporating a single copy of the code into the 30+ files.
 
-To address this, I have written a small python script (mkhtml) that
-understands simple includes and conditionals. For example, index.html
-is generated from index.src, which includes directives like
+To address this, I have written a <del>small python script</del> static
+file generator (but I didn't know to call it that when I wrote it) called
+mkhtml that understands simple includes and conditionals. For example,
+index.html is generated from index.src, which contains directives like
 
     %include('hdrnav.inc')
 
@@ -115,8 +113,7 @@ from the others.
 
 
 <a name="implications">
-Implications
-------------
+## Implications
 
  * To change HTML content, edit the corresponding .src file. If you're
    just updating the git repository so someone else can fetch it and
@@ -161,8 +158,7 @@ Implications
    and push. Finally, run 'make deploy'.
 
 
-Makefile Targets
-----------------
+## Makefile Targets
 
 The following targets are available in the Makefile:
 
@@ -182,7 +178,7 @@ The following targets are available in the Makefile:
    where the URL techint.nccs.gov points.
 
  * README.html: run Markdown.pl to generate README.html
-    
+
  * mkhtml: creates symlink mkhtml -> mkhtml.py if needed
 
  * clean: removes generated files
