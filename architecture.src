@@ -20,6 +20,7 @@ processor technologies as applicable to the OLCF roadmap.
 <a href="#Many-Core">Functional Partitioning Runtime for Many-Core Nodes</a>
 <br><a href="#TBSchedule">Top and Bottom Scheduling</a>
 <br><a href="#SCFailure">Supercomputer Failure Analysis</a>
+<br><a href="#Congestion">Interconnect Congestion Analysis</a>
 </div>
 
 %include('content_close.inc')
@@ -152,6 +153,11 @@ November 2010.
 
 %include('content_close.inc')
 
+<!-- ========================================================== -->
+%include('content_intro.inc')
+
+    <h2 id="Congestion">Interconnect Congestion Analysis</h2>
+
     <p>High-bandwidth file-systems are critical to today’s
     super-computing applications. To achieve the level of performance
     necessary for leadership class of applications, the underlying
@@ -160,17 +166,17 @@ November 2010.
     routers leads to limited overall I/O performance and high
     variability.
 
-    <p>In this effort, our goal is to identify and understand
+    <p>In this effort, our goal was to identify and understand
     bottlenecks in the interconnection-network pertaining to the file
-    system I/O traffic. This work will involve analyzing impact of job
+    system I/O traffic. This work involved analyzing the impact of job
     placement, router placement on performance, and studying how these
     configurations play a role in reducing congestion in the
     interconnection-network. During the course of this investigation
-    we seek to:
+    we sought to:
 
     <ol class="numbered">
 
-    <li class="numbered">Understand the dynamic behavior of our current system via
+    <li class="numbered">Understand the dynamic behavior of the system via
     careful experimentation and investigation, and identify where
     bottlenecks occur,</li>
 
@@ -182,8 +188,13 @@ November 2010.
 
     <li>Come up with optimal I/O router layouts for current and
     several other network topologies for future systems.
-
     </ol>
+
+    <p>
+    As a result of this research, we developed and deployed a
+    lightweight, scalable mechanism to monitor the router traffic on
+    Titan’s interconnect fabric (9600 routers). The tool is used to
+    analyze interference among jobs.
 
     <p>Contributors: Saurabh Gupta, Chris Zimmer, and Sudharshan Vazhkudai
 
