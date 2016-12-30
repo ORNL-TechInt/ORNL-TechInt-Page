@@ -21,6 +21,7 @@ and visualization.
 | <a href="#Constellation">Constellation</a>
 | <a href="#DOI">DOIs for HPC Data</a>
 | <a href="#GUIDE">GUIDE</a>
+| <a href="#BPIO">Balanced Placement I/O Library</a>
 | <a href="#TagIt">TagIt</a>
 </div>
 
@@ -215,6 +216,51 @@ Contributors: Sudharshan Vazhkudai, Ross Miller, Deryl Steinert
 
 <p>
 Status: Complete
+
+  <p>&nbsp; <a class="right" href="#">Top</a>
+%include('content_close.inc')
+
+<!-- ========================================================== -->
+%include('content_intro.inc')
+    <h2 class="title" id="BPIO">Balanced Placement I/O Library</h2>
+
+<p>
+Large-scale scientific applications' usage patterns lead to I/O
+resource contention and load imbalance. This project implemented a dynamic,
+shared library based on BPIO, a method to resolve contention, provides a
+transparent way to balance resource usage without source code modification
+or recompilation. 
+
+<p>
+The BPIO Runtime Environment can be built as a shared, preloadable library.
+It utilizes the BPIO Library for balanced data placement and function
+interposition to prioritize itself over standard function calls. This
+provides end-to-end and per job load balancing supporting a range of I/O
+interfaces including POSIX and MPI-IO. HDF5 is under development.
+
+<p>
+Aequilibro integrates BPIO with ADIOS, combining BPIO's interconnect level
+optimization with the benefits of the ADIOS I/O framework to provide
+portable, fast, scalable, easy-to-use, and metadata-rich output and I/O
+interfaces that can be changed during runtime.
+
+<p>
+TechInt contributors: Sarah Neuwrith, Feiyi Wang, Sarp Oral, Sudharshan Vazhkudai
+
+<p>
+Status: Ongoing
+
+<p>
+Selected publications:
+<ul>
+<li>
+Sarah Neuwirth, Feiyi Wang, Sarp Oral, Sudharshan S. Vazhkudai, Ulrich
+Bruening,``An I/O Load Balancing Framework for Large-scale
+Applications (BPIO 2.0),'' (Poster) Proceedings of Supercomputing 2016
+(SC16): 29th Int'l Conference on High Performance Computing,
+Networking, Storage and Analysis, Salt Lake City, UT, November 2016.
+<a href="http://users.nccs.gov/~vazhkuda/sc16-poster.pdf">pdf</a>
+</ul>
 
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
