@@ -120,9 +120,7 @@ inovolves several areas.
 %include('content_intro.inc')
 <h2 id="ActiveProcessing">Active Processing</h2>
 
-<!-- !@! external css seems to be ignored for h3: it sets font-size without effect -->
-<h3 style="font-size:18px;font-weight:normal" 
-    id="ActiveFlash">Active Flash</h3>
+<h3 id="ActiveFlash">Active Flash</h3>
 
 Modern scientific discovery is increasingly driven by large-scale
 supercomputing simulations, followed by data analysis tasks. These
@@ -172,8 +170,7 @@ associated main memory. The work involves several areas.
 
     </ul>
 
-<h3 style="font-size:18px;font-weight:normal" 
-     id="AnalyzeThis">AnalyzeThis</h3>
+<h3 id="AnalyzeThis">AnalyzeThis</h3>
 
 <p>
 The need for novel data analysis is urgent in the face of
@@ -211,8 +208,7 @@ Networking, Storage and Analysis</i>, Austin, TX, November 2015.
 <a href="http://users.nccs.gov/~vazhkuda/AnalyzeThis.pdf">pdf</a>
 </ul>
 
-<h3 style="font-size:18px;font-weight:normal" 
-    id="AnalyzeThat">AnalyzeThat</h3>
+<h3 id="AnalyzeThat">AnalyzeThat</h3>
 
 <p>
 AnalyzeThat is a programmable shared-memory system for parallel data
