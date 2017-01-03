@@ -20,6 +20,7 @@ ALL_OTHER = index.html \
 
 ALL_MEMBERS = atchley.html \
     barron.html \
+    brumgard.html \
     cwang.html \
     fwang.html \
     griffith.html \

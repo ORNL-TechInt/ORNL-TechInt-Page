@@ -1,0 +1,37 @@
+%include('html_intro.inc')
+    <meta name="keywords" content="members">
+    <meta name="description" content="NCCS TechInt group member page">
+    <title>Technology Integration Group: Chris Brumgard</title>
+%include('hdbody.inc')
+
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
+<h2>Chris Brumgard</h2> 
+
+<p>
+Chris has just recently started an appointment at ORNL after having
+been a graduate student under the direction of Dr. Micah Beck at LoCI
+since 2005.
+
+<p>
+He specializes in distributed systems and data logistics, ensuring the
+time and space positioning of data matches its criticality. He has
+prior experience having worked in several HPC environments including
+Oak Ridge National Laboratory under the XSEDE and DataOne projects.
+From 2010 to 2012, he was a researcher and developer for ACCRE at
+Vanderbilt University. He has collaborated with large-scale
+data-intensive organizations like the LHC project and AmericaView,
+developing software to distribute and maintain their data over the
+wide area while providing quick access for local computing tasks.
+
+<p>
+Currently, with TechInt he is involved in the SymphonyFS and
+Multi-tiered Storage projects.
+
+<p>
+Chris attended the University of Tennessee at Knoxville to obtain a BS
+in 2003, an M.S. in 2005 and a Ph.D. in 2016.
+
+%include('content_close.inc')
+%include('html_close.inc')
