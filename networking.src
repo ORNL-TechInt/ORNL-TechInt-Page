@@ -29,7 +29,9 @@ stacks.
        <a
         href="http://www.olcf.ornl.gov/center-projects/cci-common-communication-interface/"
         target="other">
-        <img class="networking" src="images/cci-logo-text-01.png" alt="CCI Logo"/>
+        <img class="networking" 
+        src="https://www.olcf.ornl.gov/wp-content/uploads/2011/06/cci-with-text-590x289.png" 
+        alt="CCI Logo"/>
        </a>
     </div>
 
