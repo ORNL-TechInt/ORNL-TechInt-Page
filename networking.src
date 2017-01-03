@@ -27,7 +27,7 @@ stacks.
 %include('content_intro.inc')
     <div class="logo-flow">
        <a
-        href="http://www.olcf.ornl.gov/center-projects/cci-common-communication-interface/"
+        href="http://www.olcf.ornl.gov/center-projects/common-communication-interface/"
         target="other">
         <img class="networking" 
         src="https://www.olcf.ornl.gov/wp-content/uploads/2011/06/cci-with-text-590x289.png" 
