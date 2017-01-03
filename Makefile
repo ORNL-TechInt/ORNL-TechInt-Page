@@ -36,6 +36,8 @@ ALL_MEMBERS = atchley.html \
     white.html \
     zimmer.html
 
+DEPLOYABLES = *.css *.src *.inc *.py Makefile
+
 TARGET=/ccs/wwwproj/stf008/techint
 
 XTARGET=$(HOME)/www/techint
@@ -48,7 +50,7 @@ all: mkhtml $(ALL_MEMBERS) $(ALL_OTHER)
 review: version
 	rm -rf $(XTARGET)
 	mkdir -p $(XTARGET)/js
-	tar c . | (cd $(XTARGET); tar x; make all)
+	tar c $(DEPLOYABLES) | (cd $(XTARGET); tar x; make all)
 	cp js/version.js $(XTARGET)/js/version.js
 
 deploy: version
