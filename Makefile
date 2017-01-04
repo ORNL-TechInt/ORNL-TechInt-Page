@@ -32,7 +32,6 @@ ALL_MEMBERS = atchley.html \
     sim.html \
     simmons.html \
     steinert.html \
-    tiwari.html \
     vazhkudai.html \
     white.html \
     zimmer.html

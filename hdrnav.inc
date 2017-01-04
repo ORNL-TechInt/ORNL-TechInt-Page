@@ -51,7 +51,6 @@
           <li><a href="sim.html">Hyogi Sim</a>
           <li><a href="simmons.html">James Simmons</a>
           <li><a href="steinert.html">Deryl Steinert</a>
-          <li><a href="tiwari.html">Devesh Tiwari</a>
           <li><a href="vazhkudai.html">Sudharshan Vazhkudai (group leader)</a>
           <li><a href="cwang.html">Chao Wang</a>
           <li><a href="fwang.html">Feiyi Wang</a>
