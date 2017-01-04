@@ -21,7 +21,6 @@ processor technologies as applicable to the OLCF roadmap.
 <br><a href="#TBSchedule">Top and Bottom Scheduling</a>
 <br><a href="#SCFailure">Supercomputer Failure Analysis</a>
 <br><a href="#Congestion">Interconnect Congestion Analysis</a>
-<br><a href="#Hetero">Heterogeneous Processor Architectures and End-to-end Computing</a>
 </div>
 
 %include('content_close.inc')
@@ -203,35 +202,6 @@ November 2010.
     <p>Contributors: Saurabh Gupta, Chris Zimmer, and Sudharshan Vazhkudai
 
     <p>Status: On-going
-
-  <p>&nbsp; <a class="right" href="#">Top</a>
-%include('content_close.inc')
-
-<!-- ========================================================== -->
-%include('content_intro.inc')
-
-   <h2 id="Hetero">Heterogeneous Processor Architectures and
-   End-to-end Computing</h2>
-
-<p>
-(i) Studied how end-to-end workflows (simulations + data analysis)
-perform on heterogeneous processor architectures such as big
-processors (AMD Opterons, XEONs), Coprocessors (GPUs, MIC) and little
-processors (ARM, ATOM), considering several competing dimensions such
-as performance, on-chip scalability, energyefficiency, and error
-resiliency to provide insights on the design of future heterogeneous
-systems for end-to-end workflows.
-
-<p>
-(ii) Procured an ARM-based cluster,
-and making it available to a community of users to study the
-architecture’s viability for exascale.
-
-<p>
-Contributors: ?
-
-<p>
-Status: Completed
 
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
