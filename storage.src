@@ -84,13 +84,14 @@ and Analysis</i>, Austin, TX, November 2015.
 <p>
 The Multi-Tiered Storage project is an effort to abstract the multiple
 storage tiers seen in HPC centers, e.g., a distributed SSD-based burst
-buffer, PFS, warm archive and deep archival storage. The team is designing scalable
-NoSQL database catalogs, a unified namespace, and policy-based data migration
-to present a virtual, on- demand storage hierarchy for application
-workflows.
+buffer, PFS, warm archive and deep archival storage. The team is
+designing scalable NoSQL database catalogs, a unified namespace, and
+policy-based data migration to present a virtual, on- demand storage
+hierarchy for application workflows.
 
 <p>
-Contributors: Hyogi Sim, Woong Shin
+Contributors: Hyogi Sim, Woong Shin, Sudharshan Vazhkudai, Chao Wang,
+Sarp Oral
 
 <p>
 Status: On-going
