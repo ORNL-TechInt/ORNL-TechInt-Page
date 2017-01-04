@@ -88,7 +88,7 @@ stacks.
 
     <p>Contributors: Scott Atchley, Youngjae Kim
 
-    <p>Status: On-going
+    <p>Status: Completed
 
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
@@ -101,7 +101,7 @@ stacks.
 
     <p>Contributors: Scott Atchley and Sudharshan Vazhkudai
 
-    <p>Status: On-going
+    <p>Status: Completed
 
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
