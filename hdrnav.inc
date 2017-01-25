@@ -39,7 +39,7 @@
       <li><a href="members.html">Members</a>
 %endif
         <ul>
-          <li><a href="atchley.html">Scotty Atchley</a>
+          <li><a href="atchley.html">Scott Atchley</a>
           <li><a href="barron.html">Tom Barron</a>
           <li><a href="brumgard.html">Chris Brumgard</a>
           <li><a href="griffith.html">Mitch Griffith</a>
