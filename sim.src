@@ -9,26 +9,21 @@
 %include('content_intro.inc')
 <h2>Hyogi Sim</h2> 
 
-<p> Hyogi joined the Technology Integration group in 2015 as a Post
-Masters Research Assistant. His research interests are focused on
-distributed systems and storage systems. He is currently working on
-deploying non-volatile memory devices and technologies in large scale
-systems. Also, he is exploring the hardware and software techniques of
-active storage systems in the scientific computing.
+<p>
+Hyogi Sim is an HPC systems engineer in the Technology Integration Group. His
+primarily role is to design and develop UnifyCR, a checkpoint-restart storage
+system for the exascale computing project.  Hyogi first joined Technology
+Integration Group in 2015, as a post-masters associate. During this
+appointment, he conducted research and development on active storage systems
+and scientific data management for HPC systems. His areas of interest include
+storage systems and distributed systems. 
 
+<p>
+He received a M.S. in computer science from Virginia Tech in 2014 and is
+currently pursuing his PhD degree at Virginia Tech. He also earned a M.S. in
+Computer Engineering and a B.S. in Civil Engineering from Hanyang University in
+South Korea.
 
-<p> He is currently pursuing a Ph.D. degree in Computer Science at <a
-href="http://www.vt.edu" target="other">Virginia Tech</a>. He is
-advised by Dr. Ali Butt in the 
-<a href="http://research.cs.vt.edu/dssl/index.html" target="other">
-Distributed Systems and Storage Lab
-</a>. 
-He received his
-Masters (2014) in Computer Science from <a href="http://cs.vt.edu"
-target="other">Virginia Tech</a>. He also earned a M.S. in Computer
-Engineering (2008) and B.S. in Civil Engineering (2005), both from the
-<a href="http://www.hanyang.ac.kr/english/" target="other">Hanyang
-University</a> in South Korea.
 
 %include('content_close.inc')
 %include('html_close.inc')
