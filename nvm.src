@@ -53,7 +53,7 @@ Memory Extension Workload</a>
 
     </ul>
 
-    <p>Contributors: Youngjae Kim, Chao Wang, and Sudharshan Vazhkudai
+    <p>Contributors: Chao Wang, and Sudharshan Vazhkudai
 
   <p>&nbsp; <a class="right" href="#">Top</a>
 %include('content_close.inc')
@@ -96,7 +96,7 @@ inovolves several areas.
 
 </ul>
 
-    <p>Contributors: Youngjae Kim, Chao Wang, and Sudharshan Vazhkudai
+    <p>Contributors: Chao Wang, and Sudharshan Vazhkudai
 
     <p>Status: On-going
 
@@ -148,7 +148,7 @@ associated main memory. The work involves several areas.
   Active Flash
 </ul>
 
-<p>Contributors: Sudharshan Vazhkudai and Youngjae Kim
+<p>Contributors: Sudharshan Vazhkudai
 
 <p>Status: On-going
 
@@ -215,19 +215,41 @@ AnalyzeThat is a programmable shared-memory system for parallel data
 processing with PIM (processing-in-memory) devices.
 
 <p>
-Through a rich PIM-Aware Data Structure (PADS), AnalyzeThat bundles
-data, analysis tasks, and the runtime needed to interface with the PIM
-device array. The PADS abstraction provides (i) a sophisticated
-key-value data container that allows programmers to easily store data
-on multiple PIMs, (ii) a suite of parallel operations with which users
-can easily implement data analysis applications, and (iii) an embedded
-runtime (i.e., hidden from the programmer), which provides the
-mechanisms needed to overlay both the data and the tasks on the PIM
-device array in an intelligent fashion, based on PIM-specific
-information collected from the hardware.
+Processing In Memory (PIM), the concept of integrating processing directly
+with memory, has been attracting a lot of attention since PIM can assist in
+overcoming the throughput limitation caused by data movement between CPU and
+memory.  The challenge, however, is that it requires the programmers to have a
+deep understanding of the PIM architecture to maximize the benefits such as
+data locality and parallel thread execution on multiple PIM devices.  In this
+study, we present AnalyzeThat, a programmable shared-memory system for
+parallel data processing with PIM devices.  Thematic to AnalyzeThat is a rich
+PIM-Aware Data Structure (PADS), which is an encapsulation that integrally
+ties together the data, the analysis tasks and the runtime needed to interface
+with the PIM device array.  The PADS abstraction provides (i) a key-value data
+container that allows programmers to easily store data on multiple PIMs, (ii)
+a suite of parallel operations with which users can easily implement data
+analysis applications, and (iii) a runtime, hidden to programmers, which
+provides the mechanisms needed to overlay both the data and the tasks on the
+PIM device array in an intelligent fashion, based on PIM-specific information
+collected from the hardware.  We have developed a PIM emulation framework
+called AnalyzeThat.  Our experimental evaluation with representative data
+analytics applications suggests that the proposed system can significantly
+reduce the PIM programming effort without losing its technology benefits.
 
 <p>
 Contributors: Hyogi Sim, Sudharshan Vazhkudai
+
+<p>
+Selected publications:
+
+<ul>
+<li>
+Sangkuen Lee, Hyogi Sim, Youngjae Kim, Sudharshan S. Vazhkudai,
+"AnalyzeThat: A Programmable Shared-Memory System for an Array of
+Processing-In-Memory Devices",
+<i>IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing
+(CCGRID '17)</i>, Madrid, Spain, May 2017
+</ul>
 
   <p>&nbsp; <a class="right" href="#">Top</a>
 
@@ -268,7 +290,7 @@ scientific applications. The work includes several areas.
 </ul>
 
 <p>
-Contributors: Youngjae Kim, Sarp Oral, and Sudharshan Vazhkudai
+Contributors: Sarp Oral, and Sudharshan Vazhkudai
 
 <p>
 Status: On-going
