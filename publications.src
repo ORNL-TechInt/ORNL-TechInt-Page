@@ -25,6 +25,30 @@
   * arranged as described above for display on this page.
   -->
 
+  <h3 id="2017">2017</h3>
+  <ul class="year_list">
+
+    <!-- ============================================================== -->
+    <li><h4>Non-Volatile Memory</h4>
+    <ul>
+      <li>
+         <strong>AnalyzeThat: A Programmable Shared-Memory System for an Array
+	 of Processing-In-Memory Devices</strong>,
+
+	 Sangkuen Lee, Hyogi Sim, Youngjae Kim, and Sudharshan S. Vazhkudai
+
+	 <em>IEEE/ACM International Symposium on Cluster, Cloud and Grid
+	 Computing (CCGRID '17)</em>, Madrid, Spain, May 2017
+
+	 <a target="_blank"
+	  href="https://users.nccs.gov/~hs2/papers/analyzethat-ccgrid17.pdf">pdf</a>
+
+    </ul>
+
+    <!-- ============================================================== -->
+
+  </ul>
+
   <h3 id="2016">2016</h3>
   <ul class="year_list">
 
