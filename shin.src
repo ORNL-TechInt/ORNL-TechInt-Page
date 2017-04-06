@@ -8,6 +8,26 @@
 %include('content_intro.inc')
 <h2>Woong Shin</h2>
 
+<p>Woong Shin is a post-doctoral research associate in the Technology
+Integration Group. His primarily role is to design MTS (Multi-Tiered Storage
+system), a system software for data management on multi-tiered storage systems.
+Woong first joined the Technology Integration Group in 2016 as a research intern
+(ORAU ASTRO). During this appointment, he evaluated NVM-e SSDs for burst buffer
+systems, and he also conducted research and development on multi-tiered storage
+systems for HPC centers.
+
+<p>Woong has 7 years of experience in the information technology (IT) industry of
+South Korea as a software engineer working with enterprise information systems
+and networks, followed by 7 years of training in academia focusing on system
+software and architecture design. His area of research centers around developing
+optimized system software & architecture based on NVRAM devices.
+
+<p>He received his Ph.D. degree in electrical engineering and computer science
+(M.S. and Ph.D. integrated course) in 2017 from Seoul National University, South
+Korea, and earned his B.S. in computer science from Korea University, South
+Korea.
+
+<!--
 <p>Since 2010, Woong Shin has been enrolled at Seoul National
 University pursuing both an MA and PhD in the Computer Science and
 Engineering department. His work in the Distributed Computing Systems
@@ -19,6 +39,7 @@ early in 2017.
 <p>Before academia, Woong Shin spent seven years working for Samsung
  Networks and TmaxSoft as a software engineer, building monitoring
  tools for systems, applications, and networks.
+-->
 
 %include('content_close.inc')
 %include('html_close.inc')
