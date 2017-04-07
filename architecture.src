@@ -32,12 +32,12 @@ processor technologies as applicable to the OLCF roadmap.
 
 <p>Spectral is a software library for enabling the use of the Summit
 Burst-Buffer I/O system without need for code modification. Using function call
-intercept techniques Spectral hooks into an application and detects when files
+intercept techniques, Spectral hooks into an application and detects when files
 are written to specially configured directories. Upon detection, spectral
 schedules and manages the asynchronous drains from the burst-buffer to the
 parallel file system. Spectral has successfully been tested with Fortran GTC and
 Lammps on OLCF Power clusters. The use of Spectral in both applications
-significantly increased check pointing performance while requiring no
+significantly increased checkpointing performance while requiring no
 modifications to the application source code.
 
     <p>Contributors: Christopher Zimmer and Scott Atchley
