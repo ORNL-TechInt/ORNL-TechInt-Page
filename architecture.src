@@ -17,13 +17,36 @@ processor technologies as applicable to the OLCF roadmap.
 
 </div>
 <div class="plinks">
-<a href="#Many-Core">Functional Partitioning Runtime for Many-Core Nodes</a>
+<a href="#Spectral">Spectral</a>
+<br><a href="#Many-Core">Functional Partitioning Runtime for Many-Core Nodes</a>
 <br><a href="#TBSchedule">Top and Bottom Scheduling</a>
 <br><a href="#SCFailure">Supercomputer Failure Analysis</a>
 <br><a href="#Congestion">Interconnect Congestion Analysis</a>
 </div>
 
 %include('content_close.inc')
+
+<!-- ========================================================== -->
+%include('content_intro.inc')
+    <h2 id="Spectral">Spectral</h2>
+
+<p>Spectral is a software library for enabling the use of the Summit
+Burst-Buffer I/O system without need for code modification. Using function call
+intercept techniques Spectral hooks into an application and detects when files
+are written to specially configured directories. Upon detection, spectral
+schedules and manages the asynchronous drains from the burst-buffer to the
+parallel file system. Spectral has successfully been tested with Fortran GTC and
+Lammps on OLCF Power clusters. The use of Spectral in both applications
+significantly increased check pointing performance while requiring no
+modifications to the application source code.
+
+    <p>Contributors: Christopher Zimmer and Scott Atchley
+
+    <p>Status: On-going
+
+  <p>&nbsp; <a class="right" href="#">Top</a>
+%include('content_close.inc')
+
 
 <!-- ========================================================== -->
 %include('content_intro.inc')
