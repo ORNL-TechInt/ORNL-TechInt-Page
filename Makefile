@@ -26,6 +26,7 @@ ALL_MEMBERS = atchley.html \
     griffith.html \
     gunasekaran.html \
     miller.html \
+    moore.html \
     mowery.html \
     oral.html \
     shin.html \
