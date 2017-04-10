@@ -8,25 +8,19 @@
 %include('content_intro.inc')
 <h2>Joseph Moore</h2>
 
-<p>As a member of the group's File Systems Team, Joseph is focusing on log
-analysis for storage system optimization. He is also a member of an ORNL/LLNL
-cooperative team developing the Exascale Computing Project's UnifyCR system,
-which is a checkpoint/restart file system for distributed burst buffers.
+<p>As a member of the group's File Systems Team, Joseph is focusing on log analysis
+for storage system optimization. He is also a member of an ORNL/LLNL cooperative
+team developing the Exascale Computing Project's UnifyCR system, which is a
+checkpoint/restart file system for distributed burst buffers.
 
 <p>Prior to joining ORNL, Joseph initially worked for six years in the
 telecommunications industry as a Software Engineer and Systems Architect, before
 moving into computer storage systems. He was a software engineer for four years
 with LSI Storage Systems and then moved into the Software Architect role with
-that organization.  When NetApp acquired LSI’s Engenio Storage Systems division
+that organization. When NetApp acquired LSI’s Engenio Storage Systems division
 in 2011, he joined the Advanced Development team within the newly-formed
-E-Series division of NetApp.
-
-<p>In his career, Joseph has been awarded one patent in the telecommunications
-field during his tenure at Sprint, eight patents in computer storage stemming
-from his work with LSI, and he has received five awarded patents, with more in
-the pipeline, resulting from his recent work at NetApp. He holds a B.S. in
-Mathematics from Wichita State University and an M.S. in Operations Research
-from Kansas State University.
+E-Series division of NetApp. He holds a B.S. in Mathematics from Wichita State
+University and an M.S. in Operations Research from Kansas State University.
 
 %include('content_close.inc')
 %include('html_close.inc')
