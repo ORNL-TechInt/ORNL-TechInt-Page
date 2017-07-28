@@ -40,7 +40,6 @@
 %endif
         <ul>
           <li><a href="atchley.html">Scott Atchley</a>
-          <li><a href="barron.html">Tom Barron</a>
           <li><a href="brumgard.html">Chris Brumgard</a>
           <li><a href="griffith.html">Mitch Griffith</a>
           <li><a href="gunasekaran.html">Raghul Gunasekaran</a>
@@ -53,7 +52,6 @@
           <li><a href="simmons.html">James Simmons</a>
           <li><a href="steinert.html">Deryl Steinert</a>
           <li><a href="vazhkudai.html">Sudharshan Vazhkudai (group leader)</a>
-          <li><a href="cwang.html">Chao Wang</a>
           <li><a href="fwang.html">Feiyi Wang</a>
           <li><a href="white.html">Vicky White</a>
           <li><a href="zimmer.html">Chris Zimmer</a>
