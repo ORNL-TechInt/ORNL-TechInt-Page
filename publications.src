@@ -29,6 +29,58 @@
   <ul class="year_list">
 
     <!-- ============================================================== -->
+    <li><h4>Storage</h4>
+    <ul>
+      <li>
+        <strong>GUIDE: A Scalable Information Directory Service to Collect,
+	Federate, and Analyze Logs for Operational Insights into a Leadership
+	HPC Facility</strong>,
+
+	Sudharshan S. Vazhkudai, Ross Miller, Devesh Tiwari, Christopher Zimmer,
+	Feiyi Wang, Sarp Oral, Raghul Gunasekaran, Deryl Steinert
+
+	<em>Proceedings of Supercomputing 2017 (SC17): 30th Int'l Conference on
+	High Performance Computing, Networking, Storage and Analysis</em>,
+	Denver, CO, November 2017
+
+	<a target="_blank"
+	 href="http://users.nccs.gov/~vazhkuda/GUIDE.pdf">pdf</a>
+
+      <li>
+        <strong>Scientific User Behavior and Data-Sharing Trends in a Petascale
+	File System</strong>,
+
+	Seung-Hwan Lim, Hyogi Sim, Raghul Gunasekaran, Sudharshan S. Vazhkudai
+
+	<em>Proceedings of Supercomputing 2017 (SC17): 30th Int'l Conference on
+	High Performance Computing, Networking, Storage and Analysis</em>,
+	Denver, CO, November 2017
+
+	<a target="_blank"
+	 href="http://users.nccs.gov/~vazhkuda/lustredu-analysis-sc17.pdf">pdf</a>
+
+    </ul>
+
+    <!-- ============================================================== -->
+    <li><h4>Data Management</h4>
+    <ul>
+      <li>
+        <strong>TagIt: An Integrated Indexing and Search Service for File
+	Systems</strong>,
+
+	Hyogi Sim, Youngjae Kim, Sudharshan S. Vazhkudai, Geoffroy R. Vallee,
+	Seung-Hwan Lim, Ali R. Butt
+
+	<em>Proceedings of Supercomputing 2017 (SC17): 30th Int'l Conference on
+	High Performance Computing, Networking, Storage and Analysis</em>,
+	Denver, CO, November 2017
+
+	<a target="_blank"
+	 href="http://users.nccs.gov/~hs2/papers/tagit-sc17.pdf">pdf</a>
+
+    </ul>
+
+    <!-- ============================================================== -->
     <li><h4>Non-Volatile Memory</h4>
     <ul>
       <li>
