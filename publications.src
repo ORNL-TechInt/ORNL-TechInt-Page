@@ -112,7 +112,20 @@
           Storage and Analysis</em>, Salt Lake City, UT, November
           2016.
 
+      <li>
+          <strong>FCP: A Fast and Scalable Data Copy Tool for High Performance
+	  Parallel File Systems</strong>,
 
+	  Feiyi Wang, Veronica Vergara Larrea, Dustin Leverman, Sarp Oral,
+
+	  <em>The 38th Cray User Group (CUG 2016)</em>, May, 2016.
+
+      <li>
+          <strong>Finally, a Way to Measure Frontend I/O Performance</strong>
+
+	  Christopher Zimmer, Saurabh Gupta, Veronica Vergara Larrea,
+
+	  <em>The 38th Cray User Group (CUG 2016)</em>, May, 2016.
     </ul>
 
     <!-- ============================================================== -->
