@@ -35,6 +35,7 @@ ALL_MEMBERS = atchley.html \
     steinert.html \
     vazhkudai.html \
     white.html \
+    xie.html \
     zimmer.html
 
 TARGET=/ccs/wwwproj/stf008/techint

@@ -1,0 +1,19 @@
+%include('html_intro.inc')
+    <meta name="keywords" content="members">
+    <meta name="description" content="NCCS TechInt group member page">
+    <title>Technology Integration Group: Joseph Moore</title>
+%include('hdbody.inc')
+%include('hdrnav.inc')
+
+%include('content_intro.inc')
+<h2>Bing Xie</h2>
+
+<p>Bing Xie is a Postdoctoral Researcher of Technology Integration Group at
+OLCF. Her research spans high performance computing, distributed systems,
+operating systems and file systems. Before joining TechInt group, Bing completed
+her Ph.D at Duke University and received B.S. from Xi'an Jiaotong University at
+China.
+
+%include('content_close.inc')
+%include('html_close.inc')
+

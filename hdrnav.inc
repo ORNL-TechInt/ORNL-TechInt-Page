@@ -54,6 +54,7 @@
           <li><a href="vazhkudai.html">Sudharshan Vazhkudai (group leader)</a>
           <li><a href="fwang.html">Feiyi Wang</a>
           <li><a href="white.html">Vicky White</a>
+          <li><a href="xie.html">Bing Xie</a>
           <li><a href="zimmer.html">Chris Zimmer</a>
         </ul>
 %ifeq(self.filetype, 'pub')
