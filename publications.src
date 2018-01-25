@@ -37,7 +37,7 @@
 	HPC Facility</strong>,
 
 	Sudharshan S. Vazhkudai, Ross Miller, Devesh Tiwari, Christopher Zimmer,
-	Feiyi Wang, Sarp Oral, Raghul Gunasekaran, Deryl Steinert
+	Feiyi Wang, Sarp Oral, Raghul Gunasekaran, Deryl Steinert,
 
 	<em>Proceedings of Supercomputing 2017 (SC17): 30th Int'l Conference on
 	High Performance Computing, Networking, Storage and Analysis</em>,
@@ -48,11 +48,22 @@
         <strong>Scientific User Behavior and Data-Sharing Trends in a Petascale
 	File System</strong>,
 
-	Seung-Hwan Lim, Hyogi Sim, Raghul Gunasekaran, Sudharshan S. Vazhkudai
+	Seung-Hwan Lim, Hyogi Sim, Raghul Gunasekaran, Sudharshan S. Vazhkudai,
 
 	<em>Proceedings of Supercomputing 2017 (SC17): 30th Int'l Conference on
 	High Performance Computing, Networking, Storage and Analysis</em>,
 	Denver, CO, November 2017
+
+      <li>
+        <strong>Diving into Petascale Production File Systems through Large
+        Scale Profiling and Analysis</strong>,
+
+        Feiyi Wang, Hyogi Sim, Cameron Harr, Sarp Oral,
+
+        <em>Proceedings of the 2nd Joint International Workshop on Parallel Data
+        Storage & Data Intensive Scalable Computing Systems
+        (PDSW-DISCS '17) held in conjunction with SC17</em>,
+        Denver, CO, November 2017
 
 
     </ul>
@@ -65,7 +76,7 @@
 	Systems</strong>,
 
 	Hyogi Sim, Youngjae Kim, Sudharshan S. Vazhkudai, Geoffroy R. Vallee,
-	Seung-Hwan Lim, Ali R. Butt
+	Seung-Hwan Lim, Ali R. Butt,
 
 	<em>Proceedings of Supercomputing 2017 (SC17): 30th Int'l Conference on
 	High Performance Computing, Networking, Storage and Analysis</em>,
