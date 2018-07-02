@@ -25,6 +25,86 @@
   * arranged as described above for display on this page.
   -->
 
+  <h3 id="2018">2018</h3>
+  <ul class="year_list">
+    <!-- ============================================================== -->
+    <!-- <li><h4>Storage</h4> -->
+
+    <!-- ============================================================== -->
+    <!-- <li><h4>Data Management</h4> -->
+
+    <!-- ============================================================== -->
+    <li><h4>Non-Volatile Memory</h4>
+    <ul>
+      <li>
+        <strong>An Analysis Workflow-Aware Storage System for Multi-Core Active
+        Flash Arrays</strong>,
+
+        Hyogi Sim, Geoffroy Vallee, Youngjae Kim, Sudharshan S. Vazhkudai,
+        Devesh Tiwari and Ali R. Butt,
+
+        <em>IEEE Transactions on Parallel and Distributed Systems (TPDS), 2018
+        </em>
+
+
+      <li>
+	<strong>A Programmable Shared-Memory System for an Array of
+	Processing-In-Memory Devices</strong>,
+
+	Sangkeun Lee, Hyogi Sim, Youngjae Kim, Sudharshan S. Vazhkudai,
+
+        <em>Journal of Cluster Computing, 2018</em>
+
+    </ul>
+
+    <!-- ============================================================== -->
+    <li><h4>System Architecture and Resilience</h4>
+    <ul>
+      <li>
+        <strong>Exploring the Optimal Platform Configuration for
+        Power-constrained HPC Workflows</strong>,
+
+        Kun Tang, Xubin He, Saurabh Gupta, Sudharshan S. Vazhkudai, and Devesh
+        Tiwari,
+
+        <em>Proceedings of the 27th International Conference on Computer
+        Communications and Networks (ICCCN 2018), Hangzhou, China, July
+        2018</em>
+
+      <li>
+        <strong>GPU Age-Aware Scheduling to Improve the Reliability of
+        Leadership Jobs on Titan</strong>,
+
+        Christopher J. Zimmer, Don Maxwell, Scott Atchley, Sudharshan S.
+        Vazhkudai, Stephen McNally,
+
+        <em>Proceedings of Supercomputing 2018 (SC18): 31th Int'l Conference on
+        High Performance Computing, Networking, Storage and Analysis, Dallas,
+        TX, November 2018</em>
+
+      <li>
+        <strong>The Design, Deployment, and Evaluation of the CORAL Pre-Exascale
+        Systems</strong>,
+
+        Sudharshan S. Vazhkudai, Bronis R. de Supinski, Arthur S. Bland, Al
+        Geist, James Sexton, Jim Kahle, Christopher J. Zimmer, Scott Atchley,
+        Sarp H. Oral, Don E. Maxwell, Veronica G. Vergara Larrea, Adam Bertsch,
+        Robin Goldstone, Wayne Joubert, Chris Chambreau, David Appelhans, Robert
+        Blackmore, Ben Casses, George Chochia, Gene Davison, Matthew A. Ezell,
+        Tom Gooding, Elsa Gonsiorowski, Leopold Grinberg, Bill Hanson, Bill
+        Hartner, Ian Karlin, Matthew L. Leininger, Dustin Leverman, Chris
+        Marroquin, Adam Moody, Martin Ohmacht, Ramesh Pankajakshan, Fernando
+        Pizzano, James H. Rogers, Bryan Rosenburg, Drew Schmidt, Mallikarjun
+        Shankar, Feiyi Wang, Py Watson, Bob Walkup, Lance D. Weems, Junqi Yin,
+
+        <em>Proceedings of Supercomputing 2018 (SC18): 31th Int'l Conference on
+        High Performance Computing, Networking, Storage and Analysis, Dallas,
+        TX, November 2018</em>
+
+    </ul>
+
+  </ul>
+
   <h3 id="2017">2017</h3>
   <ul class="year_list">
 
