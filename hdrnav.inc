@@ -50,7 +50,6 @@
           <li><a href="shin.html">Woong Shin</a>
           <li><a href="sim.html">Hyogi Sim</a>
           <li><a href="simmons.html">James Simmons</a>
-          <li><a href="steinert.html">Deryl Steinert</a>
           <li><a href="vazhkudai.html">Sudharshan Vazhkudai (group leader)</a>
           <li><a href="fwang.html">Feiyi Wang</a>
           <li><a href="white.html">Vicky White</a>
