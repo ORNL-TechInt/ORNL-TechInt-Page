@@ -1,7 +1,7 @@
 %include('html_intro.inc')
     <meta name="keywords" content="members">
     <meta name="description" content="NCCS TechInt group member page">
-    <title>Technology Integration Group: Joseph Moore</title>
+    <title>Technology Integration Group: Bing Xie</title>
 %include('hdbody.inc')
 %include('hdrnav.inc')
 

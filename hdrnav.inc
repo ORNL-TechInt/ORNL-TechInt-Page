@@ -42,9 +42,7 @@
           <li><a href="atchley.html">Scott Atchley</a>
           <li><a href="brumgard.html">Chris Brumgard</a>
           <li><a href="griffith.html">Mitch Griffith</a>
-          <li><a href="gunasekaran.html">Raghul Gunasekaran</a>
           <li><a href="miller.html">Ross Miller</a>
-          <li><a href="moore.html">Joseph Moore</a>
           <li><a href="mowery.html">Sonya Mowery (group secretary)</a>
           <li><a href="oral.html">Sarp Oral</a>
           <li><a href="shin.html">Woong Shin</a>
