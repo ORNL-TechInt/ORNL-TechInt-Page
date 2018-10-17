@@ -46,7 +46,6 @@
         <em>IEEE Transactions on Parallel and Distributed Systems (TPDS), 2018
         </em>
 
-
       <li>
 	<strong>A Programmable Shared-Memory System for an Array of
 	Processing-In-Memory Devices</strong>,
@@ -60,6 +59,7 @@
     <!-- ============================================================== -->
     <li><h4>System Architecture and Resilience</h4>
     <ul>
+        
       <li>
         <strong>Exploring the Optimal Platform Configuration for
         Power-constrained HPC Workflows</strong>,
@@ -109,6 +109,42 @@
   <ul class="year_list">
 
     <!-- ============================================================== -->
+    <li><h4>System Architecture</h4>
+    <ul>
+      <li>
+        <strong>Understanding Object-level Memory Access Patterns Across the
+        Spectrum</strong>,
+
+        Xu Ji, Chao Wang, Nosayba El-Sayed, Xiaosong Ma, Youngjae Kim,
+        Sudharshan S. Vazhkudai, Wei Xue, Daniel Sanchez,
+
+        <em>Proceedings of Supercomputing 2017 (SC17): 30th Int'l Conference on
+        High Performance Computing, Networking, Storage and Analysis, Denver,
+        CO, November 2017</em>
+
+      <li>
+        <strong>Toward Managing HPC Burst Buffers Effectively: Draining Strategy
+        to Regulate Bursty I/O Behavior</strong>,
+
+        Kun Tang, Ping Huang, Xubin He, Tao Lu, Sudharshan S. Vazhkudai, and
+        Devesh Tiwari,
+
+        <em>Proceedings of the 25th IEEE International Symposium on Modeling,
+        Analysis and Simulation of Computer and Telecommunication Systems
+        (MASCOTS 2017), Banff, Canada, September 2017</em>
+
+      <li>
+        <strong>Effective Running of End-to-end HPC Workflows on Emerging
+        Heterogeneous Architectures</strong>,
+
+        Kun Tang, Devesh Tiwari, Saurabh Gupta, Sudharshan S. Vazhkudai, Xubin
+        He,
+
+        <em>Proceedings of IEEE Cluster 2017, Honolulu, HI, September 2017</em>
+
+    </ul>
+
+    <!-- ============================================================== -->
     <li><h4>Storage</h4>
     <ul>
       <li>
@@ -152,6 +188,16 @@
     <li><h4>Data Management</h4>
     <ul>
       <li>
+        <strong>Applying Graph Analytics to Understand Compute Core Usage and
+        Publication Trends in a Petascale Supercomputing Facility</strong>,
+
+        Sangkeun Lee, Sudharshan S. Vazhkudai, and Raghul Gunasekaran,
+
+        <em>Proceedings of the 24th IEEE Int'l Conference on High Performance
+        Computing, Data, and Analytics (HiPC), Jaipur, India, December 2017
+        </em>
+
+      <li>
         <strong>TagIt: An Integrated Indexing and Search Service for File
 	Systems</strong>,
 
@@ -161,7 +207,6 @@
 	<em>Proceedings of Supercomputing 2017 (SC17): 30th Int'l Conference on
 	High Performance Computing, Networking, Storage and Analysis</em>,
 	Denver, CO, November 2017
-
 
     </ul>
 
