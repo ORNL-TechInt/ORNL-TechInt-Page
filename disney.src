@@ -1,0 +1,23 @@
+%include('html_intro.inc')
+    <meta name="keywords" content="members">
+    <meta name="description" content="NCCS TechInt group member page">
+    <title>Technology Integration Group: Adam Disney</title>
+%include('hdbody.inc')
+%include('hdrnav.inc')
+%include('content_intro.inc')
+
+<h2>Adam Disney</h2>
+
+<p> Adam joined the Technology Integration Group in late 2018 as an HPC Storage
+Systems Engineer. He is working as an HPSS developer and participating in the
+future archival storage solutions discussion.
+
+<p> Adam attended Pellissippi State Community College then later transferred to
+The University of Tennessee. He earned a B.S. degree in Computer Science in 2013
+and a PhD in Computer Science in 2018. His dissertation work focused on
+neuromorphic hardware simulations and supporting software. Before beginning
+neuromorphic research in 2015, Adam worked on erasure codes for storage systems
+and methods of implementing Galois field arithmetic.
+
+%include('content_close.inc')
+%include('html_close.inc')

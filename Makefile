@@ -21,18 +21,15 @@ ALL_OTHER = index.html \
 ALL_MEMBERS = atchley.html \
     barron.html \
     brumgard.html \
-    cwang.html \
+    disney.html \
     fwang.html \
     griffith.html \
-    gunasekaran.html \
     miller.html \
-    moore.html \
     mowery.html \
     oral.html \
     shin.html \
     sim.html \
     simmons.html \
-    steinert.html \
     vazhkudai.html \
     white.html \
     xie.html \
