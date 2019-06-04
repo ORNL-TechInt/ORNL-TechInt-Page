@@ -25,6 +25,49 @@
   * arranged as described above for display on this page.
   -->
 
+  <h3 id="2019">2019</h3>
+  <ul class="year_list">
+    <!-- ============================================================== -->
+    <!-- <li><h4>Storage</h4> -->
+
+    <!-- ============================================================== -->
+    <li><h4>Data Management</h4>
+    <ul>
+	  <li>
+	  <strong>Data Jockey: Automatic Data Management for HPC Multi-Tiered
+	  Storage Systems</strong>,
+
+	  Woong Shin, Christopher D. Brumgard, Bing Xie, Sudharshan S. Vazhkudai,
+	  Devarshi Ghoshal, Sarp Oral, Lavanya Ramakrishnan, 
+
+	  <em>Proceedings of the 33rd IEEE International Parallel & Distributed
+	  Processing Symposium (IPDPS 2019), Rio de Janeiro, Brazil, May 2019</em>
+	  </li>
+	</ul>
+
+    <!-- ============================================================== -->
+    <!-- <li><h4>Non-Volatile Memory</h4> -->
+
+    <!-- ============================================================== -->
+    <li><h4>System Architecture and Resilience</h4>
+    <ul>
+      <li>
+	  <strong>AHEAD: A Tool for Projecting Next-Generation Hardware
+	  Enhancements on GPU-Accelerated Systems</strong>,
+
+	  Hazem A. Abdelhafez, Christopher Zimmer, Sudharshan S. Vazhkudai and
+	  Matei Ripeanu, 
+
+	  <em>Proceedings of the 21st Workshop on Advances in Parallel and
+	  Distributed Computational Models (APDCM 2019), co-located with IPDPS’19,
+	  Rio de Janeiro, Brazil, May 2019</em>
+	  </li>
+    </ul>
+
+  </ul>
+
+  <p>&nbsp; <a class="right" href="#">Top</a>
+
   <h3 id="2018">2018</h3>
   <ul class="year_list">
     <!-- ============================================================== -->
@@ -104,6 +147,8 @@
     </ul>
 
   </ul>
+
+  <p>&nbsp; <a class="right" href="#">Top</a>
 
   <h3 id="2017">2017</h3>
   <ul class="year_list">
@@ -229,6 +274,8 @@
 
   </ul>
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
+
   <h3 id="2016">2016</h3>
   <ul class="year_list">
 
@@ -335,6 +382,8 @@
     </ul>
   </ul>
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
+
   <h3 id="2015">2015</h3>
   <ul class="year_list">
 
@@ -424,6 +473,7 @@
     </ul>
   </ul>
 
+  <p>&nbsp; <a class="right" href="#">Top</a>
 
   <h3 id="2014">2014</h3>
   <ul class="year_list">

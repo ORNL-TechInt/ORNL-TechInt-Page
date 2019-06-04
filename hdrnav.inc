@@ -62,6 +62,7 @@
       <li><a href="publications.html">Publications</a>
 %endif
         <ul>
+          <li><a href="publications.html#2019">2019</a>
           <li><a href="publications.html#2018">2018</a>
           <li><a href="publications.html#2017">2017</a>
           <li><a href="publications.html#2016">2016</a>
